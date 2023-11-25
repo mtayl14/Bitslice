@@ -1,1 +1,1 @@
-inv.sch
+../inv.sch
