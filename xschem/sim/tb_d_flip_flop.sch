@@ -24,7 +24,7 @@ C {devices/code.sym} -130 30 0 0 {name=COMMANDS only_toplevel=false value="
 TRAN 1p 20n
 save all
 set filetype=binary
-write tb_d_flip_flop_vtc.raw
+write tb_d_flip_flop_tran.raw
 .endc
 "}
 C {devices/vdd.sym} 80 60 0 0 {name=l1 lab=VDD}
