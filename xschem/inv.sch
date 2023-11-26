@@ -45,7 +45,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet3_01v8.sym} 60 -50 0 0 {name=M2
 L=0.15
-W=0.42
+W=0.84
 body=VDD
 nf=1
 mult=1
