@@ -1,0 +1,1365 @@
+| units: 0.5  tech: sky130A  format: MIT
+A A0 input
+A A1 input
+A A2 input
+A A3 input
+A A4 input
+A A5 input
+A A6 input
+A A7 input
+A B0 input
+A B1 input
+A B2 input
+A B3 input
+A B4 input
+A B5 input
+A B6 input
+A B7 input
+A clk input
+A store input
+A sub input
+A Q0 output
+A Q1 output
+A Q2 output
+A Q3 output
+A Q4 output
+A Q5 output
+A Q6 output
+A Q7 output
+A cout output
+A sum0 output
+A sum1 output
+A sum2 output
+A sum3 output
+A sum4 output
+A sum5 output
+A sum6 output
+A sum7 output
+| begin bitslice 540 410
+| begin bitslice.addf 110 330
+| device bitslice.addf.nmos 460 990
+n sub bitslice.addf.net_2 bitslice.addf.net_1 30.0 84.0
+| device bitslice.addf.pmos 460 870
+p sub bitslice.addf.net_6 bitslice.addf.net_1 30.0 84.0
+| device bitslice.addf.pmos_1 370 750
+p A0 vdd bitslice.addf.net_6 30.0 84.0
+| device bitslice.addf.pmos_2 540 750
+p bitslice.net_2 vdd bitslice.addf.net_6 30.0 84.0
+| device bitslice.addf.nmos_1 370 1110
+n A0 gnd bitslice.addf.net_2 30.0 84.0
+| device bitslice.addf.nmos_2 540 1110
+n bitslice.net_2 gnd bitslice.addf.net_2 30.0 84.0
+| device bitslice.addf.pmos_3 740 870
+p bitslice.net_2 bitslice.addf.net_5 bitslice.addf.net_1 30.0 84.0
+| device bitslice.addf.pmos_4 740 750
+p A0 vdd bitslice.addf.net_5 30.0 84.0
+| device bitslice.addf.nmos_3 740 990
+n bitslice.net_2 bitslice.addf.net_12 bitslice.addf.net_1 30.0 84.0
+| device bitslice.addf.nmos_4 740 1110
+n A0 gnd bitslice.addf.net_12 30.0 84.0
+| device bitslice.addf.pmos_5 940 750
+p A0 vdd bitslice.addf.net_7 30.0 84.0
+| device bitslice.addf.pmos_6 1110 750
+p bitslice.net_2 vdd bitslice.addf.net_7 30.0 84.0
+| device bitslice.addf.pmos_7 1270 750
+p sub vdd bitslice.addf.net_7 30.0 84.0
+| device bitslice.addf.pmos_8 1110 870
+p bitslice.addf.net_1 bitslice.addf.net_7 bitslice.addf.net_3 30.0 84.0
+| device bitslice.addf.nmos_5 940 1110
+n A0 gnd bitslice.addf.net_4 30.0 84.0
+| device bitslice.addf.nmos_6 1110 1110
+n bitslice.net_2 gnd bitslice.addf.net_4 30.0 84.0
+| device bitslice.addf.nmos_7 1270 1110
+n sub gnd bitslice.addf.net_4 30.0 84.0
+| device bitslice.addf.nmos_8 1110 990
+n bitslice.addf.net_1 bitslice.addf.net_4 bitslice.addf.net_3 30.0 84.0
+| device bitslice.addf.pmos_9 1470 870
+p sub bitslice.addf.net_10 bitslice.addf.net_3 30.0 84.0
+| device bitslice.addf.pmos_10 1470 750
+p bitslice.net_2 bitslice.addf.net_8 bitslice.addf.net_10 30.0 84.0
+| device bitslice.addf.pmos_11 1470 630
+p A0 vdd bitslice.addf.net_8 30.0 84.0
+| device bitslice.addf.nmos_9 1470 990
+n sub bitslice.addf.net_9 bitslice.addf.net_3 30.0 84.0
+| device bitslice.addf.nmos_10 1470 1110
+n bitslice.net_2 bitslice.addf.net_11 bitslice.addf.net_9 30.0 84.0
+| device bitslice.addf.nmos_11 1470 1230
+n A0 gnd bitslice.addf.net_11 30.0 84.0
+| begin bitslice.addf.inverter 1540 930
+| device bitslice.addf.inverter.nmos 550 360
+n bitslice.addf.net_3 gnd sum0 30.0 200
+| device bitslice.addf.inverter.pmos 550 200
+p bitslice.addf.net_3 vdd sum0 30.0 400
+| end bitslice.addf.inverter
+| begin bitslice.addf.inverter_1 880 1370
+| device bitslice.addf.inverter_1.nmos 550 360
+n bitslice.addf.net_1 gnd net_2 30.0 200
+| device bitslice.addf.inverter_1.pmos 550 200
+p bitslice.addf.net_1 vdd net_2 30.0 400
+| end bitslice.addf.inverter_1
+| end bitslice.addf
+| begin bitslice.mux21 -90 440
+| begin bitslice.mux21.t_gate 240 230
+| device bitslice.mux21.t_gate.pmos 210 380
+p bitslice.mux21.net_1 bitslice.net_4 bitslice.net_2 30.0 168.0
+| device bitslice.mux21.t_gate.nmos 210 300
+n sub bitslice.net_4 bitslice.net_2 30.0 84.0
+| end bitslice.mux21.t_gate
+| begin bitslice.mux21.inverter 110 130
+| device bitslice.mux21.inverter.nmos 550 360
+n sub gnd bitslice.mux21.net_1 30.0 200
+| device bitslice.mux21.inverter.pmos 550 200
+p sub vdd bitslice.mux21.net_1 30.0 400
+| end bitslice.mux21.inverter
+| begin bitslice.mux21.t_gate_1 240 430
+| device bitslice.mux21.t_gate_1.pmos 210 380
+p sub B0 bitslice.net_2 30.0 168.0
+| device bitslice.mux21.t_gate_1.nmos 210 300
+n bitslice.mux21.net_1 B0 bitslice.net_2 30.0 84.0
+| end bitslice.mux21.t_gate_1
+| end bitslice.mux21
+| begin bitslice.inverter -200 480
+| device bitslice.inverter.nmos 550 360
+n B0 gnd bitslice.net_4 30.0 200
+| device bitslice.inverter.pmos 550 200
+p B0 vdd bitslice.net_4 30.0 400
+| end bitslice.inverter
+| begin bitslice.register 350 340
+| begin bitslice.register.nand2 90 330
+| device bitslice.register.nand2.pmos 0 -100
+p bitslice.net_3 vdd bitslice.register.net_2 30.0 400
+| device bitslice.register.nand2.nmos 0 0
+n bitslice.net_3 bitslice.register.nand2.net_1 bitslice.register.net_2 30.0 400
+| device bitslice.register.nand2.pmos_1 160 -100
+p store vdd bitslice.register.net_2 30.0 400
+| device bitslice.register.nand2.nmos_1 0 100
+n store gnd bitslice.register.nand2.net_1 30.0 400
+| end bitslice.register.nand2
+| begin bitslice.register.inverter 210 330
+| device bitslice.register.inverter.nmos 550 360
+n bitslice.register.net_2 gnd bitslice.register.net_1 30.0 200
+| device bitslice.register.inverter.pmos 550 200
+p bitslice.register.net_2 vdd bitslice.register.net_1 30.0 400
+| end bitslice.register.inverter
+| begin bitslice.register.d_flip_flop 300 430
+| device bitslice.register.d_flip_flop.pmos 270 190
+p bitslice.register.net_1 vdd bitslice.register.d_flip_flop.clk_n 30.0 336.0
+| device bitslice.register.d_flip_flop.nmos 270 310
+n bitslice.register.net_1 gnd bitslice.register.d_flip_flop.clk_n 30.0 168.0
+| device bitslice.register.d_flip_flop.pmos_1 580 520
+p bitslice.register.net_1 bitslice.register.d_flip_flop.net_7 bitslice.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice.register.d_flip_flop.nmos_1 580 640
+n bitslice.register.d_flip_flop.clk_n bitslice.register.d_flip_flop.net_5 bitslice.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice.register.d_flip_flop.pmos_2 580 400
+p sum0 vdd bitslice.register.d_flip_flop.net_7 30.0 84.0
+| device bitslice.register.d_flip_flop.nmos_2 580 760
+n sum0 gnd bitslice.register.d_flip_flop.net_5 30.0 84.0
+| device bitslice.register.d_flip_flop.pmos_3 820 520
+p bitslice.register.d_flip_flop.net_3 vdd bitslice.register.d_flip_flop.net_1 30.0 84.0
+| device bitslice.register.d_flip_flop.nmos_3 820 640
+n bitslice.register.d_flip_flop.net_3 gnd bitslice.register.d_flip_flop.net_1 30.0 84.0
+| device bitslice.register.d_flip_flop.pmos_4 730 100
+p bitslice.register.d_flip_flop.clk_n bitslice.register.d_flip_flop.net_6 bitslice.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice.register.d_flip_flop.nmos_4 730 220
+n bitslice.register.net_1 bitslice.register.d_flip_flop.net_4 bitslice.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice.register.d_flip_flop.pmos_5 730 -20
+p bitslice.register.d_flip_flop.net_1 vdd bitslice.register.d_flip_flop.net_6 30.0 84.0
+| device bitslice.register.d_flip_flop.nmos_5 730 340
+n bitslice.register.d_flip_flop.net_1 gnd bitslice.register.d_flip_flop.net_4 30.0 84.0
+| device bitslice.register.d_flip_flop.pmos_6 1150 520
+p bitslice.register.d_flip_flop.clk_n bitslice.register.d_flip_flop.net_8 bitslice.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice.register.d_flip_flop.nmos_6 1150 640
+n bitslice.register.net_1 bitslice.register.d_flip_flop.net_10 bitslice.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice.register.d_flip_flop.pmos_7 1150 400
+p bitslice.register.d_flip_flop.net_1 vdd bitslice.register.d_flip_flop.net_8 30.0 84.0
+| device bitslice.register.d_flip_flop.nmos_7 1150 760
+n bitslice.register.d_flip_flop.net_1 gnd bitslice.register.d_flip_flop.net_10 30.0 84.0
+| device bitslice.register.d_flip_flop.pmos_8 1390 520
+p bitslice.register.d_flip_flop.net_2 vdd Q0 30.0 84.0
+| device bitslice.register.d_flip_flop.nmos_8 1390 640
+n bitslice.register.d_flip_flop.net_2 gnd Q0 30.0 84.0
+| device bitslice.register.d_flip_flop.pmos_9 1300 100
+p bitslice.register.net_1 bitslice.register.d_flip_flop.net_11 bitslice.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice.register.d_flip_flop.nmos_9 1300 220
+n bitslice.register.d_flip_flop.clk_n bitslice.register.d_flip_flop.net_9 bitslice.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice.register.d_flip_flop.pmos_10 1300 -20
+p Q0 vdd bitslice.register.d_flip_flop.net_11 30.0 84.0
+| device bitslice.register.d_flip_flop.nmos_10 1300 340
+n Q0 gnd bitslice.register.d_flip_flop.net_9 30.0 84.0
+| end bitslice.register.d_flip_flop
+| end bitslice.register
+| begin bitslice.inverter_1 350 150
+| device bitslice.inverter_1.nmos 550 360
+n clk gnd bitslice.net_1 30.0 200
+| device bitslice.inverter_1.pmos 550 200
+p clk vdd bitslice.net_1 30.0 400
+| end bitslice.inverter_1
+| begin bitslice.inverter_2 350 230
+| device bitslice.inverter_2.nmos 550 360
+n bitslice.net_1 gnd bitslice.net_3 30.0 3200
+| device bitslice.inverter_2.pmos 550 200
+p bitslice.net_1 vdd bitslice.net_3 30.0 6400
+| end bitslice.inverter_2
+| end bitslice
+| begin bitslice_1 540 140
+| begin bitslice_1.addf 110 330
+| device bitslice_1.addf.nmos 460 990
+n net_2 bitslice_1.addf.net_2 bitslice_1.addf.net_1 30.0 84.0
+| device bitslice_1.addf.pmos 460 870
+p net_2 bitslice_1.addf.net_6 bitslice_1.addf.net_1 30.0 84.0
+| device bitslice_1.addf.pmos_1 370 750
+p A1 vdd bitslice_1.addf.net_6 30.0 84.0
+| device bitslice_1.addf.pmos_2 540 750
+p bitslice_1.net_2 vdd bitslice_1.addf.net_6 30.0 84.0
+| device bitslice_1.addf.nmos_1 370 1110
+n A1 gnd bitslice_1.addf.net_2 30.0 84.0
+| device bitslice_1.addf.nmos_2 540 1110
+n bitslice_1.net_2 gnd bitslice_1.addf.net_2 30.0 84.0
+| device bitslice_1.addf.pmos_3 740 870
+p bitslice_1.net_2 bitslice_1.addf.net_5 bitslice_1.addf.net_1 30.0 84.0
+| device bitslice_1.addf.pmos_4 740 750
+p A1 vdd bitslice_1.addf.net_5 30.0 84.0
+| device bitslice_1.addf.nmos_3 740 990
+n bitslice_1.net_2 bitslice_1.addf.net_12 bitslice_1.addf.net_1 30.0 84.0
+| device bitslice_1.addf.nmos_4 740 1110
+n A1 gnd bitslice_1.addf.net_12 30.0 84.0
+| device bitslice_1.addf.pmos_5 940 750
+p A1 vdd bitslice_1.addf.net_7 30.0 84.0
+| device bitslice_1.addf.pmos_6 1110 750
+p bitslice_1.net_2 vdd bitslice_1.addf.net_7 30.0 84.0
+| device bitslice_1.addf.pmos_7 1270 750
+p net_2 vdd bitslice_1.addf.net_7 30.0 84.0
+| device bitslice_1.addf.pmos_8 1110 870
+p bitslice_1.addf.net_1 bitslice_1.addf.net_7 bitslice_1.addf.net_3 30.0 84.0
+| device bitslice_1.addf.nmos_5 940 1110
+n A1 gnd bitslice_1.addf.net_4 30.0 84.0
+| device bitslice_1.addf.nmos_6 1110 1110
+n bitslice_1.net_2 gnd bitslice_1.addf.net_4 30.0 84.0
+| device bitslice_1.addf.nmos_7 1270 1110
+n net_2 gnd bitslice_1.addf.net_4 30.0 84.0
+| device bitslice_1.addf.nmos_8 1110 990
+n bitslice_1.addf.net_1 bitslice_1.addf.net_4 bitslice_1.addf.net_3 30.0 84.0
+| device bitslice_1.addf.pmos_9 1470 870
+p net_2 bitslice_1.addf.net_10 bitslice_1.addf.net_3 30.0 84.0
+| device bitslice_1.addf.pmos_10 1470 750
+p bitslice_1.net_2 bitslice_1.addf.net_8 bitslice_1.addf.net_10 30.0 84.0
+| device bitslice_1.addf.pmos_11 1470 630
+p A1 vdd bitslice_1.addf.net_8 30.0 84.0
+| device bitslice_1.addf.nmos_9 1470 990
+n net_2 bitslice_1.addf.net_9 bitslice_1.addf.net_3 30.0 84.0
+| device bitslice_1.addf.nmos_10 1470 1110
+n bitslice_1.net_2 bitslice_1.addf.net_11 bitslice_1.addf.net_9 30.0 84.0
+| device bitslice_1.addf.nmos_11 1470 1230
+n A1 gnd bitslice_1.addf.net_11 30.0 84.0
+| begin bitslice_1.addf.inverter 1540 930
+| device bitslice_1.addf.inverter.nmos 550 360
+n bitslice_1.addf.net_3 gnd sum1 30.0 200
+| device bitslice_1.addf.inverter.pmos 550 200
+p bitslice_1.addf.net_3 vdd sum1 30.0 400
+| end bitslice_1.addf.inverter
+| begin bitslice_1.addf.inverter_1 880 1370
+| device bitslice_1.addf.inverter_1.nmos 550 360
+n bitslice_1.addf.net_1 gnd net_3 30.0 200
+| device bitslice_1.addf.inverter_1.pmos 550 200
+p bitslice_1.addf.net_1 vdd net_3 30.0 400
+| end bitslice_1.addf.inverter_1
+| end bitslice_1.addf
+| begin bitslice_1.mux21 -90 440
+| begin bitslice_1.mux21.t_gate 240 230
+| device bitslice_1.mux21.t_gate.pmos 210 380
+p bitslice_1.mux21.net_1 bitslice_1.net_4 bitslice_1.net_2 30.0 168.0
+| device bitslice_1.mux21.t_gate.nmos 210 300
+n sub bitslice_1.net_4 bitslice_1.net_2 30.0 84.0
+| end bitslice_1.mux21.t_gate
+| begin bitslice_1.mux21.inverter 110 130
+| device bitslice_1.mux21.inverter.nmos 550 360
+n sub gnd bitslice_1.mux21.net_1 30.0 200
+| device bitslice_1.mux21.inverter.pmos 550 200
+p sub vdd bitslice_1.mux21.net_1 30.0 400
+| end bitslice_1.mux21.inverter
+| begin bitslice_1.mux21.t_gate_1 240 430
+| device bitslice_1.mux21.t_gate_1.pmos 210 380
+p sub B1 bitslice_1.net_2 30.0 168.0
+| device bitslice_1.mux21.t_gate_1.nmos 210 300
+n bitslice_1.mux21.net_1 B1 bitslice_1.net_2 30.0 84.0
+| end bitslice_1.mux21.t_gate_1
+| end bitslice_1.mux21
+| begin bitslice_1.inverter -200 480
+| device bitslice_1.inverter.nmos 550 360
+n B1 gnd bitslice_1.net_4 30.0 200
+| device bitslice_1.inverter.pmos 550 200
+p B1 vdd bitslice_1.net_4 30.0 400
+| end bitslice_1.inverter
+| begin bitslice_1.register 350 340
+| begin bitslice_1.register.nand2 90 330
+| device bitslice_1.register.nand2.pmos 0 -100
+p bitslice_1.net_3 vdd bitslice_1.register.net_2 30.0 400
+| device bitslice_1.register.nand2.nmos 0 0
+n bitslice_1.net_3 bitslice_1.register.nand2.net_1 bitslice_1.register.net_2 30.0 400
+| device bitslice_1.register.nand2.pmos_1 160 -100
+p store vdd bitslice_1.register.net_2 30.0 400
+| device bitslice_1.register.nand2.nmos_1 0 100
+n store gnd bitslice_1.register.nand2.net_1 30.0 400
+| end bitslice_1.register.nand2
+| begin bitslice_1.register.inverter 210 330
+| device bitslice_1.register.inverter.nmos 550 360
+n bitslice_1.register.net_2 gnd bitslice_1.register.net_1 30.0 200
+| device bitslice_1.register.inverter.pmos 550 200
+p bitslice_1.register.net_2 vdd bitslice_1.register.net_1 30.0 400
+| end bitslice_1.register.inverter
+| begin bitslice_1.register.d_flip_flop 300 430
+| device bitslice_1.register.d_flip_flop.pmos 270 190
+p bitslice_1.register.net_1 vdd bitslice_1.register.d_flip_flop.clk_n 30.0 336.0
+| device bitslice_1.register.d_flip_flop.nmos 270 310
+n bitslice_1.register.net_1 gnd bitslice_1.register.d_flip_flop.clk_n 30.0 168.0
+| device bitslice_1.register.d_flip_flop.pmos_1 580 520
+p bitslice_1.register.net_1 bitslice_1.register.d_flip_flop.net_7 bitslice_1.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_1.register.d_flip_flop.nmos_1 580 640
+n bitslice_1.register.d_flip_flop.clk_n bitslice_1.register.d_flip_flop.net_5 bitslice_1.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_1.register.d_flip_flop.pmos_2 580 400
+p sum1 vdd bitslice_1.register.d_flip_flop.net_7 30.0 84.0
+| device bitslice_1.register.d_flip_flop.nmos_2 580 760
+n sum1 gnd bitslice_1.register.d_flip_flop.net_5 30.0 84.0
+| device bitslice_1.register.d_flip_flop.pmos_3 820 520
+p bitslice_1.register.d_flip_flop.net_3 vdd bitslice_1.register.d_flip_flop.net_1 30.0 84.0
+| device bitslice_1.register.d_flip_flop.nmos_3 820 640
+n bitslice_1.register.d_flip_flop.net_3 gnd bitslice_1.register.d_flip_flop.net_1 30.0 84.0
+| device bitslice_1.register.d_flip_flop.pmos_4 730 100
+p bitslice_1.register.d_flip_flop.clk_n bitslice_1.register.d_flip_flop.net_6 bitslice_1.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_1.register.d_flip_flop.nmos_4 730 220
+n bitslice_1.register.net_1 bitslice_1.register.d_flip_flop.net_4 bitslice_1.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_1.register.d_flip_flop.pmos_5 730 -20
+p bitslice_1.register.d_flip_flop.net_1 vdd bitslice_1.register.d_flip_flop.net_6 30.0 84.0
+| device bitslice_1.register.d_flip_flop.nmos_5 730 340
+n bitslice_1.register.d_flip_flop.net_1 gnd bitslice_1.register.d_flip_flop.net_4 30.0 84.0
+| device bitslice_1.register.d_flip_flop.pmos_6 1150 520
+p bitslice_1.register.d_flip_flop.clk_n bitslice_1.register.d_flip_flop.net_8 bitslice_1.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_1.register.d_flip_flop.nmos_6 1150 640
+n bitslice_1.register.net_1 bitslice_1.register.d_flip_flop.net_10 bitslice_1.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_1.register.d_flip_flop.pmos_7 1150 400
+p bitslice_1.register.d_flip_flop.net_1 vdd bitslice_1.register.d_flip_flop.net_8 30.0 84.0
+| device bitslice_1.register.d_flip_flop.nmos_7 1150 760
+n bitslice_1.register.d_flip_flop.net_1 gnd bitslice_1.register.d_flip_flop.net_10 30.0 84.0
+| device bitslice_1.register.d_flip_flop.pmos_8 1390 520
+p bitslice_1.register.d_flip_flop.net_2 vdd Q1 30.0 84.0
+| device bitslice_1.register.d_flip_flop.nmos_8 1390 640
+n bitslice_1.register.d_flip_flop.net_2 gnd Q1 30.0 84.0
+| device bitslice_1.register.d_flip_flop.pmos_9 1300 100
+p bitslice_1.register.net_1 bitslice_1.register.d_flip_flop.net_11 bitslice_1.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_1.register.d_flip_flop.nmos_9 1300 220
+n bitslice_1.register.d_flip_flop.clk_n bitslice_1.register.d_flip_flop.net_9 bitslice_1.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_1.register.d_flip_flop.pmos_10 1300 -20
+p Q1 vdd bitslice_1.register.d_flip_flop.net_11 30.0 84.0
+| device bitslice_1.register.d_flip_flop.nmos_10 1300 340
+n Q1 gnd bitslice_1.register.d_flip_flop.net_9 30.0 84.0
+| end bitslice_1.register.d_flip_flop
+| end bitslice_1.register
+| begin bitslice_1.inverter_1 350 150
+| device bitslice_1.inverter_1.nmos 550 360
+n clk gnd bitslice_1.net_1 30.0 200
+| device bitslice_1.inverter_1.pmos 550 200
+p clk vdd bitslice_1.net_1 30.0 400
+| end bitslice_1.inverter_1
+| begin bitslice_1.inverter_2 350 230
+| device bitslice_1.inverter_2.nmos 550 360
+n bitslice_1.net_1 gnd bitslice_1.net_3 30.0 3200
+| device bitslice_1.inverter_2.pmos 550 200
+p bitslice_1.net_1 vdd bitslice_1.net_3 30.0 6400
+| end bitslice_1.inverter_2
+| end bitslice_1
+| begin bitslice_2 540 -130
+| begin bitslice_2.addf 110 330
+| device bitslice_2.addf.nmos 460 990
+n net_3 bitslice_2.addf.net_2 bitslice_2.addf.net_1 30.0 84.0
+| device bitslice_2.addf.pmos 460 870
+p net_3 bitslice_2.addf.net_6 bitslice_2.addf.net_1 30.0 84.0
+| device bitslice_2.addf.pmos_1 370 750
+p A2 vdd bitslice_2.addf.net_6 30.0 84.0
+| device bitslice_2.addf.pmos_2 540 750
+p bitslice_2.net_2 vdd bitslice_2.addf.net_6 30.0 84.0
+| device bitslice_2.addf.nmos_1 370 1110
+n A2 gnd bitslice_2.addf.net_2 30.0 84.0
+| device bitslice_2.addf.nmos_2 540 1110
+n bitslice_2.net_2 gnd bitslice_2.addf.net_2 30.0 84.0
+| device bitslice_2.addf.pmos_3 740 870
+p bitslice_2.net_2 bitslice_2.addf.net_5 bitslice_2.addf.net_1 30.0 84.0
+| device bitslice_2.addf.pmos_4 740 750
+p A2 vdd bitslice_2.addf.net_5 30.0 84.0
+| device bitslice_2.addf.nmos_3 740 990
+n bitslice_2.net_2 bitslice_2.addf.net_12 bitslice_2.addf.net_1 30.0 84.0
+| device bitslice_2.addf.nmos_4 740 1110
+n A2 gnd bitslice_2.addf.net_12 30.0 84.0
+| device bitslice_2.addf.pmos_5 940 750
+p A2 vdd bitslice_2.addf.net_7 30.0 84.0
+| device bitslice_2.addf.pmos_6 1110 750
+p bitslice_2.net_2 vdd bitslice_2.addf.net_7 30.0 84.0
+| device bitslice_2.addf.pmos_7 1270 750
+p net_3 vdd bitslice_2.addf.net_7 30.0 84.0
+| device bitslice_2.addf.pmos_8 1110 870
+p bitslice_2.addf.net_1 bitslice_2.addf.net_7 bitslice_2.addf.net_3 30.0 84.0
+| device bitslice_2.addf.nmos_5 940 1110
+n A2 gnd bitslice_2.addf.net_4 30.0 84.0
+| device bitslice_2.addf.nmos_6 1110 1110
+n bitslice_2.net_2 gnd bitslice_2.addf.net_4 30.0 84.0
+| device bitslice_2.addf.nmos_7 1270 1110
+n net_3 gnd bitslice_2.addf.net_4 30.0 84.0
+| device bitslice_2.addf.nmos_8 1110 990
+n bitslice_2.addf.net_1 bitslice_2.addf.net_4 bitslice_2.addf.net_3 30.0 84.0
+| device bitslice_2.addf.pmos_9 1470 870
+p net_3 bitslice_2.addf.net_10 bitslice_2.addf.net_3 30.0 84.0
+| device bitslice_2.addf.pmos_10 1470 750
+p bitslice_2.net_2 bitslice_2.addf.net_8 bitslice_2.addf.net_10 30.0 84.0
+| device bitslice_2.addf.pmos_11 1470 630
+p A2 vdd bitslice_2.addf.net_8 30.0 84.0
+| device bitslice_2.addf.nmos_9 1470 990
+n net_3 bitslice_2.addf.net_9 bitslice_2.addf.net_3 30.0 84.0
+| device bitslice_2.addf.nmos_10 1470 1110
+n bitslice_2.net_2 bitslice_2.addf.net_11 bitslice_2.addf.net_9 30.0 84.0
+| device bitslice_2.addf.nmos_11 1470 1230
+n A2 gnd bitslice_2.addf.net_11 30.0 84.0
+| begin bitslice_2.addf.inverter 1540 930
+| device bitslice_2.addf.inverter.nmos 550 360
+n bitslice_2.addf.net_3 gnd sum2 30.0 200
+| device bitslice_2.addf.inverter.pmos 550 200
+p bitslice_2.addf.net_3 vdd sum2 30.0 400
+| end bitslice_2.addf.inverter
+| begin bitslice_2.addf.inverter_1 880 1370
+| device bitslice_2.addf.inverter_1.nmos 550 360
+n bitslice_2.addf.net_1 gnd net_1 30.0 200
+| device bitslice_2.addf.inverter_1.pmos 550 200
+p bitslice_2.addf.net_1 vdd net_1 30.0 400
+| end bitslice_2.addf.inverter_1
+| end bitslice_2.addf
+| begin bitslice_2.mux21 -90 440
+| begin bitslice_2.mux21.t_gate 240 230
+| device bitslice_2.mux21.t_gate.pmos 210 380
+p bitslice_2.mux21.net_1 bitslice_2.net_4 bitslice_2.net_2 30.0 168.0
+| device bitslice_2.mux21.t_gate.nmos 210 300
+n sub bitslice_2.net_4 bitslice_2.net_2 30.0 84.0
+| end bitslice_2.mux21.t_gate
+| begin bitslice_2.mux21.inverter 110 130
+| device bitslice_2.mux21.inverter.nmos 550 360
+n sub gnd bitslice_2.mux21.net_1 30.0 200
+| device bitslice_2.mux21.inverter.pmos 550 200
+p sub vdd bitslice_2.mux21.net_1 30.0 400
+| end bitslice_2.mux21.inverter
+| begin bitslice_2.mux21.t_gate_1 240 430
+| device bitslice_2.mux21.t_gate_1.pmos 210 380
+p sub B2 bitslice_2.net_2 30.0 168.0
+| device bitslice_2.mux21.t_gate_1.nmos 210 300
+n bitslice_2.mux21.net_1 B2 bitslice_2.net_2 30.0 84.0
+| end bitslice_2.mux21.t_gate_1
+| end bitslice_2.mux21
+| begin bitslice_2.inverter -200 480
+| device bitslice_2.inverter.nmos 550 360
+n B2 gnd bitslice_2.net_4 30.0 200
+| device bitslice_2.inverter.pmos 550 200
+p B2 vdd bitslice_2.net_4 30.0 400
+| end bitslice_2.inverter
+| begin bitslice_2.register 350 340
+| begin bitslice_2.register.nand2 90 330
+| device bitslice_2.register.nand2.pmos 0 -100
+p bitslice_2.net_3 vdd bitslice_2.register.net_2 30.0 400
+| device bitslice_2.register.nand2.nmos 0 0
+n bitslice_2.net_3 bitslice_2.register.nand2.net_1 bitslice_2.register.net_2 30.0 400
+| device bitslice_2.register.nand2.pmos_1 160 -100
+p store vdd bitslice_2.register.net_2 30.0 400
+| device bitslice_2.register.nand2.nmos_1 0 100
+n store gnd bitslice_2.register.nand2.net_1 30.0 400
+| end bitslice_2.register.nand2
+| begin bitslice_2.register.inverter 210 330
+| device bitslice_2.register.inverter.nmos 550 360
+n bitslice_2.register.net_2 gnd bitslice_2.register.net_1 30.0 200
+| device bitslice_2.register.inverter.pmos 550 200
+p bitslice_2.register.net_2 vdd bitslice_2.register.net_1 30.0 400
+| end bitslice_2.register.inverter
+| begin bitslice_2.register.d_flip_flop 300 430
+| device bitslice_2.register.d_flip_flop.pmos 270 190
+p bitslice_2.register.net_1 vdd bitslice_2.register.d_flip_flop.clk_n 30.0 336.0
+| device bitslice_2.register.d_flip_flop.nmos 270 310
+n bitslice_2.register.net_1 gnd bitslice_2.register.d_flip_flop.clk_n 30.0 168.0
+| device bitslice_2.register.d_flip_flop.pmos_1 580 520
+p bitslice_2.register.net_1 bitslice_2.register.d_flip_flop.net_7 bitslice_2.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_2.register.d_flip_flop.nmos_1 580 640
+n bitslice_2.register.d_flip_flop.clk_n bitslice_2.register.d_flip_flop.net_5 bitslice_2.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_2.register.d_flip_flop.pmos_2 580 400
+p sum2 vdd bitslice_2.register.d_flip_flop.net_7 30.0 84.0
+| device bitslice_2.register.d_flip_flop.nmos_2 580 760
+n sum2 gnd bitslice_2.register.d_flip_flop.net_5 30.0 84.0
+| device bitslice_2.register.d_flip_flop.pmos_3 820 520
+p bitslice_2.register.d_flip_flop.net_3 vdd bitslice_2.register.d_flip_flop.net_1 30.0 84.0
+| device bitslice_2.register.d_flip_flop.nmos_3 820 640
+n bitslice_2.register.d_flip_flop.net_3 gnd bitslice_2.register.d_flip_flop.net_1 30.0 84.0
+| device bitslice_2.register.d_flip_flop.pmos_4 730 100
+p bitslice_2.register.d_flip_flop.clk_n bitslice_2.register.d_flip_flop.net_6 bitslice_2.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_2.register.d_flip_flop.nmos_4 730 220
+n bitslice_2.register.net_1 bitslice_2.register.d_flip_flop.net_4 bitslice_2.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_2.register.d_flip_flop.pmos_5 730 -20
+p bitslice_2.register.d_flip_flop.net_1 vdd bitslice_2.register.d_flip_flop.net_6 30.0 84.0
+| device bitslice_2.register.d_flip_flop.nmos_5 730 340
+n bitslice_2.register.d_flip_flop.net_1 gnd bitslice_2.register.d_flip_flop.net_4 30.0 84.0
+| device bitslice_2.register.d_flip_flop.pmos_6 1150 520
+p bitslice_2.register.d_flip_flop.clk_n bitslice_2.register.d_flip_flop.net_8 bitslice_2.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_2.register.d_flip_flop.nmos_6 1150 640
+n bitslice_2.register.net_1 bitslice_2.register.d_flip_flop.net_10 bitslice_2.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_2.register.d_flip_flop.pmos_7 1150 400
+p bitslice_2.register.d_flip_flop.net_1 vdd bitslice_2.register.d_flip_flop.net_8 30.0 84.0
+| device bitslice_2.register.d_flip_flop.nmos_7 1150 760
+n bitslice_2.register.d_flip_flop.net_1 gnd bitslice_2.register.d_flip_flop.net_10 30.0 84.0
+| device bitslice_2.register.d_flip_flop.pmos_8 1390 520
+p bitslice_2.register.d_flip_flop.net_2 vdd Q2 30.0 84.0
+| device bitslice_2.register.d_flip_flop.nmos_8 1390 640
+n bitslice_2.register.d_flip_flop.net_2 gnd Q2 30.0 84.0
+| device bitslice_2.register.d_flip_flop.pmos_9 1300 100
+p bitslice_2.register.net_1 bitslice_2.register.d_flip_flop.net_11 bitslice_2.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_2.register.d_flip_flop.nmos_9 1300 220
+n bitslice_2.register.d_flip_flop.clk_n bitslice_2.register.d_flip_flop.net_9 bitslice_2.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_2.register.d_flip_flop.pmos_10 1300 -20
+p Q2 vdd bitslice_2.register.d_flip_flop.net_11 30.0 84.0
+| device bitslice_2.register.d_flip_flop.nmos_10 1300 340
+n Q2 gnd bitslice_2.register.d_flip_flop.net_9 30.0 84.0
+| end bitslice_2.register.d_flip_flop
+| end bitslice_2.register
+| begin bitslice_2.inverter_1 350 150
+| device bitslice_2.inverter_1.nmos 550 360
+n clk gnd bitslice_2.net_1 30.0 200
+| device bitslice_2.inverter_1.pmos 550 200
+p clk vdd bitslice_2.net_1 30.0 400
+| end bitslice_2.inverter_1
+| begin bitslice_2.inverter_2 350 230
+| device bitslice_2.inverter_2.nmos 550 360
+n bitslice_2.net_1 gnd bitslice_2.net_3 30.0 3200
+| device bitslice_2.inverter_2.pmos 550 200
+p bitslice_2.net_1 vdd bitslice_2.net_3 30.0 6400
+| end bitslice_2.inverter_2
+| end bitslice_2
+| begin bitslice_3 540 -400
+| begin bitslice_3.addf 110 330
+| device bitslice_3.addf.nmos 460 990
+n net_1 bitslice_3.addf.net_2 bitslice_3.addf.net_1 30.0 84.0
+| device bitslice_3.addf.pmos 460 870
+p net_1 bitslice_3.addf.net_6 bitslice_3.addf.net_1 30.0 84.0
+| device bitslice_3.addf.pmos_1 370 750
+p A3 vdd bitslice_3.addf.net_6 30.0 84.0
+| device bitslice_3.addf.pmos_2 540 750
+p bitslice_3.net_2 vdd bitslice_3.addf.net_6 30.0 84.0
+| device bitslice_3.addf.nmos_1 370 1110
+n A3 gnd bitslice_3.addf.net_2 30.0 84.0
+| device bitslice_3.addf.nmos_2 540 1110
+n bitslice_3.net_2 gnd bitslice_3.addf.net_2 30.0 84.0
+| device bitslice_3.addf.pmos_3 740 870
+p bitslice_3.net_2 bitslice_3.addf.net_5 bitslice_3.addf.net_1 30.0 84.0
+| device bitslice_3.addf.pmos_4 740 750
+p A3 vdd bitslice_3.addf.net_5 30.0 84.0
+| device bitslice_3.addf.nmos_3 740 990
+n bitslice_3.net_2 bitslice_3.addf.net_12 bitslice_3.addf.net_1 30.0 84.0
+| device bitslice_3.addf.nmos_4 740 1110
+n A3 gnd bitslice_3.addf.net_12 30.0 84.0
+| device bitslice_3.addf.pmos_5 940 750
+p A3 vdd bitslice_3.addf.net_7 30.0 84.0
+| device bitslice_3.addf.pmos_6 1110 750
+p bitslice_3.net_2 vdd bitslice_3.addf.net_7 30.0 84.0
+| device bitslice_3.addf.pmos_7 1270 750
+p net_1 vdd bitslice_3.addf.net_7 30.0 84.0
+| device bitslice_3.addf.pmos_8 1110 870
+p bitslice_3.addf.net_1 bitslice_3.addf.net_7 bitslice_3.addf.net_3 30.0 84.0
+| device bitslice_3.addf.nmos_5 940 1110
+n A3 gnd bitslice_3.addf.net_4 30.0 84.0
+| device bitslice_3.addf.nmos_6 1110 1110
+n bitslice_3.net_2 gnd bitslice_3.addf.net_4 30.0 84.0
+| device bitslice_3.addf.nmos_7 1270 1110
+n net_1 gnd bitslice_3.addf.net_4 30.0 84.0
+| device bitslice_3.addf.nmos_8 1110 990
+n bitslice_3.addf.net_1 bitslice_3.addf.net_4 bitslice_3.addf.net_3 30.0 84.0
+| device bitslice_3.addf.pmos_9 1470 870
+p net_1 bitslice_3.addf.net_10 bitslice_3.addf.net_3 30.0 84.0
+| device bitslice_3.addf.pmos_10 1470 750
+p bitslice_3.net_2 bitslice_3.addf.net_8 bitslice_3.addf.net_10 30.0 84.0
+| device bitslice_3.addf.pmos_11 1470 630
+p A3 vdd bitslice_3.addf.net_8 30.0 84.0
+| device bitslice_3.addf.nmos_9 1470 990
+n net_1 bitslice_3.addf.net_9 bitslice_3.addf.net_3 30.0 84.0
+| device bitslice_3.addf.nmos_10 1470 1110
+n bitslice_3.net_2 bitslice_3.addf.net_11 bitslice_3.addf.net_9 30.0 84.0
+| device bitslice_3.addf.nmos_11 1470 1230
+n A3 gnd bitslice_3.addf.net_11 30.0 84.0
+| begin bitslice_3.addf.inverter 1540 930
+| device bitslice_3.addf.inverter.nmos 550 360
+n bitslice_3.addf.net_3 gnd sum3 30.0 200
+| device bitslice_3.addf.inverter.pmos 550 200
+p bitslice_3.addf.net_3 vdd sum3 30.0 400
+| end bitslice_3.addf.inverter
+| begin bitslice_3.addf.inverter_1 880 1370
+| device bitslice_3.addf.inverter_1.nmos 550 360
+n bitslice_3.addf.net_1 gnd net_4 30.0 200
+| device bitslice_3.addf.inverter_1.pmos 550 200
+p bitslice_3.addf.net_1 vdd net_4 30.0 400
+| end bitslice_3.addf.inverter_1
+| end bitslice_3.addf
+| begin bitslice_3.mux21 -90 440
+| begin bitslice_3.mux21.t_gate 240 230
+| device bitslice_3.mux21.t_gate.pmos 210 380
+p bitslice_3.mux21.net_1 bitslice_3.net_4 bitslice_3.net_2 30.0 168.0
+| device bitslice_3.mux21.t_gate.nmos 210 300
+n sub bitslice_3.net_4 bitslice_3.net_2 30.0 84.0
+| end bitslice_3.mux21.t_gate
+| begin bitslice_3.mux21.inverter 110 130
+| device bitslice_3.mux21.inverter.nmos 550 360
+n sub gnd bitslice_3.mux21.net_1 30.0 200
+| device bitslice_3.mux21.inverter.pmos 550 200
+p sub vdd bitslice_3.mux21.net_1 30.0 400
+| end bitslice_3.mux21.inverter
+| begin bitslice_3.mux21.t_gate_1 240 430
+| device bitslice_3.mux21.t_gate_1.pmos 210 380
+p sub B3 bitslice_3.net_2 30.0 168.0
+| device bitslice_3.mux21.t_gate_1.nmos 210 300
+n bitslice_3.mux21.net_1 B3 bitslice_3.net_2 30.0 84.0
+| end bitslice_3.mux21.t_gate_1
+| end bitslice_3.mux21
+| begin bitslice_3.inverter -200 480
+| device bitslice_3.inverter.nmos 550 360
+n B3 gnd bitslice_3.net_4 30.0 200
+| device bitslice_3.inverter.pmos 550 200
+p B3 vdd bitslice_3.net_4 30.0 400
+| end bitslice_3.inverter
+| begin bitslice_3.register 350 340
+| begin bitslice_3.register.nand2 90 330
+| device bitslice_3.register.nand2.pmos 0 -100
+p bitslice_3.net_3 vdd bitslice_3.register.net_2 30.0 400
+| device bitslice_3.register.nand2.nmos 0 0
+n bitslice_3.net_3 bitslice_3.register.nand2.net_1 bitslice_3.register.net_2 30.0 400
+| device bitslice_3.register.nand2.pmos_1 160 -100
+p store vdd bitslice_3.register.net_2 30.0 400
+| device bitslice_3.register.nand2.nmos_1 0 100
+n store gnd bitslice_3.register.nand2.net_1 30.0 400
+| end bitslice_3.register.nand2
+| begin bitslice_3.register.inverter 210 330
+| device bitslice_3.register.inverter.nmos 550 360
+n bitslice_3.register.net_2 gnd bitslice_3.register.net_1 30.0 200
+| device bitslice_3.register.inverter.pmos 550 200
+p bitslice_3.register.net_2 vdd bitslice_3.register.net_1 30.0 400
+| end bitslice_3.register.inverter
+| begin bitslice_3.register.d_flip_flop 300 430
+| device bitslice_3.register.d_flip_flop.pmos 270 190
+p bitslice_3.register.net_1 vdd bitslice_3.register.d_flip_flop.clk_n 30.0 336.0
+| device bitslice_3.register.d_flip_flop.nmos 270 310
+n bitslice_3.register.net_1 gnd bitslice_3.register.d_flip_flop.clk_n 30.0 168.0
+| device bitslice_3.register.d_flip_flop.pmos_1 580 520
+p bitslice_3.register.net_1 bitslice_3.register.d_flip_flop.net_7 bitslice_3.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_3.register.d_flip_flop.nmos_1 580 640
+n bitslice_3.register.d_flip_flop.clk_n bitslice_3.register.d_flip_flop.net_5 bitslice_3.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_3.register.d_flip_flop.pmos_2 580 400
+p sum3 vdd bitslice_3.register.d_flip_flop.net_7 30.0 84.0
+| device bitslice_3.register.d_flip_flop.nmos_2 580 760
+n sum3 gnd bitslice_3.register.d_flip_flop.net_5 30.0 84.0
+| device bitslice_3.register.d_flip_flop.pmos_3 820 520
+p bitslice_3.register.d_flip_flop.net_3 vdd bitslice_3.register.d_flip_flop.net_1 30.0 84.0
+| device bitslice_3.register.d_flip_flop.nmos_3 820 640
+n bitslice_3.register.d_flip_flop.net_3 gnd bitslice_3.register.d_flip_flop.net_1 30.0 84.0
+| device bitslice_3.register.d_flip_flop.pmos_4 730 100
+p bitslice_3.register.d_flip_flop.clk_n bitslice_3.register.d_flip_flop.net_6 bitslice_3.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_3.register.d_flip_flop.nmos_4 730 220
+n bitslice_3.register.net_1 bitslice_3.register.d_flip_flop.net_4 bitslice_3.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_3.register.d_flip_flop.pmos_5 730 -20
+p bitslice_3.register.d_flip_flop.net_1 vdd bitslice_3.register.d_flip_flop.net_6 30.0 84.0
+| device bitslice_3.register.d_flip_flop.nmos_5 730 340
+n bitslice_3.register.d_flip_flop.net_1 gnd bitslice_3.register.d_flip_flop.net_4 30.0 84.0
+| device bitslice_3.register.d_flip_flop.pmos_6 1150 520
+p bitslice_3.register.d_flip_flop.clk_n bitslice_3.register.d_flip_flop.net_8 bitslice_3.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_3.register.d_flip_flop.nmos_6 1150 640
+n bitslice_3.register.net_1 bitslice_3.register.d_flip_flop.net_10 bitslice_3.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_3.register.d_flip_flop.pmos_7 1150 400
+p bitslice_3.register.d_flip_flop.net_1 vdd bitslice_3.register.d_flip_flop.net_8 30.0 84.0
+| device bitslice_3.register.d_flip_flop.nmos_7 1150 760
+n bitslice_3.register.d_flip_flop.net_1 gnd bitslice_3.register.d_flip_flop.net_10 30.0 84.0
+| device bitslice_3.register.d_flip_flop.pmos_8 1390 520
+p bitslice_3.register.d_flip_flop.net_2 vdd Q3 30.0 84.0
+| device bitslice_3.register.d_flip_flop.nmos_8 1390 640
+n bitslice_3.register.d_flip_flop.net_2 gnd Q3 30.0 84.0
+| device bitslice_3.register.d_flip_flop.pmos_9 1300 100
+p bitslice_3.register.net_1 bitslice_3.register.d_flip_flop.net_11 bitslice_3.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_3.register.d_flip_flop.nmos_9 1300 220
+n bitslice_3.register.d_flip_flop.clk_n bitslice_3.register.d_flip_flop.net_9 bitslice_3.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_3.register.d_flip_flop.pmos_10 1300 -20
+p Q3 vdd bitslice_3.register.d_flip_flop.net_11 30.0 84.0
+| device bitslice_3.register.d_flip_flop.nmos_10 1300 340
+n Q3 gnd bitslice_3.register.d_flip_flop.net_9 30.0 84.0
+| end bitslice_3.register.d_flip_flop
+| end bitslice_3.register
+| begin bitslice_3.inverter_1 350 150
+| device bitslice_3.inverter_1.nmos 550 360
+n clk gnd bitslice_3.net_1 30.0 200
+| device bitslice_3.inverter_1.pmos 550 200
+p clk vdd bitslice_3.net_1 30.0 400
+| end bitslice_3.inverter_1
+| begin bitslice_3.inverter_2 350 230
+| device bitslice_3.inverter_2.nmos 550 360
+n bitslice_3.net_1 gnd bitslice_3.net_3 30.0 3200
+| device bitslice_3.inverter_2.pmos 550 200
+p bitslice_3.net_1 vdd bitslice_3.net_3 30.0 6400
+| end bitslice_3.inverter_2
+| end bitslice_3
+| begin bitslice_4 540 -670
+| begin bitslice_4.addf 110 330
+| device bitslice_4.addf.nmos 460 990
+n net_4 bitslice_4.addf.net_2 bitslice_4.addf.net_1 30.0 84.0
+| device bitslice_4.addf.pmos 460 870
+p net_4 bitslice_4.addf.net_6 bitslice_4.addf.net_1 30.0 84.0
+| device bitslice_4.addf.pmos_1 370 750
+p A4 vdd bitslice_4.addf.net_6 30.0 84.0
+| device bitslice_4.addf.pmos_2 540 750
+p bitslice_4.net_2 vdd bitslice_4.addf.net_6 30.0 84.0
+| device bitslice_4.addf.nmos_1 370 1110
+n A4 gnd bitslice_4.addf.net_2 30.0 84.0
+| device bitslice_4.addf.nmos_2 540 1110
+n bitslice_4.net_2 gnd bitslice_4.addf.net_2 30.0 84.0
+| device bitslice_4.addf.pmos_3 740 870
+p bitslice_4.net_2 bitslice_4.addf.net_5 bitslice_4.addf.net_1 30.0 84.0
+| device bitslice_4.addf.pmos_4 740 750
+p A4 vdd bitslice_4.addf.net_5 30.0 84.0
+| device bitslice_4.addf.nmos_3 740 990
+n bitslice_4.net_2 bitslice_4.addf.net_12 bitslice_4.addf.net_1 30.0 84.0
+| device bitslice_4.addf.nmos_4 740 1110
+n A4 gnd bitslice_4.addf.net_12 30.0 84.0
+| device bitslice_4.addf.pmos_5 940 750
+p A4 vdd bitslice_4.addf.net_7 30.0 84.0
+| device bitslice_4.addf.pmos_6 1110 750
+p bitslice_4.net_2 vdd bitslice_4.addf.net_7 30.0 84.0
+| device bitslice_4.addf.pmos_7 1270 750
+p net_4 vdd bitslice_4.addf.net_7 30.0 84.0
+| device bitslice_4.addf.pmos_8 1110 870
+p bitslice_4.addf.net_1 bitslice_4.addf.net_7 bitslice_4.addf.net_3 30.0 84.0
+| device bitslice_4.addf.nmos_5 940 1110
+n A4 gnd bitslice_4.addf.net_4 30.0 84.0
+| device bitslice_4.addf.nmos_6 1110 1110
+n bitslice_4.net_2 gnd bitslice_4.addf.net_4 30.0 84.0
+| device bitslice_4.addf.nmos_7 1270 1110
+n net_4 gnd bitslice_4.addf.net_4 30.0 84.0
+| device bitslice_4.addf.nmos_8 1110 990
+n bitslice_4.addf.net_1 bitslice_4.addf.net_4 bitslice_4.addf.net_3 30.0 84.0
+| device bitslice_4.addf.pmos_9 1470 870
+p net_4 bitslice_4.addf.net_10 bitslice_4.addf.net_3 30.0 84.0
+| device bitslice_4.addf.pmos_10 1470 750
+p bitslice_4.net_2 bitslice_4.addf.net_8 bitslice_4.addf.net_10 30.0 84.0
+| device bitslice_4.addf.pmos_11 1470 630
+p A4 vdd bitslice_4.addf.net_8 30.0 84.0
+| device bitslice_4.addf.nmos_9 1470 990
+n net_4 bitslice_4.addf.net_9 bitslice_4.addf.net_3 30.0 84.0
+| device bitslice_4.addf.nmos_10 1470 1110
+n bitslice_4.net_2 bitslice_4.addf.net_11 bitslice_4.addf.net_9 30.0 84.0
+| device bitslice_4.addf.nmos_11 1470 1230
+n A4 gnd bitslice_4.addf.net_11 30.0 84.0
+| begin bitslice_4.addf.inverter 1540 930
+| device bitslice_4.addf.inverter.nmos 550 360
+n bitslice_4.addf.net_3 gnd sum4 30.0 200
+| device bitslice_4.addf.inverter.pmos 550 200
+p bitslice_4.addf.net_3 vdd sum4 30.0 400
+| end bitslice_4.addf.inverter
+| begin bitslice_4.addf.inverter_1 880 1370
+| device bitslice_4.addf.inverter_1.nmos 550 360
+n bitslice_4.addf.net_1 gnd net_5 30.0 200
+| device bitslice_4.addf.inverter_1.pmos 550 200
+p bitslice_4.addf.net_1 vdd net_5 30.0 400
+| end bitslice_4.addf.inverter_1
+| end bitslice_4.addf
+| begin bitslice_4.mux21 -90 440
+| begin bitslice_4.mux21.t_gate 240 230
+| device bitslice_4.mux21.t_gate.pmos 210 380
+p bitslice_4.mux21.net_1 bitslice_4.net_4 bitslice_4.net_2 30.0 168.0
+| device bitslice_4.mux21.t_gate.nmos 210 300
+n sub bitslice_4.net_4 bitslice_4.net_2 30.0 84.0
+| end bitslice_4.mux21.t_gate
+| begin bitslice_4.mux21.inverter 110 130
+| device bitslice_4.mux21.inverter.nmos 550 360
+n sub gnd bitslice_4.mux21.net_1 30.0 200
+| device bitslice_4.mux21.inverter.pmos 550 200
+p sub vdd bitslice_4.mux21.net_1 30.0 400
+| end bitslice_4.mux21.inverter
+| begin bitslice_4.mux21.t_gate_1 240 430
+| device bitslice_4.mux21.t_gate_1.pmos 210 380
+p sub B4 bitslice_4.net_2 30.0 168.0
+| device bitslice_4.mux21.t_gate_1.nmos 210 300
+n bitslice_4.mux21.net_1 B4 bitslice_4.net_2 30.0 84.0
+| end bitslice_4.mux21.t_gate_1
+| end bitslice_4.mux21
+| begin bitslice_4.inverter -200 480
+| device bitslice_4.inverter.nmos 550 360
+n B4 gnd bitslice_4.net_4 30.0 200
+| device bitslice_4.inverter.pmos 550 200
+p B4 vdd bitslice_4.net_4 30.0 400
+| end bitslice_4.inverter
+| begin bitslice_4.register 350 340
+| begin bitslice_4.register.nand2 90 330
+| device bitslice_4.register.nand2.pmos 0 -100
+p bitslice_4.net_3 vdd bitslice_4.register.net_2 30.0 400
+| device bitslice_4.register.nand2.nmos 0 0
+n bitslice_4.net_3 bitslice_4.register.nand2.net_1 bitslice_4.register.net_2 30.0 400
+| device bitslice_4.register.nand2.pmos_1 160 -100
+p store vdd bitslice_4.register.net_2 30.0 400
+| device bitslice_4.register.nand2.nmos_1 0 100
+n store gnd bitslice_4.register.nand2.net_1 30.0 400
+| end bitslice_4.register.nand2
+| begin bitslice_4.register.inverter 210 330
+| device bitslice_4.register.inverter.nmos 550 360
+n bitslice_4.register.net_2 gnd bitslice_4.register.net_1 30.0 200
+| device bitslice_4.register.inverter.pmos 550 200
+p bitslice_4.register.net_2 vdd bitslice_4.register.net_1 30.0 400
+| end bitslice_4.register.inverter
+| begin bitslice_4.register.d_flip_flop 300 430
+| device bitslice_4.register.d_flip_flop.pmos 270 190
+p bitslice_4.register.net_1 vdd bitslice_4.register.d_flip_flop.clk_n 30.0 336.0
+| device bitslice_4.register.d_flip_flop.nmos 270 310
+n bitslice_4.register.net_1 gnd bitslice_4.register.d_flip_flop.clk_n 30.0 168.0
+| device bitslice_4.register.d_flip_flop.pmos_1 580 520
+p bitslice_4.register.net_1 bitslice_4.register.d_flip_flop.net_7 bitslice_4.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_4.register.d_flip_flop.nmos_1 580 640
+n bitslice_4.register.d_flip_flop.clk_n bitslice_4.register.d_flip_flop.net_5 bitslice_4.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_4.register.d_flip_flop.pmos_2 580 400
+p sum4 vdd bitslice_4.register.d_flip_flop.net_7 30.0 84.0
+| device bitslice_4.register.d_flip_flop.nmos_2 580 760
+n sum4 gnd bitslice_4.register.d_flip_flop.net_5 30.0 84.0
+| device bitslice_4.register.d_flip_flop.pmos_3 820 520
+p bitslice_4.register.d_flip_flop.net_3 vdd bitslice_4.register.d_flip_flop.net_1 30.0 84.0
+| device bitslice_4.register.d_flip_flop.nmos_3 820 640
+n bitslice_4.register.d_flip_flop.net_3 gnd bitslice_4.register.d_flip_flop.net_1 30.0 84.0
+| device bitslice_4.register.d_flip_flop.pmos_4 730 100
+p bitslice_4.register.d_flip_flop.clk_n bitslice_4.register.d_flip_flop.net_6 bitslice_4.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_4.register.d_flip_flop.nmos_4 730 220
+n bitslice_4.register.net_1 bitslice_4.register.d_flip_flop.net_4 bitslice_4.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_4.register.d_flip_flop.pmos_5 730 -20
+p bitslice_4.register.d_flip_flop.net_1 vdd bitslice_4.register.d_flip_flop.net_6 30.0 84.0
+| device bitslice_4.register.d_flip_flop.nmos_5 730 340
+n bitslice_4.register.d_flip_flop.net_1 gnd bitslice_4.register.d_flip_flop.net_4 30.0 84.0
+| device bitslice_4.register.d_flip_flop.pmos_6 1150 520
+p bitslice_4.register.d_flip_flop.clk_n bitslice_4.register.d_flip_flop.net_8 bitslice_4.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_4.register.d_flip_flop.nmos_6 1150 640
+n bitslice_4.register.net_1 bitslice_4.register.d_flip_flop.net_10 bitslice_4.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_4.register.d_flip_flop.pmos_7 1150 400
+p bitslice_4.register.d_flip_flop.net_1 vdd bitslice_4.register.d_flip_flop.net_8 30.0 84.0
+| device bitslice_4.register.d_flip_flop.nmos_7 1150 760
+n bitslice_4.register.d_flip_flop.net_1 gnd bitslice_4.register.d_flip_flop.net_10 30.0 84.0
+| device bitslice_4.register.d_flip_flop.pmos_8 1390 520
+p bitslice_4.register.d_flip_flop.net_2 vdd Q4 30.0 84.0
+| device bitslice_4.register.d_flip_flop.nmos_8 1390 640
+n bitslice_4.register.d_flip_flop.net_2 gnd Q4 30.0 84.0
+| device bitslice_4.register.d_flip_flop.pmos_9 1300 100
+p bitslice_4.register.net_1 bitslice_4.register.d_flip_flop.net_11 bitslice_4.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_4.register.d_flip_flop.nmos_9 1300 220
+n bitslice_4.register.d_flip_flop.clk_n bitslice_4.register.d_flip_flop.net_9 bitslice_4.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_4.register.d_flip_flop.pmos_10 1300 -20
+p Q4 vdd bitslice_4.register.d_flip_flop.net_11 30.0 84.0
+| device bitslice_4.register.d_flip_flop.nmos_10 1300 340
+n Q4 gnd bitslice_4.register.d_flip_flop.net_9 30.0 84.0
+| end bitslice_4.register.d_flip_flop
+| end bitslice_4.register
+| begin bitslice_4.inverter_1 350 150
+| device bitslice_4.inverter_1.nmos 550 360
+n clk gnd bitslice_4.net_1 30.0 200
+| device bitslice_4.inverter_1.pmos 550 200
+p clk vdd bitslice_4.net_1 30.0 400
+| end bitslice_4.inverter_1
+| begin bitslice_4.inverter_2 350 230
+| device bitslice_4.inverter_2.nmos 550 360
+n bitslice_4.net_1 gnd bitslice_4.net_3 30.0 3200
+| device bitslice_4.inverter_2.pmos 550 200
+p bitslice_4.net_1 vdd bitslice_4.net_3 30.0 6400
+| end bitslice_4.inverter_2
+| end bitslice_4
+| begin bitslice_5 540 -940
+| begin bitslice_5.addf 110 330
+| device bitslice_5.addf.nmos 460 990
+n net_5 bitslice_5.addf.net_2 bitslice_5.addf.net_1 30.0 84.0
+| device bitslice_5.addf.pmos 460 870
+p net_5 bitslice_5.addf.net_6 bitslice_5.addf.net_1 30.0 84.0
+| device bitslice_5.addf.pmos_1 370 750
+p A5 vdd bitslice_5.addf.net_6 30.0 84.0
+| device bitslice_5.addf.pmos_2 540 750
+p bitslice_5.net_2 vdd bitslice_5.addf.net_6 30.0 84.0
+| device bitslice_5.addf.nmos_1 370 1110
+n A5 gnd bitslice_5.addf.net_2 30.0 84.0
+| device bitslice_5.addf.nmos_2 540 1110
+n bitslice_5.net_2 gnd bitslice_5.addf.net_2 30.0 84.0
+| device bitslice_5.addf.pmos_3 740 870
+p bitslice_5.net_2 bitslice_5.addf.net_5 bitslice_5.addf.net_1 30.0 84.0
+| device bitslice_5.addf.pmos_4 740 750
+p A5 vdd bitslice_5.addf.net_5 30.0 84.0
+| device bitslice_5.addf.nmos_3 740 990
+n bitslice_5.net_2 bitslice_5.addf.net_12 bitslice_5.addf.net_1 30.0 84.0
+| device bitslice_5.addf.nmos_4 740 1110
+n A5 gnd bitslice_5.addf.net_12 30.0 84.0
+| device bitslice_5.addf.pmos_5 940 750
+p A5 vdd bitslice_5.addf.net_7 30.0 84.0
+| device bitslice_5.addf.pmos_6 1110 750
+p bitslice_5.net_2 vdd bitslice_5.addf.net_7 30.0 84.0
+| device bitslice_5.addf.pmos_7 1270 750
+p net_5 vdd bitslice_5.addf.net_7 30.0 84.0
+| device bitslice_5.addf.pmos_8 1110 870
+p bitslice_5.addf.net_1 bitslice_5.addf.net_7 bitslice_5.addf.net_3 30.0 84.0
+| device bitslice_5.addf.nmos_5 940 1110
+n A5 gnd bitslice_5.addf.net_4 30.0 84.0
+| device bitslice_5.addf.nmos_6 1110 1110
+n bitslice_5.net_2 gnd bitslice_5.addf.net_4 30.0 84.0
+| device bitslice_5.addf.nmos_7 1270 1110
+n net_5 gnd bitslice_5.addf.net_4 30.0 84.0
+| device bitslice_5.addf.nmos_8 1110 990
+n bitslice_5.addf.net_1 bitslice_5.addf.net_4 bitslice_5.addf.net_3 30.0 84.0
+| device bitslice_5.addf.pmos_9 1470 870
+p net_5 bitslice_5.addf.net_10 bitslice_5.addf.net_3 30.0 84.0
+| device bitslice_5.addf.pmos_10 1470 750
+p bitslice_5.net_2 bitslice_5.addf.net_8 bitslice_5.addf.net_10 30.0 84.0
+| device bitslice_5.addf.pmos_11 1470 630
+p A5 vdd bitslice_5.addf.net_8 30.0 84.0
+| device bitslice_5.addf.nmos_9 1470 990
+n net_5 bitslice_5.addf.net_9 bitslice_5.addf.net_3 30.0 84.0
+| device bitslice_5.addf.nmos_10 1470 1110
+n bitslice_5.net_2 bitslice_5.addf.net_11 bitslice_5.addf.net_9 30.0 84.0
+| device bitslice_5.addf.nmos_11 1470 1230
+n A5 gnd bitslice_5.addf.net_11 30.0 84.0
+| begin bitslice_5.addf.inverter 1540 930
+| device bitslice_5.addf.inverter.nmos 550 360
+n bitslice_5.addf.net_3 gnd sum5 30.0 200
+| device bitslice_5.addf.inverter.pmos 550 200
+p bitslice_5.addf.net_3 vdd sum5 30.0 400
+| end bitslice_5.addf.inverter
+| begin bitslice_5.addf.inverter_1 880 1370
+| device bitslice_5.addf.inverter_1.nmos 550 360
+n bitslice_5.addf.net_1 gnd net_6 30.0 200
+| device bitslice_5.addf.inverter_1.pmos 550 200
+p bitslice_5.addf.net_1 vdd net_6 30.0 400
+| end bitslice_5.addf.inverter_1
+| end bitslice_5.addf
+| begin bitslice_5.mux21 -90 440
+| begin bitslice_5.mux21.t_gate 240 230
+| device bitslice_5.mux21.t_gate.pmos 210 380
+p bitslice_5.mux21.net_1 bitslice_5.net_4 bitslice_5.net_2 30.0 168.0
+| device bitslice_5.mux21.t_gate.nmos 210 300
+n sub bitslice_5.net_4 bitslice_5.net_2 30.0 84.0
+| end bitslice_5.mux21.t_gate
+| begin bitslice_5.mux21.inverter 110 130
+| device bitslice_5.mux21.inverter.nmos 550 360
+n sub gnd bitslice_5.mux21.net_1 30.0 200
+| device bitslice_5.mux21.inverter.pmos 550 200
+p sub vdd bitslice_5.mux21.net_1 30.0 400
+| end bitslice_5.mux21.inverter
+| begin bitslice_5.mux21.t_gate_1 240 430
+| device bitslice_5.mux21.t_gate_1.pmos 210 380
+p sub B5 bitslice_5.net_2 30.0 168.0
+| device bitslice_5.mux21.t_gate_1.nmos 210 300
+n bitslice_5.mux21.net_1 B5 bitslice_5.net_2 30.0 84.0
+| end bitslice_5.mux21.t_gate_1
+| end bitslice_5.mux21
+| begin bitslice_5.inverter -200 480
+| device bitslice_5.inverter.nmos 550 360
+n B5 gnd bitslice_5.net_4 30.0 200
+| device bitslice_5.inverter.pmos 550 200
+p B5 vdd bitslice_5.net_4 30.0 400
+| end bitslice_5.inverter
+| begin bitslice_5.register 350 340
+| begin bitslice_5.register.nand2 90 330
+| device bitslice_5.register.nand2.pmos 0 -100
+p bitslice_5.net_3 vdd bitslice_5.register.net_2 30.0 400
+| device bitslice_5.register.nand2.nmos 0 0
+n bitslice_5.net_3 bitslice_5.register.nand2.net_1 bitslice_5.register.net_2 30.0 400
+| device bitslice_5.register.nand2.pmos_1 160 -100
+p store vdd bitslice_5.register.net_2 30.0 400
+| device bitslice_5.register.nand2.nmos_1 0 100
+n store gnd bitslice_5.register.nand2.net_1 30.0 400
+| end bitslice_5.register.nand2
+| begin bitslice_5.register.inverter 210 330
+| device bitslice_5.register.inverter.nmos 550 360
+n bitslice_5.register.net_2 gnd bitslice_5.register.net_1 30.0 200
+| device bitslice_5.register.inverter.pmos 550 200
+p bitslice_5.register.net_2 vdd bitslice_5.register.net_1 30.0 400
+| end bitslice_5.register.inverter
+| begin bitslice_5.register.d_flip_flop 300 430
+| device bitslice_5.register.d_flip_flop.pmos 270 190
+p bitslice_5.register.net_1 vdd bitslice_5.register.d_flip_flop.clk_n 30.0 336.0
+| device bitslice_5.register.d_flip_flop.nmos 270 310
+n bitslice_5.register.net_1 gnd bitslice_5.register.d_flip_flop.clk_n 30.0 168.0
+| device bitslice_5.register.d_flip_flop.pmos_1 580 520
+p bitslice_5.register.net_1 bitslice_5.register.d_flip_flop.net_7 bitslice_5.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_5.register.d_flip_flop.nmos_1 580 640
+n bitslice_5.register.d_flip_flop.clk_n bitslice_5.register.d_flip_flop.net_5 bitslice_5.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_5.register.d_flip_flop.pmos_2 580 400
+p sum5 vdd bitslice_5.register.d_flip_flop.net_7 30.0 84.0
+| device bitslice_5.register.d_flip_flop.nmos_2 580 760
+n sum5 gnd bitslice_5.register.d_flip_flop.net_5 30.0 84.0
+| device bitslice_5.register.d_flip_flop.pmos_3 820 520
+p bitslice_5.register.d_flip_flop.net_3 vdd bitslice_5.register.d_flip_flop.net_1 30.0 84.0
+| device bitslice_5.register.d_flip_flop.nmos_3 820 640
+n bitslice_5.register.d_flip_flop.net_3 gnd bitslice_5.register.d_flip_flop.net_1 30.0 84.0
+| device bitslice_5.register.d_flip_flop.pmos_4 730 100
+p bitslice_5.register.d_flip_flop.clk_n bitslice_5.register.d_flip_flop.net_6 bitslice_5.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_5.register.d_flip_flop.nmos_4 730 220
+n bitslice_5.register.net_1 bitslice_5.register.d_flip_flop.net_4 bitslice_5.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_5.register.d_flip_flop.pmos_5 730 -20
+p bitslice_5.register.d_flip_flop.net_1 vdd bitslice_5.register.d_flip_flop.net_6 30.0 84.0
+| device bitslice_5.register.d_flip_flop.nmos_5 730 340
+n bitslice_5.register.d_flip_flop.net_1 gnd bitslice_5.register.d_flip_flop.net_4 30.0 84.0
+| device bitslice_5.register.d_flip_flop.pmos_6 1150 520
+p bitslice_5.register.d_flip_flop.clk_n bitslice_5.register.d_flip_flop.net_8 bitslice_5.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_5.register.d_flip_flop.nmos_6 1150 640
+n bitslice_5.register.net_1 bitslice_5.register.d_flip_flop.net_10 bitslice_5.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_5.register.d_flip_flop.pmos_7 1150 400
+p bitslice_5.register.d_flip_flop.net_1 vdd bitslice_5.register.d_flip_flop.net_8 30.0 84.0
+| device bitslice_5.register.d_flip_flop.nmos_7 1150 760
+n bitslice_5.register.d_flip_flop.net_1 gnd bitslice_5.register.d_flip_flop.net_10 30.0 84.0
+| device bitslice_5.register.d_flip_flop.pmos_8 1390 520
+p bitslice_5.register.d_flip_flop.net_2 vdd Q5 30.0 84.0
+| device bitslice_5.register.d_flip_flop.nmos_8 1390 640
+n bitslice_5.register.d_flip_flop.net_2 gnd Q5 30.0 84.0
+| device bitslice_5.register.d_flip_flop.pmos_9 1300 100
+p bitslice_5.register.net_1 bitslice_5.register.d_flip_flop.net_11 bitslice_5.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_5.register.d_flip_flop.nmos_9 1300 220
+n bitslice_5.register.d_flip_flop.clk_n bitslice_5.register.d_flip_flop.net_9 bitslice_5.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_5.register.d_flip_flop.pmos_10 1300 -20
+p Q5 vdd bitslice_5.register.d_flip_flop.net_11 30.0 84.0
+| device bitslice_5.register.d_flip_flop.nmos_10 1300 340
+n Q5 gnd bitslice_5.register.d_flip_flop.net_9 30.0 84.0
+| end bitslice_5.register.d_flip_flop
+| end bitslice_5.register
+| begin bitslice_5.inverter_1 350 150
+| device bitslice_5.inverter_1.nmos 550 360
+n clk gnd bitslice_5.net_1 30.0 200
+| device bitslice_5.inverter_1.pmos 550 200
+p clk vdd bitslice_5.net_1 30.0 400
+| end bitslice_5.inverter_1
+| begin bitslice_5.inverter_2 350 230
+| device bitslice_5.inverter_2.nmos 550 360
+n bitslice_5.net_1 gnd bitslice_5.net_3 30.0 3200
+| device bitslice_5.inverter_2.pmos 550 200
+p bitslice_5.net_1 vdd bitslice_5.net_3 30.0 6400
+| end bitslice_5.inverter_2
+| end bitslice_5
+| begin bitslice_6 540 -1210
+| begin bitslice_6.addf 110 330
+| device bitslice_6.addf.nmos 460 990
+n net_6 bitslice_6.addf.net_2 bitslice_6.addf.net_1 30.0 84.0
+| device bitslice_6.addf.pmos 460 870
+p net_6 bitslice_6.addf.net_6 bitslice_6.addf.net_1 30.0 84.0
+| device bitslice_6.addf.pmos_1 370 750
+p A6 vdd bitslice_6.addf.net_6 30.0 84.0
+| device bitslice_6.addf.pmos_2 540 750
+p bitslice_6.net_2 vdd bitslice_6.addf.net_6 30.0 84.0
+| device bitslice_6.addf.nmos_1 370 1110
+n A6 gnd bitslice_6.addf.net_2 30.0 84.0
+| device bitslice_6.addf.nmos_2 540 1110
+n bitslice_6.net_2 gnd bitslice_6.addf.net_2 30.0 84.0
+| device bitslice_6.addf.pmos_3 740 870
+p bitslice_6.net_2 bitslice_6.addf.net_5 bitslice_6.addf.net_1 30.0 84.0
+| device bitslice_6.addf.pmos_4 740 750
+p A6 vdd bitslice_6.addf.net_5 30.0 84.0
+| device bitslice_6.addf.nmos_3 740 990
+n bitslice_6.net_2 bitslice_6.addf.net_12 bitslice_6.addf.net_1 30.0 84.0
+| device bitslice_6.addf.nmos_4 740 1110
+n A6 gnd bitslice_6.addf.net_12 30.0 84.0
+| device bitslice_6.addf.pmos_5 940 750
+p A6 vdd bitslice_6.addf.net_7 30.0 84.0
+| device bitslice_6.addf.pmos_6 1110 750
+p bitslice_6.net_2 vdd bitslice_6.addf.net_7 30.0 84.0
+| device bitslice_6.addf.pmos_7 1270 750
+p net_6 vdd bitslice_6.addf.net_7 30.0 84.0
+| device bitslice_6.addf.pmos_8 1110 870
+p bitslice_6.addf.net_1 bitslice_6.addf.net_7 bitslice_6.addf.net_3 30.0 84.0
+| device bitslice_6.addf.nmos_5 940 1110
+n A6 gnd bitslice_6.addf.net_4 30.0 84.0
+| device bitslice_6.addf.nmos_6 1110 1110
+n bitslice_6.net_2 gnd bitslice_6.addf.net_4 30.0 84.0
+| device bitslice_6.addf.nmos_7 1270 1110
+n net_6 gnd bitslice_6.addf.net_4 30.0 84.0
+| device bitslice_6.addf.nmos_8 1110 990
+n bitslice_6.addf.net_1 bitslice_6.addf.net_4 bitslice_6.addf.net_3 30.0 84.0
+| device bitslice_6.addf.pmos_9 1470 870
+p net_6 bitslice_6.addf.net_10 bitslice_6.addf.net_3 30.0 84.0
+| device bitslice_6.addf.pmos_10 1470 750
+p bitslice_6.net_2 bitslice_6.addf.net_8 bitslice_6.addf.net_10 30.0 84.0
+| device bitslice_6.addf.pmos_11 1470 630
+p A6 vdd bitslice_6.addf.net_8 30.0 84.0
+| device bitslice_6.addf.nmos_9 1470 990
+n net_6 bitslice_6.addf.net_9 bitslice_6.addf.net_3 30.0 84.0
+| device bitslice_6.addf.nmos_10 1470 1110
+n bitslice_6.net_2 bitslice_6.addf.net_11 bitslice_6.addf.net_9 30.0 84.0
+| device bitslice_6.addf.nmos_11 1470 1230
+n A6 gnd bitslice_6.addf.net_11 30.0 84.0
+| begin bitslice_6.addf.inverter 1540 930
+| device bitslice_6.addf.inverter.nmos 550 360
+n bitslice_6.addf.net_3 gnd sum6 30.0 200
+| device bitslice_6.addf.inverter.pmos 550 200
+p bitslice_6.addf.net_3 vdd sum6 30.0 400
+| end bitslice_6.addf.inverter
+| begin bitslice_6.addf.inverter_1 880 1370
+| device bitslice_6.addf.inverter_1.nmos 550 360
+n bitslice_6.addf.net_1 gnd net_7 30.0 200
+| device bitslice_6.addf.inverter_1.pmos 550 200
+p bitslice_6.addf.net_1 vdd net_7 30.0 400
+| end bitslice_6.addf.inverter_1
+| end bitslice_6.addf
+| begin bitslice_6.mux21 -90 440
+| begin bitslice_6.mux21.t_gate 240 230
+| device bitslice_6.mux21.t_gate.pmos 210 380
+p bitslice_6.mux21.net_1 bitslice_6.net_4 bitslice_6.net_2 30.0 168.0
+| device bitslice_6.mux21.t_gate.nmos 210 300
+n sub bitslice_6.net_4 bitslice_6.net_2 30.0 84.0
+| end bitslice_6.mux21.t_gate
+| begin bitslice_6.mux21.inverter 110 130
+| device bitslice_6.mux21.inverter.nmos 550 360
+n sub gnd bitslice_6.mux21.net_1 30.0 200
+| device bitslice_6.mux21.inverter.pmos 550 200
+p sub vdd bitslice_6.mux21.net_1 30.0 400
+| end bitslice_6.mux21.inverter
+| begin bitslice_6.mux21.t_gate_1 240 430
+| device bitslice_6.mux21.t_gate_1.pmos 210 380
+p sub B6 bitslice_6.net_2 30.0 168.0
+| device bitslice_6.mux21.t_gate_1.nmos 210 300
+n bitslice_6.mux21.net_1 B6 bitslice_6.net_2 30.0 84.0
+| end bitslice_6.mux21.t_gate_1
+| end bitslice_6.mux21
+| begin bitslice_6.inverter -200 480
+| device bitslice_6.inverter.nmos 550 360
+n B6 gnd bitslice_6.net_4 30.0 200
+| device bitslice_6.inverter.pmos 550 200
+p B6 vdd bitslice_6.net_4 30.0 400
+| end bitslice_6.inverter
+| begin bitslice_6.register 350 340
+| begin bitslice_6.register.nand2 90 330
+| device bitslice_6.register.nand2.pmos 0 -100
+p bitslice_6.net_3 vdd bitslice_6.register.net_2 30.0 400
+| device bitslice_6.register.nand2.nmos 0 0
+n bitslice_6.net_3 bitslice_6.register.nand2.net_1 bitslice_6.register.net_2 30.0 400
+| device bitslice_6.register.nand2.pmos_1 160 -100
+p store vdd bitslice_6.register.net_2 30.0 400
+| device bitslice_6.register.nand2.nmos_1 0 100
+n store gnd bitslice_6.register.nand2.net_1 30.0 400
+| end bitslice_6.register.nand2
+| begin bitslice_6.register.inverter 210 330
+| device bitslice_6.register.inverter.nmos 550 360
+n bitslice_6.register.net_2 gnd bitslice_6.register.net_1 30.0 200
+| device bitslice_6.register.inverter.pmos 550 200
+p bitslice_6.register.net_2 vdd bitslice_6.register.net_1 30.0 400
+| end bitslice_6.register.inverter
+| begin bitslice_6.register.d_flip_flop 300 430
+| device bitslice_6.register.d_flip_flop.pmos 270 190
+p bitslice_6.register.net_1 vdd bitslice_6.register.d_flip_flop.clk_n 30.0 336.0
+| device bitslice_6.register.d_flip_flop.nmos 270 310
+n bitslice_6.register.net_1 gnd bitslice_6.register.d_flip_flop.clk_n 30.0 168.0
+| device bitslice_6.register.d_flip_flop.pmos_1 580 520
+p bitslice_6.register.net_1 bitslice_6.register.d_flip_flop.net_7 bitslice_6.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_6.register.d_flip_flop.nmos_1 580 640
+n bitslice_6.register.d_flip_flop.clk_n bitslice_6.register.d_flip_flop.net_5 bitslice_6.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_6.register.d_flip_flop.pmos_2 580 400
+p sum6 vdd bitslice_6.register.d_flip_flop.net_7 30.0 84.0
+| device bitslice_6.register.d_flip_flop.nmos_2 580 760
+n sum6 gnd bitslice_6.register.d_flip_flop.net_5 30.0 84.0
+| device bitslice_6.register.d_flip_flop.pmos_3 820 520
+p bitslice_6.register.d_flip_flop.net_3 vdd bitslice_6.register.d_flip_flop.net_1 30.0 84.0
+| device bitslice_6.register.d_flip_flop.nmos_3 820 640
+n bitslice_6.register.d_flip_flop.net_3 gnd bitslice_6.register.d_flip_flop.net_1 30.0 84.0
+| device bitslice_6.register.d_flip_flop.pmos_4 730 100
+p bitslice_6.register.d_flip_flop.clk_n bitslice_6.register.d_flip_flop.net_6 bitslice_6.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_6.register.d_flip_flop.nmos_4 730 220
+n bitslice_6.register.net_1 bitslice_6.register.d_flip_flop.net_4 bitslice_6.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_6.register.d_flip_flop.pmos_5 730 -20
+p bitslice_6.register.d_flip_flop.net_1 vdd bitslice_6.register.d_flip_flop.net_6 30.0 84.0
+| device bitslice_6.register.d_flip_flop.nmos_5 730 340
+n bitslice_6.register.d_flip_flop.net_1 gnd bitslice_6.register.d_flip_flop.net_4 30.0 84.0
+| device bitslice_6.register.d_flip_flop.pmos_6 1150 520
+p bitslice_6.register.d_flip_flop.clk_n bitslice_6.register.d_flip_flop.net_8 bitslice_6.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_6.register.d_flip_flop.nmos_6 1150 640
+n bitslice_6.register.net_1 bitslice_6.register.d_flip_flop.net_10 bitslice_6.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_6.register.d_flip_flop.pmos_7 1150 400
+p bitslice_6.register.d_flip_flop.net_1 vdd bitslice_6.register.d_flip_flop.net_8 30.0 84.0
+| device bitslice_6.register.d_flip_flop.nmos_7 1150 760
+n bitslice_6.register.d_flip_flop.net_1 gnd bitslice_6.register.d_flip_flop.net_10 30.0 84.0
+| device bitslice_6.register.d_flip_flop.pmos_8 1390 520
+p bitslice_6.register.d_flip_flop.net_2 vdd Q6 30.0 84.0
+| device bitslice_6.register.d_flip_flop.nmos_8 1390 640
+n bitslice_6.register.d_flip_flop.net_2 gnd Q6 30.0 84.0
+| device bitslice_6.register.d_flip_flop.pmos_9 1300 100
+p bitslice_6.register.net_1 bitslice_6.register.d_flip_flop.net_11 bitslice_6.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_6.register.d_flip_flop.nmos_9 1300 220
+n bitslice_6.register.d_flip_flop.clk_n bitslice_6.register.d_flip_flop.net_9 bitslice_6.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_6.register.d_flip_flop.pmos_10 1300 -20
+p Q6 vdd bitslice_6.register.d_flip_flop.net_11 30.0 84.0
+| device bitslice_6.register.d_flip_flop.nmos_10 1300 340
+n Q6 gnd bitslice_6.register.d_flip_flop.net_9 30.0 84.0
+| end bitslice_6.register.d_flip_flop
+| end bitslice_6.register
+| begin bitslice_6.inverter_1 350 150
+| device bitslice_6.inverter_1.nmos 550 360
+n clk gnd bitslice_6.net_1 30.0 200
+| device bitslice_6.inverter_1.pmos 550 200
+p clk vdd bitslice_6.net_1 30.0 400
+| end bitslice_6.inverter_1
+| begin bitslice_6.inverter_2 350 230
+| device bitslice_6.inverter_2.nmos 550 360
+n bitslice_6.net_1 gnd bitslice_6.net_3 30.0 3200
+| device bitslice_6.inverter_2.pmos 550 200
+p bitslice_6.net_1 vdd bitslice_6.net_3 30.0 6400
+| end bitslice_6.inverter_2
+| end bitslice_6
+| begin bitslice_7 540 -1480
+| begin bitslice_7.addf 110 330
+| device bitslice_7.addf.nmos 460 990
+n net_7 bitslice_7.addf.net_2 bitslice_7.addf.net_1 30.0 84.0
+| device bitslice_7.addf.pmos 460 870
+p net_7 bitslice_7.addf.net_6 bitslice_7.addf.net_1 30.0 84.0
+| device bitslice_7.addf.pmos_1 370 750
+p A7 vdd bitslice_7.addf.net_6 30.0 84.0
+| device bitslice_7.addf.pmos_2 540 750
+p bitslice_7.net_2 vdd bitslice_7.addf.net_6 30.0 84.0
+| device bitslice_7.addf.nmos_1 370 1110
+n A7 gnd bitslice_7.addf.net_2 30.0 84.0
+| device bitslice_7.addf.nmos_2 540 1110
+n bitslice_7.net_2 gnd bitslice_7.addf.net_2 30.0 84.0
+| device bitslice_7.addf.pmos_3 740 870
+p bitslice_7.net_2 bitslice_7.addf.net_5 bitslice_7.addf.net_1 30.0 84.0
+| device bitslice_7.addf.pmos_4 740 750
+p A7 vdd bitslice_7.addf.net_5 30.0 84.0
+| device bitslice_7.addf.nmos_3 740 990
+n bitslice_7.net_2 bitslice_7.addf.net_12 bitslice_7.addf.net_1 30.0 84.0
+| device bitslice_7.addf.nmos_4 740 1110
+n A7 gnd bitslice_7.addf.net_12 30.0 84.0
+| device bitslice_7.addf.pmos_5 940 750
+p A7 vdd bitslice_7.addf.net_7 30.0 84.0
+| device bitslice_7.addf.pmos_6 1110 750
+p bitslice_7.net_2 vdd bitslice_7.addf.net_7 30.0 84.0
+| device bitslice_7.addf.pmos_7 1270 750
+p net_7 vdd bitslice_7.addf.net_7 30.0 84.0
+| device bitslice_7.addf.pmos_8 1110 870
+p bitslice_7.addf.net_1 bitslice_7.addf.net_7 bitslice_7.addf.net_3 30.0 84.0
+| device bitslice_7.addf.nmos_5 940 1110
+n A7 gnd bitslice_7.addf.net_4 30.0 84.0
+| device bitslice_7.addf.nmos_6 1110 1110
+n bitslice_7.net_2 gnd bitslice_7.addf.net_4 30.0 84.0
+| device bitslice_7.addf.nmos_7 1270 1110
+n net_7 gnd bitslice_7.addf.net_4 30.0 84.0
+| device bitslice_7.addf.nmos_8 1110 990
+n bitslice_7.addf.net_1 bitslice_7.addf.net_4 bitslice_7.addf.net_3 30.0 84.0
+| device bitslice_7.addf.pmos_9 1470 870
+p net_7 bitslice_7.addf.net_10 bitslice_7.addf.net_3 30.0 84.0
+| device bitslice_7.addf.pmos_10 1470 750
+p bitslice_7.net_2 bitslice_7.addf.net_8 bitslice_7.addf.net_10 30.0 84.0
+| device bitslice_7.addf.pmos_11 1470 630
+p A7 vdd bitslice_7.addf.net_8 30.0 84.0
+| device bitslice_7.addf.nmos_9 1470 990
+n net_7 bitslice_7.addf.net_9 bitslice_7.addf.net_3 30.0 84.0
+| device bitslice_7.addf.nmos_10 1470 1110
+n bitslice_7.net_2 bitslice_7.addf.net_11 bitslice_7.addf.net_9 30.0 84.0
+| device bitslice_7.addf.nmos_11 1470 1230
+n A7 gnd bitslice_7.addf.net_11 30.0 84.0
+| begin bitslice_7.addf.inverter 1540 930
+| device bitslice_7.addf.inverter.nmos 550 360
+n bitslice_7.addf.net_3 gnd sum7 30.0 200
+| device bitslice_7.addf.inverter.pmos 550 200
+p bitslice_7.addf.net_3 vdd sum7 30.0 400
+| end bitslice_7.addf.inverter
+| begin bitslice_7.addf.inverter_1 880 1370
+| device bitslice_7.addf.inverter_1.nmos 550 360
+n bitslice_7.addf.net_1 gnd cout 30.0 200
+| device bitslice_7.addf.inverter_1.pmos 550 200
+p bitslice_7.addf.net_1 vdd cout 30.0 400
+| end bitslice_7.addf.inverter_1
+| end bitslice_7.addf
+| begin bitslice_7.mux21 -90 440
+| begin bitslice_7.mux21.t_gate 240 230
+| device bitslice_7.mux21.t_gate.pmos 210 380
+p bitslice_7.mux21.net_1 bitslice_7.net_4 bitslice_7.net_2 30.0 168.0
+| device bitslice_7.mux21.t_gate.nmos 210 300
+n sub bitslice_7.net_4 bitslice_7.net_2 30.0 84.0
+| end bitslice_7.mux21.t_gate
+| begin bitslice_7.mux21.inverter 110 130
+| device bitslice_7.mux21.inverter.nmos 550 360
+n sub gnd bitslice_7.mux21.net_1 30.0 200
+| device bitslice_7.mux21.inverter.pmos 550 200
+p sub vdd bitslice_7.mux21.net_1 30.0 400
+| end bitslice_7.mux21.inverter
+| begin bitslice_7.mux21.t_gate_1 240 430
+| device bitslice_7.mux21.t_gate_1.pmos 210 380
+p sub B7 bitslice_7.net_2 30.0 168.0
+| device bitslice_7.mux21.t_gate_1.nmos 210 300
+n bitslice_7.mux21.net_1 B7 bitslice_7.net_2 30.0 84.0
+| end bitslice_7.mux21.t_gate_1
+| end bitslice_7.mux21
+| begin bitslice_7.inverter -200 480
+| device bitslice_7.inverter.nmos 550 360
+n B7 gnd bitslice_7.net_4 30.0 200
+| device bitslice_7.inverter.pmos 550 200
+p B7 vdd bitslice_7.net_4 30.0 400
+| end bitslice_7.inverter
+| begin bitslice_7.register 350 340
+| begin bitslice_7.register.nand2 90 330
+| device bitslice_7.register.nand2.pmos 0 -100
+p bitslice_7.net_3 vdd bitslice_7.register.net_2 30.0 400
+| device bitslice_7.register.nand2.nmos 0 0
+n bitslice_7.net_3 bitslice_7.register.nand2.net_1 bitslice_7.register.net_2 30.0 400
+| device bitslice_7.register.nand2.pmos_1 160 -100
+p store vdd bitslice_7.register.net_2 30.0 400
+| device bitslice_7.register.nand2.nmos_1 0 100
+n store gnd bitslice_7.register.nand2.net_1 30.0 400
+| end bitslice_7.register.nand2
+| begin bitslice_7.register.inverter 210 330
+| device bitslice_7.register.inverter.nmos 550 360
+n bitslice_7.register.net_2 gnd bitslice_7.register.net_1 30.0 200
+| device bitslice_7.register.inverter.pmos 550 200
+p bitslice_7.register.net_2 vdd bitslice_7.register.net_1 30.0 400
+| end bitslice_7.register.inverter
+| begin bitslice_7.register.d_flip_flop 300 430
+| device bitslice_7.register.d_flip_flop.pmos 270 190
+p bitslice_7.register.net_1 vdd bitslice_7.register.d_flip_flop.clk_n 30.0 336.0
+| device bitslice_7.register.d_flip_flop.nmos 270 310
+n bitslice_7.register.net_1 gnd bitslice_7.register.d_flip_flop.clk_n 30.0 168.0
+| device bitslice_7.register.d_flip_flop.pmos_1 580 520
+p bitslice_7.register.net_1 bitslice_7.register.d_flip_flop.net_7 bitslice_7.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_7.register.d_flip_flop.nmos_1 580 640
+n bitslice_7.register.d_flip_flop.clk_n bitslice_7.register.d_flip_flop.net_5 bitslice_7.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_7.register.d_flip_flop.pmos_2 580 400
+p sum7 vdd bitslice_7.register.d_flip_flop.net_7 30.0 84.0
+| device bitslice_7.register.d_flip_flop.nmos_2 580 760
+n sum7 gnd bitslice_7.register.d_flip_flop.net_5 30.0 84.0
+| device bitslice_7.register.d_flip_flop.pmos_3 820 520
+p bitslice_7.register.d_flip_flop.net_3 vdd bitslice_7.register.d_flip_flop.net_1 30.0 84.0
+| device bitslice_7.register.d_flip_flop.nmos_3 820 640
+n bitslice_7.register.d_flip_flop.net_3 gnd bitslice_7.register.d_flip_flop.net_1 30.0 84.0
+| device bitslice_7.register.d_flip_flop.pmos_4 730 100
+p bitslice_7.register.d_flip_flop.clk_n bitslice_7.register.d_flip_flop.net_6 bitslice_7.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_7.register.d_flip_flop.nmos_4 730 220
+n bitslice_7.register.net_1 bitslice_7.register.d_flip_flop.net_4 bitslice_7.register.d_flip_flop.net_3 30.0 84.0
+| device bitslice_7.register.d_flip_flop.pmos_5 730 -20
+p bitslice_7.register.d_flip_flop.net_1 vdd bitslice_7.register.d_flip_flop.net_6 30.0 84.0
+| device bitslice_7.register.d_flip_flop.nmos_5 730 340
+n bitslice_7.register.d_flip_flop.net_1 gnd bitslice_7.register.d_flip_flop.net_4 30.0 84.0
+| device bitslice_7.register.d_flip_flop.pmos_6 1150 520
+p bitslice_7.register.d_flip_flop.clk_n bitslice_7.register.d_flip_flop.net_8 bitslice_7.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_7.register.d_flip_flop.nmos_6 1150 640
+n bitslice_7.register.net_1 bitslice_7.register.d_flip_flop.net_10 bitslice_7.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_7.register.d_flip_flop.pmos_7 1150 400
+p bitslice_7.register.d_flip_flop.net_1 vdd bitslice_7.register.d_flip_flop.net_8 30.0 84.0
+| device bitslice_7.register.d_flip_flop.nmos_7 1150 760
+n bitslice_7.register.d_flip_flop.net_1 gnd bitslice_7.register.d_flip_flop.net_10 30.0 84.0
+| device bitslice_7.register.d_flip_flop.pmos_8 1390 520
+p bitslice_7.register.d_flip_flop.net_2 vdd Q7 30.0 84.0
+| device bitslice_7.register.d_flip_flop.nmos_8 1390 640
+n bitslice_7.register.d_flip_flop.net_2 gnd Q7 30.0 84.0
+| device bitslice_7.register.d_flip_flop.pmos_9 1300 100
+p bitslice_7.register.net_1 bitslice_7.register.d_flip_flop.net_11 bitslice_7.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_7.register.d_flip_flop.nmos_9 1300 220
+n bitslice_7.register.d_flip_flop.clk_n bitslice_7.register.d_flip_flop.net_9 bitslice_7.register.d_flip_flop.net_2 30.0 84.0
+| device bitslice_7.register.d_flip_flop.pmos_10 1300 -20
+p Q7 vdd bitslice_7.register.d_flip_flop.net_11 30.0 84.0
+| device bitslice_7.register.d_flip_flop.nmos_10 1300 340
+n Q7 gnd bitslice_7.register.d_flip_flop.net_9 30.0 84.0
+| end bitslice_7.register.d_flip_flop
+| end bitslice_7.register
+| begin bitslice_7.inverter_1 350 150
+| device bitslice_7.inverter_1.nmos 550 360
+n clk gnd bitslice_7.net_1 30.0 200
+| device bitslice_7.inverter_1.pmos 550 200
+p clk vdd bitslice_7.net_1 30.0 400
+| end bitslice_7.inverter_1
+| begin bitslice_7.inverter_2 350 230
+| device bitslice_7.inverter_2.nmos 550 360
+n bitslice_7.net_1 gnd bitslice_7.net_3 30.0 3200
+| device bitslice_7.inverter_2.pmos 550 200
+p bitslice_7.net_1 vdd bitslice_7.net_3 30.0 6400
+| end bitslice_7.inverter_2
+| end bitslice_7
