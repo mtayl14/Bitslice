@@ -1,0 +1,35 @@
+# SUE version MMI_SUE5.6.41
+
+proc SCHEMATIC_register {} {
+  make nand2 -origin {90 330}
+  make inverter -origin {210 330}
+  make d_flip_flop -origin {300 430}
+  make input -name clk -origin {50 310}
+  make input -name en -origin {50 350}
+  make input -name D -origin {50 430}
+  make output -name Q -origin {360 430}
+  make_wire 160 330 180 330
+  make_wire 300 370 300 330
+  make_wire 300 330 260 330
+  make_wire 50 430 260 430
+  make_wire 70 350 50 350
+  make_wire 70 310 50 310
+  make_wire 360 430 340 430
+}
+
+proc ICON_register args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {0 -60} -orient R90 -name clk
+  icon_term -type input -origin {0 60} -orient R90Y -name en
+  icon_term -type input -origin {-40 0} -name D
+  icon_term -type output -origin {40 0} -name Q
+  icon_property -origin {90 80} -size large -anchor center -label register
+  icon_property -origin {0 50} -anchor e -rotate 1 -label en
+  icon_property -origin {-30 0} -label D
+  icon_property -origin {30 0} -anchor e -label Q
+  icon_property -origin {-90 290} -type user -name name
+  icon_property -origin {-90 310} -type user -name M
+  icon_property -origin {-90 330} -type user -name dpc
+  icon_line -40 -60 -40 60 40 60 40 -60 -40 -60 0 -40 40 -60
+}
+

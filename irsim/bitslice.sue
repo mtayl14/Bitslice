@@ -1,0 +1,33 @@
+# SUE version MMI_SUE5.6.41
+
+proc SCHEMATIC_bitslice {} {
+  make addf -origin {110 330}
+  make mux21 -origin {-90 440}
+  make inverter -origin {-200 480}
+  make input -name B -origin {-290 400}
+  make input -name A -origin {-290 320}
+  make output -name Q -origin {430 340}
+  make output -orient R270 -name cout -origin {110 250}
+  make input -orient R270 -name cin -origin {110 430}
+  make input -orient R90 -name sub -origin {-90 250}
+  make register -origin {350 340}
+  make input -orient R90 -name clk -origin {350 250}
+  make input -orient R270 -name store -origin {350 440}
+  make_wire 190 340 310 340
+  make_wire -50 440 -10 440
+  make_wire -10 440 -10 360
+  make_wire -10 360 30 360
+  make_wire -130 480 -150 480
+  make_wire -230 480 -250 480
+  make_wire -250 480 -250 400
+  make_wire -250 400 -130 400
+  make_wire -290 400 -250 400
+  make_wire 30 320 -290 320
+  make_wire 390 340 430 340
+  make_wire 110 250 110 290
+  make_wire 110 390 110 430
+  make_wire -90 250 -90 370
+  make_wire 350 250 350 280
+  make_wire 350 440 350 400
+}
+

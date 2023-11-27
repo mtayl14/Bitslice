@@ -138,3 +138,17 @@ proc SCHEMATIC_d_flip_flop {} {
   make_wire 1510 580 1550 580
 }
 
+proc ICON_d_flip_flop args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-40 0} -name D
+  icon_term -type input -origin {0 -60} -orient R90 -name clk
+  icon_term -type output -origin {40 0} -name Q
+  icon_property -origin {0 90} -size large -anchor center -label d_flip_flop
+  icon_property -origin {-30 0} -label D
+  icon_property -origin {30 0} -anchor e -label Q
+  icon_property -origin {-90 330} -type user -name name
+  icon_property -origin {-90 350} -type user -name M
+  icon_property -origin {-90 370} -type user -name dpc
+  icon_line -40 -60 -40 60 40 60 40 -60 -40 -60 0 -40 40 -60 40 -60
+}
+

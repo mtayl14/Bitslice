@@ -1,0 +1,44 @@
+# SUE version MMI_SUE5.6.41
+
+proc SCHEMATIC_t_gate {} {
+  make pmos -orient R270 -W 0.84 -origin {210 380}
+  make nmos -orient R90 -W 0.42 -origin {210 300}
+  make input -name A -origin {130 340}
+  make output -name B -origin {290 340}
+  make input -name en -origin {190 220}
+  make input -name en_n -origin {190 460}
+  make_wire 250 380 270 380
+  make_wire 270 300 250 300
+  make_wire 170 300 150 300
+  make_wire 150 380 170 380
+  make_wire 150 300 150 340
+  make_wire 150 340 150 380
+  make_wire 130 340 150 340
+  make_wire 270 340 270 380
+  make_wire 270 340 270 300
+  make_wire 270 340 290 340
+  make_wire 190 460 210 460
+  make_wire 210 460 210 440
+  make_wire 190 220 210 220
+  make_wire 210 220 210 240
+}
+
+proc ICON_t_gate args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-40 0} -name A
+  icon_term -type output -origin {40 0} -name B
+  icon_term -type input -origin {0 -60} -orient R90X -name en_n
+  icon_term -type input -origin {0 60} -orient R270 -name en
+  icon_property -origin {110 60} -size large -anchor center -label t_gate
+  icon_property -origin {-30 0} -label A
+  icon_property -origin {30 0} -anchor e -label B
+  icon_property -origin {-80 300} -type user -name name
+  icon_property -origin {-80 320} -type user -name M
+  icon_property -origin {-80 340} -type user -name dpc
+  icon_line -40 -30 -40 30 40 30 40 -30 -40 -30
+  icon_line -40 -40 40 -40
+  icon_arc -10 -60 10 -40 -start 0 -extent 359
+  icon_line -40 40 40 40
+  icon_line 0 60 0 40 0 40 0 40
+}
+
