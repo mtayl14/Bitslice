@@ -1,0 +1,67 @@
+| units: 0.5  tech: sky130A  format: MIT
+A D input
+A clk input
+A en input
+A Q output
+| begin nand2 90 330
+| device nand2.pmos 0 -100
+p clk vdd net_2 30.0 400
+| device nand2.nmos 0 0
+n clk nand2.net_1 net_2 30.0 400
+| device nand2.pmos_1 160 -100
+p en vdd net_2 30.0 400
+| device nand2.nmos_1 0 100
+n en gnd nand2.net_1 30.0 400
+| end nand2
+| begin inverter 210 330
+| device inverter.nmos 550 360
+n net_2 gnd net_1 30.0 200
+| device inverter.pmos 550 200
+p net_2 vdd net_1 30.0 400
+| end inverter
+| begin d_flip_flop 300 430
+| device d_flip_flop.pmos 270 190
+p net_1 vdd d_flip_flop.clk_n 30.0 336.0
+| device d_flip_flop.nmos 270 310
+n net_1 gnd d_flip_flop.clk_n 30.0 168.0
+| device d_flip_flop.pmos_1 580 520
+p net_1 d_flip_flop.net_4 d_flip_flop.net_1 30.0 84.0
+| device d_flip_flop.nmos_1 580 640
+n d_flip_flop.clk_n d_flip_flop.net_10 d_flip_flop.net_1 30.0 84.0
+| device d_flip_flop.pmos_2 580 400
+p D vdd d_flip_flop.net_4 30.0 84.0
+| device d_flip_flop.nmos_2 580 760
+n D gnd d_flip_flop.net_10 30.0 84.0
+| device d_flip_flop.pmos_3 820 520
+p d_flip_flop.net_1 vdd d_flip_flop.net_5 30.0 84.0
+| device d_flip_flop.nmos_3 820 640
+n d_flip_flop.net_1 gnd d_flip_flop.net_5 30.0 84.0
+| device d_flip_flop.pmos_4 730 100
+p d_flip_flop.clk_n d_flip_flop.net_7 d_flip_flop.net_1 30.0 84.0
+| device d_flip_flop.nmos_4 730 220
+n net_1 d_flip_flop.net_8 d_flip_flop.net_1 30.0 84.0
+| device d_flip_flop.pmos_5 730 -20
+p d_flip_flop.net_5 vdd d_flip_flop.net_7 30.0 84.0
+| device d_flip_flop.nmos_5 730 340
+n d_flip_flop.net_5 gnd d_flip_flop.net_8 30.0 84.0
+| device d_flip_flop.pmos_6 1150 520
+p d_flip_flop.clk_n d_flip_flop.net_11 d_flip_flop.net_2 30.0 84.0
+| device d_flip_flop.nmos_6 1150 640
+n net_1 d_flip_flop.net_6 d_flip_flop.net_2 30.0 84.0
+| device d_flip_flop.pmos_7 1150 400
+p d_flip_flop.net_5 vdd d_flip_flop.net_11 30.0 84.0
+| device d_flip_flop.nmos_7 1150 760
+n d_flip_flop.net_5 gnd d_flip_flop.net_6 30.0 84.0
+| device d_flip_flop.pmos_8 1390 520
+p d_flip_flop.net_2 vdd Q 30.0 84.0
+| device d_flip_flop.nmos_8 1390 640
+n d_flip_flop.net_2 gnd Q 30.0 84.0
+| device d_flip_flop.pmos_9 1300 100
+p net_1 d_flip_flop.net_3 d_flip_flop.net_2 30.0 84.0
+| device d_flip_flop.nmos_9 1300 220
+n d_flip_flop.clk_n d_flip_flop.net_9 d_flip_flop.net_2 30.0 84.0
+| device d_flip_flop.pmos_10 1300 -20
+p Q vdd d_flip_flop.net_3 30.0 84.0
+| device d_flip_flop.nmos_10 1300 340
+n Q gnd d_flip_flop.net_9 30.0 84.0
+| end d_flip_flop

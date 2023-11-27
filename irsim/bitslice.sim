@@ -1,0 +1,174 @@
+| units: 0.5  tech: sky130A  format: MIT
+A A input
+A B input
+A cin input
+A clk input
+A store input
+A sub input
+A Q output
+A cout output
+A sum output
+| begin addf 110 330
+| device addf.nmos 460 990
+n cin addf.net_2 addf.net_1 30.0 84.0
+| device addf.pmos 460 870
+p cin addf.net_6 addf.net_1 30.0 84.0
+| device addf.pmos_1 370 750
+p A vdd addf.net_6 30.0 84.0
+| device addf.pmos_2 540 750
+p net_4 vdd addf.net_6 30.0 84.0
+| device addf.nmos_1 370 1110
+n A gnd addf.net_2 30.0 84.0
+| device addf.nmos_2 540 1110
+n net_4 gnd addf.net_2 30.0 84.0
+| device addf.pmos_3 740 870
+p net_4 addf.net_5 addf.net_1 30.0 84.0
+| device addf.pmos_4 740 750
+p A vdd addf.net_5 30.0 84.0
+| device addf.nmos_3 740 990
+n net_4 addf.net_12 addf.net_1 30.0 84.0
+| device addf.nmos_4 740 1110
+n A gnd addf.net_12 30.0 84.0
+| device addf.pmos_5 940 750
+p A vdd addf.net_7 30.0 84.0
+| device addf.pmos_6 1110 750
+p net_4 vdd addf.net_7 30.0 84.0
+| device addf.pmos_7 1270 750
+p cin vdd addf.net_7 30.0 84.0
+| device addf.pmos_8 1110 870
+p addf.net_1 addf.net_7 addf.net_3 30.0 84.0
+| device addf.nmos_5 940 1110
+n A gnd addf.net_4 30.0 84.0
+| device addf.nmos_6 1110 1110
+n net_4 gnd addf.net_4 30.0 84.0
+| device addf.nmos_7 1270 1110
+n cin gnd addf.net_4 30.0 84.0
+| device addf.nmos_8 1110 990
+n addf.net_1 addf.net_4 addf.net_3 30.0 84.0
+| device addf.pmos_9 1470 870
+p cin addf.net_10 addf.net_3 30.0 84.0
+| device addf.pmos_10 1470 750
+p net_4 addf.net_8 addf.net_10 30.0 84.0
+| device addf.pmos_11 1470 630
+p A vdd addf.net_8 30.0 84.0
+| device addf.nmos_9 1470 990
+n cin addf.net_9 addf.net_3 30.0 84.0
+| device addf.nmos_10 1470 1110
+n net_4 addf.net_11 addf.net_9 30.0 84.0
+| device addf.nmos_11 1470 1230
+n A gnd addf.net_11 30.0 84.0
+| begin addf.inverter 1540 930
+| device addf.inverter.nmos 550 360
+n addf.net_3 gnd sum 30.0 200
+| device addf.inverter.pmos 550 200
+p addf.net_3 vdd sum 30.0 400
+| end addf.inverter
+| begin addf.inverter_1 880 1370
+| device addf.inverter_1.nmos 550 360
+n addf.net_1 gnd cout 30.0 200
+| device addf.inverter_1.pmos 550 200
+p addf.net_1 vdd cout 30.0 400
+| end addf.inverter_1
+| end addf
+| begin mux21 -90 440
+| begin mux21.t_gate 240 230
+| device mux21.t_gate.pmos 210 380
+p mux21.net_1 net_3 net_4 30.0 168.0
+| device mux21.t_gate.nmos 210 300
+n sub net_3 net_4 30.0 84.0
+| end mux21.t_gate
+| begin mux21.inverter 110 130
+| device mux21.inverter.nmos 550 360
+n sub gnd mux21.net_1 30.0 200
+| device mux21.inverter.pmos 550 200
+p sub vdd mux21.net_1 30.0 400
+| end mux21.inverter
+| begin mux21.t_gate_1 240 430
+| device mux21.t_gate_1.pmos 210 380
+p sub B net_4 30.0 168.0
+| device mux21.t_gate_1.nmos 210 300
+n mux21.net_1 B net_4 30.0 84.0
+| end mux21.t_gate_1
+| end mux21
+| begin inverter -200 480
+| device inverter.nmos 550 360
+n B gnd net_3 30.0 200
+| device inverter.pmos 550 200
+p B vdd net_3 30.0 400
+| end inverter
+| begin register 350 340
+| begin register.nand2 90 330
+| device register.nand2.pmos 0 -100
+p net_2 vdd register.net_2 30.0 400
+| device register.nand2.nmos 0 0
+n net_2 register.nand2.net_1 register.net_2 30.0 400
+| device register.nand2.pmos_1 160 -100
+p store vdd register.net_2 30.0 400
+| device register.nand2.nmos_1 0 100
+n store gnd register.nand2.net_1 30.0 400
+| end register.nand2
+| begin register.inverter 210 330
+| device register.inverter.nmos 550 360
+n register.net_2 gnd register.net_1 30.0 200
+| device register.inverter.pmos 550 200
+p register.net_2 vdd register.net_1 30.0 400
+| end register.inverter
+| begin register.d_flip_flop 300 430
+| device register.d_flip_flop.pmos 270 190
+p register.net_1 vdd register.d_flip_flop.clk_n 30.0 336.0
+| device register.d_flip_flop.nmos 270 310
+n register.net_1 gnd register.d_flip_flop.clk_n 30.0 168.0
+| device register.d_flip_flop.pmos_1 580 520
+p register.net_1 register.d_flip_flop.net_4 register.d_flip_flop.net_1 30.0 84.0
+| device register.d_flip_flop.nmos_1 580 640
+n register.d_flip_flop.clk_n register.d_flip_flop.net_10 register.d_flip_flop.net_1 30.0 84.0
+| device register.d_flip_flop.pmos_2 580 400
+p sum vdd register.d_flip_flop.net_4 30.0 84.0
+| device register.d_flip_flop.nmos_2 580 760
+n sum gnd register.d_flip_flop.net_10 30.0 84.0
+| device register.d_flip_flop.pmos_3 820 520
+p register.d_flip_flop.net_1 vdd register.d_flip_flop.net_5 30.0 84.0
+| device register.d_flip_flop.nmos_3 820 640
+n register.d_flip_flop.net_1 gnd register.d_flip_flop.net_5 30.0 84.0
+| device register.d_flip_flop.pmos_4 730 100
+p register.d_flip_flop.clk_n register.d_flip_flop.net_7 register.d_flip_flop.net_1 30.0 84.0
+| device register.d_flip_flop.nmos_4 730 220
+n register.net_1 register.d_flip_flop.net_8 register.d_flip_flop.net_1 30.0 84.0
+| device register.d_flip_flop.pmos_5 730 -20
+p register.d_flip_flop.net_5 vdd register.d_flip_flop.net_7 30.0 84.0
+| device register.d_flip_flop.nmos_5 730 340
+n register.d_flip_flop.net_5 gnd register.d_flip_flop.net_8 30.0 84.0
+| device register.d_flip_flop.pmos_6 1150 520
+p register.d_flip_flop.clk_n register.d_flip_flop.net_11 register.d_flip_flop.net_2 30.0 84.0
+| device register.d_flip_flop.nmos_6 1150 640
+n register.net_1 register.d_flip_flop.net_6 register.d_flip_flop.net_2 30.0 84.0
+| device register.d_flip_flop.pmos_7 1150 400
+p register.d_flip_flop.net_5 vdd register.d_flip_flop.net_11 30.0 84.0
+| device register.d_flip_flop.nmos_7 1150 760
+n register.d_flip_flop.net_5 gnd register.d_flip_flop.net_6 30.0 84.0
+| device register.d_flip_flop.pmos_8 1390 520
+p register.d_flip_flop.net_2 vdd Q 30.0 84.0
+| device register.d_flip_flop.nmos_8 1390 640
+n register.d_flip_flop.net_2 gnd Q 30.0 84.0
+| device register.d_flip_flop.pmos_9 1300 100
+p register.net_1 register.d_flip_flop.net_3 register.d_flip_flop.net_2 30.0 84.0
+| device register.d_flip_flop.nmos_9 1300 220
+n register.d_flip_flop.clk_n register.d_flip_flop.net_9 register.d_flip_flop.net_2 30.0 84.0
+| device register.d_flip_flop.pmos_10 1300 -20
+p Q vdd register.d_flip_flop.net_3 30.0 84.0
+| device register.d_flip_flop.nmos_10 1300 340
+n Q gnd register.d_flip_flop.net_9 30.0 84.0
+| end register.d_flip_flop
+| end register
+| begin inverter_1 350 150
+| device inverter_1.nmos 550 360
+n clk gnd net_1 30.0 200
+| device inverter_1.pmos 550 200
+p clk vdd net_1 30.0 400
+| end inverter_1
+| begin inverter_2 350 230
+| device inverter_2.nmos 550 360
+n net_1 gnd net_2 30.0 3200
+| device inverter_2.pmos 550 200
+p net_1 vdd net_2 30.0 6400
+| end inverter_2

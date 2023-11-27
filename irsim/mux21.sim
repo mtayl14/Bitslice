@@ -1,0 +1,23 @@
+| units: 0.5  tech: sky130A  format: MIT
+A A input
+A B input
+A sel input
+A Y output
+| begin t_gate 240 230
+| device t_gate.pmos 210 380
+p net_1 B Y 30.0 168.0
+| device t_gate.nmos 210 300
+n sel B Y 30.0 84.0
+| end t_gate
+| begin inverter 110 130
+| device inverter.nmos 550 360
+n sel gnd net_1 30.0 200
+| device inverter.pmos 550 200
+p sel vdd net_1 30.0 400
+| end inverter
+| begin t_gate_1 240 430
+| device t_gate_1.pmos 210 380
+p sel A Y 30.0 168.0
+| device t_gate_1.nmos 210 300
+n net_1 A Y 30.0 84.0
+| end t_gate_1
