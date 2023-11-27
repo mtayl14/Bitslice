@@ -1,0 +1,37 @@
+# SUE version MMI_SUE5.6.41
+
+proc SCHEMATIC_datapath {} {
+  make bitslice -origin {540 410}
+  make input -name clk -origin {300 520}
+  make input -name sub -origin {300 540}
+  make input -name store -origin {300 560}
+  make input -name {A[7:0]} -origin {300 390}
+  make input -name {B[7:0]} -origin {300 430}
+  make output -name cout -origin {740 280}
+  make name_net_s -orient RY -name {cout,cout_int[6:0]} -origin {640 280}
+  make output -name {Q[7:0]} -origin {740 410}
+  make name_net_s -name {cout_int[6:0],cin} -origin {560 540}
+  make_wire 480 340 480 320
+  make_wire 510 340 510 300
+  make_wire 540 280 540 340
+  make_wire 300 520 320 520
+  make_wire 320 320 320 520
+  make_wire 340 540 340 300
+  make_wire 300 560 360 560
+  make_wire 360 560 360 280
+  make_wire 300 540 340 540
+  make_wire 480 320 320 320
+  make_wire 340 300 510 300
+  make_wire 540 280 360 280
+  make_wire 600 280 600 340
+  make_wire 600 540 600 480
+  make_wire 560 540 600 540
+  make_wire 560 540 340 540
+  make_wire 420 430 300 430
+  make_wire 420 390 300 390
+  make_wire 600 280 640 280
+  make_wire 640 280 740 280
+  make_wire 660 410 740 410
+  make_text -origin {100 160} -text {Using the bus feature to create 8 duplicates and automatically connect nets.}
+}
+
