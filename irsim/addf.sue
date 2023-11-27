@@ -1,0 +1,143 @@
+# SUE version MMI_SUE5.6.41
+
+proc SCHEMATIC_addf {} {
+  make nmos -W 0.42 -origin {460 990}
+  make pmos -W 0.42 -origin {460 870}
+  make pmos -W 0.42 -origin {370 750}
+  make pmos -W 0.42 -origin {540 750}
+  make nmos -W 0.42 -origin {370 1110}
+  make nmos -W 0.42 -origin {540 1110}
+  make pmos -W 0.42 -origin {740 870}
+  make pmos -W 0.42 -origin {740 750}
+  make nmos -W 0.42 -origin {740 990}
+  make nmos -W 0.42 -origin {740 1110}
+  make global -name gnd -origin {740 1190}
+  make global -name gnd -origin {460 1190}
+  make global -orient RXY -name vdd -origin {460 670}
+  make global -orient RXY -name vdd -origin {740 670}
+  make pmos -W 0.42 -origin {940 750}
+  make pmos -W 0.42 -origin {1110 750}
+  make pmos -W 0.42 -origin {1270 750}
+  make pmos -W 0.42 -origin {1110 870}
+  make global -orient RXY -name vdd -origin {1110 670}
+  make nmos -W 0.42 -origin {940 1110}
+  make nmos -W 0.42 -origin {1110 1110}
+  make nmos -W 0.42 -origin {1270 1110}
+  make nmos -W 0.42 -origin {1110 990}
+  make pmos -W 0.42 -origin {1470 870}
+  make pmos -W 0.42 -origin {1470 750}
+  make pmos -W 0.42 -origin {1470 630}
+  make nmos -W 0.42 -origin {1470 990}
+  make nmos -W 0.42 -origin {1470 1110}
+  make nmos -W 0.42 -origin {1470 1230}
+  make global -orient RXY -name vdd -origin {1470 570}
+  make global -name gnd -origin {1110 1190}
+  make global -name gnd -origin {1470 1290}
+  make inverter -origin {1540 930}
+  make output -name sum -origin {1630 930}
+  make input -name A -origin {320 750}
+  make input -name A -origin {310 1110}
+  make input -name A -origin {680 750}
+  make input -name A -origin {680 1110}
+  make input -name A -origin {880 1110}
+  make input -name A -origin {880 750}
+  make input -name A -origin {1410 630}
+  make input -name A -origin {1410 1230}
+  make input -name B -origin {480 750}
+  make input -name B -origin {480 1110}
+  make input -name B -origin {680 870}
+  make input -name B -origin {680 990}
+  make input -name B -origin {1050 750}
+  make input -name B -origin {1050 1110}
+  make input -name B -origin {1410 750}
+  make input -name B -origin {1410 1110}
+  make input -name C -origin {1410 990}
+  make input -name C -origin {1410 870}
+  make input -name C -origin {1210 750}
+  make input -name C -origin {1210 1110}
+  make input -name C -origin {330 920}
+  make output -name cout -origin {970 1370}
+  make inverter -origin {880 1370}
+  make_wire 370 810 460 810
+  make_wire 460 810 460 830
+  make_wire 370 790 370 810
+  make_wire 540 790 540 810
+  make_wire 540 810 460 810
+  make_wire 370 870 400 870
+  make_wire 400 990 370 990
+  make_wire 370 1070 370 1050
+  make_wire 370 1050 460 1050
+  make_wire 460 1050 460 1030
+  make_wire 540 1070 540 1050
+  make_wire 540 1050 460 1050
+  make_wire 370 1150 370 1170
+  make_wire 540 1170 540 1150
+  make_wire 740 790 740 830
+  make_wire 740 1030 740 1070
+  make_wire 740 1150 740 1190
+  make_wire 460 1170 370 1170
+  make_wire 460 1170 540 1170
+  make_wire 460 1170 460 1190
+  make_wire 460 690 370 690
+  make_wire 460 690 540 690
+  make_wire 740 670 740 710
+  make_wire 540 690 540 710
+  make_wire 370 690 370 710
+  make_wire 460 670 460 690
+  make_wire 1110 810 1110 830
+  make_wire 940 790 940 810
+  make_wire 940 810 1110 810
+  make_wire 940 710 940 690
+  make_wire 1270 690 1270 710
+  make_wire 1110 690 1110 710
+  make_wire 1110 690 940 690
+  make_wire 1110 690 1270 690
+  make_wire 1110 670 1110 690
+  make_wire 1270 1070 1270 1050
+  make_wire 1270 1050 1110 1050
+  make_wire 1110 1050 1110 1030
+  make_wire 1110 1070 1110 1050
+  make_wire 1110 1050 940 1050
+  make_wire 940 1050 940 1070
+  make_wire 1270 1150 1270 1170
+  make_wire 1270 1170 1110 1170
+  make_wire 940 1150 940 1170
+  make_wire 940 1170 1110 1170
+  make_wire 1110 1170 1110 1150
+  make_wire 1050 870 1030 870
+  make_wire 1030 990 1050 990
+  make_wire 1030 870 1030 930
+  make_wire 1030 930 1030 990
+  make_wire 740 930 740 910
+  make_wire 740 930 740 950
+  make_wire 1470 790 1470 830
+  make_wire 1270 790 1270 810
+  make_wire 1270 810 1110 810
+  make_wire 1110 810 1110 790
+  make_wire 1470 670 1470 710
+  make_wire 1470 1030 1470 1070
+  make_wire 1470 1150 1470 1190
+  make_wire 1470 570 1470 590
+  make_wire 1110 1170 1110 1190
+  make_wire 1470 1270 1470 1290
+  make_wire 1470 930 1470 950
+  make_wire 1470 910 1470 930
+  make_wire 1110 930 1110 910
+  make_wire 1110 930 1110 950
+  make_wire 1630 930 1590 930
+  make_wire 310 750 320 750
+  make_wire 1110 930 1470 930
+  make_wire 1470 930 1510 930
+  make_wire 330 920 370 920
+  make_wire 370 920 370 870
+  make_wire 370 920 370 990
+  make_wire 460 930 740 930
+  make_wire 460 930 460 910
+  make_wire 460 930 460 950
+  make_wire 970 1370 930 1370
+  make_wire 810 1370 850 1370
+  make_wire 810 930 810 1370
+  make_wire 810 930 740 930
+  make_wire 1030 930 810 930
+}
+
