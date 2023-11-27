@@ -1,37 +1,164 @@
 # SUE version MMI_SUE5.6.41
 
 proc SCHEMATIC_datapath {} {
+  make input -name clk -origin {280 520}
+  make input -name sub -origin {280 540}
+  make input -name store -origin {280 560}
   make bitslice -origin {540 410}
-  make input -name clk -origin {300 520}
-  make input -name sub -origin {300 540}
-  make input -name store -origin {300 560}
-  make input -name {A[7:0]} -origin {300 390}
-  make input -name {B[7:0]} -origin {300 430}
-  make output -name cout -origin {740 280}
-  make name_net_s -orient RY -name {cout,cout_int[6:0]} -origin {640 280}
-  make output -name {Q[7:0]} -origin {740 410}
-  make name_net_s -name {cout_int[6:0],cin} -origin {560 540}
-  make_wire 480 340 480 320
-  make_wire 510 340 510 300
-  make_wire 540 280 540 340
-  make_wire 300 520 320 520
-  make_wire 320 320 320 520
-  make_wire 340 540 340 300
-  make_wire 300 560 360 560
-  make_wire 360 560 360 280
-  make_wire 300 540 340 540
-  make_wire 480 320 320 320
-  make_wire 340 300 510 300
-  make_wire 540 280 360 280
-  make_wire 600 280 600 340
-  make_wire 600 540 600 480
-  make_wire 560 540 600 540
-  make_wire 560 540 340 540
-  make_wire 420 430 300 430
-  make_wire 420 390 300 390
-  make_wire 600 280 640 280
-  make_wire 640 280 740 280
-  make_wire 660 410 740 410
-  make_text -origin {100 160} -text {Using the bus feature to create 8 duplicates and automatically connect nets.}
+  make input -name A0 -origin {270 370}
+  make input -name B0 -origin {270 410}
+  make bitslice -origin {540 140}
+  make input -name A1 -origin {270 100}
+  make input -name B1 -origin {270 140}
+  make output -name Q0 -origin {810 370}
+  make output -name sum0 -origin {810 410}
+  make output -name Q1 -origin {810 100}
+  make output -name sum1 -origin {810 140}
+  make bitslice -origin {540 -130}
+  make input -name A2 -origin {270 -170}
+  make input -name B2 -origin {270 -130}
+  make output -name Q2 -origin {810 -170}
+  make output -name sum2 -origin {810 -130}
+  make bitslice -origin {540 -400}
+  make bitslice -origin {540 -670}
+  make bitslice -origin {540 -940}
+  make bitslice -origin {540 -1210}
+  make bitslice -origin {540 -1480}
+  make output -name cout -origin {810 -1610}
+  make input -name B3 -origin {270 -400}
+  make input -name A3 -origin {270 -440}
+  make output -name Q3 -origin {810 -440}
+  make output -name sum3 -origin {810 -400}
+  make input -name A4 -origin {270 -710}
+  make input -name B4 -origin {270 -670}
+  make output -name Q4 -origin {810 -710}
+  make output -name sum4 -origin {810 -670}
+  make input -name A5 -origin {270 -980}
+  make input -name B5 -origin {270 -940}
+  make output -name Q5 -origin {810 -980}
+  make output -name sum5 -origin {810 -940}
+  make input -name A6 -origin {270 -1250}
+  make input -name B6 -origin {270 -1210}
+  make output -name Q6 -origin {810 -1250}
+  make output -name sum6 -origin {810 -1210}
+  make input -name A7 -origin {270 -1520}
+  make input -name B7 -origin {270 -1480}
+  make output -name Q7 -origin {810 -1520}
+  make output -name sum7 -origin {810 -1480}
+  make_wire 430 410 270 410
+  make_wire 430 370 270 370
+  make_wire 430 140 270 140
+  make_wire 430 100 270 100
+  make_wire 810 370 650 370
+  make_wire 810 410 650 410
+  make_wire 810 100 650 100
+  make_wire 810 140 650 140
+  make_wire 520 290 380 290
+  make_wire 380 560 280 560
+  make_wire 380 560 520 560
+  make_wire 490 270 350 270
+  make_wire 350 540 280 540
+  make_wire 350 540 490 540
+  make_wire 460 250 320 250
+  make_wire 320 520 460 520
+  make_wire 320 520 280 520
+  make_wire 430 -130 270 -130
+  make_wire 430 -170 270 -170
+  make_wire 810 -170 650 -170
+  make_wire 810 -130 650 -130
+  make_wire 350 0 490 0
+  make_wire 320 -20 460 -20
+  make_wire 380 20 520 20
+  make_wire 520 -40 520 20
+  make_wire 460 -40 460 -20
+  make_wire 490 -40 490 0
+  make_wire 380 20 380 290
+  make_wire 320 -20 320 250
+  make_wire 490 230 490 270
+  make_wire 520 230 520 290
+  make_wire 350 0 350 270
+  make_wire 460 230 460 250
+  make_wire 320 250 320 520
+  make_wire 460 500 460 520
+  make_wire 520 500 520 560
+  make_wire 380 290 380 560
+  make_wire 350 270 350 540
+  make_wire 490 500 490 540
+  make_wire 590 50 590 -40
+  make_wire 590 230 590 320
+  make_wire 590 500 590 540
+  make_wire 590 540 490 540
+  make_wire 430 -400 270 -400
+  make_wire 430 -440 270 -440
+  make_wire 810 -440 650 -440
+  make_wire 810 -400 650 -400
+  make_wire 350 -270 490 -270
+  make_wire 320 -290 460 -290
+  make_wire 380 -250 520 -250
+  make_wire 520 -310 520 -250
+  make_wire 460 -310 460 -290
+  make_wire 490 -310 490 -270
+  make_wire 380 -250 380 20
+  make_wire 320 -290 320 -20
+  make_wire 350 -270 350 0
+  make_wire 590 -220 590 -310
+  make_wire 430 -670 270 -670
+  make_wire 430 -710 270 -710
+  make_wire 810 -710 650 -710
+  make_wire 810 -670 650 -670
+  make_wire 350 -540 490 -540
+  make_wire 320 -560 460 -560
+  make_wire 380 -520 520 -520
+  make_wire 520 -580 520 -520
+  make_wire 460 -580 460 -560
+  make_wire 490 -580 490 -540
+  make_wire 380 -520 380 -250
+  make_wire 320 -560 320 -290
+  make_wire 350 -540 350 -270
+  make_wire 590 -490 590 -580
+  make_wire 430 -940 270 -940
+  make_wire 430 -980 270 -980
+  make_wire 810 -980 650 -980
+  make_wire 810 -940 650 -940
+  make_wire 350 -810 490 -810
+  make_wire 320 -830 460 -830
+  make_wire 380 -790 520 -790
+  make_wire 520 -850 520 -790
+  make_wire 460 -850 460 -830
+  make_wire 490 -850 490 -810
+  make_wire 380 -790 380 -520
+  make_wire 320 -830 320 -560
+  make_wire 350 -810 350 -540
+  make_wire 590 -760 590 -850
+  make_wire 430 -1210 270 -1210
+  make_wire 430 -1250 270 -1250
+  make_wire 810 -1250 650 -1250
+  make_wire 810 -1210 650 -1210
+  make_wire 350 -1080 490 -1080
+  make_wire 320 -1100 460 -1100
+  make_wire 380 -1060 520 -1060
+  make_wire 520 -1120 520 -1060
+  make_wire 460 -1120 460 -1100
+  make_wire 490 -1120 490 -1080
+  make_wire 380 -1060 380 -790
+  make_wire 320 -1100 320 -830
+  make_wire 350 -1080 350 -810
+  make_wire 590 -1030 590 -1120
+  make_wire 430 -1480 270 -1480
+  make_wire 430 -1520 270 -1520
+  make_wire 810 -1520 650 -1520
+  make_wire 810 -1480 650 -1480
+  make_wire 350 -1350 490 -1350
+  make_wire 320 -1370 460 -1370
+  make_wire 380 -1330 520 -1330
+  make_wire 520 -1390 520 -1330
+  make_wire 460 -1390 460 -1370
+  make_wire 490 -1390 490 -1350
+  make_wire 380 -1330 380 -1060
+  make_wire 320 -1370 320 -1100
+  make_wire 350 -1350 350 -1080
+  make_wire 590 -1300 590 -1390
+  make_wire 590 -1610 590 -1570
+  make_wire 810 -1610 590 -1610
 }
 

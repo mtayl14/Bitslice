@@ -37,28 +37,28 @@ proc SCHEMATIC_bitslice {} {
 
 proc ICON_bitslice args {
   icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
-  icon_term -type input -origin {-120 -20} -name A
-  icon_term -type input -origin {-120 20} -name B
-  icon_term -type output -origin {120 0} -name Q
-  icon_term -type input -origin {-30 -70} -orient R90 -name sub
-  icon_term -type output -origin {60 -70} -orient R90Y -name cout
-  icon_term -type input -origin {-60 -70} -orient R90 -name clk
-  icon_term -type input -origin {60 70} -orient R90Y -name cin
-  icon_term -type input -origin {0 -70} -orient R90 -name store
-  icon_term -type input -origin {0 0} -name sum
-  icon_term -type output -origin {0 0} -name sum
-  icon_property -origin {170 110} -size large -anchor center -label bitslice
-  icon_property -origin {-110 -20} -label A
-  icon_property -origin {-110 20} -label B
-  icon_property -origin {110 0} -anchor e -label Q
-  icon_property -origin {-30 -60} -rotate 1 -label sub
-  icon_property -origin {60 -60} -rotate 1 -label cout
-  icon_property -origin {-60 -60} -rotate 1 -label clk
-  icon_property -origin {60 60} -anchor e -rotate 1 -label cin
-  icon_property -origin {0 -60} -rotate 1 -label store
-  icon_property -origin {-100 310} -type user -name name
-  icon_property -origin {-100 330} -type user -name M
-  icon_property -origin {-100 350} -type user -name dpc
-  icon_line -120 -70 -120 70 120 70 120 -70 -120 -70
+  icon_term -type input -origin {-110 -40} -name A
+  icon_term -type input -origin {-110 0} -name B
+  icon_term -type output -origin {110 -40} -name Q
+  icon_term -type input -origin {-50 90} -orient R90Y -name sub
+  icon_term -type output -origin {50 -90} -orient R90Y -name cout
+  icon_term -type output -origin {110 0} -name sum
+  icon_term -type input -origin {-80 90} -orient R90Y -name clk
+  icon_term -type input -origin {50 90} -orient R90Y -name cin
+  icon_term -type input -origin {-20 90} -orient R90Y -name store
+  icon_property -origin {0 0} -size large -anchor center -label bitslice
+  icon_line -110 -90 110 -90 110 90 -110 90 -110 -90
+  icon_property -origin {-100 -40} -label A
+  icon_property -origin {-100 0} -label B
+  icon_property -origin {100 -40} -anchor e -label Q
+  icon_property -origin {-50 80} -anchor e -rotate 1 -label sub
+  icon_property -origin {50 -80} -rotate 1 -label cout
+  icon_property -origin {100 0} -anchor e -label sum
+  icon_property -origin {-80 80} -anchor e -rotate 1 -label clk
+  icon_property -origin {50 80} -anchor e -rotate 1 -label cin
+  icon_property -origin {-20 80} -anchor e -rotate 1 -label store
+  icon_property -origin {-110 310} -type user -name name
+  icon_property -origin {-110 330} -type user -name M
+  icon_property -origin {-110 350} -type user -name dpc
 }
 
