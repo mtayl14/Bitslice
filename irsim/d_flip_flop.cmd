@@ -1,5 +1,5 @@
 | testvectors
-stepsize 20.0
+stepsize 5.0
 h vdd
 l gnd
 
