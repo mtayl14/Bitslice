@@ -3,8 +3,8 @@
 proc SCHEMATIC_mux21 {} {
   make t_gate -origin {240 230}
   make inverter -origin {110 130}
-  make input -name A -origin {20 230}
-  make input -name B -origin {20 430}
+  make input -name A -origin {20 430}
+  make input -name B -origin {20 230}
   make t_gate -origin {240 430}
   make input -name sel -origin {20 130}
   make output -name Y -origin {340 330}
@@ -22,11 +22,11 @@ proc SCHEMATIC_mux21 {} {
   make_wire 240 330 240 290
   make_wire 60 130 80 130
   make_wire 20 130 60 130
-  make_wire 20 430 200 430
-  make_wire 20 230 200 230
   make_wire 300 330 300 430
   make_wire 300 330 300 230
   make_wire 300 330 340 330
+  make_wire 200 230 20 230
+  make_wire 200 430 20 430
 }
 
 proc ICON_mux21 args {
