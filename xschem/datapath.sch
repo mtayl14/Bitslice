@@ -28,9 +28,9 @@ lab=B0}
 N -150 -10 -90 -10 {
 lab=A0}
 N -160 -980 -160 0 {bus=true
-lab=#net8}
+lab=A[7..0]}
 N -220 -960 -220 20 {bus=true
-lab=#net9}
+lab=B[7..0]}
 N -210 -130 -90 -130 {
 lab=B1}
 N -150 -150 -90 -150 {
@@ -177,16 +177,18 @@ N -260 100 -180 100 {
 lab=subtract}
 N -260 60 -180 60 {
 lab=store}
-N 10 180 40 180 {
+N 10 80 40 80 {
 lab=subtract}
-N 40 150 40 180 {
+N 40 50 40 80 {
 lab=subtract}
 N 40 -1040 40 -1030 {
 lab=carry}
 N 40 -1040 230 -1040 {
 lab=carry}
-N -260 -20 -160 -20 {bus=true}
-N -260 20 -220 20 {bus=true}
+N -260 -20 -160 -20 {bus=true
+lab=A[7..0]}
+N -260 20 -220 20 {bus=true
+lab=B[7..0]}
 C {bitslice.sym} 0 0 0 0 {name=x1}
 C {bitslice.sym} 0 -140 0 0 {name=x2}
 C {bitslice.sym} 0 -280 0 0 {name=x3}
@@ -276,6 +278,5 @@ C {devices/lab_pin.sym} -180 60 0 1 {name=p54 sig_type=std_logic lab=store}
 C {devices/ipin.sym} -260 60 0 0 {name=p55 lab=store}
 C {devices/ipin.sym} -260 100 0 0 {name=p56 lab=subtract}
 C {devices/ipin.sym} -260 140 0 0 {name=p57 lab=clk}
-C {inv.sym} 40 110 3 0 {name=x9}
-C {devices/lab_pin.sym} 10 180 0 0 {name=p58 sig_type=std_logic lab=subtract}
+C {devices/lab_pin.sym} 10 80 0 0 {name=p58 sig_type=std_logic lab=subtract}
 C {devices/opin.sym} 230 -1040 0 0 {name=p59 lab=carry}
