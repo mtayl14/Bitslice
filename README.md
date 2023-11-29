@@ -4,7 +4,7 @@ Status:
 
 | |`xschem`|`sue`|`irsim`|stick diagram|`magic`|LVS|
 |--|--|--|--|--|--|--|
-|Full adder|✅|✅|✅[^1]|✅[^1]|✅[^1]|❌|
+|Full adder|✅|✅|✅[^1]|✅[^1]|✅[^1]|✅|
 |D flip-flop|✅|✅|✅|❌|❌|❌|
 |2-1 multiplexer|✅|✅|✅|❌|❌|❌|
 |Register|✅|✅|✅|❌|❌|❌|

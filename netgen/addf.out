@@ -1,0 +1,92 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: addf                            |Circuit 2: addf                            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (14)               |sky130_fd_pr__pfet_01v8 (14)               
+sky130_fd_pr__nfet_01v8 (14)               |sky130_fd_pr__nfet_01v8 (14)               
+Number of devices: 28                      |Number of devices: 28                      
+Number of nets: 19                         |Number of nets: 19                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8:15 vs. sky130_fd_pr__nfet_01v8:M1:
+ w circuit1: 0.52   circuit2: 0.42   (delta=21.3%, cutoff=1%)
+sky130_fd_pr__nfet_01v8:9 vs. sky130_fd_pr__nfet_01v8:M5:
+ w circuit1: 0.52   circuit2: 0.42   (delta=21.3%, cutoff=1%)
+sky130_fd_pr__nfet_01v8:8 vs. sky130_fd_pr__nfet_01v8:M6:
+ w circuit1: 0.52   circuit2: 0.42   (delta=21.3%, cutoff=1%)
+sky130_fd_pr__nfet_01v8:24 vs. sky130_fd_pr__nfet_01v8:M9:
+ w circuit1: 0.52   circuit2: 0.42   (delta=21.3%, cutoff=1%)
+sky130_fd_pr__nfet_01v8:10 vs. sky130_fd_pr__nfet_01v8:M15:
+ w circuit1: 0.52   circuit2: 0.42   (delta=21.3%, cutoff=1%)
+sky130_fd_pr__nfet_01v8:25 vs. sky130_fd_pr__nfet_01v8:M17:
+ w circuit1: 0.52   circuit2: 0.42   (delta=21.3%, cutoff=1%)
+sky130_fd_pr__nfet_01v8:18 vs. sky130_fd_pr__nfet_01v8:M16:
+ w circuit1: 0.52   circuit2: 0.42   (delta=21.3%, cutoff=1%)
+sky130_fd_pr__nfet_01v8:2 vs. sky130_fd_pr__nfet_01v8:M18:
+ w circuit1: 0.52   circuit2: 0.42   (delta=21.3%, cutoff=1%)
+sky130_fd_pr__nfet_01v8:20 vs. sky130_fd_pr__nfet_01v8:M22:
+ w circuit1: 0.52   circuit2: 0.42   (delta=21.3%, cutoff=1%)
+sky130_fd_pr__nfet_01v8:4 vs. sky130_fd_pr__nfet_01v8:M23:
+ w circuit1: 0.52   circuit2: 0.42   (delta=21.3%, cutoff=1%)
+sky130_fd_pr__nfet_01v8:26 vs. sky130_fd_pr__nfet_01v8:M24:
+ w circuit1: 0.52   circuit2: 0.42   (delta=21.3%, cutoff=1%)
+sky130_fd_pr__nfet_01v8:19 vs. sky130_fd_pr__nfet_01v8:M25:
+ w circuit1: 0.52   circuit2: 0.42   (delta=21.3%, cutoff=1%)
+sky130_fd_pr__nfet_01v8:17 vs. sky130_fd_pr__nfet_01v8:M10:
+ w circuit1: 0.52   circuit2: 0.42   (delta=21.3%, cutoff=1%)
+sky130_fd_pr__nfet_01v8:5 vs. sky130_fd_pr__nfet_01v8:M27:
+ w circuit1: 0.52   circuit2: 0.42   (delta=21.3%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:11 vs. sky130_fd_pr__pfet_01v8:M2:
+ w circuit1: 1.26   circuit2: 0.42   (delta=100%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:6 vs. sky130_fd_pr__pfet_01v8:M3:
+ w circuit1: 1.26   circuit2: 0.42   (delta=100%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:3 vs. sky130_fd_pr__pfet_01v8:M4:
+ w circuit1: 1.26   circuit2: 0.42   (delta=100%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:21 vs. sky130_fd_pr__pfet_01v8:M7:
+ w circuit1: 1.26   circuit2: 0.42   (delta=100%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:22 vs. sky130_fd_pr__pfet_01v8:M12:
+ w circuit1: 1.26   circuit2: 0.42   (delta=100%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:13 vs. sky130_fd_pr__pfet_01v8:M11:
+ w circuit1: 1.26   circuit2: 0.42   (delta=100%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:27 vs. sky130_fd_pr__pfet_01v8:M13:
+ w circuit1: 1.26   circuit2: 0.42   (delta=100%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:7 vs. sky130_fd_pr__pfet_01v8:M14:
+ w circuit1: 1.26   circuit2: 0.42   (delta=100%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:16 vs. sky130_fd_pr__pfet_01v8:M19:
+ w circuit1: 1.26   circuit2: 0.42   (delta=100%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:0 vs. sky130_fd_pr__pfet_01v8:M20:
+ w circuit1: 1.26   circuit2: 0.42   (delta=100%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:23 vs. sky130_fd_pr__pfet_01v8:M21:
+ w circuit1: 1.26   circuit2: 0.42   (delta=100%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:14 vs. sky130_fd_pr__pfet_01v8:M26:
+ w circuit1: 1.26   circuit2: 0.42   (delta=100%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:12 vs. sky130_fd_pr__pfet_01v8:M8:
+ w circuit1: 1.26   circuit2: 0.42   (delta=100%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:1 vs. sky130_fd_pr__pfet_01v8:M28:
+ w circuit1: 1.26   circuit2: 0.42   (delta=100%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: addf                            |Circuit 2: addf                            
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+CI                                         |CI                                         
+CO                                         |CO                                         
+S                                          |S                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes addf and addf are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ addf
