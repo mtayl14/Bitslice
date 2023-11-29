@@ -10,21 +10,21 @@ lab=#net1}
 N 60 180 60 200 {
 lab=GND}
 N 120 -20 120 0 {
-lab=#net2}
+lab=Z}
 N 0 -20 0 -0 {
-lab=#net2}
+lab=Z}
 N 0 -0 120 -0 {
-lab=#net2}
+lab=Z}
 N 60 0 60 20 {
-lab=#net2}
+lab=Z}
 N 0 -100 0 -80 {
-lab=VDD}
+lab=vdd}
 N 0 -100 120 -100 {
-lab=VDD}
+lab=vdd}
 N 120 -100 120 -80 {
-lab=VDD}
+lab=vdd}
 N 60 -120 60 -100 {
-lab=VDD}
+lab=vdd}
 N -60 -50 -40 -50 {
 lab=A}
 N 60 -50 80 -50 {
@@ -38,7 +38,7 @@ lab=A}
 N -120 -90 -100 -90 {
 lab=B}
 N 120 0 160 0 {
-lab=#net2}
+lab=Z}
 C {sky130_fd_pr/nfet3_01v8.sym} 40 50 0 0 {name=M1
 L=0.15
 W=0.84
@@ -99,8 +99,8 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/gnd.sym} 60 200 0 0 {name=l1 lab=GND}
-C {devices/vdd.sym} 60 -120 0 0 {name=l2 lab=VDD}
+C {devices/gnd.sym} 60 200 0 0 {name=l1 lab=gnd}
+C {devices/vdd.sym} 60 -120 0 0 {name=l2 lab=vdd}
 C {devices/lab_pin.sym} 60 -50 0 0 {name=p1 sig_type=std_logic lab=B}
 C {devices/lab_pin.sym} -60 -50 0 0 {name=p2 sig_type=std_logic lab=A}
 C {devices/lab_pin.sym} 0 150 0 0 {name=p3 sig_type=std_logic lab=B}

@@ -6,28 +6,28 @@ V {}
 S {}
 E {}
 N 0 -0 20 0 {
-lab=a}
+lab=A}
 N 20 -20 20 0 {
-lab=a}
+lab=A}
 N 20 -0 20 20 {
-lab=a}
+lab=A}
 N 20 20 20 50 {
-lab=a}
+lab=A}
 N 20 50 40 50 {
-lab=a}
+lab=A}
 N 20 -50 40 -50 {
-lab=a}
+lab=A}
 N 20 -50 20 -20 {
-lab=a}
+lab=A}
 N 80 -20 80 20 {
-lab=z}
+lab=Z}
 N 80 -100 80 -80 {
-lab=VDD}
+lab=vdd}
 N 80 80 80 100 {
 lab=GND}
 N 80 0 100 0 {
-lab=z}
-C {devices/ipin.sym} 0 0 0 0 {name=p1 lab=a}
+lab=Z}
+C {devices/ipin.sym} 0 0 0 0 {name=p1 lab=A}
 C {sky130_fd_pr/nfet3_01v8.sym} 60 50 0 0 {name=M1
 L=0.15
 W=0.42
@@ -58,6 +58,6 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/vdd.sym} 80 -100 0 0 {name=l5 lab=VDD}
-C {devices/gnd.sym} 80 100 0 0 {name=l6 lab=GND}
-C {devices/opin.sym} 100 0 0 0 {name=p2 lab=z}
+C {devices/vdd.sym} 80 -100 0 0 {name=l5 lab=vdd}
+C {devices/gnd.sym} 80 100 0 0 {name=l6 lab=gnd}
+C {devices/opin.sym} 100 0 0 0 {name=p2 lab=Z}
