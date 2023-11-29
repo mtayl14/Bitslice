@@ -642,7 +642,9 @@ port 5 n
 rlabel viali 1350 496 1350 496 1 CO
 port 6 n
 rlabel metal1 129 496 129 496 1 B
+port 2 n
 rlabel viali 265 422 265 422 1 CI
+port 3 n
 rlabel viali 97 348 97 348 1 A
 port 1 n
 rlabel viali 1228 274 1228 274 1 CON
