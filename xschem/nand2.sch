@@ -33,9 +33,9 @@ N 0 150 20 150 {
 lab=B}
 N 0 50 20 50 {
 lab=A}
-N -120 -110 -100 -110 {
+N -160 -10 -140 -10 {
 lab=A}
-N -120 -90 -100 -90 {
+N -160 10 -140 10 {
 lab=B}
 N 120 0 160 0 {
 lab=Z}
@@ -105,8 +105,8 @@ C {devices/lab_pin.sym} 60 -50 0 0 {name=p1 sig_type=std_logic lab=B}
 C {devices/lab_pin.sym} -60 -50 0 0 {name=p2 sig_type=std_logic lab=A}
 C {devices/lab_pin.sym} 0 150 0 0 {name=p3 sig_type=std_logic lab=B}
 C {devices/lab_pin.sym} 0 50 0 0 {name=p4 sig_type=std_logic lab=A}
-C {devices/lab_pin.sym} -100 -110 0 1 {name=p5 sig_type=std_logic lab=A}
-C {devices/lab_pin.sym} -100 -90 0 1 {name=p6 sig_type=std_logic lab=B}
-C {devices/ipin.sym} -120 -110 0 0 {name=p7 lab=A}
-C {devices/ipin.sym} -120 -90 0 0 {name=p8 lab=B}
+C {devices/lab_pin.sym} -140 -10 0 1 {name=p5 sig_type=std_logic lab=A}
+C {devices/lab_pin.sym} -140 10 0 1 {name=p6 sig_type=std_logic lab=B}
+C {devices/ipin.sym} -160 -10 0 0 {name=p7 lab=A}
+C {devices/ipin.sym} -160 10 0 0 {name=p8 lab=B}
 C {devices/opin.sym} 160 0 0 0 {name=p9 lab=Z}

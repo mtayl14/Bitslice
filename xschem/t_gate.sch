@@ -18,13 +18,13 @@ lab=out}
 N -50 -80 -50 90 {
 lab=in}
 N 0 -80 0 -40 {
-lab=#net1}
+lab=VDD}
 N 90 -130 90 -40 {
 lab=VDD}
 N 0 50 0 90 {
-lab=#net2}
+lab=gnd}
 N -90 50 -90 140 {
-lab=GND}
+lab=gnd}
 N -90 0 -50 -0 {
 lab=in}
 N 50 -0 90 0 {
@@ -33,8 +33,10 @@ N 0 130 0 140 {
 lab=E}
 N 0 -130 0 -120 {
 lab=E_n}
-N 0 -40 90 -40 {}
-N -90 50 0 50 {}
+N 0 -40 90 -40 {
+lab=VDD}
+N -90 50 0 50 {
+lab=gnd}
 C {sky130_fd_pr/nfet_01v8.sym} 0 110 3 0 {name=M1
 L=0.15
 W=0.42
