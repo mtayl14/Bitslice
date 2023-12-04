@@ -10,23 +10,23 @@ L 4 250 -460 250 -160 {}
 L 4 0 -460 250 -460 {}
 L 4 0 -460 0 -160 {}
 N 140 -320 140 -280 {
-lab=clk_b}
+lab=CLK_n}
 N 80 -350 100 -350 {
-lab=clk}
+lab=CLK}
 N 80 -350 80 -250 {
-lab=clk}
+lab=CLK}
 N 80 -250 100 -250 {
-lab=clk}
+lab=CLK}
 N 140 -220 140 -200 {
 lab=GND}
 N 140 -400 140 -380 {
 lab=VDD}
 N 140 -300 180 -300 {
-lab=clk_b}
+lab=CLK_n}
 N 40 -300 80 -300 {
-lab=clk}
+lab=CLK}
 N 50 -420 80 -420 {
-lab=clk}
+lab=CLK}
 N 420 -20 420 20 {
 lab=#net1}
 N 420 160 420 180 {
@@ -36,9 +36,9 @@ lab=VDD}
 N 260 0 300 0 {
 lab=D}
 N 360 -50 380 -50 {
-lab=clk}
+lab=CLK}
 N 360 50 380 50 {
-lab=clk_b}
+lab=CLK_n}
 N 660 -50 660 0 {
 lab=#net1}
 N 660 -50 680 -50 {
@@ -60,9 +60,9 @@ lab=VDD}
 N 620 -160 620 -140 {
 lab=GND}
 N 660 -270 680 -270 {
-lab=clk}
+lab=CLK}
 N 660 -370 680 -370 {
-lab=clk_b}
+lab=CLK_n}
 N 620 -340 620 -300 {
 lab=#net1}
 N 620 -240 620 -220 {
@@ -108,9 +108,9 @@ lab=#net8}
 N 1020 -100 1020 -80 {
 lab=#net9}
 N 960 50 980 50 {
-lab=clk}
+lab=CLK}
 N 960 -50 980 -50 {
-lab=clk_b}
+lab=CLK_n}
 N 900 -130 980 -130 {
 lab=#net2}
 N 900 -130 900 130 {
@@ -130,7 +130,7 @@ lab=#net7}
 N 1260 50 1280 50 {
 lab=#net7}
 N 1320 -20 1320 20 {
-lab=q}
+lab=Q}
 N 1320 80 1320 100 {
 lab=GND}
 N 1320 -100 1320 -80 {
@@ -142,33 +142,33 @@ lab=GND}
 N 1220 -500 1220 -480 {
 lab=VDD}
 N 1260 -370 1280 -370 {
-lab=clk}
+lab=CLK}
 N 1260 -270 1280 -270 {
-lab=clk_b}
+lab=CLK_n}
 N 1220 -240 1220 -220 {
 lab=#net10}
 N 1220 -420 1220 -400 {
 lab=#net11}
 N 1260 -450 1340 -450 {
-lab=q}
+lab=Q}
 N 1340 -450 1340 -320 {
-lab=q}
+lab=Q}
 N 1260 -190 1340 -190 {
-lab=q}
+lab=Q}
 N 1340 -320 1340 -190 {
-lab=q}
+lab=Q}
 N 1140 -320 1220 -320 {
 lab=#net7}
 N 1140 -320 1140 0 {
 lab=#net7}
 N 1420 -320 1420 0 {
-lab=q}
+lab=Q}
 N 1340 -320 1420 -320 {
-lab=q}
+lab=Q}
 N 1320 0 1420 0 {
-lab=q}
+lab=Q}
 N 1420 0 1500 0 {
-lab=q}
+lab=Q}
 C {sky130_fd_pr/nfet3_01v8.sym} 120 -250 0 0 {name=M1
 L=0.15
 W=0.84
@@ -199,10 +199,10 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/ipin.sym} 50 -420 0 0 {name=p1 lab=clk}
-C {devices/lab_pin.sym} 180 -300 0 1 {name=p2 sig_type=std_logic lab=clk_b}
-C {devices/lab_pin.sym} 80 -420 0 1 {name=p3 sig_type=std_logic lab=clk}
-C {devices/lab_pin.sym} 40 -300 0 0 {name=p4 sig_type=std_logic lab=clk}
+C {devices/ipin.sym} 50 -420 0 0 {name=p1 lab=CLK}
+C {devices/lab_pin.sym} 180 -300 0 1 {name=p2 sig_type=std_logic lab=CLK_n}
+C {devices/lab_pin.sym} 80 -420 0 1 {name=p3 sig_type=std_logic lab=CLK}
+C {devices/lab_pin.sym} 40 -300 0 0 {name=p4 sig_type=std_logic lab=CLK}
 C {devices/vdd.sym} 140 -400 0 0 {name=l3 lab=VDD}
 C {devices/gnd.sym} 140 -200 0 0 {name=l2 lab=GND}
 C {sky130_fd_pr/pfet3_01v8.sym} 400 -50 0 0 {name=M3
@@ -267,8 +267,8 @@ spiceprefix=X
 }
 C {devices/gnd.sym} 420 180 0 0 {name=l1 lab=GND}
 C {devices/vdd.sym} 420 -180 0 0 {name=l4 lab=VDD}
-C {devices/lab_pin.sym} 360 -50 0 0 {name=p5 sig_type=std_logic lab=clk}
-C {devices/lab_pin.sym} 360 50 0 0 {name=p6 sig_type=std_logic lab=clk_b}
+C {devices/lab_pin.sym} 360 -50 0 0 {name=p5 sig_type=std_logic lab=CLK}
+C {devices/lab_pin.sym} 360 50 0 0 {name=p6 sig_type=std_logic lab=CLK_n}
 C {devices/ipin.sym} 260 0 0 0 {name=p7 lab=D}
 C {sky130_fd_pr/pfet3_01v8.sym} 700 -50 0 0 {name=M7
 L=0.15
@@ -364,8 +364,8 @@ spiceprefix=X
 }
 C {devices/vdd.sym} 620 -500 0 0 {name=l7 lab=VDD}
 C {devices/gnd.sym} 620 -140 0 0 {name=l8 lab=GND}
-C {devices/lab_pin.sym} 680 -270 2 0 {name=p8 sig_type=std_logic lab=clk}
-C {devices/lab_pin.sym} 680 -370 2 0 {name=p9 sig_type=std_logic lab=clk_b}
+C {devices/lab_pin.sym} 680 -270 2 0 {name=p8 sig_type=std_logic lab=CLK}
+C {devices/lab_pin.sym} 680 -370 2 0 {name=p9 sig_type=std_logic lab=CLK_n}
 C {sky130_fd_pr/pfet3_01v8.sym} 1000 -50 0 0 {name=M13
 L=0.15
 W=0.42
@@ -428,8 +428,8 @@ spiceprefix=X
 }
 C {devices/vdd.sym} 1020 -180 0 1 {name=l9 lab=VDD}
 C {devices/gnd.sym} 1020 180 0 1 {name=l10 lab=GND}
-C {devices/lab_pin.sym} 960 50 2 1 {name=p10 sig_type=std_logic lab=clk}
-C {devices/lab_pin.sym} 960 -50 2 1 {name=p11 sig_type=std_logic lab=clk_b}
+C {devices/lab_pin.sym} 960 50 2 1 {name=p10 sig_type=std_logic lab=CLK}
+C {devices/lab_pin.sym} 960 -50 2 1 {name=p11 sig_type=std_logic lab=CLK_n}
 C {sky130_fd_pr/pfet3_01v8.sym} 1300 -50 0 0 {name=M17
 L=0.15
 W=0.84
@@ -524,6 +524,9 @@ spiceprefix=X
 }
 C {devices/gnd.sym} 1220 -140 0 1 {name=l13 lab=GND}
 C {devices/vdd.sym} 1220 -500 0 1 {name=l14 lab=VDD}
-C {devices/lab_pin.sym} 1280 -370 0 1 {name=p12 sig_type=std_logic lab=clk}
-C {devices/lab_pin.sym} 1280 -270 0 1 {name=p13 sig_type=std_logic lab=clk_b}
+C {devices/lab_pin.sym} 1280 -370 0 1 {name=p12 sig_type=std_logic lab=CLK}
+C {devices/lab_pin.sym} 1280 -270 0 1 {name=p13 sig_type=std_logic lab=CLK_n}
 C {devices/opin.sym} 1500 0 0 0 {name=p14 lab=Q}
+C {devices/lab_wire.sym} 820 0 0 0 {name=p15 sig_type=std_logic lab=inverter_1_out}
+C {devices/lab_wire.sym} 540 0 0 0 {name=p16 sig_type=std_logic lab=common_1}
+C {devices/lab_wire.sym} 1140 0 0 0 {name=p17 sig_type=std_logic lab=common_2}
