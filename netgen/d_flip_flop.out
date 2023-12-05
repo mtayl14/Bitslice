@@ -1,43 +1,21 @@
 
-Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
-Equate elements:  no current cell.
-Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
-
 Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
 Equate elements:  no current cell.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
 
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
 Subcircuit summary:
 Circuit 1: d_flip_flop                     |Circuit 2: d_flip_flop                     
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (11)               |sky130_fd_pr__nfet_01v8 (11)               
 sky130_fd_pr__pfet_01v8 (11)               |sky130_fd_pr__pfet_01v8 (11)               
+sky130_fd_pr__nfet_01v8 (11)               |sky130_fd_pr__nfet_01v8 (11)               
 Number of devices: 22                      |Number of devices: 22                      
 Number of nets: 17                         |Number of nets: 17                         
 ---------------------------------------------------------------------------------------
-Netlists match uniquely with property errors.
-sky130_fd_pr__pfet_01v8:1 vs. sky130_fd_pr__pfet_01v8:M4:
- w circuit1: 0.84   circuit2: 0.42   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8:18 vs. sky130_fd_pr__pfet_01v8:M7:
- w circuit1: 0.84   circuit2: 0.42   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8:7 vs. sky130_fd_pr__pfet_01v8:M2:
- w circuit1: 0.84   circuit2: 1.68   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8:16 vs. sky130_fd_pr__pfet_01v8:M10:
- w circuit1: 0.84   circuit2: 0.42   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8:14 vs. sky130_fd_pr__pfet_01v8:M14:
- w circuit1: 0.84   circuit2: 0.42   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8:19 vs. sky130_fd_pr__pfet_01v8:M13:
- w circuit1: 0.84   circuit2: 0.42   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8:13 vs. sky130_fd_pr__pfet_01v8:M9:
- w circuit1: 0.84   circuit2: 0.42   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8:9 vs. sky130_fd_pr__pfet_01v8:M19:
- w circuit1: 0.84   circuit2: 0.42   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8:4 vs. sky130_fd_pr__pfet_01v8:M3:
- w circuit1: 0.84   circuit2: 0.42   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8:10 vs. sky130_fd_pr__pfet_01v8:M20:
- w circuit1: 0.84   circuit2: 0.42   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__nfet_01v8:3 vs. sky130_fd_pr__nfet_01v8:M1:
- w circuit1: 0.42   circuit2: 0.84   (delta=66.7%, cutoff=1%)
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: d_flip_flop                     |Circuit 2: d_flip_flop                     
@@ -50,7 +28,4 @@ Cell pin lists are equivalent.
 Device classes d_flip_flop and d_flip_flop are equivalent.
 
 Final result: Circuits match uniquely.
-Property errors were found.
-
-The following cells had property errors:
- d_flip_flop
+.
