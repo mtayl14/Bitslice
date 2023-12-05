@@ -1,0 +1,30 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1701817060
+<< metal1 >>
+rect 2 781 125 842
+rect 0 0 123 61
+<< metal2 >>
+rect 368 324 486 358
+rect 368 216 402 324
+use and2  and2_0
+timestamp 1701816570
+transform 1 0 100 0 1 145
+box -100 -145 336 706
+use d_flip_flop  d_flip_flop_0
+timestamp 1701814136
+transform 1 0 532 0 1 145
+box -98 -145 1612 706
+<< labels >>
+rlabel space 58 354 58 354 5 CLK
+port 2 s
+rlabel space 250 452 250 452 5 EN
+port 3 s
+rlabel space 702 384 702 384 5 D
+port 1 s
+rlabel space 2094 192 2094 192 5 Q
+port 4 s
+rlabel metal1 24 810 24 810 5 vdd
+rlabel metal1 30 30 30 30 5 gnd
+<< end >>
