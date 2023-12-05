@@ -7,7 +7,7 @@
 ( @@version : 1.0.440-0-g43e733e );
 ( @@techdesc : SkyWater SKY130: Open Source rules and DRC );
 ( @@style : gdsii );
-( @@date : Fri Nov 24 16:43:06 2023 );
+( @@date : Wed Nov 29 14:09:46 2023 );
 DS 1 1 20;
 9 addf;
 L NWELL;
