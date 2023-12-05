@@ -20,7 +20,7 @@ lab=CLK}
 N 140 -220 140 -200 {
 lab=GND}
 N 140 -400 140 -380 {
-lab=VDD}
+lab=vdd}
 N 140 -300 180 -300 {
 lab=CLK_n}
 N 40 -300 80 -300 {
@@ -28,11 +28,11 @@ lab=CLK}
 N 50 -420 80 -420 {
 lab=CLK}
 N 420 -20 420 20 {
-lab=#net1}
+lab=common_1}
 N 420 160 420 180 {
 lab=GND}
 N 420 -180 420 -160 {
-lab=VDD}
+lab=vdd}
 N 260 0 300 0 {
 lab=D}
 N 360 -50 380 -50 {
@@ -40,23 +40,23 @@ lab=CLK}
 N 360 50 380 50 {
 lab=CLK_n}
 N 660 -50 660 0 {
-lab=#net1}
+lab=common_1}
 N 660 -50 680 -50 {
-lab=#net1}
+lab=common_1}
 N 660 -0 660 50 {
-lab=#net1}
+lab=common_1}
 N 660 50 680 50 {
-lab=#net1}
+lab=common_1}
 N 720 -20 720 20 {
-lab=#net2}
+lab=inverter_1_out}
 N 720 80 720 100 {
 lab=GND}
 N 720 -100 720 -80 {
-lab=VDD}
+lab=vdd}
 N 420 0 660 0 {
-lab=#net1}
+lab=common_1}
 N 620 -500 620 -480 {
-lab=VDD}
+lab=vdd}
 N 620 -160 620 -140 {
 lab=GND}
 N 660 -270 680 -270 {
@@ -64,31 +64,31 @@ lab=CLK}
 N 660 -370 680 -370 {
 lab=CLK_n}
 N 620 -340 620 -300 {
-lab=#net1}
+lab=common_1}
 N 620 -240 620 -220 {
-lab=#net3}
+lab=#net1}
 N 620 -420 620 -400 {
-lab=#net4}
+lab=#net2}
 N 820 -320 820 0 {
-lab=#net2}
+lab=inverter_1_out}
 N 720 0 820 0 {
-lab=#net2}
+lab=inverter_1_out}
 N 660 -190 740 -190 {
-lab=#net2}
+lab=inverter_1_out}
 N 740 -450 740 -190 {
-lab=#net2}
+lab=inverter_1_out}
 N 660 -450 740 -450 {
-lab=#net2}
+lab=inverter_1_out}
 N 740 -320 820 -320 {
-lab=#net2}
+lab=inverter_1_out}
 N 540 -320 620 -320 {
-lab=#net1}
+lab=common_1}
 N 540 -320 540 0 {
-lab=#net1}
+lab=common_1}
 N 420 80 420 100 {
-lab=#net5}
+lab=#net3}
 N 420 -100 420 -80 {
-lab=#net6}
+lab=#net4}
 N 300 -130 380 -130 {
 lab=D}
 N 300 -130 300 0 {
@@ -98,57 +98,57 @@ lab=D}
 N 300 0 300 130 {
 lab=D}
 N 1020 -180 1020 -160 {
-lab=VDD}
+lab=vdd}
 N 1020 160 1020 180 {
 lab=GND}
 N 1020 -20 1020 20 {
-lab=#net7}
+lab=common_2}
 N 1020 80 1020 100 {
-lab=#net8}
+lab=#net5}
 N 1020 -100 1020 -80 {
-lab=#net9}
+lab=#net6}
 N 960 50 980 50 {
 lab=CLK}
 N 960 -50 980 -50 {
 lab=CLK_n}
 N 900 -130 980 -130 {
-lab=#net2}
+lab=inverter_1_out}
 N 900 -130 900 130 {
-lab=#net2}
+lab=inverter_1_out}
 N 900 130 980 130 {
-lab=#net2}
+lab=inverter_1_out}
 N 820 -0 900 0 {
-lab=#net2}
+lab=inverter_1_out}
 N 1020 0 1260 0 {
-lab=#net7}
+lab=common_2}
 N 1260 -50 1260 0 {
-lab=#net7}
+lab=common_2}
 N 1260 -50 1280 -50 {
-lab=#net7}
+lab=common_2}
 N 1260 0 1260 50 {
-lab=#net7}
+lab=common_2}
 N 1260 50 1280 50 {
-lab=#net7}
+lab=common_2}
 N 1320 -20 1320 20 {
 lab=Q}
 N 1320 80 1320 100 {
 lab=GND}
 N 1320 -100 1320 -80 {
-lab=VDD}
+lab=vdd}
 N 1220 -340 1220 -300 {
-lab=#net7}
+lab=common_2}
 N 1220 -160 1220 -140 {
 lab=GND}
 N 1220 -500 1220 -480 {
-lab=VDD}
+lab=vdd}
 N 1260 -370 1280 -370 {
 lab=CLK}
 N 1260 -270 1280 -270 {
 lab=CLK_n}
 N 1220 -240 1220 -220 {
-lab=#net10}
+lab=#net7}
 N 1220 -420 1220 -400 {
-lab=#net11}
+lab=#net8}
 N 1260 -450 1340 -450 {
 lab=Q}
 N 1340 -450 1340 -320 {
@@ -158,9 +158,9 @@ lab=Q}
 N 1340 -320 1340 -190 {
 lab=Q}
 N 1140 -320 1220 -320 {
-lab=#net7}
+lab=common_2}
 N 1140 -320 1140 0 {
-lab=#net7}
+lab=common_2}
 N 1420 -320 1420 0 {
 lab=Q}
 N 1340 -320 1420 -320 {
@@ -203,8 +203,8 @@ C {devices/ipin.sym} 50 -420 0 0 {name=p1 lab=CLK}
 C {devices/lab_pin.sym} 180 -300 0 1 {name=p2 sig_type=std_logic lab=CLK_n}
 C {devices/lab_pin.sym} 80 -420 0 1 {name=p3 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 40 -300 0 0 {name=p4 sig_type=std_logic lab=CLK}
-C {devices/vdd.sym} 140 -400 0 0 {name=l3 lab=VDD}
-C {devices/gnd.sym} 140 -200 0 0 {name=l2 lab=GND}
+C {devices/vdd.sym} 140 -400 0 0 {name=l3 lab=vdd}
+C {devices/gnd.sym} 140 -200 0 0 {name=l2 lab=gnd}
 C {sky130_fd_pr/pfet3_01v8.sym} 400 -50 0 0 {name=M3
 L=0.15
 W=0.42
@@ -265,8 +265,8 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/gnd.sym} 420 180 0 0 {name=l1 lab=GND}
-C {devices/vdd.sym} 420 -180 0 0 {name=l4 lab=VDD}
+C {devices/gnd.sym} 420 180 0 0 {name=l1 lab=gnd}
+C {devices/vdd.sym} 420 -180 0 0 {name=l4 lab=vdd}
 C {devices/lab_pin.sym} 360 -50 0 0 {name=p5 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 360 50 0 0 {name=p6 sig_type=std_logic lab=CLK_n}
 C {devices/ipin.sym} 260 0 0 0 {name=p7 lab=D}
@@ -300,8 +300,8 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/gnd.sym} 720 100 0 0 {name=l5 lab=GND}
-C {devices/vdd.sym} 720 -100 0 0 {name=l6 lab=VDD}
+C {devices/gnd.sym} 720 100 0 0 {name=l5 lab=gnd}
+C {devices/vdd.sym} 720 -100 0 0 {name=l6 lab=vdd}
 C {sky130_fd_pr/pfet3_01v8.sym} 640 -370 0 1 {name=M9
 L=0.15
 W=0.42
@@ -362,8 +362,8 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/vdd.sym} 620 -500 0 0 {name=l7 lab=VDD}
-C {devices/gnd.sym} 620 -140 0 0 {name=l8 lab=GND}
+C {devices/vdd.sym} 620 -500 0 0 {name=l7 lab=vdd}
+C {devices/gnd.sym} 620 -140 0 0 {name=l8 lab=gnd}
 C {devices/lab_pin.sym} 680 -270 2 0 {name=p8 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 680 -370 2 0 {name=p9 sig_type=std_logic lab=CLK_n}
 C {sky130_fd_pr/pfet3_01v8.sym} 1000 -50 0 0 {name=M13
@@ -426,8 +426,8 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/vdd.sym} 1020 -180 0 1 {name=l9 lab=VDD}
-C {devices/gnd.sym} 1020 180 0 1 {name=l10 lab=GND}
+C {devices/vdd.sym} 1020 -180 0 1 {name=l9 lab=vdd}
+C {devices/gnd.sym} 1020 180 0 1 {name=l10 lab=gnd}
 C {devices/lab_pin.sym} 960 50 2 1 {name=p10 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 960 -50 2 1 {name=p11 sig_type=std_logic lab=CLK_n}
 C {sky130_fd_pr/pfet3_01v8.sym} 1300 -50 0 0 {name=M17
@@ -460,8 +460,8 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/gnd.sym} 1320 100 0 0 {name=l11 lab=GND}
-C {devices/vdd.sym} 1320 -100 0 0 {name=l12 lab=VDD}
+C {devices/gnd.sym} 1320 100 0 0 {name=l11 lab=gnd}
+C {devices/vdd.sym} 1320 -100 0 0 {name=l12 lab=vdd}
 C {sky130_fd_pr/pfet3_01v8.sym} 1240 -370 0 1 {name=M19
 L=0.15
 W=0.42
@@ -522,8 +522,8 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/gnd.sym} 1220 -140 0 1 {name=l13 lab=GND}
-C {devices/vdd.sym} 1220 -500 0 1 {name=l14 lab=VDD}
+C {devices/gnd.sym} 1220 -140 0 1 {name=l13 lab=gnd}
+C {devices/vdd.sym} 1220 -500 0 1 {name=l14 lab=vdd}
 C {devices/lab_pin.sym} 1280 -370 0 1 {name=p12 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 1280 -270 0 1 {name=p13 sig_type=std_logic lab=CLK_n}
 C {devices/opin.sym} 1500 0 0 0 {name=p14 lab=Q}
