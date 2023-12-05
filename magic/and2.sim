@@ -1,0 +1,14 @@
+| units: 500000 tech: sky130A format: MIT
+x B Y_n w_n98_348# w_n98_348# s=4704,224 d=8484,269 l=30 w=168 x=86 y=384 sky130_fd_pr__pfet_01v8
+x Y_n w_n98_348# Y w_n98_348# s=8484,269 d=8904,442 l=30 w=168 x=217 y=384 sky130_fd_pr__pfet_01v8
+x Y_n a_n2_n145# Y a_n2_n145# s=6342,269 d=4452,274 l=30 w=84 x=217 y=0 sky130_fd_pr__nfet_01v8
+x A w_n98_348# Y_n w_n98_348# s=8904,442 d=4704,224 l=30 w=168 x=0 y=384 sky130_fd_pr__pfet_01v8
+x B a_30_n42# a_n2_n145# a_n2_n145# s=4704,224 d=6342,269 l=30 w=168 x=86 y=-41 sky130_fd_pr__nfet_01v8
+x A Y_n a_30_n42# a_n2_n145# s=8904,442 d=4704,224 l=30 w=168 x=0 y=-41 sky130_fd_pr__nfet_01v8
+R Y 1020
+R B 1046
+R A 1045
+R a_30_n42# 360
+R Y_n 2223
+R w_n98_348# 3680
+R a_n2_n145# 2026

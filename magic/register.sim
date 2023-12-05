@@ -1,0 +1,58 @@
+| units: 500000 tech: sky130A format: MIT
+x d_flip_flop_0/common_1 vdd d_flip_flop_0/inverter_1_out vdd s=3276,162 d=9408,392 l=30 w=84 x=1212 y=571 sky130_fd_pr__pfet_01v8
+x d_flip_flop_0/inverter_1_out d_flip_flop_0/a_494_0# gnd gnd s=3276,162 d=3276,162 l=30 w=84 x=1104 y=145 sky130_fd_pr__nfet_01v8
+x d_flip_flop_0/CLK_n d_flip_flop_0/a_974_426# d_flip_flop_0/common_2 vdd s=3276,162 d=5712,220 l=30 w=84 x=1584 y=571 sky130_fd_pr__pfet_01v8
+x d_flip_flop_0/Q d_flip_flop_0/a_1248_0# gnd gnd s=3276,162 d=3276,162 l=30 w=84 x=1858 y=145 sky130_fd_pr__nfet_01v8
+x d_flip_flop_0/inverter_1_out gnd d_flip_flop_0/a_974_0# gnd s=4452,274 d=3276,162 l=30 w=84 x=1476 y=145 sky130_fd_pr__nfet_01v8
+x d_flip_flop_0/D vdd d_flip_flop_0/a_220_426# vdd s=4452,274 d=3276,162 l=30 w=84 x=722 y=571 sky130_fd_pr__pfet_01v8
+x and2_0/Y d_flip_flop_0/common_1 d_flip_flop_0/a_494_0# gnd s=5712,220 d=3276,162 l=30 w=84 x=996 y=145 sky130_fd_pr__nfet_01v8
+x d_flip_flop_0/CLK_n d_flip_flop_0/common_2 d_flip_flop_0/a_1248_0# gnd s=5712,220 d=3276,162 l=30 w=84 x=1750 y=145 sky130_fd_pr__nfet_01v8
+x and2_0/Y vdd d_flip_flop_0/CLK_n vdd s=17808,778 d=17808,778 l=30 w=336 x=532 y=445 sky130_fd_pr__pfet_01v8
+x and2_0/Y d_flip_flop_0/a_220_426# d_flip_flop_0/common_1 vdd s=3276,162 d=5712,220 l=30 w=84 x=830 y=571 sky130_fd_pr__pfet_01v8
+x d_flip_flop_0/common_2 vdd d_flip_flop_0/Q vdd s=5376,246 d=13608,560 l=30 w=168 x=1966 y=529 sky130_fd_pr__pfet_01v8
+x and2_0/Y d_flip_flop_0/common_2 d_flip_flop_0/a_1248_426# vdd s=5712,220 d=3276,162 l=30 w=84 x=1750 y=571 sky130_fd_pr__pfet_01v8
+x and2_0/Y gnd d_flip_flop_0/CLK_n gnd s=8904,442 d=8904,442 l=30 w=168 x=532 y=104 sky130_fd_pr__nfet_01v8
+x d_flip_flop_0/CLK_n d_flip_flop_0/a_220_0# d_flip_flop_0/common_1 gnd s=3276,162 d=5712,220 l=30 w=84 x=830 y=145 sky130_fd_pr__nfet_01v8
+x d_flip_flop_0/Q d_flip_flop_0/a_1248_426# vdd vdd s=3276,162 d=5376,246 l=30 w=84 x=1858 y=571 sky130_fd_pr__pfet_01v8
+x and2_0/Y d_flip_flop_0/a_974_0# d_flip_flop_0/common_2 gnd s=3276,162 d=5712,220 l=30 w=84 x=1584 y=145 sky130_fd_pr__nfet_01v8
+x d_flip_flop_0/common_1 gnd d_flip_flop_0/inverter_1_out gnd s=3276,162 d=9408,392 l=30 w=84 x=1212 y=145 sky130_fd_pr__nfet_01v8
+x d_flip_flop_0/common_2 gnd d_flip_flop_0/Q gnd s=3276,162 d=9408,392 l=30 w=84 x=1966 y=145 sky130_fd_pr__nfet_01v8
+x d_flip_flop_0/CLK_n d_flip_flop_0/common_1 d_flip_flop_0/a_494_426# vdd s=5712,220 d=3276,162 l=30 w=84 x=996 y=571 sky130_fd_pr__pfet_01v8
+x d_flip_flop_0/inverter_1_out vdd d_flip_flop_0/a_974_426# vdd s=4452,274 d=3276,162 l=30 w=84 x=1476 y=571 sky130_fd_pr__pfet_01v8
+x d_flip_flop_0/D gnd d_flip_flop_0/a_220_0# gnd s=4452,274 d=3276,162 l=30 w=84 x=722 y=145 sky130_fd_pr__nfet_01v8
+x d_flip_flop_0/inverter_1_out d_flip_flop_0/a_494_426# vdd vdd s=3276,162 d=3276,162 l=30 w=84 x=1104 y=571 sky130_fd_pr__pfet_01v8
+x and2_0/B and2_0/Y_n vdd vdd s=4704,224 d=8484,269 l=30 w=168 x=186 y=529 sky130_fd_pr__pfet_01v8
+x and2_0/Y_n vdd and2_0/Y vdd s=8484,269 d=8904,442 l=30 w=168 x=317 y=529 sky130_fd_pr__pfet_01v8
+x and2_0/Y_n gnd and2_0/Y gnd s=6342,269 d=4452,274 l=30 w=84 x=317 y=145 sky130_fd_pr__nfet_01v8
+x and2_0/A vdd and2_0/Y_n vdd s=8904,442 d=4704,224 l=30 w=168 x=100 y=529 sky130_fd_pr__pfet_01v8
+x and2_0/B and2_0/a_30_n42# gnd gnd s=4704,224 d=6342,269 l=30 w=168 x=186 y=104 sky130_fd_pr__nfet_01v8
+x and2_0/A and2_0/Y_n and2_0/a_30_n42# gnd s=8904,442 d=4704,224 l=30 w=168 x=100 y=104 sky130_fd_pr__nfet_01v8
+C vdd0 3.3
+R vdd 18487
+= vdd and2_0/vdd
+= vdd d_flip_flop_0/vdd
+R and2_0/B 1046
+R and2_0/A 1045
+R and2_0/a_30_n42# 360
+R and2_0/Y_n 2223
+R d_flip_flop_0/Q 2101
+R d_flip_flop_0/D 983
+R and2_0/Y 4505
+= and2_0/Y d_flip_flop_0/CLK
+= and2_0/Y m2_368_216#
+R d_flip_flop_0/a_1248_0# 129
+R d_flip_flop_0/a_974_0# 129
+R d_flip_flop_0/a_494_0# 129
+R d_flip_flop_0/a_220_0# 129
+R d_flip_flop_0/a_1248_426# 212
+R d_flip_flop_0/a_974_426# 212
+R d_flip_flop_0/a_494_426# 212
+R d_flip_flop_0/a_220_426# 212
+R d_flip_flop_0/common_2 1750
+R d_flip_flop_0/common_1 1746
+R d_flip_flop_0/inverter_1_out 2792
+R d_flip_flop_0/CLK_n 3984
+R gnd 12964
+= gnd and2_0/gnd
+= gnd VSUBS
+= gnd d_flip_flop_0/gnd

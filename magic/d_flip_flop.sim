@@ -1,0 +1,41 @@
+| units: 500000 tech: sky130A format: MIT
+x common_1 vdd inverter_1_out vdd s=3276,162 d=9408,392 l=30 w=84 x=680 y=426 sky130_fd_pr__pfet_01v8
+x inverter_1_out a_494_0# gnd gnd s=3276,162 d=3276,162 l=30 w=84 x=572 y=0 sky130_fd_pr__nfet_01v8
+x CLK_n a_974_426# common_2 vdd s=3276,162 d=5712,220 l=30 w=84 x=1052 y=426 sky130_fd_pr__pfet_01v8
+x Q a_1248_0# gnd gnd s=3276,162 d=3276,162 l=30 w=84 x=1326 y=0 sky130_fd_pr__nfet_01v8
+x inverter_1_out gnd a_974_0# gnd s=4452,274 d=3276,162 l=30 w=84 x=944 y=0 sky130_fd_pr__nfet_01v8
+x D vdd a_220_426# vdd s=4452,274 d=3276,162 l=30 w=84 x=190 y=426 sky130_fd_pr__pfet_01v8
+x CLK common_1 a_494_0# gnd s=5712,220 d=3276,162 l=30 w=84 x=464 y=0 sky130_fd_pr__nfet_01v8
+x CLK_n common_2 a_1248_0# gnd s=5712,220 d=3276,162 l=30 w=84 x=1218 y=0 sky130_fd_pr__nfet_01v8
+x CLK vdd CLK_n vdd s=17808,778 d=17808,778 l=30 w=336 x=0 y=300 sky130_fd_pr__pfet_01v8
+x CLK a_220_426# common_1 vdd s=3276,162 d=5712,220 l=30 w=84 x=298 y=426 sky130_fd_pr__pfet_01v8
+x common_2 vdd Q vdd s=5376,246 d=13608,560 l=30 w=168 x=1434 y=384 sky130_fd_pr__pfet_01v8
+x CLK common_2 a_1248_426# vdd s=5712,220 d=3276,162 l=30 w=84 x=1218 y=426 sky130_fd_pr__pfet_01v8
+x CLK gnd CLK_n gnd s=8904,442 d=8904,442 l=30 w=168 x=0 y=-41 sky130_fd_pr__nfet_01v8
+x CLK_n a_220_0# common_1 gnd s=3276,162 d=5712,220 l=30 w=84 x=298 y=0 sky130_fd_pr__nfet_01v8
+x Q a_1248_426# vdd vdd s=3276,162 d=5376,246 l=30 w=84 x=1326 y=426 sky130_fd_pr__pfet_01v8
+x CLK a_974_0# common_2 gnd s=3276,162 d=5712,220 l=30 w=84 x=1052 y=0 sky130_fd_pr__nfet_01v8
+x common_1 gnd inverter_1_out gnd s=3276,162 d=9408,392 l=30 w=84 x=680 y=0 sky130_fd_pr__nfet_01v8
+x common_2 gnd Q gnd s=3276,162 d=9408,392 l=30 w=84 x=1434 y=0 sky130_fd_pr__nfet_01v8
+x CLK_n common_1 a_494_426# vdd s=5712,220 d=3276,162 l=30 w=84 x=464 y=426 sky130_fd_pr__pfet_01v8
+x inverter_1_out vdd a_974_426# vdd s=4452,274 d=3276,162 l=30 w=84 x=944 y=426 sky130_fd_pr__pfet_01v8
+x D gnd a_220_0# gnd s=4452,274 d=3276,162 l=30 w=84 x=190 y=0 sky130_fd_pr__nfet_01v8
+x inverter_1_out a_494_426# vdd vdd s=3276,162 d=3276,162 l=30 w=84 x=572 y=426 sky130_fd_pr__pfet_01v8
+R Q 2101
+R D 983
+R CLK 3458
+R a_1248_0# 129
+R a_974_0# 129
+R a_494_0# 129
+R a_220_0# 129
+R a_1248_426# 212
+R a_974_426# 212
+R a_494_426# 212
+R a_220_426# 212
+R common_2 1750
+R common_1 1746
+R inverter_1_out 2792
+R CLK_n 3984
+C vdd0 2.3
+R vdd 14228
+R gnd 9303
