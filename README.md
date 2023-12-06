@@ -9,7 +9,7 @@ Status:
 |2-1 multiplexer|✅|✅|✅|✅|✅|❌|
 |Register|✅|✅|✅|✅|✅|❌|
 |__Bit slice__|✅|✅|✅|✅|✅|❌|
-|__8-bit data path__|✅|✅|✅|❌|❌|❌|
+|__8-bit data path__|✅|✅|✅|✅|✅|❌|
 
 ---
 Now, talking with Dr. Stine on Monday, Nov 29th, he said that the two's complement subtraction wasn't actually required.

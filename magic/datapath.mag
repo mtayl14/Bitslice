@@ -1,0 +1,37 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1701825258
+use bitslice  bitslice_0
+timestamp 1701824698
+transform 1 0 -12 0 1 14
+box 0 -20 5224 877
+use bitslice  bitslice_1
+timestamp 1701824698
+transform 1 0 -12 0 1 938
+box 0 -20 5224 877
+use bitslice  bitslice_2
+timestamp 1701824698
+transform 1 0 -12 0 1 1862
+box 0 -20 5224 877
+use bitslice  bitslice_3
+timestamp 1701824698
+transform 1 0 -12 0 1 2786
+box 0 -20 5224 877
+use bitslice  bitslice_4
+timestamp 1701824698
+transform 1 0 -12 0 1 3710
+box 0 -20 5224 877
+use bitslice  bitslice_5
+timestamp 1701824698
+transform 1 0 -12 0 1 4634
+box 0 -20 5224 877
+use bitslice  bitslice_6
+timestamp 1701824698
+transform 1 0 -12 0 1 5558
+box 0 -20 5224 877
+use bitslice  bitslice_7
+timestamp 1701824698
+transform 1 0 -12 0 1 6482
+box 0 -20 5224 877
+<< end >>
