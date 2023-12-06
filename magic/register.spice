@@ -34,8 +34,8 @@ X4 gnd B a_30_n42# gnd sky130_fd_pr__nfet_01v8 ad=0.159 pd=1.35 as=0.118 ps=1.12
 X5 a_30_n42# A Y_n gnd sky130_fd_pr__nfet_01v8 ad=0.118 pd=1.12 as=0.223 ps=2.21 w=0.84 l=0.15
 .ends
 
-.subckt register
-Xd_flip_flop_0 and2_0/Y d_flip_flop_0/D d_flip_flop_0/Q vdd gnd d_flip_flop
-Xand2_0 and2_0/A and2_0/B and2_0/Y vdd gnd and2
+.subckt register D CLK EN Q gnd vdd
+Xd_flip_flop_0 and2_0/Y D Q vdd gnd d_flip_flop
+Xand2_0 CLK EN and2_0/Y vdd gnd and2
 .ends
 
