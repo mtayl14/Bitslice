@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1701816570
+timestamp 1701889381
 << nwell >>
 rect -98 348 336 706
 << nmos >>
@@ -212,5 +212,7 @@ rlabel via1 -42 208 -42 208 5 A
 port 1 s
 rlabel polycont 191 191 191 191 5 Y_n
 rlabel metal1 -70 -116 -70 -116 5 gnd
+port 4 s
 rlabel metal1 -70 668 -70 668 5 vdd
+port 5 s
 << end >>
