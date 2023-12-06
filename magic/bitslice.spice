@@ -91,12 +91,11 @@ Xd_flip_flop_0 and2_0/Y D Q gnd vdd d_flip_flop
 Xand2_0 CLK EN and2_0/Y gnd vdd and2
 .ends
 
-.subckt bitslice
-Xinverter_0 inverter_0/A inverter_0/B VSUBS addf_0/vdd inverter
-Xmux21_0 mux21_0/A mux21_0/B mux21_0/Y mux21_0/S VSUBS addf_0/vdd mux21
-Xbuffer_fo4_0 buffer_fo4_0/A buffer_fo4_0/B VSUBS addf_0/vdd buffer_fo4
-Xaddf_0 addf_0/A addf_0/B addf_0/CI VSUBS addf_0/S addf_0/CO addf_0/vdd addf
-Xregister_0 register_0/D register_0/CLK register_0/EN register_0/Q addf_0/vdd VSUBS
-+ register
+.subckt bitslice gnd vdd B A SUB CI STORE CLK CO Q
+Xinverter_0 B mux21_0/B gnd vdd inverter
+Xmux21_0 B mux21_0/B addf_0/B SUB gnd vdd mux21
+Xbuffer_fo4_0 CLK register_0/CLK gnd vdd buffer_fo4
+Xaddf_0 A addf_0/B CI gnd addf_0/S CO vdd addf
+Xregister_0 addf_0/S register_0/CLK STORE Q vdd gnd register
 .ends
 
