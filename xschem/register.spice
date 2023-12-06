@@ -1,15 +1,15 @@
 ** sch_path: /home/mtayl14/Projects/Bitslice/xschem/register.sch
-.subckt register CLK EN D Q
-*.PININFO CLK:I EN:I D:I Q:O
-x1 net1 Q D d_flip_flop
-x2 CLK net1 EN and2
+.subckt register CLK EN D Q vdd gnd
+*.PININFO CLK:I EN:I D:I Q:O vdd:I gnd:I
+x1 net1 Q D vdd gnd d_flip_flop
+x2 CLK net1 EN vdd gnd vdd gnd and2
 .ends
 
-* expanding   symbol:  d_flip_flop.sym # of pins=3
+* expanding   symbol:  d_flip_flop.sym # of pins=5
 ** sym_path: /home/mtayl14/Projects/Bitslice/xschem/d_flip_flop.sym
 ** sch_path: /home/mtayl14/Projects/Bitslice/xschem/d_flip_flop.sch
-.subckt d_flip_flop CLK Q D
-*.PININFO CLK:I D:I Q:O
+.subckt d_flip_flop CLK Q D vdd gnd
+*.PININFO CLK:I D:I Q:O vdd:I gnd:I
 XM1 CLK_n CLK gnd GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
@@ -79,11 +79,11 @@ XM22 net7 Q gnd GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2)
 .ends
 
 
-* expanding   symbol:  and2.sym # of pins=3
+* expanding   symbol:  and2.sym # of pins=5
 ** sym_path: /home/mtayl14/Projects/Bitslice/xschem/and2.sym
 ** sch_path: /home/mtayl14/Projects/Bitslice/xschem/and2.sch
-.subckt and2 A Y B
-*.PININFO A:I B:I Y:O
+.subckt and2 A Y B vdd gnd vddpin gndpin
+*.PININFO A:I B:I Y:O vdd:I gnd:I
 XM1 net1 A net2 GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
@@ -104,6 +104,4 @@ XM6 Y net1 gnd GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) 
 + sa=0 sb=0 sd=0 mult=1 m=1
 .ends
 
-.GLOBAL vdd
-.GLOBAL gnd
 .end

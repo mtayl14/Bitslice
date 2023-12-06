@@ -1,0 +1,611 @@
+* NGSPICE file created from bitslice.ext - technology: sky130A
+
+.subckt inverter A B gnd vdd
+X0 B A gnd gnd sky130_fd_pr__nfet_01v8 ad=0.111 pd=1.37 as=0.111 ps=1.37 w=0.42 l=0.15
+X1 B A vdd vdd sky130_fd_pr__pfet_01v8 ad=0.223 pd=2.21 as=0.223 ps=2.21 w=0.84 l=0.15
+C0 vdd A 0.105f
+C1 vdd B 0.0828f
+C2 B A 0.0573f
+C3 B gnd 0.32f
+C4 A gnd 0.405f
+C5 vdd gnd 0.456f
+.ends
+
+.subckt mux21 A B Y S gnd vdd S_n
+X0 Y S A vdd sky130_fd_pr__pfet_01v8 ad=0.118 pd=1.12 as=0.223 ps=2.21 w=0.84 l=0.15
+X1 S_n S gnd gnd sky130_fd_pr__nfet_01v8 ad=0.111 pd=1.37 as=0.111 ps=1.37 w=0.42 l=0.15
+X2 B S Y gnd sky130_fd_pr__nfet_01v8 ad=0.111 pd=1.37 as=0.0588 ps=0.7 w=0.42 l=0.15
+X3 S_n S vdd vdd sky130_fd_pr__pfet_01v8 ad=0.223 pd=2.21 as=0.223 ps=2.21 w=0.84 l=0.15
+X4 B S_n Y vdd sky130_fd_pr__pfet_01v8 ad=0.223 pd=2.21 as=0.118 ps=1.12 w=0.84 l=0.15
+X5 Y S_n A gnd sky130_fd_pr__nfet_01v8 ad=0.0588 pd=0.7 as=0.111 ps=1.37 w=0.42 l=0.15
+C0 S S_n 0.421f
+C1 Y S_n 0.122f
+C2 vdd S_n 0.186f
+C3 Y S 0.12f
+C4 vdd S 0.155f
+C5 A S_n 0.232f
+C6 vdd Y 0.0197f
+C7 S_n B 0.101f
+C8 A S 0.101f
+C9 S B 0.0905f
+C10 A Y 0.175f
+C11 Y B 0.175f
+C12 A vdd 0.0531f
+C13 vdd B 0.0456f
+C14 A B 0.129f
+C15 B gnd 0.249f
+C16 Y gnd 0.11f
+C17 A gnd 0.176f
+C18 S gnd 0.621f
+C19 vdd gnd 0.843f
+C20 S_n gnd 0.433f
+.ends
+
+.subckt buffer_fo4 A B gnd vdd a_n240_0#
+X0 a_n240_0# A vdd vdd sky130_fd_pr__pfet_01v8 ad=0.223 pd=2.21 as=0.223 ps=2.21 w=0.84 l=0.15
+X1 B a_n240_0# gnd gnd sky130_fd_pr__nfet_01v8 ad=0.47 pd=3.92 as=0.504 ps=3.96 w=1.68 l=0.15
+X2 a_n240_0# A gnd gnd sky130_fd_pr__nfet_01v8 ad=0.111 pd=1.37 as=0.111 ps=1.37 w=0.42 l=0.15
+X3 vdd a_n240_0# B vdd sky130_fd_pr__pfet_01v8 ad=1.01 pd=7.32 as=0.941 ps=7.28 w=3.36 l=0.15
+C0 B A 0.00714f
+C1 a_n240_0# A 0.0759f
+C2 vdd A 0.118f
+C3 a_n240_0# B 0.11f
+C4 B vdd 0.294f
+C5 a_n240_0# vdd 0.267f
+C6 B gnd 0.415f
+C7 A gnd 0.384f
+C8 vdd gnd 1.67f
+C9 a_n240_0# gnd 0.477f
+.ends
+
+.subckt addf A B CI gnd S CO vdd a_526_521# a_368_115# a_952_115# a_368_521# a_952_521#
++ a_784_115# a_27_115# a_27_521# CON a_870_115# a_870_521# a_526_115#
+X0 a_952_521# CI a_870_521# vdd sky130_fd_pr__pfet_01v8 ad=0.164 pd=1.52 as=0.164 ps=1.52 w=1.26 l=0.15
+X1 S a_784_115# vdd vdd sky130_fd_pr__pfet_01v8 ad=0.334 pd=3.05 as=0.214 ps=1.6 w=1.26 l=0.15
+X2 a_526_115# CI gnd gnd sky130_fd_pr__nfet_01v8 ad=0.0728 pd=0.8 as=0.0728 ps=0.8 w=0.52 l=0.15
+X3 a_27_521# B vdd vdd sky130_fd_pr__pfet_01v8 ad=0.176 pd=1.54 as=0.176 ps=1.54 w=1.26 l=0.15
+X4 a_952_115# CI a_870_115# gnd sky130_fd_pr__nfet_01v8 ad=0.0676 pd=0.78 as=0.0676 ps=0.78 w=0.52 l=0.15
+X5 S a_784_115# gnd gnd sky130_fd_pr__nfet_01v8 ad=0.138 pd=1.57 as=0.0884 ps=0.86 w=0.52 l=0.15
+X6 vdd A a_27_521# vdd sky130_fd_pr__pfet_01v8 ad=0.176 pd=1.54 as=0.334 ps=3.05 w=1.26 l=0.15
+X7 a_784_115# CON a_526_521# vdd sky130_fd_pr__pfet_01v8 ad=0.176 pd=1.54 as=0.176 ps=1.54 w=1.26 l=0.15
+X8 a_27_115# B gnd gnd sky130_fd_pr__nfet_01v8 ad=0.0728 pd=0.8 as=0.0728 ps=0.8 w=0.52 l=0.15
+X9 gnd A a_27_115# gnd sky130_fd_pr__nfet_01v8 ad=0.0728 pd=0.8 as=0.138 ps=1.57 w=0.52 l=0.15
+X10 a_784_115# CON a_526_115# gnd sky130_fd_pr__nfet_01v8 ad=0.0728 pd=0.8 as=0.0728 ps=0.8 w=0.52 l=0.15
+X11 CON CI a_27_521# vdd sky130_fd_pr__pfet_01v8 ad=0.176 pd=1.54 as=0.176 ps=1.54 w=1.26 l=0.15
+X12 vdd A a_368_521# vdd sky130_fd_pr__pfet_01v8 ad=0.176 pd=1.54 as=0.132 ps=1.47 w=1.26 l=0.15
+X13 a_526_521# A vdd vdd sky130_fd_pr__pfet_01v8 ad=0.176 pd=1.54 as=0.176 ps=1.54 w=1.26 l=0.15
+X14 CO CON vdd vdd sky130_fd_pr__pfet_01v8 ad=0.334 pd=3.05 as=0.334 ps=3.05 w=1.26 l=0.15
+X15 CON CI a_27_115# gnd sky130_fd_pr__nfet_01v8 ad=0.0728 pd=0.8 as=0.0728 ps=0.8 w=0.52 l=0.15
+X16 a_870_521# B a_784_115# vdd sky130_fd_pr__pfet_01v8 ad=0.164 pd=1.52 as=0.176 ps=1.54 w=1.26 l=0.15
+X17 gnd A a_368_115# gnd sky130_fd_pr__nfet_01v8 ad=0.0728 pd=0.8 as=0.0546 ps=0.73 w=0.52 l=0.15
+X18 a_526_115# A gnd gnd sky130_fd_pr__nfet_01v8 ad=0.0728 pd=0.8 as=0.0728 ps=0.8 w=0.52 l=0.15
+X19 CO CON gnd gnd sky130_fd_pr__nfet_01v8 ad=0.138 pd=1.57 as=0.138 ps=1.57 w=0.52 l=0.15
+X20 a_870_115# B a_784_115# gnd sky130_fd_pr__nfet_01v8 ad=0.0676 pd=0.78 as=0.0728 ps=0.8 w=0.52 l=0.15
+X21 a_368_521# B CON vdd sky130_fd_pr__pfet_01v8 ad=0.132 pd=1.47 as=0.176 ps=1.54 w=1.26 l=0.15
+X22 vdd B a_526_521# vdd sky130_fd_pr__pfet_01v8 ad=0.176 pd=1.54 as=0.176 ps=1.54 w=1.26 l=0.15
+X23 vdd A a_952_521# vdd sky130_fd_pr__pfet_01v8 ad=0.214 pd=1.6 as=0.164 ps=1.52 w=1.26 l=0.15
+X24 a_368_115# B CON gnd sky130_fd_pr__nfet_01v8 ad=0.0546 pd=0.73 as=0.0728 ps=0.8 w=0.52 l=0.15
+X25 gnd B a_526_115# gnd sky130_fd_pr__nfet_01v8 ad=0.0728 pd=0.8 as=0.0728 ps=0.8 w=0.52 l=0.15
+X26 gnd A a_952_115# gnd sky130_fd_pr__nfet_01v8 ad=0.0884 pd=0.86 as=0.0676 ps=0.78 w=0.52 l=0.15
+X27 a_526_521# CI vdd vdd sky130_fd_pr__pfet_01v8 ad=0.176 pd=1.54 as=0.176 ps=1.54 w=1.26 l=0.15
+C0 CON CI 0.216f
+C1 S A 0.0302f
+C2 a_784_115# A 0.19f
+C3 CI a_27_115# 0.00565f
+C4 CO B 0.00429f
+C5 CO vdd 0.11f
+C6 a_952_521# A 0.00141f
+C7 a_952_115# A 3.88e-19
+C8 B CI 0.879f
+C9 a_870_115# CON 0.00202f
+C10 CI vdd 0.122f
+C11 a_526_521# CI 0.023f
+C12 B a_870_115# 2.05e-19
+C13 a_526_115# CON 0.0428f
+C14 a_27_521# CI 0.00307f
+C15 B a_526_115# 0.0263f
+C16 a_526_115# vdd 0.00164f
+C17 a_526_115# a_526_521# 0.00723f
+C18 S CO 0.0234f
+C19 CO a_784_115# 0.00108f
+C20 S CI 0.00855f
+C21 a_784_115# CI 0.0932f
+C22 CON a_27_115# 0.0441f
+C23 CI a_870_521# 0.00263f
+C24 a_952_521# CI 0.00174f
+C25 a_952_115# CI 5.65e-19
+C26 CO A 6.94e-19
+C27 B CON 0.281f
+C28 S a_870_115# 3.84e-19
+C29 CON vdd 0.165f
+C30 CI A 0.533f
+C31 a_784_115# a_870_115# 0.00424f
+C32 B a_27_115# 0.0277f
+C33 vdd a_27_115# 8.57e-19
+C34 a_526_521# CON 0.00605f
+C35 B vdd 0.294f
+C36 a_27_521# CON 0.066f
+C37 B a_526_521# 0.036f
+C38 a_526_521# vdd 0.175f
+C39 a_526_115# a_784_115# 0.0359f
+C40 a_526_115# a_368_115# 6.28e-19
+C41 a_27_521# a_27_115# 0.00483f
+C42 a_27_521# B 0.0591f
+C43 a_27_521# vdd 0.134f
+C44 a_526_115# A 0.00873f
+C45 a_368_521# CON 0.00367f
+C46 S CON 0.113f
+C47 a_784_115# CON 0.169f
+C48 CON a_368_115# 0.0037f
+C49 a_368_521# B 0.00709f
+C50 a_368_521# vdd 0.00893f
+C51 a_952_115# CON 0.00227f
+C52 CO CI 4.26e-19
+C53 S B 8.48e-19
+C54 S vdd 0.139f
+C55 CON A 0.453f
+C56 B a_784_115# 0.19f
+C57 B a_368_115# 9.37e-19
+C58 a_784_115# vdd 0.149f
+C59 vdd a_368_115# 1.02e-19
+C60 S a_526_521# 6.86e-19
+C61 B a_870_521# 0.0013f
+C62 a_27_115# A 0.0428f
+C63 vdd a_870_521# 0.00633f
+C64 a_526_521# a_784_115# 0.0546f
+C65 a_952_521# vdd 0.00973f
+C66 B A 0.513f
+C67 vdd A 0.169f
+C68 S a_27_521# 2.01e-19
+C69 a_526_521# A 0.00216f
+C70 a_526_115# CI 0.0258f
+C71 a_27_521# A 0.0145f
+C72 a_368_521# S 1.28e-19
+C73 a_368_521# a_784_115# 5.73e-19
+C74 S a_784_115# 0.116f
+C75 S a_870_521# 7.59e-19
+C76 S a_952_521# 0.00114f
+C77 a_784_115# a_870_521# 0.0133f
+C78 S a_952_115# 7.1e-19
+C79 CO CON 0.127f
+C80 a_784_115# a_952_521# 0.0127f
+C81 a_952_115# a_784_115# 0.00282f
+C82 CO gnd 0.209f
+C83 S gnd 0.116f
+C84 CI gnd 0.525f
+C85 B gnd 0.705f
+C86 A gnd 0.788f
+C87 vdd gnd 2.33f
+C88 a_952_115# gnd 0.00647f
+C89 a_870_115# gnd 0.00354f
+C90 a_526_115# gnd 0.155f
+C91 a_368_115# gnd 0.00506f
+C92 a_27_115# gnd 0.159f
+C93 a_952_521# gnd 1.04e-19
+C94 a_870_521# gnd 9.72e-21
+C95 a_526_521# gnd 0.0201f
+C96 a_368_521# gnd 2.66e-19
+C97 a_27_521# gnd 0.057f
+C98 a_784_115# gnd 0.291f
+C99 CON gnd 0.781f
+.ends
+
+.subckt d_flip_flop CLK D Q gnd vdd a_494_0# a_1248_0# CLK_n a_220_0# inverter_1_out
++ common_2 common_1 a_974_0#
+X0 inverter_1_out common_1 vdd vdd sky130_fd_pr__pfet_01v8 ad=0.235 pd=1.96 as=0.0819 ps=0.81 w=0.42 l=0.15
+X1 gnd inverter_1_out a_494_0# gnd sky130_fd_pr__nfet_01v8 ad=0.0819 pd=0.81 as=0.0819 ps=0.81 w=0.42 l=0.15
+X2 common_2 CLK_n a_974_426# vdd sky130_fd_pr__pfet_01v8 ad=0.143 pd=1.1 as=0.0819 ps=0.81 w=0.42 l=0.15
+X3 gnd Q a_1248_0# gnd sky130_fd_pr__nfet_01v8 ad=0.0819 pd=0.81 as=0.0819 ps=0.81 w=0.42 l=0.15
+X4 a_974_0# inverter_1_out gnd gnd sky130_fd_pr__nfet_01v8 ad=0.0819 pd=0.81 as=0.111 ps=1.37 w=0.42 l=0.15
+X5 a_220_426# D vdd vdd sky130_fd_pr__pfet_01v8 ad=0.0819 pd=0.81 as=0.111 ps=1.37 w=0.42 l=0.15
+X6 a_494_0# CLK common_1 gnd sky130_fd_pr__nfet_01v8 ad=0.0819 pd=0.81 as=0.143 ps=1.1 w=0.42 l=0.15
+X7 a_1248_0# CLK_n common_2 gnd sky130_fd_pr__nfet_01v8 ad=0.0819 pd=0.81 as=0.143 ps=1.1 w=0.42 l=0.15
+X8 CLK_n CLK vdd vdd sky130_fd_pr__pfet_01v8 ad=0.445 pd=3.89 as=0.445 ps=3.89 w=1.68 l=0.15
+X9 common_1 CLK a_220_426# vdd sky130_fd_pr__pfet_01v8 ad=0.143 pd=1.1 as=0.0819 ps=0.81 w=0.42 l=0.15
+X10 Q common_2 vdd vdd sky130_fd_pr__pfet_01v8 ad=0.34 pd=2.8 as=0.134 ps=1.23 w=0.84 l=0.15
+X11 a_1248_426# CLK common_2 vdd sky130_fd_pr__pfet_01v8 ad=0.0819 pd=0.81 as=0.143 ps=1.1 w=0.42 l=0.15
+X12 CLK_n CLK gnd gnd sky130_fd_pr__nfet_01v8 ad=0.223 pd=2.21 as=0.223 ps=2.21 w=0.84 l=0.15
+X13 common_1 CLK_n a_220_0# gnd sky130_fd_pr__nfet_01v8 ad=0.143 pd=1.1 as=0.0819 ps=0.81 w=0.42 l=0.15
+X14 vdd Q a_1248_426# vdd sky130_fd_pr__pfet_01v8 ad=0.134 pd=1.23 as=0.0819 ps=0.81 w=0.42 l=0.15
+X15 common_2 CLK a_974_0# gnd sky130_fd_pr__nfet_01v8 ad=0.143 pd=1.1 as=0.0819 ps=0.81 w=0.42 l=0.15
+X16 inverter_1_out common_1 gnd gnd sky130_fd_pr__nfet_01v8 ad=0.235 pd=1.96 as=0.0819 ps=0.81 w=0.42 l=0.15
+X17 Q common_2 gnd gnd sky130_fd_pr__nfet_01v8 ad=0.235 pd=1.96 as=0.0819 ps=0.81 w=0.42 l=0.15
+X18 a_494_426# CLK_n common_1 vdd sky130_fd_pr__pfet_01v8 ad=0.0819 pd=0.81 as=0.143 ps=1.1 w=0.42 l=0.15
+X19 a_974_426# inverter_1_out vdd vdd sky130_fd_pr__pfet_01v8 ad=0.0819 pd=0.81 as=0.111 ps=1.37 w=0.42 l=0.15
+X20 a_220_0# D gnd gnd sky130_fd_pr__nfet_01v8 ad=0.0819 pd=0.81 as=0.111 ps=1.37 w=0.42 l=0.15
+X21 vdd inverter_1_out a_494_426# vdd sky130_fd_pr__pfet_01v8 ad=0.0819 pd=0.81 as=0.0819 ps=0.81 w=0.42 l=0.15
+C0 common_2 CLK 0.116f
+C1 Q vdd 0.172f
+C2 a_220_0# CLK_n 0.00636f
+C3 a_494_426# CLK 0.00292f
+C4 a_974_0# CLK 0.00228f
+C5 a_494_0# CLK 0.00903f
+C6 CLK common_1 0.294f
+C7 common_2 Q 0.269f
+C8 CLK_n a_974_426# 0.00166f
+C9 D CLK_n 0.122f
+C10 CLK_n inverter_1_out 0.21f
+C11 Q a_974_0# 3.81e-19
+C12 Q a_494_0# 1.34e-19
+C13 Q common_1 2.17e-19
+C14 a_1248_0# Q 9.54e-19
+C15 a_220_426# CLK_n 6.84e-19
+C16 CLK_n vdd 0.318f
+C17 D inverter_1_out 0.00602f
+C18 Q CLK 0.0622f
+C19 a_1248_426# vdd 0.00627f
+C20 common_2 CLK_n 0.209f
+C21 common_2 a_1248_426# 0.00273f
+C22 a_974_426# vdd 0.00744f
+C23 common_2 a_220_0# 9.78e-20
+C24 D vdd 0.109f
+C25 CLK_n a_494_426# 0.00166f
+C26 CLK_n a_974_0# 0.00401f
+C27 vdd inverter_1_out 0.302f
+C28 CLK_n a_494_0# 0.00356f
+C29 CLK_n common_1 0.257f
+C30 a_1248_0# CLK_n 0.00313f
+C31 a_220_0# common_1 0.00135f
+C32 common_2 a_974_426# 0.00211f
+C33 common_2 D 1.9e-19
+C34 common_2 inverter_1_out 0.0217f
+C35 CLK_n CLK 1.39f
+C36 a_220_426# vdd 0.00638f
+C37 D common_1 0.0338f
+C38 a_1248_426# CLK 0.0028f
+C39 inverter_1_out common_1 0.241f
+C40 a_220_0# CLK 0.00497f
+C41 CLK_n Q 0.0719f
+C42 common_2 vdd 0.165f
+C43 a_974_426# CLK 0.00292f
+C44 a_220_0# Q 1.24e-19
+C45 D CLK 0.188f
+C46 a_494_426# vdd 0.00747f
+C47 inverter_1_out CLK 0.224f
+C48 a_974_0# vdd 2.34e-19
+C49 a_220_426# common_1 0.00211f
+C50 a_494_0# vdd 2.34e-19
+C51 vdd common_1 0.175f
+C52 a_1248_0# vdd 3.63e-19
+C53 D Q 2.13e-19
+C54 common_2 a_974_0# 0.00277f
+C55 Q inverter_1_out 0.00505f
+C56 common_2 a_494_0# 2.69e-19
+C57 common_2 common_1 3.81e-19
+C58 common_2 a_1248_0# 0.00945f
+C59 a_220_426# CLK 0.00458f
+C60 vdd CLK 0.661f
+C61 a_494_426# common_1 0.00211f
+C62 Q gnd 0.492f
+C63 D gnd 0.27f
+C64 CLK gnd 1.15f
+C65 vdd gnd 2.63f
+C66 a_1248_0# gnd 0.00421f
+C67 a_974_0# gnd 0.00647f
+C68 a_494_0# gnd 0.00449f
+C69 a_220_0# gnd 0.00356f
+C70 a_1248_426# gnd 2.68e-19
+C71 a_974_426# gnd 2.68e-19
+C72 a_494_426# gnd 2.68e-19
+C73 common_2 gnd 0.517f
+C74 common_1 gnd 0.302f
+C75 inverter_1_out gnd 0.593f
+C76 CLK_n gnd 0.855f
+.ends
+
+.subckt and2 A B Y gnd vdd a_30_n42# Y_n
+X0 vdd B Y_n vdd sky130_fd_pr__pfet_01v8 ad=0.212 pd=1.35 as=0.118 ps=1.12 w=0.84 l=0.15
+X1 Y Y_n vdd vdd sky130_fd_pr__pfet_01v8 ad=0.223 pd=2.21 as=0.212 ps=1.35 w=0.84 l=0.15
+X2 Y Y_n gnd gnd sky130_fd_pr__nfet_01v8 ad=0.111 pd=1.37 as=0.159 ps=1.35 w=0.42 l=0.15
+X3 Y_n A vdd vdd sky130_fd_pr__pfet_01v8 ad=0.118 pd=1.12 as=0.223 ps=2.21 w=0.84 l=0.15
+X4 gnd B a_30_n42# gnd sky130_fd_pr__nfet_01v8 ad=0.159 pd=1.35 as=0.118 ps=1.12 w=0.84 l=0.15
+X5 a_30_n42# A Y_n gnd sky130_fd_pr__nfet_01v8 ad=0.118 pd=1.12 as=0.223 ps=2.21 w=0.84 l=0.15
+C0 Y a_30_n42# 9.31e-19
+C1 vdd a_30_n42# 4.51e-19
+C2 Y Y_n 0.0794f
+C3 Y_n vdd 0.186f
+C4 A B 0.0938f
+C5 Y_n a_30_n42# 0.0116f
+C6 A Y 0.00134f
+C7 A vdd 0.072f
+C8 Y B 0.0233f
+C9 vdd B 0.108f
+C10 A Y_n 0.0914f
+C11 Y_n B 0.176f
+C12 Y vdd 0.0836f
+C13 Y gnd 0.284f
+C14 B gnd 0.248f
+C15 A gnd 0.322f
+C16 vdd gnd 0.757f
+C17 a_30_n42# gnd 0.00713f
+C18 Y_n gnd 0.444f
+.ends
+
+.subckt register D CLK EN Q vdd and2_0/Y_n d_flip_flop_0/common_1 and2_0/Y and2_0/a_30_n42#
++ d_flip_flop_0/inverter_1_out d_flip_flop_0/CLK_n gnd
+Xd_flip_flop_0 and2_0/Y D Q gnd vdd d_flip_flop_0/a_494_0# d_flip_flop_0/a_1248_0#
++ d_flip_flop_0/CLK_n d_flip_flop_0/a_220_0# d_flip_flop_0/inverter_1_out d_flip_flop_0/common_2
++ d_flip_flop_0/common_1 d_flip_flop_0/a_974_0# d_flip_flop
+Xand2_0 CLK EN and2_0/Y gnd vdd and2_0/a_30_n42# and2_0/Y_n and2
+C0 and2_0/Y d_flip_flop_0/a_494_0# 2.46e-19
+C1 and2_0/Y D 0.00132f
+C2 d_flip_flop_0/inverter_1_out EN 1.44e-19
+C3 vdd d_flip_flop_0/CLK_n 5.37e-19
+C4 d_flip_flop_0/inverter_1_out and2_0/Y 7.03e-19
+C5 d_flip_flop_0/a_220_0# Q -1.39e-35
+C6 vdd D 0.00388f
+C7 EN d_flip_flop_0/common_1 2.23e-19
+C8 and2_0/Y d_flip_flop_0/a_220_0# 6.81e-19
+C9 and2_0/Y d_flip_flop_0/common_1 9.82e-19
+C10 EN Q 2.99e-20
+C11 and2_0/Y Q 1.66e-19
+C12 CLK and2_0/Y_n 2.84e-32
+C13 and2_0/Y EN 0.0186f
+C14 d_flip_flop_0/CLK_n and2_0/Y_n 5.91e-19
+C15 and2_0/Y d_flip_flop_0/a_974_0# 1.25e-19
+C16 vdd EN 0.00216f
+C17 and2_0/Y_n D 0.00817f
+C18 vdd and2_0/Y 0.0522f
+C19 and2_0/Y d_flip_flop_0/a_1248_0# 8.55e-20
+C20 and2_0/a_30_n42# and2_0/Y 7.24e-19
+C21 and2_0/Y_n and2_0/Y 0.0383f
+C22 vdd and2_0/Y_n 0.014f
+C23 CLK D 4.88e-20
+C24 EN d_flip_flop_0/common_2 3.89e-20
+C25 and2_0/Y d_flip_flop_0/common_2 3.33e-19
+C26 CLK EN -1.42e-32
+C27 CLK and2_0/Y 0.0199f
+C28 d_flip_flop_0/CLK_n EN 0.00102f
+C29 d_flip_flop_0/CLK_n and2_0/Y 0.0351f
+C30 EN D 7.78e-19
+C31 vdd gnd 3.28f
+C32 EN gnd 0.231f
+C33 CLK gnd 0.306f
+C34 and2_0/a_30_n42# gnd 0.00713f
+C35 and2_0/Y_n gnd 0.445f
+C36 Q gnd 0.492f
+C37 D gnd 0.257f
+C38 and2_0/Y gnd 1.29f
+C39 d_flip_flop_0/a_1248_0# gnd 0.00421f
+C40 d_flip_flop_0/a_974_0# gnd 0.00647f
+C41 d_flip_flop_0/a_494_0# gnd 0.00449f
+C42 d_flip_flop_0/a_220_0# gnd 0.00356f
+C43 d_flip_flop_0/a_1248_426# gnd 2.68e-19 $ **FLOATING
+C44 d_flip_flop_0/a_974_426# gnd 2.68e-19 $ **FLOATING
+C45 d_flip_flop_0/a_494_426# gnd 2.68e-19 $ **FLOATING
+C46 d_flip_flop_0/common_2 gnd 0.517f
+C47 d_flip_flop_0/common_1 gnd 0.302f
+C48 d_flip_flop_0/inverter_1_out gnd 0.593f
+C49 d_flip_flop_0/CLK_n gnd 0.855f
+.ends
+
+.subckt bitslice
+Xinverter_0 inverter_0/A inverter_0/B VSUBS addf_0/vdd inverter
+Xmux21_0 mux21_0/A mux21_0/B mux21_0/Y mux21_0/S VSUBS addf_0/vdd mux21_0/S_n mux21
+Xbuffer_fo4_0 buffer_fo4_0/A buffer_fo4_0/B VSUBS addf_0/vdd buffer_fo4_0/a_n240_0#
++ buffer_fo4
+Xaddf_0 addf_0/A addf_0/B addf_0/CI VSUBS addf_0/S addf_0/CO addf_0/vdd addf_0/a_526_521#
++ addf_0/a_368_115# addf_0/a_952_115# addf_0/a_368_521# addf_0/a_952_521# addf_0/a_784_115#
++ addf_0/a_27_115# addf_0/a_27_521# addf_0/CON addf_0/a_870_115# addf_0/a_870_521#
++ addf_0/a_526_115# addf
+Xregister_0 register_0/D register_0/CLK register_0/EN register_0/Q addf_0/vdd register_0/and2_0/Y_n
++ register_0/d_flip_flop_0/common_1 register_0/and2_0/Y register_0/and2_0/a_30_n42#
++ register_0/d_flip_flop_0/inverter_1_out register_0/d_flip_flop_0/CLK_n VSUBS register
+C0 buffer_fo4_0/A addf_0/A 9.22e-19
+C1 inverter_0/B mux21_0/S 0.0267f
+C2 buffer_fo4_0/a_n240_0# addf_0/A 3.72e-19
+C3 register_0/CLK addf_0/S 9.71e-20
+C4 addf_0/S mux21_0/B 7.85e-19
+C5 register_0/CLK addf_0/vdd 0.0102f
+C6 mux21_0/B addf_0/vdd 0.012f
+C7 register_0/EN register_0/and2_0/Y -1.42e-32
+C8 addf_0/a_27_521# mux21_0/Y 8.56e-19
+C9 addf_0/a_27_521# addf_0/vdd 0.0051f
+C10 buffer_fo4_0/A addf_0/B 0.00115f
+C11 buffer_fo4_0/a_n240_0# addf_0/B 4.58e-21
+C12 addf_0/a_526_521# mux21_0/S_n 7.44e-19
+C13 buffer_fo4_0/A mux21_0/Y 1.87e-21
+C14 addf_0/a_526_115# mux21_0/S 3.39e-20
+C15 addf_0/S buffer_fo4_0/A 0.00157f
+C16 addf_0/vdd addf_0/a_27_115# -1.11e-34
+C17 buffer_fo4_0/A addf_0/vdd 0.013f
+C18 addf_0/S buffer_fo4_0/a_n240_0# 9.04e-19
+C19 mux21_0/S_n addf_0/CO 3.91e-20
+C20 buffer_fo4_0/a_n240_0# addf_0/vdd 0.0146f
+C21 mux21_0/B addf_0/a_368_115# 6.26e-19
+C22 addf_0/A mux21_0/Y 0.00338f
+C23 addf_0/vdd addf_0/a_784_115# -5.68e-32
+C24 register_0/CLK register_0/EN 1.42e-32
+C25 addf_0/S addf_0/A 3.55e-33
+C26 addf_0/vdd addf_0/A 0.00331f
+C27 addf_0/CI buffer_fo4_0/B 0.00193f
+C28 inverter_0/A addf_0/vdd 0.00399f
+C29 addf_0/CO register_0/and2_0/Y 4.74e-19
+C30 buffer_fo4_0/B addf_0/CON 7.65e-19
+C31 register_0/d_flip_flop_0/inverter_1_out buffer_fo4_0/a_n240_0# 9.01e-21
+C32 addf_0/B mux21_0/Y 0.00196f
+C33 register_0/and2_0/Y_n addf_0/CO 7.68e-21
+C34 mux21_0/A addf_0/A 3.36e-19
+C35 addf_0/S addf_0/B 1.11e-34
+C36 buffer_fo4_0/B register_0/and2_0/Y 0.00854f
+C37 inverter_0/A mux21_0/A 0.0112f
+C38 addf_0/vdd addf_0/B 8.08e-20
+C39 register_0/D buffer_fo4_0/a_n240_0# 1.83e-19
+C40 register_0/EN buffer_fo4_0/A 0.00552f
+C41 addf_0/a_27_115# mux21_0/S 3.81e-19
+C42 buffer_fo4_0/A mux21_0/S 3.31e-19
+C43 register_0/EN buffer_fo4_0/a_n240_0# 4.89e-19
+C44 addf_0/vdd mux21_0/Y 9.03e-19
+C45 addf_0/a_526_521# mux21_0/B 0.00268f
+C46 buffer_fo4_0/a_n240_0# mux21_0/S 1.35e-20
+C47 mux21_0/S addf_0/a_784_115# 1.2e-19
+C48 addf_0/S addf_0/vdd 0.00117f
+C49 register_0/and2_0/Y_n buffer_fo4_0/B 0.0202f
+C50 register_0/CLK addf_0/CO 7.08e-20
+C51 mux21_0/B addf_0/a_952_115# 2.13e-19
+C52 mux21_0/B addf_0/CO 5.83e-19
+C53 addf_0/A mux21_0/S 0.0412f
+C54 register_0/d_flip_flop_0/CLK_n buffer_fo4_0/a_n240_0# 1.5e-19
+C55 inverter_0/A mux21_0/S 0.0521f
+C56 addf_0/CI mux21_0/S_n 9.84e-19
+C57 mux21_0/S_n addf_0/CON 0.00154f
+C58 register_0/CLK buffer_fo4_0/B 0.0281f
+C59 mux21_0/A addf_0/vdd 0.00575f
+C60 inverter_0/B addf_0/CON 3.28e-20
+C61 addf_0/a_526_521# buffer_fo4_0/A 2.46e-20
+C62 mux21_0/S_n addf_0/a_952_521# 9.88e-20
+C63 inverter_0/B mux21_0/S_n 0.0455f
+C64 addf_0/a_526_521# buffer_fo4_0/a_n240_0# 4.17e-21
+C65 mux21_0/S addf_0/B 0.00218f
+C66 addf_0/CON register_0/and2_0/Y 3.25e-19
+C67 buffer_fo4_0/A addf_0/CO 0.0572f
+C68 register_0/D addf_0/vdd 0.00129f
+C69 buffer_fo4_0/a_n240_0# addf_0/CO 0.0327f
+C70 register_0/EN addf_0/S 2.3e-20
+C71 addf_0/S mux21_0/S 2.94e-20
+C72 register_0/EN addf_0/vdd 2.27e-19
+C73 addf_0/vdd mux21_0/S 0.00347f
+C74 register_0/and2_0/Y_n addf_0/CON 9.36e-20
+C75 addf_0/CO addf_0/A -1.11e-34
+C76 buffer_fo4_0/B buffer_fo4_0/a_n240_0# -3.55e-33
+C77 addf_0/a_368_521# mux21_0/S_n 5.18e-19
+C78 buffer_fo4_0/B addf_0/a_784_115# 1.86e-19
+C79 mux21_0/A mux21_0/S -1.42e-32
+C80 register_0/and2_0/Y_n register_0/and2_0/Y -1.42e-32
+C81 buffer_fo4_0/B addf_0/A 3.96e-19
+C82 register_0/CLK addf_0/CI 1.79e-20
+C83 addf_0/CI mux21_0/B 0.00803f
+C84 register_0/CLK addf_0/CON 4.47e-19
+C85 mux21_0/B addf_0/CON 0.0107f
+C86 addf_0/a_526_521# addf_0/S 2.22e-34
+C87 mux21_0/S_n mux21_0/B -2.84e-32
+C88 addf_0/a_870_521# mux21_0/S_n 1.15e-19
+C89 register_0/EN register_0/D -2.22e-34
+C90 mux21_0/B addf_0/a_952_521# 5.31e-19
+C91 addf_0/S addf_0/CO -3.55e-33
+C92 addf_0/a_27_521# addf_0/CON 1.42e-32
+C93 addf_0/CO addf_0/vdd 0.0592f
+C94 addf_0/a_27_521# mux21_0/S_n 0.00501f
+C95 register_0/CLK register_0/and2_0/Y -3.55e-33
+C96 buffer_fo4_0/B addf_0/B 7.43e-20
+C97 register_0/d_flip_flop_0/common_1 buffer_fo4_0/a_n240_0# 1.91e-20
+C98 addf_0/CI buffer_fo4_0/A 0.00108f
+C99 buffer_fo4_0/A addf_0/CON 0.0342f
+C100 addf_0/CI buffer_fo4_0/a_n240_0# 2.56e-19
+C101 addf_0/S buffer_fo4_0/B 0.0012f
+C102 buffer_fo4_0/A mux21_0/S_n 0.00118f
+C103 buffer_fo4_0/a_n240_0# addf_0/CON 0.00267f
+C104 buffer_fo4_0/B addf_0/vdd 0.0158f
+C105 mux21_0/S_n buffer_fo4_0/a_n240_0# 5.99e-21
+C106 addf_0/a_526_115# mux21_0/B 0.00142f
+C107 mux21_0/S_n addf_0/a_784_115# 4.83e-19
+C108 addf_0/a_368_521# mux21_0/B 0.00167f
+C109 mux21_0/S_n addf_0/A 0.0127f
+C110 inverter_0/A addf_0/CON 4.98e-20
+C111 register_0/and2_0/a_30_n42# buffer_fo4_0/B 9.08e-20
+C112 inverter_0/A mux21_0/S_n 0.00111f
+C113 buffer_fo4_0/A register_0/and2_0/Y 2.99e-19
+C114 buffer_fo4_0/a_n240_0# register_0/and2_0/Y 0.00334f
+C115 inverter_0/B addf_0/A 4.24e-20
+C116 inverter_0/A inverter_0/B -7.11e-33
+C117 register_0/EN addf_0/CO 7.52e-21
+C118 register_0/and2_0/Y addf_0/a_784_115# 3.88e-21
+C119 addf_0/CO mux21_0/S 2.24e-20
+C120 addf_0/a_870_521# mux21_0/B 6.12e-19
+C121 register_0/and2_0/Y_n buffer_fo4_0/A 7.16e-19
+C122 register_0/and2_0/Y_n buffer_fo4_0/a_n240_0# 0.00291f
+C123 addf_0/a_526_115# buffer_fo4_0/A 2.46e-20
+C124 register_0/D buffer_fo4_0/B 9.93e-19
+C125 mux21_0/S_n addf_0/B 0.0295f
+C126 addf_0/a_27_521# mux21_0/B 0.0495f
+C127 addf_0/a_526_115# buffer_fo4_0/a_n240_0# 1.23e-20
+C128 addf_0/CI mux21_0/Y 0.00513f
+C129 addf_0/CON mux21_0/Y 0.00433f
+C130 register_0/EN buffer_fo4_0/B 0.00417f
+C131 addf_0/a_870_115# mux21_0/B 2.02e-19
+C132 register_0/and2_0/Y_n addf_0/A 9.67e-21
+C133 addf_0/CI addf_0/vdd 8.54e-20
+C134 addf_0/vdd addf_0/CON 0.0058f
+C135 addf_0/S mux21_0/S_n 0.00172f
+C136 mux21_0/S_n addf_0/vdd 0.0202f
+C137 register_0/CLK buffer_fo4_0/A 0.00511f
+C138 mux21_0/B addf_0/a_27_115# 0.0352f
+C139 buffer_fo4_0/A mux21_0/B 0.00253f
+C140 register_0/CLK buffer_fo4_0/a_n240_0# 8.48e-19
+C141 register_0/d_flip_flop_0/CLK_n buffer_fo4_0/B 2.81e-20
+C142 mux21_0/B buffer_fo4_0/a_n240_0# 5.26e-19
+C143 inverter_0/B addf_0/vdd 0.0378f
+C144 register_0/CLK addf_0/a_784_115# 7.19e-20
+C145 mux21_0/B addf_0/a_784_115# 0.00272f
+C146 register_0/and2_0/a_30_n42# addf_0/CON 2.07e-20
+C147 addf_0/S register_0/and2_0/Y 1.39e-19
+C148 register_0/CLK addf_0/A 0.0012f
+C149 addf_0/a_27_521# buffer_fo4_0/A 9.61e-21
+C150 addf_0/vdd register_0/and2_0/Y 0.00207f
+C151 mux21_0/B addf_0/A 0.0171f
+C152 addf_0/a_27_521# buffer_fo4_0/a_n240_0# 3.21e-20
+C153 mux21_0/A addf_0/CON 6.44e-20
+C154 mux21_0/S_n mux21_0/A 2.84e-32
+C155 inverter_0/B mux21_0/A 0.0191f
+C156 register_0/and2_0/Y_n addf_0/S 5.46e-20
+C157 register_0/and2_0/Y_n addf_0/vdd 0.0019f
+C158 buffer_fo4_0/A addf_0/a_27_115# 9.61e-21
+C159 buffer_fo4_0/a_n240_0# addf_0/a_27_115# 1.58e-21
+C160 buffer_fo4_0/B addf_0/CO 2.86e-19
+C161 addf_0/a_368_521# addf_0/S 2.78e-35
+C162 addf_0/CI mux21_0/S 0.00727f
+C163 register_0/EN addf_0/CON 2.53e-20
+C164 register_0/CLK addf_0/B 2.06e-21
+C165 mux21_0/S addf_0/CON 0.00301f
+C166 buffer_fo4_0/A addf_0/a_784_115# 0.00178f
+C167 mux21_0/B addf_0/B 0.0168f
+C168 mux21_0/S_n mux21_0/S -5.68e-32
+C169 buffer_fo4_0/a_n240_0# addf_0/a_784_115# 1.9e-19
+C170 addf_0/vdd VSUBS 8.04f
+C171 register_0/EN VSUBS 0.231f
+C172 register_0/CLK VSUBS 0.307f
+C173 register_0/and2_0/a_30_n42# VSUBS 0.00755f
+C174 register_0/and2_0/Y_n VSUBS 0.449f
+C175 register_0/Q VSUBS 0.492f
+C176 register_0/D VSUBS 0.257f
+C177 register_0/and2_0/Y VSUBS 1.26f
+C178 register_0/d_flip_flop_0/a_1248_0# VSUBS 0.00421f
+C179 register_0/d_flip_flop_0/a_974_0# VSUBS 0.00647f
+C180 register_0/d_flip_flop_0/a_494_0# VSUBS 0.00449f
+C181 register_0/d_flip_flop_0/a_220_0# VSUBS 0.00356f
+C182 register_0/d_flip_flop_0/a_1248_426# VSUBS 2.68e-19 $ **FLOATING
+C183 register_0/d_flip_flop_0/a_974_426# VSUBS 2.68e-19 $ **FLOATING
+C184 register_0/d_flip_flop_0/a_494_426# VSUBS 2.68e-19 $ **FLOATING
+C185 register_0/d_flip_flop_0/common_2 VSUBS 0.517f
+C186 register_0/d_flip_flop_0/common_1 VSUBS 0.302f
+C187 register_0/d_flip_flop_0/inverter_1_out VSUBS 0.593f
+C188 register_0/d_flip_flop_0/CLK_n VSUBS 0.855f
+C189 addf_0/CO VSUBS 0.244f
+C190 addf_0/S VSUBS 0.116f
+C191 addf_0/CI VSUBS 0.525f
+C192 addf_0/B VSUBS 0.705f
+C193 addf_0/A VSUBS 0.788f
+C194 addf_0/a_952_115# VSUBS 0.00647f
+C195 addf_0/a_870_115# VSUBS 0.00354f
+C196 addf_0/a_526_115# VSUBS 0.155f
+C197 addf_0/a_368_115# VSUBS 0.00506f
+C198 addf_0/a_27_115# VSUBS 0.162f
+C199 addf_0/a_952_521# VSUBS 1.04e-19
+C200 addf_0/a_870_521# VSUBS 9.72e-21
+C201 addf_0/a_526_521# VSUBS 0.0201f
+C202 addf_0/a_368_521# VSUBS 2.66e-19
+C203 addf_0/a_27_521# VSUBS 0.057f
+C204 addf_0/a_784_115# VSUBS 0.291f
+C205 addf_0/CON VSUBS 0.783f
+C206 buffer_fo4_0/B VSUBS 0.415f
+C207 buffer_fo4_0/A VSUBS 0.384f
+C208 buffer_fo4_0/a_n240_0# VSUBS 0.477f
+C209 mux21_0/B VSUBS 0.252f
+C210 mux21_0/Y VSUBS 0.11f
+C211 mux21_0/A VSUBS 0.176f
+C212 mux21_0/S VSUBS 0.621f
+C213 mux21_0/S_n VSUBS 0.433f
+C214 inverter_0/B VSUBS 0.345f
+C215 inverter_0/A VSUBS 0.406f
+.ends
+

@@ -1,6 +1,6 @@
 * NGSPICE file created from addf.ext - technology: sky130A
 
-.subckt addf A B CI S CO
+.subckt addf A B CI gnd S CO vdd
 X0 a_952_521# CI a_870_521# vdd sky130_fd_pr__pfet_01v8 ad=0.164 pd=1.52 as=0.164 ps=1.52 w=1.26 l=0.15
 X1 S a_784_115# vdd vdd sky130_fd_pr__pfet_01v8 ad=0.334 pd=3.05 as=0.214 ps=1.6 w=1.26 l=0.15
 X2 a_526_115# CI gnd gnd sky130_fd_pr__nfet_01v8 ad=0.0728 pd=0.8 as=0.0728 ps=0.8 w=0.52 l=0.15

@@ -1,6 +1,6 @@
 * NGSPICE file created from mux21.ext - technology: sky130A
 
-.subckt mux21 A B Y S
+.subckt mux21 A B Y S gnd vdd
 X0 Y S A vdd sky130_fd_pr__pfet_01v8 ad=0.118 pd=1.12 as=0.223 ps=2.21 w=0.84 l=0.15
 X1 S_n S gnd gnd sky130_fd_pr__nfet_01v8 ad=0.111 pd=1.37 as=0.111 ps=1.37 w=0.42 l=0.15
 X2 B S Y gnd sky130_fd_pr__nfet_01v8 ad=0.111 pd=1.37 as=0.0588 ps=0.7 w=0.42 l=0.15

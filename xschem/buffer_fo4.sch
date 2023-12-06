@@ -31,6 +31,18 @@ N -120 -50 -80 -50 {
 lab=A}
 N -160 0 -120 0 {
 lab=A}
+N -40 -100 -40 -80 {
+lab=vdd}
+N 80 -100 80 -80 {
+lab=vdd}
+N -40 80 -40 100 {
+lab=gnd}
+N 80 80 80 100 {
+lab=gnd}
+N -160 110 -130 110 {
+lab=vdd}
+N -160 90 -130 90 {
+lab=gnd}
 C {sky130_fd_pr/nfet3_01v8.sym} -60 50 0 0 {name=M1
 L=0.15
 W=0.42
@@ -91,9 +103,14 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/vdd.sym} -40 -80 0 0 {name=l1 lab=VDD}
-C {devices/vdd.sym} 80 -80 0 0 {name=l2 lab=VDD}
-C {devices/gnd.sym} -40 80 0 0 {name=l3 lab=GND}
-C {devices/gnd.sym} 80 80 0 0 {name=l4 lab=GND}
 C {devices/ipin.sym} -160 0 0 0 {name=p1 lab=A}
 C {devices/opin.sym} 120 0 0 0 {name=p2 lab=B}
+C {devices/lab_pin.sym} -40 -100 0 0 {name=p18 sig_type=std_logic lab=vdd}
+C {devices/lab_pin.sym} 80 -100 0 0 {name=p3 sig_type=std_logic lab=vdd}
+C {devices/lab_pin.sym} -40 100 0 0 {name=p26 sig_type=std_logic lab=gnd}
+C {devices/lab_pin.sym} 80 100 0 0 {name=p4 sig_type=std_logic lab=gnd}
+C {devices/ipin.sym} -160 110 0 0 {name=p32 lab=vdd}
+C {devices/lab_pin.sym} -130 110 0 1 {name=p33 sig_type=std_logic lab=vdd}
+C {devices/ipin.sym} -160 90 0 0 {name=p34 lab=gnd}
+C {devices/lab_pin.sym} -130 90 0 1 {name=p35 sig_type=std_logic lab=gnd
+}

@@ -30,26 +30,25 @@ Cell pin lists are equivalent.
 Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
 
 Subcircuit summary:
-Circuit 1: d_flip_flop                     |Circuit 2: d_flip_flop                     
+Circuit 1: buffer_fo4                      |Circuit 2: buffer_fo4                      
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8 (11)               |sky130_fd_pr__pfet_01v8 (11)               
-sky130_fd_pr__nfet_01v8 (11)               |sky130_fd_pr__nfet_01v8 (11)               
-Number of devices: 22                      |Number of devices: 22                      
-Number of nets: 17                         |Number of nets: 17                         
+sky130_fd_pr__pfet_01v8 (2)                |sky130_fd_pr__pfet_01v8 (2)                
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 5                          |Number of nets: 5                          
 ---------------------------------------------------------------------------------------
 Netlists match uniquely.
 
 Subcircuit pins:
-Circuit 1: d_flip_flop                     |Circuit 2: d_flip_flop                     
+Circuit 1: buffer_fo4                      |Circuit 2: buffer_fo4                      
 -------------------------------------------|-------------------------------------------
-Q                                          |Q                                          
-D                                          |D                                          
+A                                          |A                                          
+B                                          |B                                          
 gnd                                        |gnd                                        
 vdd                                        |vdd                                        
-CLK                                        |CLK                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes d_flip_flop and d_flip_flop are equivalent.
+Device classes buffer_fo4 and buffer_fo4 are equivalent.
 
 Final result: Circuits match uniquely.
 .
