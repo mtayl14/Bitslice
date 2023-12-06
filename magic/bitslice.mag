@@ -1,0 +1,25 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1701824698
+use addf  addf_0
+timestamp 1701824319
+transform 1 0 698 0 1 -20
+box -18 0 1411 897
+use buffer_fo4  buffer_fo4_0
+timestamp 1701824637
+transform 1 0 2453 0 1 145
+box -368 -145 655 706
+use inverter  inverter_0
+timestamp 1701820176
+transform 1 0 98 0 1 145
+box -98 -145 128 706
+use mux21  mux21_0
+timestamp 1701811191
+transform 1 0 310 0 1 145
+box -100 -145 396 706
+use register  register_0
+timestamp 1701818696
+transform 1 0 3080 0 1 0
+box 0 0 2144 851
+<< end >>
