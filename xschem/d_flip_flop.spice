@@ -1,6 +1,6 @@
 ** sch_path: /home/mtayl14/Projects/Bitslice/xschem/d_flip_flop.sch
-.subckt d_flip_flop CLK D Q
-*.PININFO CLK:I D:I Q:O
+.subckt d_flip_flop CLK D Q vdd gnd
+*.PININFO CLK:I D:I Q:O vdd:I gnd:I
 XM1 CLK_n CLK gnd GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
@@ -68,6 +68,4 @@ XM22 net7 Q gnd GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2)
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
 .ends
-.GLOBAL vdd
-.GLOBAL gnd
 .end

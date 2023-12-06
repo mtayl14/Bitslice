@@ -24,6 +24,9 @@ x inverter_1_out a_494_426# vdd vdd s=3276,162 d=3276,162 l=30 w=84 x=572 y=426 
 R Q 2101
 R D 983
 R CLK 3458
+C vdd0 2.6
+R vdd 14240
+R gnd 10276
 R a_1248_0# 129
 R a_974_0# 129
 R a_494_0# 129
@@ -36,6 +39,3 @@ R common_2 1750
 R common_1 1746
 R inverter_1_out 2792
 R CLK_n 3984
-C vdd0 2.3
-R vdd 14228
-R gnd 9303

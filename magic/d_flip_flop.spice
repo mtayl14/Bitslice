@@ -1,6 +1,6 @@
 * NGSPICE file created from d_flip_flop.ext - technology: sky130A
 
-.subckt d_flip_flop CLK D Q
+.subckt d_flip_flop CLK D Q gnd vdd
 X0 inverter_1_out common_1 vdd vdd sky130_fd_pr__pfet_01v8 ad=0.235 pd=1.96 as=0.0819 ps=0.81 w=0.42 l=0.15
 X1 gnd inverter_1_out a_494_0# gnd sky130_fd_pr__nfet_01v8 ad=0.0819 pd=0.81 as=0.0819 ps=0.81 w=0.42 l=0.15
 X2 common_2 CLK_n a_974_426# vdd sky130_fd_pr__pfet_01v8 ad=0.143 pd=1.1 as=0.0819 ps=0.81 w=0.42 l=0.15

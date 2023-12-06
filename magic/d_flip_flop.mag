@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1701814136
+timestamp 1701889161
 << nwell >>
 rect -98 348 1612 706
 rect -98 264 119 348
@@ -639,7 +639,9 @@ port 2 s
 rlabel metal2 1534 16 1590 72 5 Q
 port 3 s
 rlabel locali -68 -119 -68 -119 5 gnd
+port 4 s
 rlabel locali -50 670 -50 670 5 vdd
+port 5 s
 rlabel locali 58 136 58 136 5 CLK_n
 rlabel viali 396 228 396 228 5 common_1
 rlabel locali 800 218 800 218 5 inverter_1_out
