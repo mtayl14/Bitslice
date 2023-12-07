@@ -67,9 +67,10 @@ x register_0/and2_0/Y_n gnd register_0/and2_0/Y gnd s=6342,269 d=4452,274 l=30 w
 x register_0/CLK vdd register_0/and2_0/Y_n vdd s=8904,442 d=4704,224 l=30 w=168 x=3180 y=529 sky130_fd_pr__pfet_01v8
 x STORE register_0/and2_0/a_30_n42# gnd gnd s=4704,224 d=6342,269 l=30 w=168 x=3266 y=104 sky130_fd_pr__nfet_01v8
 x register_0/CLK register_0/and2_0/Y_n register_0/and2_0/a_30_n42# gnd s=8904,442 d=4704,224 l=30 w=168 x=3180 y=104 sky130_fd_pr__nfet_01v8
-C vdd0 8.0
-R vdd 50406
+C vdd0 8.6
+R vdd 50408
 = vdd addf_0/vdd
+= vdd m1_4842_781#
 = vdd register_0/vdd
 = vdd register_0/and2_0/vdd
 = vdd register_0/d_flip_flop_0/vdd
@@ -141,7 +142,8 @@ R B 1961
 = B m1_46_260#
 R SUB 2098
 = SUB mux21_0/S
-R gnd 37054
+R gnd 37057
+= gnd m1_4642_9#
 = gnd register_0/gnd
 = gnd register_0/and2_0/gnd
 = gnd register_0/VSUBS

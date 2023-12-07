@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1701898898
+timestamp 1701981720
 << locali >>
 rect 541 681 575 697
 rect 1841 534 1893 586
@@ -63,6 +63,7 @@ rect 628 117 658 162
 rect 142 89 658 117
 rect 0 0 121 61
 << via1 >>
+rect 4842 781 4894 833
 rect 338 682 392 736
 rect 29 566 83 620
 rect 3422 642 3474 694
@@ -71,6 +72,7 @@ rect 248 427 300 479
 rect 2013 441 2065 493
 rect 928 367 980 419
 rect 778 293 830 345
+rect 4642 9 4694 61
 << metal2 >>
 rect 23 620 89 626
 rect 23 566 29 620
@@ -122,6 +124,10 @@ rect 3474 654 3802 692
 rect 3474 642 3480 654
 rect 3416 636 3480 642
 rect 3748 380 3802 654
+rect 4642 61 4694 930
+rect 4642 -70 4694 9
+rect 4842 833 4894 930
+rect 4842 -70 4894 781
 rect 5146 161 5202 217
 use addf  addf_0
 timestamp 1701894535
@@ -140,7 +146,7 @@ timestamp 1701892517
 transform 1 0 310 0 1 145
 box -100 -145 396 706
 use register  register_0
-timestamp 1701889381
+timestamp 1701885628
 transform 1 0 3080 0 1 0
 box 0 0 2144 851
 << labels >>

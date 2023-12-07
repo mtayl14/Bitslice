@@ -1,0 +1,249 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: d_flip_flop                     |Circuit 2: d_flip_flop                     
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (11)               |sky130_fd_pr__pfet_01v8 (11)               
+sky130_fd_pr__nfet_01v8 (11)               |sky130_fd_pr__nfet_01v8 (11)               
+Number of devices: 22                      |Number of devices: 22                      
+Number of nets: 17                         |Number of nets: 17                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: d_flip_flop                     |Circuit 2: d_flip_flop                     
+-------------------------------------------|-------------------------------------------
+Q                                          |Q                                          
+D                                          |D                                          
+gnd                                        |gnd                                        
+vdd                                        |vdd                                        
+CLK                                        |CLK                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes d_flip_flop and d_flip_flop are equivalent.
+
+Subcircuit summary:
+Circuit 1: and2                            |Circuit 2: and2                            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (3)                |sky130_fd_pr__pfet_01v8 (3)                
+sky130_fd_pr__nfet_01v8 (3)                |sky130_fd_pr__nfet_01v8 (3)                
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: and2                            |Circuit 2: and2                            
+-------------------------------------------|-------------------------------------------
+gnd                                        |gnd                                        
+A                                          |A                                          
+B                                          |B                                          
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes and2 and and2 are equivalent.
+Flattening unmatched subcell t_gate in circuit mux21 (1)(2 instances)
+Flattening unmatched subcell inv in circuit mux21 (1)(1 instance)
+
+Subcircuit summary:
+Circuit 1: mux21                           |Circuit 2: mux21                           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (3)                |sky130_fd_pr__pfet_01v8 (3)                
+sky130_fd_pr__nfet_01v8 (3)                |sky130_fd_pr__nfet_01v8 (3)                
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: mux21                           |Circuit 2: mux21                           
+-------------------------------------------|-------------------------------------------
+B                                          |B                                          
+A                                          |A                                          
+S                                          |S                                          
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes mux21 and mux21 are equivalent.
+
+Subcircuit summary:
+Circuit 1: buffer_fo4                      |Circuit 2: buffer_fo4                      
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (2)                |sky130_fd_pr__pfet_01v8 (2)                
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 5                          |Number of nets: 5                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: buffer_fo4                      |Circuit 2: buffer_fo4                      
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+gnd                                        |gnd                                        
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes buffer_fo4 and buffer_fo4 are equivalent.
+
+Subcircuit summary:
+Circuit 1: addf                            |Circuit 2: addf                            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (14)               |sky130_fd_pr__pfet_01v8 (14)               
+sky130_fd_pr__nfet_01v8 (14)               |sky130_fd_pr__nfet_01v8 (14)               
+Number of devices: 28                      |Number of devices: 28                      
+Number of nets: 19                         |Number of nets: 19                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: addf                            |Circuit 2: addf                            
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+gnd                                        |gnd                                        
+vdd                                        |vdd                                        
+CI                                         |CI                                         
+CO                                         |CO                                         
+S                                          |S                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes addf and addf are equivalent.
+
+Subcircuit summary:
+Circuit 1: register                        |Circuit 2: register                        
+-------------------------------------------|-------------------------------------------
+d_flip_flop (1)                            |d_flip_flop (1)                            
+and2 (1)                                   |and2 (1)                                   
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: register                        |Circuit 2: register                        
+-------------------------------------------|-------------------------------------------
+Q                                          |Q                                          
+D                                          |D                                          
+CLK                                        |CLK                                        
+EN                                         |EN                                         
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes register and register are equivalent.
+Flattening unmatched subcell inverter in circuit bitslice (0)(1 instance)
+Flattening unmatched subcell inv in circuit bitslice (1)(1 instance)
+
+Subcircuit summary:
+Circuit 1: bitslice                        |Circuit 2: bitslice                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+mux21 (1)                                  |mux21 (1)                                  
+buffer_fo4 (1)                             |buffer_fo4 (1)                             
+addf (1)                                   |addf (1)                                   
+register (1)                               |register (1)                               
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 14                         |Number of nets: 14                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: bitslice                        |Circuit 2: bitslice                        
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+CI                                         |CI                                         
+CO                                         |CO                                         
+STORE                                      |STORE                                      
+Q                                          |Q                                          
+SUB                                        |SUB                                        
+CLK                                        |CLK                                        
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+B                                          |B                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes bitslice and bitslice are equivalent.
+
+Subcircuit summary:
+Circuit 1: datapath                        |Circuit 2: datapath                        
+-------------------------------------------|-------------------------------------------
+bitslice (8)                               |bitslice (8)                               
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 37                         |Number of nets: 37                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: datapath                        |Circuit 2: datapath                        
+-------------------------------------------|-------------------------------------------
+CLK                                        |CLK                                        
+STORE                                      |STORE                                      
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+SUB                                        |SUB                                        
+A0                                         |A0                                         
+Q0                                         |Q0                                         
+B0                                         |B0                                         
+A6                                         |A6                                         
+A2                                         |A2                                         
+A4                                         |A4                                         
+A3                                         |A3                                         
+A5                                         |A5                                         
+A1                                         |A1                                         
+Q6                                         |Q6                                         
+Q2                                         |Q2                                         
+Q4                                         |Q4                                         
+Q3                                         |Q3                                         
+Q5                                         |Q5                                         
+Q1                                         |Q1                                         
+B6                                         |B6                                         
+B2                                         |B2                                         
+B4                                         |B4                                         
+B3                                         |B3                                         
+B5                                         |B5                                         
+B1                                         |B1                                         
+CARRY                                      |CARRY                                      
+A7                                         |A7                                         
+Q7                                         |Q7                                         
+B7                                         |B7                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes datapath and datapath are equivalent.
+
+Final result: Circuits match uniquely.
+.

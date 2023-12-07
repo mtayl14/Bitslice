@@ -1,0 +1,1269 @@
+| units: 500000 tech: sky130A format: MIT
+x B0 gnd bitslice_0/mux21_0/B gnd s=4452,274 d=4452,274 l=30 w=84 x=86 y=159 sky130_fd_pr__nfet_01v8
+x B0 vdd bitslice_0/mux21_0/B vdd s=8904,442 d=8904,442 l=30 w=168 x=86 y=543 sky130_fd_pr__pfet_01v8
+x SUB B0 bitslice_0/addf_0/B vdd s=8904,442 d=4704,224 l=30 w=168 x=488 y=543 sky130_fd_pr__pfet_01v8
+x SUB gnd bitslice_0/mux21_0/S_n gnd s=4452,274 d=4452,274 l=30 w=84 x=298 y=159 sky130_fd_pr__nfet_01v8
+x SUB bitslice_0/addf_0/B bitslice_0/mux21_0/B gnd s=2352,140 d=4452,274 l=30 w=84 x=574 y=159 sky130_fd_pr__nfet_01v8
+x SUB vdd bitslice_0/mux21_0/S_n vdd s=8904,442 d=8904,442 l=30 w=168 x=298 y=543 sky130_fd_pr__pfet_01v8
+x bitslice_0/mux21_0/S_n bitslice_0/addf_0/B bitslice_0/mux21_0/B vdd s=4704,224 d=8904,442 l=30 w=168 x=574 y=543 sky130_fd_pr__pfet_01v8
+x bitslice_0/mux21_0/S_n B0 bitslice_0/addf_0/B gnd s=4452,274 d=2352,140 l=30 w=84 x=488 y=159 sky130_fd_pr__nfet_01v8
+x CLK vdd bitslice_0/buffer_fo4_0/a_n240_0# vdd s=8904,442 d=8904,442 l=30 w=168 x=2172 y=543 sky130_fd_pr__pfet_01v8
+x bitslice_0/buffer_fo4_0/a_n240_0# gnd bitslice_0/register_0/CLK gnd s=20160,792 d=18816,784 l=30 w=336 x=2556 y=204 sky130_fd_pr__nfet_01v8
+x CLK gnd bitslice_0/buffer_fo4_0/a_n240_0# gnd s=4452,274 d=4452,274 l=30 w=84 x=2172 y=159 sky130_fd_pr__nfet_01v8
+x bitslice_0/buffer_fo4_0/a_n240_0# bitslice_0/register_0/CLK vdd vdd s=37632,1456 d=40320,1464 l=30 w=672 x=2389 y=593 sky130_fd_pr__pfet_01v8
+x SUB bitslice_0/addf_0/a_870_521# bitslice_0/addf_0/a_952_521# vdd s=6552,304 d=6552,304 l=30 w=252 x=1608 y=515 sky130_fd_pr__pfet_01v8
+x bitslice_0/addf_0/a_784_115# vdd bitslice_0/addf_0/S vdd s=8568,320 d=13356,610 l=30 w=252 x=1788 y=515 sky130_fd_pr__pfet_01v8
+x SUB gnd bitslice_0/addf_0/a_526_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1354 y=109 sky130_fd_pr__nfet_01v8
+x bitslice_0/addf_0/B vdd bitslice_0/addf_0/a_27_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=852 y=515 sky130_fd_pr__pfet_01v8
+x SUB bitslice_0/addf_0/a_870_115# bitslice_0/addf_0/a_952_115# gnd s=2704,156 d=2704,156 l=30 w=104 x=1608 y=109 sky130_fd_pr__nfet_01v8
+x bitslice_0/addf_0/a_784_115# gnd bitslice_0/addf_0/S gnd s=3536,172 d=5512,314 l=30 w=104 x=1788 y=109 sky130_fd_pr__nfet_01v8
+x A0 bitslice_0/addf_0/a_27_521# vdd vdd s=13356,610 d=7056,308 l=30 w=252 x=766 y=515 sky130_fd_pr__pfet_01v8
+x bitslice_0/addf_0/CON bitslice_0/addf_0/a_526_521# bitslice_0/addf_0/a_784_115# vdd s=7056,308 d=7056,308 l=30 w=252 x=1440 y=515 sky130_fd_pr__pfet_01v8
+x bitslice_0/addf_0/B gnd bitslice_0/addf_0/a_27_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=852 y=109 sky130_fd_pr__nfet_01v8
+x A0 bitslice_0/addf_0/a_27_115# gnd gnd s=5512,314 d=2912,160 l=30 w=104 x=766 y=109 sky130_fd_pr__nfet_01v8
+x bitslice_0/addf_0/CON bitslice_0/addf_0/a_526_115# bitslice_0/addf_0/a_784_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1440 y=109 sky130_fd_pr__nfet_01v8
+x SUB bitslice_0/addf_0/a_27_521# bitslice_0/addf_0/CON vdd s=7056,308 d=7056,308 l=30 w=252 x=938 y=515 sky130_fd_pr__pfet_01v8
+x A0 bitslice_0/addf_0/a_368_521# vdd vdd s=5292,294 d=7056,308 l=30 w=252 x=1096 y=515 sky130_fd_pr__pfet_01v8
+x A0 vdd bitslice_0/addf_0/a_526_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=1182 y=515 sky130_fd_pr__pfet_01v8
+x bitslice_0/addf_0/CON vdd bitslice_1/CI vdd s=13356,610 d=13356,610 l=30 w=252 x=1978 y=515 sky130_fd_pr__pfet_01v8
+x SUB bitslice_0/addf_0/a_27_115# bitslice_0/addf_0/CON gnd s=2912,160 d=2912,160 l=30 w=104 x=938 y=109 sky130_fd_pr__nfet_01v8
+x bitslice_0/addf_0/B bitslice_0/addf_0/a_784_115# bitslice_0/addf_0/a_870_521# vdd s=7056,308 d=6552,304 l=30 w=252 x=1526 y=515 sky130_fd_pr__pfet_01v8
+x A0 bitslice_0/addf_0/a_368_115# gnd gnd s=2184,146 d=2912,160 l=30 w=104 x=1096 y=109 sky130_fd_pr__nfet_01v8
+x A0 gnd bitslice_0/addf_0/a_526_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1182 y=109 sky130_fd_pr__nfet_01v8
+x bitslice_0/addf_0/CON gnd bitslice_1/CI gnd s=5512,314 d=5512,314 l=30 w=104 x=1978 y=109 sky130_fd_pr__nfet_01v8
+x bitslice_0/addf_0/B bitslice_0/addf_0/a_784_115# bitslice_0/addf_0/a_870_115# gnd s=2912,160 d=2704,156 l=30 w=104 x=1526 y=109 sky130_fd_pr__nfet_01v8
+x bitslice_0/addf_0/B bitslice_0/addf_0/CON bitslice_0/addf_0/a_368_521# vdd s=7056,308 d=5292,294 l=30 w=252 x=1024 y=515 sky130_fd_pr__pfet_01v8
+x bitslice_0/addf_0/B bitslice_0/addf_0/a_526_521# vdd vdd s=7056,308 d=7056,308 l=30 w=252 x=1268 y=515 sky130_fd_pr__pfet_01v8
+x A0 bitslice_0/addf_0/a_952_521# vdd vdd s=6552,304 d=8568,320 l=30 w=252 x=1690 y=515 sky130_fd_pr__pfet_01v8
+x bitslice_0/addf_0/B bitslice_0/addf_0/CON bitslice_0/addf_0/a_368_115# gnd s=2912,160 d=2184,146 l=30 w=104 x=1024 y=109 sky130_fd_pr__nfet_01v8
+x bitslice_0/addf_0/B bitslice_0/addf_0/a_526_115# gnd gnd s=2912,160 d=2912,160 l=30 w=104 x=1268 y=109 sky130_fd_pr__nfet_01v8
+x A0 bitslice_0/addf_0/a_952_115# gnd gnd s=2704,156 d=3536,172 l=30 w=104 x=1690 y=109 sky130_fd_pr__nfet_01v8
+x SUB vdd bitslice_0/addf_0/a_526_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=1354 y=515 sky130_fd_pr__pfet_01v8
+x bitslice_0/register_0/d_flip_flop_0/common_1 vdd bitslice_0/register_0/d_flip_flop_0/inverter_1_out vdd s=3276,162 d=9408,392 l=30 w=84 x=4280 y=585 sky130_fd_pr__pfet_01v8
+x bitslice_0/register_0/d_flip_flop_0/inverter_1_out bitslice_0/register_0/d_flip_flop_0/a_494_0# gnd gnd s=3276,162 d=3276,162 l=30 w=84 x=4172 y=159 sky130_fd_pr__nfet_01v8
+x bitslice_0/register_0/d_flip_flop_0/CLK_n bitslice_0/register_0/d_flip_flop_0/a_974_426# bitslice_0/register_0/d_flip_flop_0/common_2 vdd s=3276,162 d=5712,220 l=30 w=84 x=4652 y=585 sky130_fd_pr__pfet_01v8
+x Q0 bitslice_0/register_0/d_flip_flop_0/a_1248_0# gnd gnd s=3276,162 d=3276,162 l=30 w=84 x=4926 y=159 sky130_fd_pr__nfet_01v8
+x bitslice_0/register_0/d_flip_flop_0/inverter_1_out gnd bitslice_0/register_0/d_flip_flop_0/a_974_0# gnd s=4452,274 d=3276,162 l=30 w=84 x=4544 y=159 sky130_fd_pr__nfet_01v8
+x bitslice_0/addf_0/S vdd bitslice_0/register_0/d_flip_flop_0/a_220_426# vdd s=4452,274 d=3276,162 l=30 w=84 x=3790 y=585 sky130_fd_pr__pfet_01v8
+x bitslice_0/register_0/and2_0/Y bitslice_0/register_0/d_flip_flop_0/common_1 bitslice_0/register_0/d_flip_flop_0/a_494_0# gnd s=5712,220 d=3276,162 l=30 w=84 x=4064 y=159 sky130_fd_pr__nfet_01v8
+x bitslice_0/register_0/d_flip_flop_0/CLK_n bitslice_0/register_0/d_flip_flop_0/common_2 bitslice_0/register_0/d_flip_flop_0/a_1248_0# gnd s=5712,220 d=3276,162 l=30 w=84 x=4818 y=159 sky130_fd_pr__nfet_01v8
+x bitslice_0/register_0/and2_0/Y vdd bitslice_0/register_0/d_flip_flop_0/CLK_n vdd s=17808,778 d=17808,778 l=30 w=336 x=3600 y=459 sky130_fd_pr__pfet_01v8
+x bitslice_0/register_0/and2_0/Y bitslice_0/register_0/d_flip_flop_0/a_220_426# bitslice_0/register_0/d_flip_flop_0/common_1 vdd s=3276,162 d=5712,220 l=30 w=84 x=3898 y=585 sky130_fd_pr__pfet_01v8
+x bitslice_0/register_0/d_flip_flop_0/common_2 vdd Q0 vdd s=5376,246 d=13608,560 l=30 w=168 x=5034 y=543 sky130_fd_pr__pfet_01v8
+x bitslice_0/register_0/and2_0/Y bitslice_0/register_0/d_flip_flop_0/common_2 bitslice_0/register_0/d_flip_flop_0/a_1248_426# vdd s=5712,220 d=3276,162 l=30 w=84 x=4818 y=585 sky130_fd_pr__pfet_01v8
+x bitslice_0/register_0/and2_0/Y gnd bitslice_0/register_0/d_flip_flop_0/CLK_n gnd s=8904,442 d=8904,442 l=30 w=168 x=3600 y=118 sky130_fd_pr__nfet_01v8
+x bitslice_0/register_0/d_flip_flop_0/CLK_n bitslice_0/register_0/d_flip_flop_0/a_220_0# bitslice_0/register_0/d_flip_flop_0/common_1 gnd s=3276,162 d=5712,220 l=30 w=84 x=3898 y=159 sky130_fd_pr__nfet_01v8
+x Q0 bitslice_0/register_0/d_flip_flop_0/a_1248_426# vdd vdd s=3276,162 d=5376,246 l=30 w=84 x=4926 y=585 sky130_fd_pr__pfet_01v8
+x bitslice_0/register_0/and2_0/Y bitslice_0/register_0/d_flip_flop_0/a_974_0# bitslice_0/register_0/d_flip_flop_0/common_2 gnd s=3276,162 d=5712,220 l=30 w=84 x=4652 y=159 sky130_fd_pr__nfet_01v8
+x bitslice_0/register_0/d_flip_flop_0/common_1 gnd bitslice_0/register_0/d_flip_flop_0/inverter_1_out gnd s=3276,162 d=9408,392 l=30 w=84 x=4280 y=159 sky130_fd_pr__nfet_01v8
+x bitslice_0/register_0/d_flip_flop_0/common_2 gnd Q0 gnd s=3276,162 d=9408,392 l=30 w=84 x=5034 y=159 sky130_fd_pr__nfet_01v8
+x bitslice_0/register_0/d_flip_flop_0/CLK_n bitslice_0/register_0/d_flip_flop_0/common_1 bitslice_0/register_0/d_flip_flop_0/a_494_426# vdd s=5712,220 d=3276,162 l=30 w=84 x=4064 y=585 sky130_fd_pr__pfet_01v8
+x bitslice_0/register_0/d_flip_flop_0/inverter_1_out vdd bitslice_0/register_0/d_flip_flop_0/a_974_426# vdd s=4452,274 d=3276,162 l=30 w=84 x=4544 y=585 sky130_fd_pr__pfet_01v8
+x bitslice_0/addf_0/S gnd bitslice_0/register_0/d_flip_flop_0/a_220_0# gnd s=4452,274 d=3276,162 l=30 w=84 x=3790 y=159 sky130_fd_pr__nfet_01v8
+x bitslice_0/register_0/d_flip_flop_0/inverter_1_out bitslice_0/register_0/d_flip_flop_0/a_494_426# vdd vdd s=3276,162 d=3276,162 l=30 w=84 x=4172 y=585 sky130_fd_pr__pfet_01v8
+x STORE bitslice_0/register_0/and2_0/Y_n vdd vdd s=4704,224 d=8484,269 l=30 w=168 x=3254 y=543 sky130_fd_pr__pfet_01v8
+x bitslice_0/register_0/and2_0/Y_n vdd bitslice_0/register_0/and2_0/Y vdd s=8484,269 d=8904,442 l=30 w=168 x=3385 y=543 sky130_fd_pr__pfet_01v8
+x bitslice_0/register_0/and2_0/Y_n gnd bitslice_0/register_0/and2_0/Y gnd s=6342,269 d=4452,274 l=30 w=84 x=3385 y=159 sky130_fd_pr__nfet_01v8
+x bitslice_0/register_0/CLK vdd bitslice_0/register_0/and2_0/Y_n vdd s=8904,442 d=4704,224 l=30 w=168 x=3168 y=543 sky130_fd_pr__pfet_01v8
+x STORE bitslice_0/register_0/and2_0/a_30_n42# gnd gnd s=4704,224 d=6342,269 l=30 w=168 x=3254 y=118 sky130_fd_pr__nfet_01v8
+x bitslice_0/register_0/CLK bitslice_0/register_0/and2_0/Y_n bitslice_0/register_0/and2_0/a_30_n42# gnd s=8904,442 d=4704,224 l=30 w=168 x=3168 y=118 sky130_fd_pr__nfet_01v8
+x B1 gnd bitslice_1/mux21_0/B gnd s=4452,274 d=4452,274 l=30 w=84 x=86 y=1083 sky130_fd_pr__nfet_01v8
+x B1 vdd bitslice_1/mux21_0/B vdd s=8904,442 d=8904,442 l=30 w=168 x=86 y=1467 sky130_fd_pr__pfet_01v8
+x SUB B1 bitslice_1/addf_0/B vdd s=8904,442 d=4704,224 l=30 w=168 x=488 y=1467 sky130_fd_pr__pfet_01v8
+x SUB gnd bitslice_1/mux21_0/S_n gnd s=4452,274 d=4452,274 l=30 w=84 x=298 y=1083 sky130_fd_pr__nfet_01v8
+x SUB bitslice_1/addf_0/B bitslice_1/mux21_0/B gnd s=2352,140 d=4452,274 l=30 w=84 x=574 y=1083 sky130_fd_pr__nfet_01v8
+x SUB vdd bitslice_1/mux21_0/S_n vdd s=8904,442 d=8904,442 l=30 w=168 x=298 y=1467 sky130_fd_pr__pfet_01v8
+x bitslice_1/mux21_0/S_n bitslice_1/addf_0/B bitslice_1/mux21_0/B vdd s=4704,224 d=8904,442 l=30 w=168 x=574 y=1467 sky130_fd_pr__pfet_01v8
+x bitslice_1/mux21_0/S_n B1 bitslice_1/addf_0/B gnd s=4452,274 d=2352,140 l=30 w=84 x=488 y=1083 sky130_fd_pr__nfet_01v8
+x CLK vdd bitslice_1/buffer_fo4_0/a_n240_0# vdd s=8904,442 d=8904,442 l=30 w=168 x=2172 y=1467 sky130_fd_pr__pfet_01v8
+x bitslice_1/buffer_fo4_0/a_n240_0# gnd bitslice_1/register_0/CLK gnd s=20160,792 d=18816,784 l=30 w=336 x=2556 y=1128 sky130_fd_pr__nfet_01v8
+x CLK gnd bitslice_1/buffer_fo4_0/a_n240_0# gnd s=4452,274 d=4452,274 l=30 w=84 x=2172 y=1083 sky130_fd_pr__nfet_01v8
+x bitslice_1/buffer_fo4_0/a_n240_0# bitslice_1/register_0/CLK vdd vdd s=37632,1456 d=40320,1464 l=30 w=672 x=2389 y=1517 sky130_fd_pr__pfet_01v8
+x bitslice_1/CI bitslice_1/addf_0/a_870_521# bitslice_1/addf_0/a_952_521# vdd s=6552,304 d=6552,304 l=30 w=252 x=1608 y=1439 sky130_fd_pr__pfet_01v8
+x bitslice_1/addf_0/a_784_115# vdd bitslice_1/addf_0/S vdd s=8568,320 d=13356,610 l=30 w=252 x=1788 y=1439 sky130_fd_pr__pfet_01v8
+x bitslice_1/CI gnd bitslice_1/addf_0/a_526_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1354 y=1033 sky130_fd_pr__nfet_01v8
+x bitslice_1/addf_0/B vdd bitslice_1/addf_0/a_27_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=852 y=1439 sky130_fd_pr__pfet_01v8
+x bitslice_1/CI bitslice_1/addf_0/a_870_115# bitslice_1/addf_0/a_952_115# gnd s=2704,156 d=2704,156 l=30 w=104 x=1608 y=1033 sky130_fd_pr__nfet_01v8
+x bitslice_1/addf_0/a_784_115# gnd bitslice_1/addf_0/S gnd s=3536,172 d=5512,314 l=30 w=104 x=1788 y=1033 sky130_fd_pr__nfet_01v8
+x A1 bitslice_1/addf_0/a_27_521# vdd vdd s=13356,610 d=7056,308 l=30 w=252 x=766 y=1439 sky130_fd_pr__pfet_01v8
+x bitslice_1/addf_0/CON bitslice_1/addf_0/a_526_521# bitslice_1/addf_0/a_784_115# vdd s=7056,308 d=7056,308 l=30 w=252 x=1440 y=1439 sky130_fd_pr__pfet_01v8
+x bitslice_1/addf_0/B gnd bitslice_1/addf_0/a_27_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=852 y=1033 sky130_fd_pr__nfet_01v8
+x A1 bitslice_1/addf_0/a_27_115# gnd gnd s=5512,314 d=2912,160 l=30 w=104 x=766 y=1033 sky130_fd_pr__nfet_01v8
+x bitslice_1/addf_0/CON bitslice_1/addf_0/a_526_115# bitslice_1/addf_0/a_784_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1440 y=1033 sky130_fd_pr__nfet_01v8
+x bitslice_1/CI bitslice_1/addf_0/a_27_521# bitslice_1/addf_0/CON vdd s=7056,308 d=7056,308 l=30 w=252 x=938 y=1439 sky130_fd_pr__pfet_01v8
+x A1 bitslice_1/addf_0/a_368_521# vdd vdd s=5292,294 d=7056,308 l=30 w=252 x=1096 y=1439 sky130_fd_pr__pfet_01v8
+x A1 vdd bitslice_1/addf_0/a_526_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=1182 y=1439 sky130_fd_pr__pfet_01v8
+x bitslice_1/addf_0/CON vdd bitslice_2/CI vdd s=13356,610 d=13356,610 l=30 w=252 x=1978 y=1439 sky130_fd_pr__pfet_01v8
+x bitslice_1/CI bitslice_1/addf_0/a_27_115# bitslice_1/addf_0/CON gnd s=2912,160 d=2912,160 l=30 w=104 x=938 y=1033 sky130_fd_pr__nfet_01v8
+x bitslice_1/addf_0/B bitslice_1/addf_0/a_784_115# bitslice_1/addf_0/a_870_521# vdd s=7056,308 d=6552,304 l=30 w=252 x=1526 y=1439 sky130_fd_pr__pfet_01v8
+x A1 bitslice_1/addf_0/a_368_115# gnd gnd s=2184,146 d=2912,160 l=30 w=104 x=1096 y=1033 sky130_fd_pr__nfet_01v8
+x A1 gnd bitslice_1/addf_0/a_526_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1182 y=1033 sky130_fd_pr__nfet_01v8
+x bitslice_1/addf_0/CON gnd bitslice_2/CI gnd s=5512,314 d=5512,314 l=30 w=104 x=1978 y=1033 sky130_fd_pr__nfet_01v8
+x bitslice_1/addf_0/B bitslice_1/addf_0/a_784_115# bitslice_1/addf_0/a_870_115# gnd s=2912,160 d=2704,156 l=30 w=104 x=1526 y=1033 sky130_fd_pr__nfet_01v8
+x bitslice_1/addf_0/B bitslice_1/addf_0/CON bitslice_1/addf_0/a_368_521# vdd s=7056,308 d=5292,294 l=30 w=252 x=1024 y=1439 sky130_fd_pr__pfet_01v8
+x bitslice_1/addf_0/B bitslice_1/addf_0/a_526_521# vdd vdd s=7056,308 d=7056,308 l=30 w=252 x=1268 y=1439 sky130_fd_pr__pfet_01v8
+x A1 bitslice_1/addf_0/a_952_521# vdd vdd s=6552,304 d=8568,320 l=30 w=252 x=1690 y=1439 sky130_fd_pr__pfet_01v8
+x bitslice_1/addf_0/B bitslice_1/addf_0/CON bitslice_1/addf_0/a_368_115# gnd s=2912,160 d=2184,146 l=30 w=104 x=1024 y=1033 sky130_fd_pr__nfet_01v8
+x bitslice_1/addf_0/B bitslice_1/addf_0/a_526_115# gnd gnd s=2912,160 d=2912,160 l=30 w=104 x=1268 y=1033 sky130_fd_pr__nfet_01v8
+x A1 bitslice_1/addf_0/a_952_115# gnd gnd s=2704,156 d=3536,172 l=30 w=104 x=1690 y=1033 sky130_fd_pr__nfet_01v8
+x bitslice_1/CI vdd bitslice_1/addf_0/a_526_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=1354 y=1439 sky130_fd_pr__pfet_01v8
+x bitslice_1/register_0/d_flip_flop_0/common_1 vdd bitslice_1/register_0/d_flip_flop_0/inverter_1_out vdd s=3276,162 d=9408,392 l=30 w=84 x=4280 y=1509 sky130_fd_pr__pfet_01v8
+x bitslice_1/register_0/d_flip_flop_0/inverter_1_out bitslice_1/register_0/d_flip_flop_0/a_494_0# gnd gnd s=3276,162 d=3276,162 l=30 w=84 x=4172 y=1083 sky130_fd_pr__nfet_01v8
+x bitslice_1/register_0/d_flip_flop_0/CLK_n bitslice_1/register_0/d_flip_flop_0/a_974_426# bitslice_1/register_0/d_flip_flop_0/common_2 vdd s=3276,162 d=5712,220 l=30 w=84 x=4652 y=1509 sky130_fd_pr__pfet_01v8
+x Q1 bitslice_1/register_0/d_flip_flop_0/a_1248_0# gnd gnd s=3276,162 d=3276,162 l=30 w=84 x=4926 y=1083 sky130_fd_pr__nfet_01v8
+x bitslice_1/register_0/d_flip_flop_0/inverter_1_out gnd bitslice_1/register_0/d_flip_flop_0/a_974_0# gnd s=4452,274 d=3276,162 l=30 w=84 x=4544 y=1083 sky130_fd_pr__nfet_01v8
+x bitslice_1/addf_0/S vdd bitslice_1/register_0/d_flip_flop_0/a_220_426# vdd s=4452,274 d=3276,162 l=30 w=84 x=3790 y=1509 sky130_fd_pr__pfet_01v8
+x bitslice_1/register_0/and2_0/Y bitslice_1/register_0/d_flip_flop_0/common_1 bitslice_1/register_0/d_flip_flop_0/a_494_0# gnd s=5712,220 d=3276,162 l=30 w=84 x=4064 y=1083 sky130_fd_pr__nfet_01v8
+x bitslice_1/register_0/d_flip_flop_0/CLK_n bitslice_1/register_0/d_flip_flop_0/common_2 bitslice_1/register_0/d_flip_flop_0/a_1248_0# gnd s=5712,220 d=3276,162 l=30 w=84 x=4818 y=1083 sky130_fd_pr__nfet_01v8
+x bitslice_1/register_0/and2_0/Y vdd bitslice_1/register_0/d_flip_flop_0/CLK_n vdd s=17808,778 d=17808,778 l=30 w=336 x=3600 y=1383 sky130_fd_pr__pfet_01v8
+x bitslice_1/register_0/and2_0/Y bitslice_1/register_0/d_flip_flop_0/a_220_426# bitslice_1/register_0/d_flip_flop_0/common_1 vdd s=3276,162 d=5712,220 l=30 w=84 x=3898 y=1509 sky130_fd_pr__pfet_01v8
+x bitslice_1/register_0/d_flip_flop_0/common_2 vdd Q1 vdd s=5376,246 d=13608,560 l=30 w=168 x=5034 y=1467 sky130_fd_pr__pfet_01v8
+x bitslice_1/register_0/and2_0/Y bitslice_1/register_0/d_flip_flop_0/common_2 bitslice_1/register_0/d_flip_flop_0/a_1248_426# vdd s=5712,220 d=3276,162 l=30 w=84 x=4818 y=1509 sky130_fd_pr__pfet_01v8
+x bitslice_1/register_0/and2_0/Y gnd bitslice_1/register_0/d_flip_flop_0/CLK_n gnd s=8904,442 d=8904,442 l=30 w=168 x=3600 y=1042 sky130_fd_pr__nfet_01v8
+x bitslice_1/register_0/d_flip_flop_0/CLK_n bitslice_1/register_0/d_flip_flop_0/a_220_0# bitslice_1/register_0/d_flip_flop_0/common_1 gnd s=3276,162 d=5712,220 l=30 w=84 x=3898 y=1083 sky130_fd_pr__nfet_01v8
+x Q1 bitslice_1/register_0/d_flip_flop_0/a_1248_426# vdd vdd s=3276,162 d=5376,246 l=30 w=84 x=4926 y=1509 sky130_fd_pr__pfet_01v8
+x bitslice_1/register_0/and2_0/Y bitslice_1/register_0/d_flip_flop_0/a_974_0# bitslice_1/register_0/d_flip_flop_0/common_2 gnd s=3276,162 d=5712,220 l=30 w=84 x=4652 y=1083 sky130_fd_pr__nfet_01v8
+x bitslice_1/register_0/d_flip_flop_0/common_1 gnd bitslice_1/register_0/d_flip_flop_0/inverter_1_out gnd s=3276,162 d=9408,392 l=30 w=84 x=4280 y=1083 sky130_fd_pr__nfet_01v8
+x bitslice_1/register_0/d_flip_flop_0/common_2 gnd Q1 gnd s=3276,162 d=9408,392 l=30 w=84 x=5034 y=1083 sky130_fd_pr__nfet_01v8
+x bitslice_1/register_0/d_flip_flop_0/CLK_n bitslice_1/register_0/d_flip_flop_0/common_1 bitslice_1/register_0/d_flip_flop_0/a_494_426# vdd s=5712,220 d=3276,162 l=30 w=84 x=4064 y=1509 sky130_fd_pr__pfet_01v8
+x bitslice_1/register_0/d_flip_flop_0/inverter_1_out vdd bitslice_1/register_0/d_flip_flop_0/a_974_426# vdd s=4452,274 d=3276,162 l=30 w=84 x=4544 y=1509 sky130_fd_pr__pfet_01v8
+x bitslice_1/addf_0/S gnd bitslice_1/register_0/d_flip_flop_0/a_220_0# gnd s=4452,274 d=3276,162 l=30 w=84 x=3790 y=1083 sky130_fd_pr__nfet_01v8
+x bitslice_1/register_0/d_flip_flop_0/inverter_1_out bitslice_1/register_0/d_flip_flop_0/a_494_426# vdd vdd s=3276,162 d=3276,162 l=30 w=84 x=4172 y=1509 sky130_fd_pr__pfet_01v8
+x STORE bitslice_1/register_0/and2_0/Y_n vdd vdd s=4704,224 d=8484,269 l=30 w=168 x=3254 y=1467 sky130_fd_pr__pfet_01v8
+x bitslice_1/register_0/and2_0/Y_n vdd bitslice_1/register_0/and2_0/Y vdd s=8484,269 d=8904,442 l=30 w=168 x=3385 y=1467 sky130_fd_pr__pfet_01v8
+x bitslice_1/register_0/and2_0/Y_n gnd bitslice_1/register_0/and2_0/Y gnd s=6342,269 d=4452,274 l=30 w=84 x=3385 y=1083 sky130_fd_pr__nfet_01v8
+x bitslice_1/register_0/CLK vdd bitslice_1/register_0/and2_0/Y_n vdd s=8904,442 d=4704,224 l=30 w=168 x=3168 y=1467 sky130_fd_pr__pfet_01v8
+x STORE bitslice_1/register_0/and2_0/a_30_n42# gnd gnd s=4704,224 d=6342,269 l=30 w=168 x=3254 y=1042 sky130_fd_pr__nfet_01v8
+x bitslice_1/register_0/CLK bitslice_1/register_0/and2_0/Y_n bitslice_1/register_0/and2_0/a_30_n42# gnd s=8904,442 d=4704,224 l=30 w=168 x=3168 y=1042 sky130_fd_pr__nfet_01v8
+x B2 gnd bitslice_2/mux21_0/B gnd s=4452,274 d=4452,274 l=30 w=84 x=86 y=2007 sky130_fd_pr__nfet_01v8
+x B2 vdd bitslice_2/mux21_0/B vdd s=8904,442 d=8904,442 l=30 w=168 x=86 y=2391 sky130_fd_pr__pfet_01v8
+x SUB B2 bitslice_2/addf_0/B vdd s=8904,442 d=4704,224 l=30 w=168 x=488 y=2391 sky130_fd_pr__pfet_01v8
+x SUB gnd bitslice_2/mux21_0/S_n gnd s=4452,274 d=4452,274 l=30 w=84 x=298 y=2007 sky130_fd_pr__nfet_01v8
+x SUB bitslice_2/addf_0/B bitslice_2/mux21_0/B gnd s=2352,140 d=4452,274 l=30 w=84 x=574 y=2007 sky130_fd_pr__nfet_01v8
+x SUB vdd bitslice_2/mux21_0/S_n vdd s=8904,442 d=8904,442 l=30 w=168 x=298 y=2391 sky130_fd_pr__pfet_01v8
+x bitslice_2/mux21_0/S_n bitslice_2/addf_0/B bitslice_2/mux21_0/B vdd s=4704,224 d=8904,442 l=30 w=168 x=574 y=2391 sky130_fd_pr__pfet_01v8
+x bitslice_2/mux21_0/S_n B2 bitslice_2/addf_0/B gnd s=4452,274 d=2352,140 l=30 w=84 x=488 y=2007 sky130_fd_pr__nfet_01v8
+x CLK vdd bitslice_2/buffer_fo4_0/a_n240_0# vdd s=8904,442 d=8904,442 l=30 w=168 x=2172 y=2391 sky130_fd_pr__pfet_01v8
+x bitslice_2/buffer_fo4_0/a_n240_0# gnd bitslice_2/register_0/CLK gnd s=20160,792 d=18816,784 l=30 w=336 x=2556 y=2052 sky130_fd_pr__nfet_01v8
+x CLK gnd bitslice_2/buffer_fo4_0/a_n240_0# gnd s=4452,274 d=4452,274 l=30 w=84 x=2172 y=2007 sky130_fd_pr__nfet_01v8
+x bitslice_2/buffer_fo4_0/a_n240_0# bitslice_2/register_0/CLK vdd vdd s=37632,1456 d=40320,1464 l=30 w=672 x=2389 y=2441 sky130_fd_pr__pfet_01v8
+x bitslice_2/CI bitslice_2/addf_0/a_870_521# bitslice_2/addf_0/a_952_521# vdd s=6552,304 d=6552,304 l=30 w=252 x=1608 y=2363 sky130_fd_pr__pfet_01v8
+x bitslice_2/addf_0/a_784_115# vdd bitslice_2/addf_0/S vdd s=8568,320 d=13356,610 l=30 w=252 x=1788 y=2363 sky130_fd_pr__pfet_01v8
+x bitslice_2/CI gnd bitslice_2/addf_0/a_526_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1354 y=1957 sky130_fd_pr__nfet_01v8
+x bitslice_2/addf_0/B vdd bitslice_2/addf_0/a_27_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=852 y=2363 sky130_fd_pr__pfet_01v8
+x bitslice_2/CI bitslice_2/addf_0/a_870_115# bitslice_2/addf_0/a_952_115# gnd s=2704,156 d=2704,156 l=30 w=104 x=1608 y=1957 sky130_fd_pr__nfet_01v8
+x bitslice_2/addf_0/a_784_115# gnd bitslice_2/addf_0/S gnd s=3536,172 d=5512,314 l=30 w=104 x=1788 y=1957 sky130_fd_pr__nfet_01v8
+x A2 bitslice_2/addf_0/a_27_521# vdd vdd s=13356,610 d=7056,308 l=30 w=252 x=766 y=2363 sky130_fd_pr__pfet_01v8
+x bitslice_2/addf_0/CON bitslice_2/addf_0/a_526_521# bitslice_2/addf_0/a_784_115# vdd s=7056,308 d=7056,308 l=30 w=252 x=1440 y=2363 sky130_fd_pr__pfet_01v8
+x bitslice_2/addf_0/B gnd bitslice_2/addf_0/a_27_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=852 y=1957 sky130_fd_pr__nfet_01v8
+x A2 bitslice_2/addf_0/a_27_115# gnd gnd s=5512,314 d=2912,160 l=30 w=104 x=766 y=1957 sky130_fd_pr__nfet_01v8
+x bitslice_2/addf_0/CON bitslice_2/addf_0/a_526_115# bitslice_2/addf_0/a_784_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1440 y=1957 sky130_fd_pr__nfet_01v8
+x bitslice_2/CI bitslice_2/addf_0/a_27_521# bitslice_2/addf_0/CON vdd s=7056,308 d=7056,308 l=30 w=252 x=938 y=2363 sky130_fd_pr__pfet_01v8
+x A2 bitslice_2/addf_0/a_368_521# vdd vdd s=5292,294 d=7056,308 l=30 w=252 x=1096 y=2363 sky130_fd_pr__pfet_01v8
+x A2 vdd bitslice_2/addf_0/a_526_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=1182 y=2363 sky130_fd_pr__pfet_01v8
+x bitslice_2/addf_0/CON vdd bitslice_3/CI vdd s=13356,610 d=13356,610 l=30 w=252 x=1978 y=2363 sky130_fd_pr__pfet_01v8
+x bitslice_2/CI bitslice_2/addf_0/a_27_115# bitslice_2/addf_0/CON gnd s=2912,160 d=2912,160 l=30 w=104 x=938 y=1957 sky130_fd_pr__nfet_01v8
+x bitslice_2/addf_0/B bitslice_2/addf_0/a_784_115# bitslice_2/addf_0/a_870_521# vdd s=7056,308 d=6552,304 l=30 w=252 x=1526 y=2363 sky130_fd_pr__pfet_01v8
+x A2 bitslice_2/addf_0/a_368_115# gnd gnd s=2184,146 d=2912,160 l=30 w=104 x=1096 y=1957 sky130_fd_pr__nfet_01v8
+x A2 gnd bitslice_2/addf_0/a_526_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1182 y=1957 sky130_fd_pr__nfet_01v8
+x bitslice_2/addf_0/CON gnd bitslice_3/CI gnd s=5512,314 d=5512,314 l=30 w=104 x=1978 y=1957 sky130_fd_pr__nfet_01v8
+x bitslice_2/addf_0/B bitslice_2/addf_0/a_784_115# bitslice_2/addf_0/a_870_115# gnd s=2912,160 d=2704,156 l=30 w=104 x=1526 y=1957 sky130_fd_pr__nfet_01v8
+x bitslice_2/addf_0/B bitslice_2/addf_0/CON bitslice_2/addf_0/a_368_521# vdd s=7056,308 d=5292,294 l=30 w=252 x=1024 y=2363 sky130_fd_pr__pfet_01v8
+x bitslice_2/addf_0/B bitslice_2/addf_0/a_526_521# vdd vdd s=7056,308 d=7056,308 l=30 w=252 x=1268 y=2363 sky130_fd_pr__pfet_01v8
+x A2 bitslice_2/addf_0/a_952_521# vdd vdd s=6552,304 d=8568,320 l=30 w=252 x=1690 y=2363 sky130_fd_pr__pfet_01v8
+x bitslice_2/addf_0/B bitslice_2/addf_0/CON bitslice_2/addf_0/a_368_115# gnd s=2912,160 d=2184,146 l=30 w=104 x=1024 y=1957 sky130_fd_pr__nfet_01v8
+x bitslice_2/addf_0/B bitslice_2/addf_0/a_526_115# gnd gnd s=2912,160 d=2912,160 l=30 w=104 x=1268 y=1957 sky130_fd_pr__nfet_01v8
+x A2 bitslice_2/addf_0/a_952_115# gnd gnd s=2704,156 d=3536,172 l=30 w=104 x=1690 y=1957 sky130_fd_pr__nfet_01v8
+x bitslice_2/CI vdd bitslice_2/addf_0/a_526_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=1354 y=2363 sky130_fd_pr__pfet_01v8
+x bitslice_2/register_0/d_flip_flop_0/common_1 vdd bitslice_2/register_0/d_flip_flop_0/inverter_1_out vdd s=3276,162 d=9408,392 l=30 w=84 x=4280 y=2433 sky130_fd_pr__pfet_01v8
+x bitslice_2/register_0/d_flip_flop_0/inverter_1_out bitslice_2/register_0/d_flip_flop_0/a_494_0# gnd gnd s=3276,162 d=3276,162 l=30 w=84 x=4172 y=2007 sky130_fd_pr__nfet_01v8
+x bitslice_2/register_0/d_flip_flop_0/CLK_n bitslice_2/register_0/d_flip_flop_0/a_974_426# bitslice_2/register_0/d_flip_flop_0/common_2 vdd s=3276,162 d=5712,220 l=30 w=84 x=4652 y=2433 sky130_fd_pr__pfet_01v8
+x Q2 bitslice_2/register_0/d_flip_flop_0/a_1248_0# gnd gnd s=3276,162 d=3276,162 l=30 w=84 x=4926 y=2007 sky130_fd_pr__nfet_01v8
+x bitslice_2/register_0/d_flip_flop_0/inverter_1_out gnd bitslice_2/register_0/d_flip_flop_0/a_974_0# gnd s=4452,274 d=3276,162 l=30 w=84 x=4544 y=2007 sky130_fd_pr__nfet_01v8
+x bitslice_2/addf_0/S vdd bitslice_2/register_0/d_flip_flop_0/a_220_426# vdd s=4452,274 d=3276,162 l=30 w=84 x=3790 y=2433 sky130_fd_pr__pfet_01v8
+x bitslice_2/register_0/and2_0/Y bitslice_2/register_0/d_flip_flop_0/common_1 bitslice_2/register_0/d_flip_flop_0/a_494_0# gnd s=5712,220 d=3276,162 l=30 w=84 x=4064 y=2007 sky130_fd_pr__nfet_01v8
+x bitslice_2/register_0/d_flip_flop_0/CLK_n bitslice_2/register_0/d_flip_flop_0/common_2 bitslice_2/register_0/d_flip_flop_0/a_1248_0# gnd s=5712,220 d=3276,162 l=30 w=84 x=4818 y=2007 sky130_fd_pr__nfet_01v8
+x bitslice_2/register_0/and2_0/Y vdd bitslice_2/register_0/d_flip_flop_0/CLK_n vdd s=17808,778 d=17808,778 l=30 w=336 x=3600 y=2307 sky130_fd_pr__pfet_01v8
+x bitslice_2/register_0/and2_0/Y bitslice_2/register_0/d_flip_flop_0/a_220_426# bitslice_2/register_0/d_flip_flop_0/common_1 vdd s=3276,162 d=5712,220 l=30 w=84 x=3898 y=2433 sky130_fd_pr__pfet_01v8
+x bitslice_2/register_0/d_flip_flop_0/common_2 vdd Q2 vdd s=5376,246 d=13608,560 l=30 w=168 x=5034 y=2391 sky130_fd_pr__pfet_01v8
+x bitslice_2/register_0/and2_0/Y bitslice_2/register_0/d_flip_flop_0/common_2 bitslice_2/register_0/d_flip_flop_0/a_1248_426# vdd s=5712,220 d=3276,162 l=30 w=84 x=4818 y=2433 sky130_fd_pr__pfet_01v8
+x bitslice_2/register_0/and2_0/Y gnd bitslice_2/register_0/d_flip_flop_0/CLK_n gnd s=8904,442 d=8904,442 l=30 w=168 x=3600 y=1966 sky130_fd_pr__nfet_01v8
+x bitslice_2/register_0/d_flip_flop_0/CLK_n bitslice_2/register_0/d_flip_flop_0/a_220_0# bitslice_2/register_0/d_flip_flop_0/common_1 gnd s=3276,162 d=5712,220 l=30 w=84 x=3898 y=2007 sky130_fd_pr__nfet_01v8
+x Q2 bitslice_2/register_0/d_flip_flop_0/a_1248_426# vdd vdd s=3276,162 d=5376,246 l=30 w=84 x=4926 y=2433 sky130_fd_pr__pfet_01v8
+x bitslice_2/register_0/and2_0/Y bitslice_2/register_0/d_flip_flop_0/a_974_0# bitslice_2/register_0/d_flip_flop_0/common_2 gnd s=3276,162 d=5712,220 l=30 w=84 x=4652 y=2007 sky130_fd_pr__nfet_01v8
+x bitslice_2/register_0/d_flip_flop_0/common_1 gnd bitslice_2/register_0/d_flip_flop_0/inverter_1_out gnd s=3276,162 d=9408,392 l=30 w=84 x=4280 y=2007 sky130_fd_pr__nfet_01v8
+x bitslice_2/register_0/d_flip_flop_0/common_2 gnd Q2 gnd s=3276,162 d=9408,392 l=30 w=84 x=5034 y=2007 sky130_fd_pr__nfet_01v8
+x bitslice_2/register_0/d_flip_flop_0/CLK_n bitslice_2/register_0/d_flip_flop_0/common_1 bitslice_2/register_0/d_flip_flop_0/a_494_426# vdd s=5712,220 d=3276,162 l=30 w=84 x=4064 y=2433 sky130_fd_pr__pfet_01v8
+x bitslice_2/register_0/d_flip_flop_0/inverter_1_out vdd bitslice_2/register_0/d_flip_flop_0/a_974_426# vdd s=4452,274 d=3276,162 l=30 w=84 x=4544 y=2433 sky130_fd_pr__pfet_01v8
+x bitslice_2/addf_0/S gnd bitslice_2/register_0/d_flip_flop_0/a_220_0# gnd s=4452,274 d=3276,162 l=30 w=84 x=3790 y=2007 sky130_fd_pr__nfet_01v8
+x bitslice_2/register_0/d_flip_flop_0/inverter_1_out bitslice_2/register_0/d_flip_flop_0/a_494_426# vdd vdd s=3276,162 d=3276,162 l=30 w=84 x=4172 y=2433 sky130_fd_pr__pfet_01v8
+x STORE bitslice_2/register_0/and2_0/Y_n vdd vdd s=4704,224 d=8484,269 l=30 w=168 x=3254 y=2391 sky130_fd_pr__pfet_01v8
+x bitslice_2/register_0/and2_0/Y_n vdd bitslice_2/register_0/and2_0/Y vdd s=8484,269 d=8904,442 l=30 w=168 x=3385 y=2391 sky130_fd_pr__pfet_01v8
+x bitslice_2/register_0/and2_0/Y_n gnd bitslice_2/register_0/and2_0/Y gnd s=6342,269 d=4452,274 l=30 w=84 x=3385 y=2007 sky130_fd_pr__nfet_01v8
+x bitslice_2/register_0/CLK vdd bitslice_2/register_0/and2_0/Y_n vdd s=8904,442 d=4704,224 l=30 w=168 x=3168 y=2391 sky130_fd_pr__pfet_01v8
+x STORE bitslice_2/register_0/and2_0/a_30_n42# gnd gnd s=4704,224 d=6342,269 l=30 w=168 x=3254 y=1966 sky130_fd_pr__nfet_01v8
+x bitslice_2/register_0/CLK bitslice_2/register_0/and2_0/Y_n bitslice_2/register_0/and2_0/a_30_n42# gnd s=8904,442 d=4704,224 l=30 w=168 x=3168 y=1966 sky130_fd_pr__nfet_01v8
+x B3 gnd bitslice_3/mux21_0/B gnd s=4452,274 d=4452,274 l=30 w=84 x=86 y=2931 sky130_fd_pr__nfet_01v8
+x B3 vdd bitslice_3/mux21_0/B vdd s=8904,442 d=8904,442 l=30 w=168 x=86 y=3315 sky130_fd_pr__pfet_01v8
+x SUB B3 bitslice_3/addf_0/B vdd s=8904,442 d=4704,224 l=30 w=168 x=488 y=3315 sky130_fd_pr__pfet_01v8
+x SUB gnd bitslice_3/mux21_0/S_n gnd s=4452,274 d=4452,274 l=30 w=84 x=298 y=2931 sky130_fd_pr__nfet_01v8
+x SUB bitslice_3/addf_0/B bitslice_3/mux21_0/B gnd s=2352,140 d=4452,274 l=30 w=84 x=574 y=2931 sky130_fd_pr__nfet_01v8
+x SUB vdd bitslice_3/mux21_0/S_n vdd s=8904,442 d=8904,442 l=30 w=168 x=298 y=3315 sky130_fd_pr__pfet_01v8
+x bitslice_3/mux21_0/S_n bitslice_3/addf_0/B bitslice_3/mux21_0/B vdd s=4704,224 d=8904,442 l=30 w=168 x=574 y=3315 sky130_fd_pr__pfet_01v8
+x bitslice_3/mux21_0/S_n B3 bitslice_3/addf_0/B gnd s=4452,274 d=2352,140 l=30 w=84 x=488 y=2931 sky130_fd_pr__nfet_01v8
+x CLK vdd bitslice_3/buffer_fo4_0/a_n240_0# vdd s=8904,442 d=8904,442 l=30 w=168 x=2172 y=3315 sky130_fd_pr__pfet_01v8
+x bitslice_3/buffer_fo4_0/a_n240_0# gnd bitslice_3/register_0/CLK gnd s=20160,792 d=18816,784 l=30 w=336 x=2556 y=2976 sky130_fd_pr__nfet_01v8
+x CLK gnd bitslice_3/buffer_fo4_0/a_n240_0# gnd s=4452,274 d=4452,274 l=30 w=84 x=2172 y=2931 sky130_fd_pr__nfet_01v8
+x bitslice_3/buffer_fo4_0/a_n240_0# bitslice_3/register_0/CLK vdd vdd s=37632,1456 d=40320,1464 l=30 w=672 x=2389 y=3365 sky130_fd_pr__pfet_01v8
+x bitslice_3/CI bitslice_3/addf_0/a_870_521# bitslice_3/addf_0/a_952_521# vdd s=6552,304 d=6552,304 l=30 w=252 x=1608 y=3287 sky130_fd_pr__pfet_01v8
+x bitslice_3/addf_0/a_784_115# vdd bitslice_3/addf_0/S vdd s=8568,320 d=13356,610 l=30 w=252 x=1788 y=3287 sky130_fd_pr__pfet_01v8
+x bitslice_3/CI gnd bitslice_3/addf_0/a_526_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1354 y=2881 sky130_fd_pr__nfet_01v8
+x bitslice_3/addf_0/B vdd bitslice_3/addf_0/a_27_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=852 y=3287 sky130_fd_pr__pfet_01v8
+x bitslice_3/CI bitslice_3/addf_0/a_870_115# bitslice_3/addf_0/a_952_115# gnd s=2704,156 d=2704,156 l=30 w=104 x=1608 y=2881 sky130_fd_pr__nfet_01v8
+x bitslice_3/addf_0/a_784_115# gnd bitslice_3/addf_0/S gnd s=3536,172 d=5512,314 l=30 w=104 x=1788 y=2881 sky130_fd_pr__nfet_01v8
+x A3 bitslice_3/addf_0/a_27_521# vdd vdd s=13356,610 d=7056,308 l=30 w=252 x=766 y=3287 sky130_fd_pr__pfet_01v8
+x bitslice_3/addf_0/CON bitslice_3/addf_0/a_526_521# bitslice_3/addf_0/a_784_115# vdd s=7056,308 d=7056,308 l=30 w=252 x=1440 y=3287 sky130_fd_pr__pfet_01v8
+x bitslice_3/addf_0/B gnd bitslice_3/addf_0/a_27_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=852 y=2881 sky130_fd_pr__nfet_01v8
+x A3 bitslice_3/addf_0/a_27_115# gnd gnd s=5512,314 d=2912,160 l=30 w=104 x=766 y=2881 sky130_fd_pr__nfet_01v8
+x bitslice_3/addf_0/CON bitslice_3/addf_0/a_526_115# bitslice_3/addf_0/a_784_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1440 y=2881 sky130_fd_pr__nfet_01v8
+x bitslice_3/CI bitslice_3/addf_0/a_27_521# bitslice_3/addf_0/CON vdd s=7056,308 d=7056,308 l=30 w=252 x=938 y=3287 sky130_fd_pr__pfet_01v8
+x A3 bitslice_3/addf_0/a_368_521# vdd vdd s=5292,294 d=7056,308 l=30 w=252 x=1096 y=3287 sky130_fd_pr__pfet_01v8
+x A3 vdd bitslice_3/addf_0/a_526_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=1182 y=3287 sky130_fd_pr__pfet_01v8
+x bitslice_3/addf_0/CON vdd bitslice_4/CI vdd s=13356,610 d=13356,610 l=30 w=252 x=1978 y=3287 sky130_fd_pr__pfet_01v8
+x bitslice_3/CI bitslice_3/addf_0/a_27_115# bitslice_3/addf_0/CON gnd s=2912,160 d=2912,160 l=30 w=104 x=938 y=2881 sky130_fd_pr__nfet_01v8
+x bitslice_3/addf_0/B bitslice_3/addf_0/a_784_115# bitslice_3/addf_0/a_870_521# vdd s=7056,308 d=6552,304 l=30 w=252 x=1526 y=3287 sky130_fd_pr__pfet_01v8
+x A3 bitslice_3/addf_0/a_368_115# gnd gnd s=2184,146 d=2912,160 l=30 w=104 x=1096 y=2881 sky130_fd_pr__nfet_01v8
+x A3 gnd bitslice_3/addf_0/a_526_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1182 y=2881 sky130_fd_pr__nfet_01v8
+x bitslice_3/addf_0/CON gnd bitslice_4/CI gnd s=5512,314 d=5512,314 l=30 w=104 x=1978 y=2881 sky130_fd_pr__nfet_01v8
+x bitslice_3/addf_0/B bitslice_3/addf_0/a_784_115# bitslice_3/addf_0/a_870_115# gnd s=2912,160 d=2704,156 l=30 w=104 x=1526 y=2881 sky130_fd_pr__nfet_01v8
+x bitslice_3/addf_0/B bitslice_3/addf_0/CON bitslice_3/addf_0/a_368_521# vdd s=7056,308 d=5292,294 l=30 w=252 x=1024 y=3287 sky130_fd_pr__pfet_01v8
+x bitslice_3/addf_0/B bitslice_3/addf_0/a_526_521# vdd vdd s=7056,308 d=7056,308 l=30 w=252 x=1268 y=3287 sky130_fd_pr__pfet_01v8
+x A3 bitslice_3/addf_0/a_952_521# vdd vdd s=6552,304 d=8568,320 l=30 w=252 x=1690 y=3287 sky130_fd_pr__pfet_01v8
+x bitslice_3/addf_0/B bitslice_3/addf_0/CON bitslice_3/addf_0/a_368_115# gnd s=2912,160 d=2184,146 l=30 w=104 x=1024 y=2881 sky130_fd_pr__nfet_01v8
+x bitslice_3/addf_0/B bitslice_3/addf_0/a_526_115# gnd gnd s=2912,160 d=2912,160 l=30 w=104 x=1268 y=2881 sky130_fd_pr__nfet_01v8
+x A3 bitslice_3/addf_0/a_952_115# gnd gnd s=2704,156 d=3536,172 l=30 w=104 x=1690 y=2881 sky130_fd_pr__nfet_01v8
+x bitslice_3/CI vdd bitslice_3/addf_0/a_526_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=1354 y=3287 sky130_fd_pr__pfet_01v8
+x bitslice_3/register_0/d_flip_flop_0/common_1 vdd bitslice_3/register_0/d_flip_flop_0/inverter_1_out vdd s=3276,162 d=9408,392 l=30 w=84 x=4280 y=3357 sky130_fd_pr__pfet_01v8
+x bitslice_3/register_0/d_flip_flop_0/inverter_1_out bitslice_3/register_0/d_flip_flop_0/a_494_0# gnd gnd s=3276,162 d=3276,162 l=30 w=84 x=4172 y=2931 sky130_fd_pr__nfet_01v8
+x bitslice_3/register_0/d_flip_flop_0/CLK_n bitslice_3/register_0/d_flip_flop_0/a_974_426# bitslice_3/register_0/d_flip_flop_0/common_2 vdd s=3276,162 d=5712,220 l=30 w=84 x=4652 y=3357 sky130_fd_pr__pfet_01v8
+x Q3 bitslice_3/register_0/d_flip_flop_0/a_1248_0# gnd gnd s=3276,162 d=3276,162 l=30 w=84 x=4926 y=2931 sky130_fd_pr__nfet_01v8
+x bitslice_3/register_0/d_flip_flop_0/inverter_1_out gnd bitslice_3/register_0/d_flip_flop_0/a_974_0# gnd s=4452,274 d=3276,162 l=30 w=84 x=4544 y=2931 sky130_fd_pr__nfet_01v8
+x bitslice_3/addf_0/S vdd bitslice_3/register_0/d_flip_flop_0/a_220_426# vdd s=4452,274 d=3276,162 l=30 w=84 x=3790 y=3357 sky130_fd_pr__pfet_01v8
+x bitslice_3/register_0/and2_0/Y bitslice_3/register_0/d_flip_flop_0/common_1 bitslice_3/register_0/d_flip_flop_0/a_494_0# gnd s=5712,220 d=3276,162 l=30 w=84 x=4064 y=2931 sky130_fd_pr__nfet_01v8
+x bitslice_3/register_0/d_flip_flop_0/CLK_n bitslice_3/register_0/d_flip_flop_0/common_2 bitslice_3/register_0/d_flip_flop_0/a_1248_0# gnd s=5712,220 d=3276,162 l=30 w=84 x=4818 y=2931 sky130_fd_pr__nfet_01v8
+x bitslice_3/register_0/and2_0/Y vdd bitslice_3/register_0/d_flip_flop_0/CLK_n vdd s=17808,778 d=17808,778 l=30 w=336 x=3600 y=3231 sky130_fd_pr__pfet_01v8
+x bitslice_3/register_0/and2_0/Y bitslice_3/register_0/d_flip_flop_0/a_220_426# bitslice_3/register_0/d_flip_flop_0/common_1 vdd s=3276,162 d=5712,220 l=30 w=84 x=3898 y=3357 sky130_fd_pr__pfet_01v8
+x bitslice_3/register_0/d_flip_flop_0/common_2 vdd Q3 vdd s=5376,246 d=13608,560 l=30 w=168 x=5034 y=3315 sky130_fd_pr__pfet_01v8
+x bitslice_3/register_0/and2_0/Y bitslice_3/register_0/d_flip_flop_0/common_2 bitslice_3/register_0/d_flip_flop_0/a_1248_426# vdd s=5712,220 d=3276,162 l=30 w=84 x=4818 y=3357 sky130_fd_pr__pfet_01v8
+x bitslice_3/register_0/and2_0/Y gnd bitslice_3/register_0/d_flip_flop_0/CLK_n gnd s=8904,442 d=8904,442 l=30 w=168 x=3600 y=2890 sky130_fd_pr__nfet_01v8
+x bitslice_3/register_0/d_flip_flop_0/CLK_n bitslice_3/register_0/d_flip_flop_0/a_220_0# bitslice_3/register_0/d_flip_flop_0/common_1 gnd s=3276,162 d=5712,220 l=30 w=84 x=3898 y=2931 sky130_fd_pr__nfet_01v8
+x Q3 bitslice_3/register_0/d_flip_flop_0/a_1248_426# vdd vdd s=3276,162 d=5376,246 l=30 w=84 x=4926 y=3357 sky130_fd_pr__pfet_01v8
+x bitslice_3/register_0/and2_0/Y bitslice_3/register_0/d_flip_flop_0/a_974_0# bitslice_3/register_0/d_flip_flop_0/common_2 gnd s=3276,162 d=5712,220 l=30 w=84 x=4652 y=2931 sky130_fd_pr__nfet_01v8
+x bitslice_3/register_0/d_flip_flop_0/common_1 gnd bitslice_3/register_0/d_flip_flop_0/inverter_1_out gnd s=3276,162 d=9408,392 l=30 w=84 x=4280 y=2931 sky130_fd_pr__nfet_01v8
+x bitslice_3/register_0/d_flip_flop_0/common_2 gnd Q3 gnd s=3276,162 d=9408,392 l=30 w=84 x=5034 y=2931 sky130_fd_pr__nfet_01v8
+x bitslice_3/register_0/d_flip_flop_0/CLK_n bitslice_3/register_0/d_flip_flop_0/common_1 bitslice_3/register_0/d_flip_flop_0/a_494_426# vdd s=5712,220 d=3276,162 l=30 w=84 x=4064 y=3357 sky130_fd_pr__pfet_01v8
+x bitslice_3/register_0/d_flip_flop_0/inverter_1_out vdd bitslice_3/register_0/d_flip_flop_0/a_974_426# vdd s=4452,274 d=3276,162 l=30 w=84 x=4544 y=3357 sky130_fd_pr__pfet_01v8
+x bitslice_3/addf_0/S gnd bitslice_3/register_0/d_flip_flop_0/a_220_0# gnd s=4452,274 d=3276,162 l=30 w=84 x=3790 y=2931 sky130_fd_pr__nfet_01v8
+x bitslice_3/register_0/d_flip_flop_0/inverter_1_out bitslice_3/register_0/d_flip_flop_0/a_494_426# vdd vdd s=3276,162 d=3276,162 l=30 w=84 x=4172 y=3357 sky130_fd_pr__pfet_01v8
+x STORE bitslice_3/register_0/and2_0/Y_n vdd vdd s=4704,224 d=8484,269 l=30 w=168 x=3254 y=3315 sky130_fd_pr__pfet_01v8
+x bitslice_3/register_0/and2_0/Y_n vdd bitslice_3/register_0/and2_0/Y vdd s=8484,269 d=8904,442 l=30 w=168 x=3385 y=3315 sky130_fd_pr__pfet_01v8
+x bitslice_3/register_0/and2_0/Y_n gnd bitslice_3/register_0/and2_0/Y gnd s=6342,269 d=4452,274 l=30 w=84 x=3385 y=2931 sky130_fd_pr__nfet_01v8
+x bitslice_3/register_0/CLK vdd bitslice_3/register_0/and2_0/Y_n vdd s=8904,442 d=4704,224 l=30 w=168 x=3168 y=3315 sky130_fd_pr__pfet_01v8
+x STORE bitslice_3/register_0/and2_0/a_30_n42# gnd gnd s=4704,224 d=6342,269 l=30 w=168 x=3254 y=2890 sky130_fd_pr__nfet_01v8
+x bitslice_3/register_0/CLK bitslice_3/register_0/and2_0/Y_n bitslice_3/register_0/and2_0/a_30_n42# gnd s=8904,442 d=4704,224 l=30 w=168 x=3168 y=2890 sky130_fd_pr__nfet_01v8
+x B4 gnd bitslice_4/mux21_0/B gnd s=4452,274 d=4452,274 l=30 w=84 x=86 y=3855 sky130_fd_pr__nfet_01v8
+x B4 vdd bitslice_4/mux21_0/B vdd s=8904,442 d=8904,442 l=30 w=168 x=86 y=4239 sky130_fd_pr__pfet_01v8
+x SUB B4 bitslice_4/addf_0/B vdd s=8904,442 d=4704,224 l=30 w=168 x=488 y=4239 sky130_fd_pr__pfet_01v8
+x SUB gnd bitslice_4/mux21_0/S_n gnd s=4452,274 d=4452,274 l=30 w=84 x=298 y=3855 sky130_fd_pr__nfet_01v8
+x SUB bitslice_4/addf_0/B bitslice_4/mux21_0/B gnd s=2352,140 d=4452,274 l=30 w=84 x=574 y=3855 sky130_fd_pr__nfet_01v8
+x SUB vdd bitslice_4/mux21_0/S_n vdd s=8904,442 d=8904,442 l=30 w=168 x=298 y=4239 sky130_fd_pr__pfet_01v8
+x bitslice_4/mux21_0/S_n bitslice_4/addf_0/B bitslice_4/mux21_0/B vdd s=4704,224 d=8904,442 l=30 w=168 x=574 y=4239 sky130_fd_pr__pfet_01v8
+x bitslice_4/mux21_0/S_n B4 bitslice_4/addf_0/B gnd s=4452,274 d=2352,140 l=30 w=84 x=488 y=3855 sky130_fd_pr__nfet_01v8
+x CLK vdd bitslice_4/buffer_fo4_0/a_n240_0# vdd s=8904,442 d=8904,442 l=30 w=168 x=2172 y=4239 sky130_fd_pr__pfet_01v8
+x bitslice_4/buffer_fo4_0/a_n240_0# gnd bitslice_4/register_0/CLK gnd s=20160,792 d=18816,784 l=30 w=336 x=2556 y=3900 sky130_fd_pr__nfet_01v8
+x CLK gnd bitslice_4/buffer_fo4_0/a_n240_0# gnd s=4452,274 d=4452,274 l=30 w=84 x=2172 y=3855 sky130_fd_pr__nfet_01v8
+x bitslice_4/buffer_fo4_0/a_n240_0# bitslice_4/register_0/CLK vdd vdd s=37632,1456 d=40320,1464 l=30 w=672 x=2389 y=4289 sky130_fd_pr__pfet_01v8
+x bitslice_4/CI bitslice_4/addf_0/a_870_521# bitslice_4/addf_0/a_952_521# vdd s=6552,304 d=6552,304 l=30 w=252 x=1608 y=4211 sky130_fd_pr__pfet_01v8
+x bitslice_4/addf_0/a_784_115# vdd bitslice_4/addf_0/S vdd s=8568,320 d=13356,610 l=30 w=252 x=1788 y=4211 sky130_fd_pr__pfet_01v8
+x bitslice_4/CI gnd bitslice_4/addf_0/a_526_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1354 y=3805 sky130_fd_pr__nfet_01v8
+x bitslice_4/addf_0/B vdd bitslice_4/addf_0/a_27_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=852 y=4211 sky130_fd_pr__pfet_01v8
+x bitslice_4/CI bitslice_4/addf_0/a_870_115# bitslice_4/addf_0/a_952_115# gnd s=2704,156 d=2704,156 l=30 w=104 x=1608 y=3805 sky130_fd_pr__nfet_01v8
+x bitslice_4/addf_0/a_784_115# gnd bitslice_4/addf_0/S gnd s=3536,172 d=5512,314 l=30 w=104 x=1788 y=3805 sky130_fd_pr__nfet_01v8
+x A4 bitslice_4/addf_0/a_27_521# vdd vdd s=13356,610 d=7056,308 l=30 w=252 x=766 y=4211 sky130_fd_pr__pfet_01v8
+x bitslice_4/addf_0/CON bitslice_4/addf_0/a_526_521# bitslice_4/addf_0/a_784_115# vdd s=7056,308 d=7056,308 l=30 w=252 x=1440 y=4211 sky130_fd_pr__pfet_01v8
+x bitslice_4/addf_0/B gnd bitslice_4/addf_0/a_27_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=852 y=3805 sky130_fd_pr__nfet_01v8
+x A4 bitslice_4/addf_0/a_27_115# gnd gnd s=5512,314 d=2912,160 l=30 w=104 x=766 y=3805 sky130_fd_pr__nfet_01v8
+x bitslice_4/addf_0/CON bitslice_4/addf_0/a_526_115# bitslice_4/addf_0/a_784_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1440 y=3805 sky130_fd_pr__nfet_01v8
+x bitslice_4/CI bitslice_4/addf_0/a_27_521# bitslice_4/addf_0/CON vdd s=7056,308 d=7056,308 l=30 w=252 x=938 y=4211 sky130_fd_pr__pfet_01v8
+x A4 bitslice_4/addf_0/a_368_521# vdd vdd s=5292,294 d=7056,308 l=30 w=252 x=1096 y=4211 sky130_fd_pr__pfet_01v8
+x A4 vdd bitslice_4/addf_0/a_526_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=1182 y=4211 sky130_fd_pr__pfet_01v8
+x bitslice_4/addf_0/CON vdd bitslice_5/CI vdd s=13356,610 d=13356,610 l=30 w=252 x=1978 y=4211 sky130_fd_pr__pfet_01v8
+x bitslice_4/CI bitslice_4/addf_0/a_27_115# bitslice_4/addf_0/CON gnd s=2912,160 d=2912,160 l=30 w=104 x=938 y=3805 sky130_fd_pr__nfet_01v8
+x bitslice_4/addf_0/B bitslice_4/addf_0/a_784_115# bitslice_4/addf_0/a_870_521# vdd s=7056,308 d=6552,304 l=30 w=252 x=1526 y=4211 sky130_fd_pr__pfet_01v8
+x A4 bitslice_4/addf_0/a_368_115# gnd gnd s=2184,146 d=2912,160 l=30 w=104 x=1096 y=3805 sky130_fd_pr__nfet_01v8
+x A4 gnd bitslice_4/addf_0/a_526_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1182 y=3805 sky130_fd_pr__nfet_01v8
+x bitslice_4/addf_0/CON gnd bitslice_5/CI gnd s=5512,314 d=5512,314 l=30 w=104 x=1978 y=3805 sky130_fd_pr__nfet_01v8
+x bitslice_4/addf_0/B bitslice_4/addf_0/a_784_115# bitslice_4/addf_0/a_870_115# gnd s=2912,160 d=2704,156 l=30 w=104 x=1526 y=3805 sky130_fd_pr__nfet_01v8
+x bitslice_4/addf_0/B bitslice_4/addf_0/CON bitslice_4/addf_0/a_368_521# vdd s=7056,308 d=5292,294 l=30 w=252 x=1024 y=4211 sky130_fd_pr__pfet_01v8
+x bitslice_4/addf_0/B bitslice_4/addf_0/a_526_521# vdd vdd s=7056,308 d=7056,308 l=30 w=252 x=1268 y=4211 sky130_fd_pr__pfet_01v8
+x A4 bitslice_4/addf_0/a_952_521# vdd vdd s=6552,304 d=8568,320 l=30 w=252 x=1690 y=4211 sky130_fd_pr__pfet_01v8
+x bitslice_4/addf_0/B bitslice_4/addf_0/CON bitslice_4/addf_0/a_368_115# gnd s=2912,160 d=2184,146 l=30 w=104 x=1024 y=3805 sky130_fd_pr__nfet_01v8
+x bitslice_4/addf_0/B bitslice_4/addf_0/a_526_115# gnd gnd s=2912,160 d=2912,160 l=30 w=104 x=1268 y=3805 sky130_fd_pr__nfet_01v8
+x A4 bitslice_4/addf_0/a_952_115# gnd gnd s=2704,156 d=3536,172 l=30 w=104 x=1690 y=3805 sky130_fd_pr__nfet_01v8
+x bitslice_4/CI vdd bitslice_4/addf_0/a_526_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=1354 y=4211 sky130_fd_pr__pfet_01v8
+x bitslice_4/register_0/d_flip_flop_0/common_1 vdd bitslice_4/register_0/d_flip_flop_0/inverter_1_out vdd s=3276,162 d=9408,392 l=30 w=84 x=4280 y=4281 sky130_fd_pr__pfet_01v8
+x bitslice_4/register_0/d_flip_flop_0/inverter_1_out bitslice_4/register_0/d_flip_flop_0/a_494_0# gnd gnd s=3276,162 d=3276,162 l=30 w=84 x=4172 y=3855 sky130_fd_pr__nfet_01v8
+x bitslice_4/register_0/d_flip_flop_0/CLK_n bitslice_4/register_0/d_flip_flop_0/a_974_426# bitslice_4/register_0/d_flip_flop_0/common_2 vdd s=3276,162 d=5712,220 l=30 w=84 x=4652 y=4281 sky130_fd_pr__pfet_01v8
+x Q4 bitslice_4/register_0/d_flip_flop_0/a_1248_0# gnd gnd s=3276,162 d=3276,162 l=30 w=84 x=4926 y=3855 sky130_fd_pr__nfet_01v8
+x bitslice_4/register_0/d_flip_flop_0/inverter_1_out gnd bitslice_4/register_0/d_flip_flop_0/a_974_0# gnd s=4452,274 d=3276,162 l=30 w=84 x=4544 y=3855 sky130_fd_pr__nfet_01v8
+x bitslice_4/addf_0/S vdd bitslice_4/register_0/d_flip_flop_0/a_220_426# vdd s=4452,274 d=3276,162 l=30 w=84 x=3790 y=4281 sky130_fd_pr__pfet_01v8
+x bitslice_4/register_0/and2_0/Y bitslice_4/register_0/d_flip_flop_0/common_1 bitslice_4/register_0/d_flip_flop_0/a_494_0# gnd s=5712,220 d=3276,162 l=30 w=84 x=4064 y=3855 sky130_fd_pr__nfet_01v8
+x bitslice_4/register_0/d_flip_flop_0/CLK_n bitslice_4/register_0/d_flip_flop_0/common_2 bitslice_4/register_0/d_flip_flop_0/a_1248_0# gnd s=5712,220 d=3276,162 l=30 w=84 x=4818 y=3855 sky130_fd_pr__nfet_01v8
+x bitslice_4/register_0/and2_0/Y vdd bitslice_4/register_0/d_flip_flop_0/CLK_n vdd s=17808,778 d=17808,778 l=30 w=336 x=3600 y=4155 sky130_fd_pr__pfet_01v8
+x bitslice_4/register_0/and2_0/Y bitslice_4/register_0/d_flip_flop_0/a_220_426# bitslice_4/register_0/d_flip_flop_0/common_1 vdd s=3276,162 d=5712,220 l=30 w=84 x=3898 y=4281 sky130_fd_pr__pfet_01v8
+x bitslice_4/register_0/d_flip_flop_0/common_2 vdd Q4 vdd s=5376,246 d=13608,560 l=30 w=168 x=5034 y=4239 sky130_fd_pr__pfet_01v8
+x bitslice_4/register_0/and2_0/Y bitslice_4/register_0/d_flip_flop_0/common_2 bitslice_4/register_0/d_flip_flop_0/a_1248_426# vdd s=5712,220 d=3276,162 l=30 w=84 x=4818 y=4281 sky130_fd_pr__pfet_01v8
+x bitslice_4/register_0/and2_0/Y gnd bitslice_4/register_0/d_flip_flop_0/CLK_n gnd s=8904,442 d=8904,442 l=30 w=168 x=3600 y=3814 sky130_fd_pr__nfet_01v8
+x bitslice_4/register_0/d_flip_flop_0/CLK_n bitslice_4/register_0/d_flip_flop_0/a_220_0# bitslice_4/register_0/d_flip_flop_0/common_1 gnd s=3276,162 d=5712,220 l=30 w=84 x=3898 y=3855 sky130_fd_pr__nfet_01v8
+x Q4 bitslice_4/register_0/d_flip_flop_0/a_1248_426# vdd vdd s=3276,162 d=5376,246 l=30 w=84 x=4926 y=4281 sky130_fd_pr__pfet_01v8
+x bitslice_4/register_0/and2_0/Y bitslice_4/register_0/d_flip_flop_0/a_974_0# bitslice_4/register_0/d_flip_flop_0/common_2 gnd s=3276,162 d=5712,220 l=30 w=84 x=4652 y=3855 sky130_fd_pr__nfet_01v8
+x bitslice_4/register_0/d_flip_flop_0/common_1 gnd bitslice_4/register_0/d_flip_flop_0/inverter_1_out gnd s=3276,162 d=9408,392 l=30 w=84 x=4280 y=3855 sky130_fd_pr__nfet_01v8
+x bitslice_4/register_0/d_flip_flop_0/common_2 gnd Q4 gnd s=3276,162 d=9408,392 l=30 w=84 x=5034 y=3855 sky130_fd_pr__nfet_01v8
+x bitslice_4/register_0/d_flip_flop_0/CLK_n bitslice_4/register_0/d_flip_flop_0/common_1 bitslice_4/register_0/d_flip_flop_0/a_494_426# vdd s=5712,220 d=3276,162 l=30 w=84 x=4064 y=4281 sky130_fd_pr__pfet_01v8
+x bitslice_4/register_0/d_flip_flop_0/inverter_1_out vdd bitslice_4/register_0/d_flip_flop_0/a_974_426# vdd s=4452,274 d=3276,162 l=30 w=84 x=4544 y=4281 sky130_fd_pr__pfet_01v8
+x bitslice_4/addf_0/S gnd bitslice_4/register_0/d_flip_flop_0/a_220_0# gnd s=4452,274 d=3276,162 l=30 w=84 x=3790 y=3855 sky130_fd_pr__nfet_01v8
+x bitslice_4/register_0/d_flip_flop_0/inverter_1_out bitslice_4/register_0/d_flip_flop_0/a_494_426# vdd vdd s=3276,162 d=3276,162 l=30 w=84 x=4172 y=4281 sky130_fd_pr__pfet_01v8
+x STORE bitslice_4/register_0/and2_0/Y_n vdd vdd s=4704,224 d=8484,269 l=30 w=168 x=3254 y=4239 sky130_fd_pr__pfet_01v8
+x bitslice_4/register_0/and2_0/Y_n vdd bitslice_4/register_0/and2_0/Y vdd s=8484,269 d=8904,442 l=30 w=168 x=3385 y=4239 sky130_fd_pr__pfet_01v8
+x bitslice_4/register_0/and2_0/Y_n gnd bitslice_4/register_0/and2_0/Y gnd s=6342,269 d=4452,274 l=30 w=84 x=3385 y=3855 sky130_fd_pr__nfet_01v8
+x bitslice_4/register_0/CLK vdd bitslice_4/register_0/and2_0/Y_n vdd s=8904,442 d=4704,224 l=30 w=168 x=3168 y=4239 sky130_fd_pr__pfet_01v8
+x STORE bitslice_4/register_0/and2_0/a_30_n42# gnd gnd s=4704,224 d=6342,269 l=30 w=168 x=3254 y=3814 sky130_fd_pr__nfet_01v8
+x bitslice_4/register_0/CLK bitslice_4/register_0/and2_0/Y_n bitslice_4/register_0/and2_0/a_30_n42# gnd s=8904,442 d=4704,224 l=30 w=168 x=3168 y=3814 sky130_fd_pr__nfet_01v8
+x B5 gnd bitslice_5/mux21_0/B gnd s=4452,274 d=4452,274 l=30 w=84 x=86 y=4779 sky130_fd_pr__nfet_01v8
+x B5 vdd bitslice_5/mux21_0/B vdd s=8904,442 d=8904,442 l=30 w=168 x=86 y=5163 sky130_fd_pr__pfet_01v8
+x SUB B5 bitslice_5/addf_0/B vdd s=8904,442 d=4704,224 l=30 w=168 x=488 y=5163 sky130_fd_pr__pfet_01v8
+x SUB gnd bitslice_5/mux21_0/S_n gnd s=4452,274 d=4452,274 l=30 w=84 x=298 y=4779 sky130_fd_pr__nfet_01v8
+x SUB bitslice_5/addf_0/B bitslice_5/mux21_0/B gnd s=2352,140 d=4452,274 l=30 w=84 x=574 y=4779 sky130_fd_pr__nfet_01v8
+x SUB vdd bitslice_5/mux21_0/S_n vdd s=8904,442 d=8904,442 l=30 w=168 x=298 y=5163 sky130_fd_pr__pfet_01v8
+x bitslice_5/mux21_0/S_n bitslice_5/addf_0/B bitslice_5/mux21_0/B vdd s=4704,224 d=8904,442 l=30 w=168 x=574 y=5163 sky130_fd_pr__pfet_01v8
+x bitslice_5/mux21_0/S_n B5 bitslice_5/addf_0/B gnd s=4452,274 d=2352,140 l=30 w=84 x=488 y=4779 sky130_fd_pr__nfet_01v8
+x CLK vdd bitslice_5/buffer_fo4_0/a_n240_0# vdd s=8904,442 d=8904,442 l=30 w=168 x=2172 y=5163 sky130_fd_pr__pfet_01v8
+x bitslice_5/buffer_fo4_0/a_n240_0# gnd bitslice_5/register_0/CLK gnd s=20160,792 d=18816,784 l=30 w=336 x=2556 y=4824 sky130_fd_pr__nfet_01v8
+x CLK gnd bitslice_5/buffer_fo4_0/a_n240_0# gnd s=4452,274 d=4452,274 l=30 w=84 x=2172 y=4779 sky130_fd_pr__nfet_01v8
+x bitslice_5/buffer_fo4_0/a_n240_0# bitslice_5/register_0/CLK vdd vdd s=37632,1456 d=40320,1464 l=30 w=672 x=2389 y=5213 sky130_fd_pr__pfet_01v8
+x bitslice_5/CI bitslice_5/addf_0/a_870_521# bitslice_5/addf_0/a_952_521# vdd s=6552,304 d=6552,304 l=30 w=252 x=1608 y=5135 sky130_fd_pr__pfet_01v8
+x bitslice_5/addf_0/a_784_115# vdd bitslice_5/addf_0/S vdd s=8568,320 d=13356,610 l=30 w=252 x=1788 y=5135 sky130_fd_pr__pfet_01v8
+x bitslice_5/CI gnd bitslice_5/addf_0/a_526_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1354 y=4729 sky130_fd_pr__nfet_01v8
+x bitslice_5/addf_0/B vdd bitslice_5/addf_0/a_27_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=852 y=5135 sky130_fd_pr__pfet_01v8
+x bitslice_5/CI bitslice_5/addf_0/a_870_115# bitslice_5/addf_0/a_952_115# gnd s=2704,156 d=2704,156 l=30 w=104 x=1608 y=4729 sky130_fd_pr__nfet_01v8
+x bitslice_5/addf_0/a_784_115# gnd bitslice_5/addf_0/S gnd s=3536,172 d=5512,314 l=30 w=104 x=1788 y=4729 sky130_fd_pr__nfet_01v8
+x A5 bitslice_5/addf_0/a_27_521# vdd vdd s=13356,610 d=7056,308 l=30 w=252 x=766 y=5135 sky130_fd_pr__pfet_01v8
+x bitslice_5/addf_0/CON bitslice_5/addf_0/a_526_521# bitslice_5/addf_0/a_784_115# vdd s=7056,308 d=7056,308 l=30 w=252 x=1440 y=5135 sky130_fd_pr__pfet_01v8
+x bitslice_5/addf_0/B gnd bitslice_5/addf_0/a_27_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=852 y=4729 sky130_fd_pr__nfet_01v8
+x A5 bitslice_5/addf_0/a_27_115# gnd gnd s=5512,314 d=2912,160 l=30 w=104 x=766 y=4729 sky130_fd_pr__nfet_01v8
+x bitslice_5/addf_0/CON bitslice_5/addf_0/a_526_115# bitslice_5/addf_0/a_784_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1440 y=4729 sky130_fd_pr__nfet_01v8
+x bitslice_5/CI bitslice_5/addf_0/a_27_521# bitslice_5/addf_0/CON vdd s=7056,308 d=7056,308 l=30 w=252 x=938 y=5135 sky130_fd_pr__pfet_01v8
+x A5 bitslice_5/addf_0/a_368_521# vdd vdd s=5292,294 d=7056,308 l=30 w=252 x=1096 y=5135 sky130_fd_pr__pfet_01v8
+x A5 vdd bitslice_5/addf_0/a_526_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=1182 y=5135 sky130_fd_pr__pfet_01v8
+x bitslice_5/addf_0/CON vdd bitslice_6/CI vdd s=13356,610 d=13356,610 l=30 w=252 x=1978 y=5135 sky130_fd_pr__pfet_01v8
+x bitslice_5/CI bitslice_5/addf_0/a_27_115# bitslice_5/addf_0/CON gnd s=2912,160 d=2912,160 l=30 w=104 x=938 y=4729 sky130_fd_pr__nfet_01v8
+x bitslice_5/addf_0/B bitslice_5/addf_0/a_784_115# bitslice_5/addf_0/a_870_521# vdd s=7056,308 d=6552,304 l=30 w=252 x=1526 y=5135 sky130_fd_pr__pfet_01v8
+x A5 bitslice_5/addf_0/a_368_115# gnd gnd s=2184,146 d=2912,160 l=30 w=104 x=1096 y=4729 sky130_fd_pr__nfet_01v8
+x A5 gnd bitslice_5/addf_0/a_526_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1182 y=4729 sky130_fd_pr__nfet_01v8
+x bitslice_5/addf_0/CON gnd bitslice_6/CI gnd s=5512,314 d=5512,314 l=30 w=104 x=1978 y=4729 sky130_fd_pr__nfet_01v8
+x bitslice_5/addf_0/B bitslice_5/addf_0/a_784_115# bitslice_5/addf_0/a_870_115# gnd s=2912,160 d=2704,156 l=30 w=104 x=1526 y=4729 sky130_fd_pr__nfet_01v8
+x bitslice_5/addf_0/B bitslice_5/addf_0/CON bitslice_5/addf_0/a_368_521# vdd s=7056,308 d=5292,294 l=30 w=252 x=1024 y=5135 sky130_fd_pr__pfet_01v8
+x bitslice_5/addf_0/B bitslice_5/addf_0/a_526_521# vdd vdd s=7056,308 d=7056,308 l=30 w=252 x=1268 y=5135 sky130_fd_pr__pfet_01v8
+x A5 bitslice_5/addf_0/a_952_521# vdd vdd s=6552,304 d=8568,320 l=30 w=252 x=1690 y=5135 sky130_fd_pr__pfet_01v8
+x bitslice_5/addf_0/B bitslice_5/addf_0/CON bitslice_5/addf_0/a_368_115# gnd s=2912,160 d=2184,146 l=30 w=104 x=1024 y=4729 sky130_fd_pr__nfet_01v8
+x bitslice_5/addf_0/B bitslice_5/addf_0/a_526_115# gnd gnd s=2912,160 d=2912,160 l=30 w=104 x=1268 y=4729 sky130_fd_pr__nfet_01v8
+x A5 bitslice_5/addf_0/a_952_115# gnd gnd s=2704,156 d=3536,172 l=30 w=104 x=1690 y=4729 sky130_fd_pr__nfet_01v8
+x bitslice_5/CI vdd bitslice_5/addf_0/a_526_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=1354 y=5135 sky130_fd_pr__pfet_01v8
+x bitslice_5/register_0/d_flip_flop_0/common_1 vdd bitslice_5/register_0/d_flip_flop_0/inverter_1_out vdd s=3276,162 d=9408,392 l=30 w=84 x=4280 y=5205 sky130_fd_pr__pfet_01v8
+x bitslice_5/register_0/d_flip_flop_0/inverter_1_out bitslice_5/register_0/d_flip_flop_0/a_494_0# gnd gnd s=3276,162 d=3276,162 l=30 w=84 x=4172 y=4779 sky130_fd_pr__nfet_01v8
+x bitslice_5/register_0/d_flip_flop_0/CLK_n bitslice_5/register_0/d_flip_flop_0/a_974_426# bitslice_5/register_0/d_flip_flop_0/common_2 vdd s=3276,162 d=5712,220 l=30 w=84 x=4652 y=5205 sky130_fd_pr__pfet_01v8
+x Q5 bitslice_5/register_0/d_flip_flop_0/a_1248_0# gnd gnd s=3276,162 d=3276,162 l=30 w=84 x=4926 y=4779 sky130_fd_pr__nfet_01v8
+x bitslice_5/register_0/d_flip_flop_0/inverter_1_out gnd bitslice_5/register_0/d_flip_flop_0/a_974_0# gnd s=4452,274 d=3276,162 l=30 w=84 x=4544 y=4779 sky130_fd_pr__nfet_01v8
+x bitslice_5/addf_0/S vdd bitslice_5/register_0/d_flip_flop_0/a_220_426# vdd s=4452,274 d=3276,162 l=30 w=84 x=3790 y=5205 sky130_fd_pr__pfet_01v8
+x bitslice_5/register_0/and2_0/Y bitslice_5/register_0/d_flip_flop_0/common_1 bitslice_5/register_0/d_flip_flop_0/a_494_0# gnd s=5712,220 d=3276,162 l=30 w=84 x=4064 y=4779 sky130_fd_pr__nfet_01v8
+x bitslice_5/register_0/d_flip_flop_0/CLK_n bitslice_5/register_0/d_flip_flop_0/common_2 bitslice_5/register_0/d_flip_flop_0/a_1248_0# gnd s=5712,220 d=3276,162 l=30 w=84 x=4818 y=4779 sky130_fd_pr__nfet_01v8
+x bitslice_5/register_0/and2_0/Y vdd bitslice_5/register_0/d_flip_flop_0/CLK_n vdd s=17808,778 d=17808,778 l=30 w=336 x=3600 y=5079 sky130_fd_pr__pfet_01v8
+x bitslice_5/register_0/and2_0/Y bitslice_5/register_0/d_flip_flop_0/a_220_426# bitslice_5/register_0/d_flip_flop_0/common_1 vdd s=3276,162 d=5712,220 l=30 w=84 x=3898 y=5205 sky130_fd_pr__pfet_01v8
+x bitslice_5/register_0/d_flip_flop_0/common_2 vdd Q5 vdd s=5376,246 d=13608,560 l=30 w=168 x=5034 y=5163 sky130_fd_pr__pfet_01v8
+x bitslice_5/register_0/and2_0/Y bitslice_5/register_0/d_flip_flop_0/common_2 bitslice_5/register_0/d_flip_flop_0/a_1248_426# vdd s=5712,220 d=3276,162 l=30 w=84 x=4818 y=5205 sky130_fd_pr__pfet_01v8
+x bitslice_5/register_0/and2_0/Y gnd bitslice_5/register_0/d_flip_flop_0/CLK_n gnd s=8904,442 d=8904,442 l=30 w=168 x=3600 y=4738 sky130_fd_pr__nfet_01v8
+x bitslice_5/register_0/d_flip_flop_0/CLK_n bitslice_5/register_0/d_flip_flop_0/a_220_0# bitslice_5/register_0/d_flip_flop_0/common_1 gnd s=3276,162 d=5712,220 l=30 w=84 x=3898 y=4779 sky130_fd_pr__nfet_01v8
+x Q5 bitslice_5/register_0/d_flip_flop_0/a_1248_426# vdd vdd s=3276,162 d=5376,246 l=30 w=84 x=4926 y=5205 sky130_fd_pr__pfet_01v8
+x bitslice_5/register_0/and2_0/Y bitslice_5/register_0/d_flip_flop_0/a_974_0# bitslice_5/register_0/d_flip_flop_0/common_2 gnd s=3276,162 d=5712,220 l=30 w=84 x=4652 y=4779 sky130_fd_pr__nfet_01v8
+x bitslice_5/register_0/d_flip_flop_0/common_1 gnd bitslice_5/register_0/d_flip_flop_0/inverter_1_out gnd s=3276,162 d=9408,392 l=30 w=84 x=4280 y=4779 sky130_fd_pr__nfet_01v8
+x bitslice_5/register_0/d_flip_flop_0/common_2 gnd Q5 gnd s=3276,162 d=9408,392 l=30 w=84 x=5034 y=4779 sky130_fd_pr__nfet_01v8
+x bitslice_5/register_0/d_flip_flop_0/CLK_n bitslice_5/register_0/d_flip_flop_0/common_1 bitslice_5/register_0/d_flip_flop_0/a_494_426# vdd s=5712,220 d=3276,162 l=30 w=84 x=4064 y=5205 sky130_fd_pr__pfet_01v8
+x bitslice_5/register_0/d_flip_flop_0/inverter_1_out vdd bitslice_5/register_0/d_flip_flop_0/a_974_426# vdd s=4452,274 d=3276,162 l=30 w=84 x=4544 y=5205 sky130_fd_pr__pfet_01v8
+x bitslice_5/addf_0/S gnd bitslice_5/register_0/d_flip_flop_0/a_220_0# gnd s=4452,274 d=3276,162 l=30 w=84 x=3790 y=4779 sky130_fd_pr__nfet_01v8
+x bitslice_5/register_0/d_flip_flop_0/inverter_1_out bitslice_5/register_0/d_flip_flop_0/a_494_426# vdd vdd s=3276,162 d=3276,162 l=30 w=84 x=4172 y=5205 sky130_fd_pr__pfet_01v8
+x STORE bitslice_5/register_0/and2_0/Y_n vdd vdd s=4704,224 d=8484,269 l=30 w=168 x=3254 y=5163 sky130_fd_pr__pfet_01v8
+x bitslice_5/register_0/and2_0/Y_n vdd bitslice_5/register_0/and2_0/Y vdd s=8484,269 d=8904,442 l=30 w=168 x=3385 y=5163 sky130_fd_pr__pfet_01v8
+x bitslice_5/register_0/and2_0/Y_n gnd bitslice_5/register_0/and2_0/Y gnd s=6342,269 d=4452,274 l=30 w=84 x=3385 y=4779 sky130_fd_pr__nfet_01v8
+x bitslice_5/register_0/CLK vdd bitslice_5/register_0/and2_0/Y_n vdd s=8904,442 d=4704,224 l=30 w=168 x=3168 y=5163 sky130_fd_pr__pfet_01v8
+x STORE bitslice_5/register_0/and2_0/a_30_n42# gnd gnd s=4704,224 d=6342,269 l=30 w=168 x=3254 y=4738 sky130_fd_pr__nfet_01v8
+x bitslice_5/register_0/CLK bitslice_5/register_0/and2_0/Y_n bitslice_5/register_0/and2_0/a_30_n42# gnd s=8904,442 d=4704,224 l=30 w=168 x=3168 y=4738 sky130_fd_pr__nfet_01v8
+x B6 gnd bitslice_6/mux21_0/B gnd s=4452,274 d=4452,274 l=30 w=84 x=86 y=5703 sky130_fd_pr__nfet_01v8
+x B6 vdd bitslice_6/mux21_0/B vdd s=8904,442 d=8904,442 l=30 w=168 x=86 y=6087 sky130_fd_pr__pfet_01v8
+x SUB B6 bitslice_6/addf_0/B vdd s=8904,442 d=4704,224 l=30 w=168 x=488 y=6087 sky130_fd_pr__pfet_01v8
+x SUB gnd bitslice_6/mux21_0/S_n gnd s=4452,274 d=4452,274 l=30 w=84 x=298 y=5703 sky130_fd_pr__nfet_01v8
+x SUB bitslice_6/addf_0/B bitslice_6/mux21_0/B gnd s=2352,140 d=4452,274 l=30 w=84 x=574 y=5703 sky130_fd_pr__nfet_01v8
+x SUB vdd bitslice_6/mux21_0/S_n vdd s=8904,442 d=8904,442 l=30 w=168 x=298 y=6087 sky130_fd_pr__pfet_01v8
+x bitslice_6/mux21_0/S_n bitslice_6/addf_0/B bitslice_6/mux21_0/B vdd s=4704,224 d=8904,442 l=30 w=168 x=574 y=6087 sky130_fd_pr__pfet_01v8
+x bitslice_6/mux21_0/S_n B6 bitslice_6/addf_0/B gnd s=4452,274 d=2352,140 l=30 w=84 x=488 y=5703 sky130_fd_pr__nfet_01v8
+x CLK vdd bitslice_6/buffer_fo4_0/a_n240_0# vdd s=8904,442 d=8904,442 l=30 w=168 x=2172 y=6087 sky130_fd_pr__pfet_01v8
+x bitslice_6/buffer_fo4_0/a_n240_0# gnd bitslice_6/register_0/CLK gnd s=20160,792 d=18816,784 l=30 w=336 x=2556 y=5748 sky130_fd_pr__nfet_01v8
+x CLK gnd bitslice_6/buffer_fo4_0/a_n240_0# gnd s=4452,274 d=4452,274 l=30 w=84 x=2172 y=5703 sky130_fd_pr__nfet_01v8
+x bitslice_6/buffer_fo4_0/a_n240_0# bitslice_6/register_0/CLK vdd vdd s=37632,1456 d=40320,1464 l=30 w=672 x=2389 y=6137 sky130_fd_pr__pfet_01v8
+x bitslice_6/CI bitslice_6/addf_0/a_870_521# bitslice_6/addf_0/a_952_521# vdd s=6552,304 d=6552,304 l=30 w=252 x=1608 y=6059 sky130_fd_pr__pfet_01v8
+x bitslice_6/addf_0/a_784_115# vdd bitslice_6/addf_0/S vdd s=8568,320 d=13356,610 l=30 w=252 x=1788 y=6059 sky130_fd_pr__pfet_01v8
+x bitslice_6/CI gnd bitslice_6/addf_0/a_526_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1354 y=5653 sky130_fd_pr__nfet_01v8
+x bitslice_6/addf_0/B vdd bitslice_6/addf_0/a_27_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=852 y=6059 sky130_fd_pr__pfet_01v8
+x bitslice_6/CI bitslice_6/addf_0/a_870_115# bitslice_6/addf_0/a_952_115# gnd s=2704,156 d=2704,156 l=30 w=104 x=1608 y=5653 sky130_fd_pr__nfet_01v8
+x bitslice_6/addf_0/a_784_115# gnd bitslice_6/addf_0/S gnd s=3536,172 d=5512,314 l=30 w=104 x=1788 y=5653 sky130_fd_pr__nfet_01v8
+x A6 bitslice_6/addf_0/a_27_521# vdd vdd s=13356,610 d=7056,308 l=30 w=252 x=766 y=6059 sky130_fd_pr__pfet_01v8
+x bitslice_6/addf_0/CON bitslice_6/addf_0/a_526_521# bitslice_6/addf_0/a_784_115# vdd s=7056,308 d=7056,308 l=30 w=252 x=1440 y=6059 sky130_fd_pr__pfet_01v8
+x bitslice_6/addf_0/B gnd bitslice_6/addf_0/a_27_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=852 y=5653 sky130_fd_pr__nfet_01v8
+x A6 bitslice_6/addf_0/a_27_115# gnd gnd s=5512,314 d=2912,160 l=30 w=104 x=766 y=5653 sky130_fd_pr__nfet_01v8
+x bitslice_6/addf_0/CON bitslice_6/addf_0/a_526_115# bitslice_6/addf_0/a_784_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1440 y=5653 sky130_fd_pr__nfet_01v8
+x bitslice_6/CI bitslice_6/addf_0/a_27_521# bitslice_6/addf_0/CON vdd s=7056,308 d=7056,308 l=30 w=252 x=938 y=6059 sky130_fd_pr__pfet_01v8
+x A6 bitslice_6/addf_0/a_368_521# vdd vdd s=5292,294 d=7056,308 l=30 w=252 x=1096 y=6059 sky130_fd_pr__pfet_01v8
+x A6 vdd bitslice_6/addf_0/a_526_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=1182 y=6059 sky130_fd_pr__pfet_01v8
+x bitslice_6/addf_0/CON vdd bitslice_7/CI vdd s=13356,610 d=13356,610 l=30 w=252 x=1978 y=6059 sky130_fd_pr__pfet_01v8
+x bitslice_6/CI bitslice_6/addf_0/a_27_115# bitslice_6/addf_0/CON gnd s=2912,160 d=2912,160 l=30 w=104 x=938 y=5653 sky130_fd_pr__nfet_01v8
+x bitslice_6/addf_0/B bitslice_6/addf_0/a_784_115# bitslice_6/addf_0/a_870_521# vdd s=7056,308 d=6552,304 l=30 w=252 x=1526 y=6059 sky130_fd_pr__pfet_01v8
+x A6 bitslice_6/addf_0/a_368_115# gnd gnd s=2184,146 d=2912,160 l=30 w=104 x=1096 y=5653 sky130_fd_pr__nfet_01v8
+x A6 gnd bitslice_6/addf_0/a_526_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1182 y=5653 sky130_fd_pr__nfet_01v8
+x bitslice_6/addf_0/CON gnd bitslice_7/CI gnd s=5512,314 d=5512,314 l=30 w=104 x=1978 y=5653 sky130_fd_pr__nfet_01v8
+x bitslice_6/addf_0/B bitslice_6/addf_0/a_784_115# bitslice_6/addf_0/a_870_115# gnd s=2912,160 d=2704,156 l=30 w=104 x=1526 y=5653 sky130_fd_pr__nfet_01v8
+x bitslice_6/addf_0/B bitslice_6/addf_0/CON bitslice_6/addf_0/a_368_521# vdd s=7056,308 d=5292,294 l=30 w=252 x=1024 y=6059 sky130_fd_pr__pfet_01v8
+x bitslice_6/addf_0/B bitslice_6/addf_0/a_526_521# vdd vdd s=7056,308 d=7056,308 l=30 w=252 x=1268 y=6059 sky130_fd_pr__pfet_01v8
+x A6 bitslice_6/addf_0/a_952_521# vdd vdd s=6552,304 d=8568,320 l=30 w=252 x=1690 y=6059 sky130_fd_pr__pfet_01v8
+x bitslice_6/addf_0/B bitslice_6/addf_0/CON bitslice_6/addf_0/a_368_115# gnd s=2912,160 d=2184,146 l=30 w=104 x=1024 y=5653 sky130_fd_pr__nfet_01v8
+x bitslice_6/addf_0/B bitslice_6/addf_0/a_526_115# gnd gnd s=2912,160 d=2912,160 l=30 w=104 x=1268 y=5653 sky130_fd_pr__nfet_01v8
+x A6 bitslice_6/addf_0/a_952_115# gnd gnd s=2704,156 d=3536,172 l=30 w=104 x=1690 y=5653 sky130_fd_pr__nfet_01v8
+x bitslice_6/CI vdd bitslice_6/addf_0/a_526_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=1354 y=6059 sky130_fd_pr__pfet_01v8
+x bitslice_6/register_0/d_flip_flop_0/common_1 vdd bitslice_6/register_0/d_flip_flop_0/inverter_1_out vdd s=3276,162 d=9408,392 l=30 w=84 x=4280 y=6129 sky130_fd_pr__pfet_01v8
+x bitslice_6/register_0/d_flip_flop_0/inverter_1_out bitslice_6/register_0/d_flip_flop_0/a_494_0# gnd gnd s=3276,162 d=3276,162 l=30 w=84 x=4172 y=5703 sky130_fd_pr__nfet_01v8
+x bitslice_6/register_0/d_flip_flop_0/CLK_n bitslice_6/register_0/d_flip_flop_0/a_974_426# bitslice_6/register_0/d_flip_flop_0/common_2 vdd s=3276,162 d=5712,220 l=30 w=84 x=4652 y=6129 sky130_fd_pr__pfet_01v8
+x Q6 bitslice_6/register_0/d_flip_flop_0/a_1248_0# gnd gnd s=3276,162 d=3276,162 l=30 w=84 x=4926 y=5703 sky130_fd_pr__nfet_01v8
+x bitslice_6/register_0/d_flip_flop_0/inverter_1_out gnd bitslice_6/register_0/d_flip_flop_0/a_974_0# gnd s=4452,274 d=3276,162 l=30 w=84 x=4544 y=5703 sky130_fd_pr__nfet_01v8
+x bitslice_6/addf_0/S vdd bitslice_6/register_0/d_flip_flop_0/a_220_426# vdd s=4452,274 d=3276,162 l=30 w=84 x=3790 y=6129 sky130_fd_pr__pfet_01v8
+x bitslice_6/register_0/and2_0/Y bitslice_6/register_0/d_flip_flop_0/common_1 bitslice_6/register_0/d_flip_flop_0/a_494_0# gnd s=5712,220 d=3276,162 l=30 w=84 x=4064 y=5703 sky130_fd_pr__nfet_01v8
+x bitslice_6/register_0/d_flip_flop_0/CLK_n bitslice_6/register_0/d_flip_flop_0/common_2 bitslice_6/register_0/d_flip_flop_0/a_1248_0# gnd s=5712,220 d=3276,162 l=30 w=84 x=4818 y=5703 sky130_fd_pr__nfet_01v8
+x bitslice_6/register_0/and2_0/Y vdd bitslice_6/register_0/d_flip_flop_0/CLK_n vdd s=17808,778 d=17808,778 l=30 w=336 x=3600 y=6003 sky130_fd_pr__pfet_01v8
+x bitslice_6/register_0/and2_0/Y bitslice_6/register_0/d_flip_flop_0/a_220_426# bitslice_6/register_0/d_flip_flop_0/common_1 vdd s=3276,162 d=5712,220 l=30 w=84 x=3898 y=6129 sky130_fd_pr__pfet_01v8
+x bitslice_6/register_0/d_flip_flop_0/common_2 vdd Q6 vdd s=5376,246 d=13608,560 l=30 w=168 x=5034 y=6087 sky130_fd_pr__pfet_01v8
+x bitslice_6/register_0/and2_0/Y bitslice_6/register_0/d_flip_flop_0/common_2 bitslice_6/register_0/d_flip_flop_0/a_1248_426# vdd s=5712,220 d=3276,162 l=30 w=84 x=4818 y=6129 sky130_fd_pr__pfet_01v8
+x bitslice_6/register_0/and2_0/Y gnd bitslice_6/register_0/d_flip_flop_0/CLK_n gnd s=8904,442 d=8904,442 l=30 w=168 x=3600 y=5662 sky130_fd_pr__nfet_01v8
+x bitslice_6/register_0/d_flip_flop_0/CLK_n bitslice_6/register_0/d_flip_flop_0/a_220_0# bitslice_6/register_0/d_flip_flop_0/common_1 gnd s=3276,162 d=5712,220 l=30 w=84 x=3898 y=5703 sky130_fd_pr__nfet_01v8
+x Q6 bitslice_6/register_0/d_flip_flop_0/a_1248_426# vdd vdd s=3276,162 d=5376,246 l=30 w=84 x=4926 y=6129 sky130_fd_pr__pfet_01v8
+x bitslice_6/register_0/and2_0/Y bitslice_6/register_0/d_flip_flop_0/a_974_0# bitslice_6/register_0/d_flip_flop_0/common_2 gnd s=3276,162 d=5712,220 l=30 w=84 x=4652 y=5703 sky130_fd_pr__nfet_01v8
+x bitslice_6/register_0/d_flip_flop_0/common_1 gnd bitslice_6/register_0/d_flip_flop_0/inverter_1_out gnd s=3276,162 d=9408,392 l=30 w=84 x=4280 y=5703 sky130_fd_pr__nfet_01v8
+x bitslice_6/register_0/d_flip_flop_0/common_2 gnd Q6 gnd s=3276,162 d=9408,392 l=30 w=84 x=5034 y=5703 sky130_fd_pr__nfet_01v8
+x bitslice_6/register_0/d_flip_flop_0/CLK_n bitslice_6/register_0/d_flip_flop_0/common_1 bitslice_6/register_0/d_flip_flop_0/a_494_426# vdd s=5712,220 d=3276,162 l=30 w=84 x=4064 y=6129 sky130_fd_pr__pfet_01v8
+x bitslice_6/register_0/d_flip_flop_0/inverter_1_out vdd bitslice_6/register_0/d_flip_flop_0/a_974_426# vdd s=4452,274 d=3276,162 l=30 w=84 x=4544 y=6129 sky130_fd_pr__pfet_01v8
+x bitslice_6/addf_0/S gnd bitslice_6/register_0/d_flip_flop_0/a_220_0# gnd s=4452,274 d=3276,162 l=30 w=84 x=3790 y=5703 sky130_fd_pr__nfet_01v8
+x bitslice_6/register_0/d_flip_flop_0/inverter_1_out bitslice_6/register_0/d_flip_flop_0/a_494_426# vdd vdd s=3276,162 d=3276,162 l=30 w=84 x=4172 y=6129 sky130_fd_pr__pfet_01v8
+x STORE bitslice_6/register_0/and2_0/Y_n vdd vdd s=4704,224 d=8484,269 l=30 w=168 x=3254 y=6087 sky130_fd_pr__pfet_01v8
+x bitslice_6/register_0/and2_0/Y_n vdd bitslice_6/register_0/and2_0/Y vdd s=8484,269 d=8904,442 l=30 w=168 x=3385 y=6087 sky130_fd_pr__pfet_01v8
+x bitslice_6/register_0/and2_0/Y_n gnd bitslice_6/register_0/and2_0/Y gnd s=6342,269 d=4452,274 l=30 w=84 x=3385 y=5703 sky130_fd_pr__nfet_01v8
+x bitslice_6/register_0/CLK vdd bitslice_6/register_0/and2_0/Y_n vdd s=8904,442 d=4704,224 l=30 w=168 x=3168 y=6087 sky130_fd_pr__pfet_01v8
+x STORE bitslice_6/register_0/and2_0/a_30_n42# gnd gnd s=4704,224 d=6342,269 l=30 w=168 x=3254 y=5662 sky130_fd_pr__nfet_01v8
+x bitslice_6/register_0/CLK bitslice_6/register_0/and2_0/Y_n bitslice_6/register_0/and2_0/a_30_n42# gnd s=8904,442 d=4704,224 l=30 w=168 x=3168 y=5662 sky130_fd_pr__nfet_01v8
+x B7 gnd bitslice_7/mux21_0/B gnd s=4452,274 d=4452,274 l=30 w=84 x=86 y=6627 sky130_fd_pr__nfet_01v8
+x B7 vdd bitslice_7/mux21_0/B vdd s=8904,442 d=8904,442 l=30 w=168 x=86 y=7011 sky130_fd_pr__pfet_01v8
+x SUB B7 bitslice_7/addf_0/B vdd s=8904,442 d=4704,224 l=30 w=168 x=488 y=7011 sky130_fd_pr__pfet_01v8
+x SUB gnd bitslice_7/mux21_0/S_n gnd s=4452,274 d=4452,274 l=30 w=84 x=298 y=6627 sky130_fd_pr__nfet_01v8
+x SUB bitslice_7/addf_0/B bitslice_7/mux21_0/B gnd s=2352,140 d=4452,274 l=30 w=84 x=574 y=6627 sky130_fd_pr__nfet_01v8
+x SUB vdd bitslice_7/mux21_0/S_n vdd s=8904,442 d=8904,442 l=30 w=168 x=298 y=7011 sky130_fd_pr__pfet_01v8
+x bitslice_7/mux21_0/S_n bitslice_7/addf_0/B bitslice_7/mux21_0/B vdd s=4704,224 d=8904,442 l=30 w=168 x=574 y=7011 sky130_fd_pr__pfet_01v8
+x bitslice_7/mux21_0/S_n B7 bitslice_7/addf_0/B gnd s=4452,274 d=2352,140 l=30 w=84 x=488 y=6627 sky130_fd_pr__nfet_01v8
+x CLK vdd bitslice_7/buffer_fo4_0/a_n240_0# vdd s=8904,442 d=8904,442 l=30 w=168 x=2172 y=7011 sky130_fd_pr__pfet_01v8
+x bitslice_7/buffer_fo4_0/a_n240_0# gnd bitslice_7/register_0/CLK gnd s=20160,792 d=18816,784 l=30 w=336 x=2556 y=6672 sky130_fd_pr__nfet_01v8
+x CLK gnd bitslice_7/buffer_fo4_0/a_n240_0# gnd s=4452,274 d=4452,274 l=30 w=84 x=2172 y=6627 sky130_fd_pr__nfet_01v8
+x bitslice_7/buffer_fo4_0/a_n240_0# bitslice_7/register_0/CLK vdd vdd s=37632,1456 d=40320,1464 l=30 w=672 x=2389 y=7061 sky130_fd_pr__pfet_01v8
+x bitslice_7/CI bitslice_7/addf_0/a_870_521# bitslice_7/addf_0/a_952_521# vdd s=6552,304 d=6552,304 l=30 w=252 x=1608 y=6983 sky130_fd_pr__pfet_01v8
+x bitslice_7/addf_0/a_784_115# vdd bitslice_7/addf_0/S vdd s=8568,320 d=13356,610 l=30 w=252 x=1788 y=6983 sky130_fd_pr__pfet_01v8
+x bitslice_7/CI gnd bitslice_7/addf_0/a_526_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1354 y=6577 sky130_fd_pr__nfet_01v8
+x bitslice_7/addf_0/B vdd bitslice_7/addf_0/a_27_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=852 y=6983 sky130_fd_pr__pfet_01v8
+x bitslice_7/CI bitslice_7/addf_0/a_870_115# bitslice_7/addf_0/a_952_115# gnd s=2704,156 d=2704,156 l=30 w=104 x=1608 y=6577 sky130_fd_pr__nfet_01v8
+x bitslice_7/addf_0/a_784_115# gnd bitslice_7/addf_0/S gnd s=3536,172 d=5512,314 l=30 w=104 x=1788 y=6577 sky130_fd_pr__nfet_01v8
+x A7 bitslice_7/addf_0/a_27_521# vdd vdd s=13356,610 d=7056,308 l=30 w=252 x=766 y=6983 sky130_fd_pr__pfet_01v8
+x bitslice_7/addf_0/CON bitslice_7/addf_0/a_526_521# bitslice_7/addf_0/a_784_115# vdd s=7056,308 d=7056,308 l=30 w=252 x=1440 y=6983 sky130_fd_pr__pfet_01v8
+x bitslice_7/addf_0/B gnd bitslice_7/addf_0/a_27_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=852 y=6577 sky130_fd_pr__nfet_01v8
+x A7 bitslice_7/addf_0/a_27_115# gnd gnd s=5512,314 d=2912,160 l=30 w=104 x=766 y=6577 sky130_fd_pr__nfet_01v8
+x bitslice_7/addf_0/CON bitslice_7/addf_0/a_526_115# bitslice_7/addf_0/a_784_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1440 y=6577 sky130_fd_pr__nfet_01v8
+x bitslice_7/CI bitslice_7/addf_0/a_27_521# bitslice_7/addf_0/CON vdd s=7056,308 d=7056,308 l=30 w=252 x=938 y=6983 sky130_fd_pr__pfet_01v8
+x A7 bitslice_7/addf_0/a_368_521# vdd vdd s=5292,294 d=7056,308 l=30 w=252 x=1096 y=6983 sky130_fd_pr__pfet_01v8
+x A7 vdd bitslice_7/addf_0/a_526_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=1182 y=6983 sky130_fd_pr__pfet_01v8
+x bitslice_7/addf_0/CON vdd CARRY vdd s=13356,610 d=13356,610 l=30 w=252 x=1978 y=6983 sky130_fd_pr__pfet_01v8
+x bitslice_7/CI bitslice_7/addf_0/a_27_115# bitslice_7/addf_0/CON gnd s=2912,160 d=2912,160 l=30 w=104 x=938 y=6577 sky130_fd_pr__nfet_01v8
+x bitslice_7/addf_0/B bitslice_7/addf_0/a_784_115# bitslice_7/addf_0/a_870_521# vdd s=7056,308 d=6552,304 l=30 w=252 x=1526 y=6983 sky130_fd_pr__pfet_01v8
+x A7 bitslice_7/addf_0/a_368_115# gnd gnd s=2184,146 d=2912,160 l=30 w=104 x=1096 y=6577 sky130_fd_pr__nfet_01v8
+x A7 gnd bitslice_7/addf_0/a_526_115# gnd s=2912,160 d=2912,160 l=30 w=104 x=1182 y=6577 sky130_fd_pr__nfet_01v8
+x bitslice_7/addf_0/CON gnd CARRY gnd s=5512,314 d=5512,314 l=30 w=104 x=1978 y=6577 sky130_fd_pr__nfet_01v8
+x bitslice_7/addf_0/B bitslice_7/addf_0/a_784_115# bitslice_7/addf_0/a_870_115# gnd s=2912,160 d=2704,156 l=30 w=104 x=1526 y=6577 sky130_fd_pr__nfet_01v8
+x bitslice_7/addf_0/B bitslice_7/addf_0/CON bitslice_7/addf_0/a_368_521# vdd s=7056,308 d=5292,294 l=30 w=252 x=1024 y=6983 sky130_fd_pr__pfet_01v8
+x bitslice_7/addf_0/B bitslice_7/addf_0/a_526_521# vdd vdd s=7056,308 d=7056,308 l=30 w=252 x=1268 y=6983 sky130_fd_pr__pfet_01v8
+x A7 bitslice_7/addf_0/a_952_521# vdd vdd s=6552,304 d=8568,320 l=30 w=252 x=1690 y=6983 sky130_fd_pr__pfet_01v8
+x bitslice_7/addf_0/B bitslice_7/addf_0/CON bitslice_7/addf_0/a_368_115# gnd s=2912,160 d=2184,146 l=30 w=104 x=1024 y=6577 sky130_fd_pr__nfet_01v8
+x bitslice_7/addf_0/B bitslice_7/addf_0/a_526_115# gnd gnd s=2912,160 d=2912,160 l=30 w=104 x=1268 y=6577 sky130_fd_pr__nfet_01v8
+x A7 bitslice_7/addf_0/a_952_115# gnd gnd s=2704,156 d=3536,172 l=30 w=104 x=1690 y=6577 sky130_fd_pr__nfet_01v8
+x bitslice_7/CI vdd bitslice_7/addf_0/a_526_521# vdd s=7056,308 d=7056,308 l=30 w=252 x=1354 y=6983 sky130_fd_pr__pfet_01v8
+x bitslice_7/register_0/d_flip_flop_0/common_1 vdd bitslice_7/register_0/d_flip_flop_0/inverter_1_out vdd s=3276,162 d=9408,392 l=30 w=84 x=4280 y=7053 sky130_fd_pr__pfet_01v8
+x bitslice_7/register_0/d_flip_flop_0/inverter_1_out bitslice_7/register_0/d_flip_flop_0/a_494_0# gnd gnd s=3276,162 d=3276,162 l=30 w=84 x=4172 y=6627 sky130_fd_pr__nfet_01v8
+x bitslice_7/register_0/d_flip_flop_0/CLK_n bitslice_7/register_0/d_flip_flop_0/a_974_426# bitslice_7/register_0/d_flip_flop_0/common_2 vdd s=3276,162 d=5712,220 l=30 w=84 x=4652 y=7053 sky130_fd_pr__pfet_01v8
+x Q7 bitslice_7/register_0/d_flip_flop_0/a_1248_0# gnd gnd s=3276,162 d=3276,162 l=30 w=84 x=4926 y=6627 sky130_fd_pr__nfet_01v8
+x bitslice_7/register_0/d_flip_flop_0/inverter_1_out gnd bitslice_7/register_0/d_flip_flop_0/a_974_0# gnd s=4452,274 d=3276,162 l=30 w=84 x=4544 y=6627 sky130_fd_pr__nfet_01v8
+x bitslice_7/addf_0/S vdd bitslice_7/register_0/d_flip_flop_0/a_220_426# vdd s=4452,274 d=3276,162 l=30 w=84 x=3790 y=7053 sky130_fd_pr__pfet_01v8
+x bitslice_7/register_0/and2_0/Y bitslice_7/register_0/d_flip_flop_0/common_1 bitslice_7/register_0/d_flip_flop_0/a_494_0# gnd s=5712,220 d=3276,162 l=30 w=84 x=4064 y=6627 sky130_fd_pr__nfet_01v8
+x bitslice_7/register_0/d_flip_flop_0/CLK_n bitslice_7/register_0/d_flip_flop_0/common_2 bitslice_7/register_0/d_flip_flop_0/a_1248_0# gnd s=5712,220 d=3276,162 l=30 w=84 x=4818 y=6627 sky130_fd_pr__nfet_01v8
+x bitslice_7/register_0/and2_0/Y vdd bitslice_7/register_0/d_flip_flop_0/CLK_n vdd s=17808,778 d=17808,778 l=30 w=336 x=3600 y=6927 sky130_fd_pr__pfet_01v8
+x bitslice_7/register_0/and2_0/Y bitslice_7/register_0/d_flip_flop_0/a_220_426# bitslice_7/register_0/d_flip_flop_0/common_1 vdd s=3276,162 d=5712,220 l=30 w=84 x=3898 y=7053 sky130_fd_pr__pfet_01v8
+x bitslice_7/register_0/d_flip_flop_0/common_2 vdd Q7 vdd s=5376,246 d=13608,560 l=30 w=168 x=5034 y=7011 sky130_fd_pr__pfet_01v8
+x bitslice_7/register_0/and2_0/Y bitslice_7/register_0/d_flip_flop_0/common_2 bitslice_7/register_0/d_flip_flop_0/a_1248_426# vdd s=5712,220 d=3276,162 l=30 w=84 x=4818 y=7053 sky130_fd_pr__pfet_01v8
+x bitslice_7/register_0/and2_0/Y gnd bitslice_7/register_0/d_flip_flop_0/CLK_n gnd s=8904,442 d=8904,442 l=30 w=168 x=3600 y=6586 sky130_fd_pr__nfet_01v8
+x bitslice_7/register_0/d_flip_flop_0/CLK_n bitslice_7/register_0/d_flip_flop_0/a_220_0# bitslice_7/register_0/d_flip_flop_0/common_1 gnd s=3276,162 d=5712,220 l=30 w=84 x=3898 y=6627 sky130_fd_pr__nfet_01v8
+x Q7 bitslice_7/register_0/d_flip_flop_0/a_1248_426# vdd vdd s=3276,162 d=5376,246 l=30 w=84 x=4926 y=7053 sky130_fd_pr__pfet_01v8
+x bitslice_7/register_0/and2_0/Y bitslice_7/register_0/d_flip_flop_0/a_974_0# bitslice_7/register_0/d_flip_flop_0/common_2 gnd s=3276,162 d=5712,220 l=30 w=84 x=4652 y=6627 sky130_fd_pr__nfet_01v8
+x bitslice_7/register_0/d_flip_flop_0/common_1 gnd bitslice_7/register_0/d_flip_flop_0/inverter_1_out gnd s=3276,162 d=9408,392 l=30 w=84 x=4280 y=6627 sky130_fd_pr__nfet_01v8
+x bitslice_7/register_0/d_flip_flop_0/common_2 gnd Q7 gnd s=3276,162 d=9408,392 l=30 w=84 x=5034 y=6627 sky130_fd_pr__nfet_01v8
+x bitslice_7/register_0/d_flip_flop_0/CLK_n bitslice_7/register_0/d_flip_flop_0/common_1 bitslice_7/register_0/d_flip_flop_0/a_494_426# vdd s=5712,220 d=3276,162 l=30 w=84 x=4064 y=7053 sky130_fd_pr__pfet_01v8
+x bitslice_7/register_0/d_flip_flop_0/inverter_1_out vdd bitslice_7/register_0/d_flip_flop_0/a_974_426# vdd s=4452,274 d=3276,162 l=30 w=84 x=4544 y=7053 sky130_fd_pr__pfet_01v8
+x bitslice_7/addf_0/S gnd bitslice_7/register_0/d_flip_flop_0/a_220_0# gnd s=4452,274 d=3276,162 l=30 w=84 x=3790 y=6627 sky130_fd_pr__nfet_01v8
+x bitslice_7/register_0/d_flip_flop_0/inverter_1_out bitslice_7/register_0/d_flip_flop_0/a_494_426# vdd vdd s=3276,162 d=3276,162 l=30 w=84 x=4172 y=7053 sky130_fd_pr__pfet_01v8
+x STORE bitslice_7/register_0/and2_0/Y_n vdd vdd s=4704,224 d=8484,269 l=30 w=168 x=3254 y=7011 sky130_fd_pr__pfet_01v8
+x bitslice_7/register_0/and2_0/Y_n vdd bitslice_7/register_0/and2_0/Y vdd s=8484,269 d=8904,442 l=30 w=168 x=3385 y=7011 sky130_fd_pr__pfet_01v8
+x bitslice_7/register_0/and2_0/Y_n gnd bitslice_7/register_0/and2_0/Y gnd s=6342,269 d=4452,274 l=30 w=84 x=3385 y=6627 sky130_fd_pr__nfet_01v8
+x bitslice_7/register_0/CLK vdd bitslice_7/register_0/and2_0/Y_n vdd s=8904,442 d=4704,224 l=30 w=168 x=3168 y=7011 sky130_fd_pr__pfet_01v8
+x STORE bitslice_7/register_0/and2_0/a_30_n42# gnd gnd s=4704,224 d=6342,269 l=30 w=168 x=3254 y=6586 sky130_fd_pr__nfet_01v8
+x bitslice_7/register_0/CLK bitslice_7/register_0/and2_0/Y_n bitslice_7/register_0/and2_0/a_30_n42# gnd s=8904,442 d=4704,224 l=30 w=168 x=3168 y=6586 sky130_fd_pr__nfet_01v8
+C vdd SUB 2.0
+R bitslice_7/addf_0/S 2462
+= bitslice_7/addf_0/S bitslice_7/register_0/D
+= bitslice_7/addf_0/S bitslice_7/register_0/d_flip_flop_0/D
+= bitslice_7/addf_0/S bitslice_7/m1_1835_528#
+= bitslice_7/addf_0/S bitslice_7/li_1841_534#
+R bitslice_7/register_0/CLK 4194
+= bitslice_7/register_0/CLK bitslice_7/buffer_fo4_0/B
+= bitslice_7/register_0/CLK bitslice_7/m1_2874_370#
+= bitslice_7/register_0/CLK bitslice_7/register_0/and2_0/A
+R bitslice_7/register_0/and2_0/a_30_n42# 360
+R bitslice_7/register_0/and2_0/Y_n 2223
+R Q7 2101
+= Q7 bitslice_7/Q
+= Q7 bitslice_7/register_0/Q
+= Q7 bitslice_7/register_0/d_flip_flop_0/Q
+R bitslice_7/register_0/and2_0/Y 4505
+= bitslice_7/register_0/and2_0/Y bitslice_7/register_0/d_flip_flop_0/CLK
+= bitslice_7/register_0/and2_0/Y bitslice_7/register_0/m2_368_216#
+R bitslice_7/register_0/d_flip_flop_0/a_1248_0# 129
+R bitslice_7/register_0/d_flip_flop_0/a_974_0# 129
+R bitslice_7/register_0/d_flip_flop_0/a_494_0# 129
+R bitslice_7/register_0/d_flip_flop_0/a_220_0# 129
+R bitslice_7/register_0/d_flip_flop_0/a_1248_426# 212
+R bitslice_7/register_0/d_flip_flop_0/a_974_426# 212
+R bitslice_7/register_0/d_flip_flop_0/a_494_426# 212
+R bitslice_7/register_0/d_flip_flop_0/a_220_426# 212
+R bitslice_7/register_0/d_flip_flop_0/common_2 1750
+R bitslice_7/register_0/d_flip_flop_0/common_1 1746
+R bitslice_7/register_0/d_flip_flop_0/inverter_1_out 2792
+R bitslice_7/register_0/d_flip_flop_0/CLK_n 3984
+R CARRY 1425
+= CARRY bitslice_7/CO
+= CARRY bitslice_7/addf_0/CO
+R A7 4745
+= A7 bitslice_7/A
+= A7 bitslice_7/addf_0/A
+R bitslice_7/addf_0/a_952_115# 240
+R bitslice_7/addf_0/a_870_115# 240
+R bitslice_7/addf_0/a_526_115# 944
+R bitslice_7/addf_0/a_368_115# 297
+R bitslice_7/addf_0/a_27_115# 959
+R bitslice_7/addf_0/a_952_521# 955
+R bitslice_7/addf_0/a_870_521# 955
+R bitslice_7/addf_0/a_526_521# 2404
+R bitslice_7/addf_0/a_368_521# 1182
+R bitslice_7/addf_0/a_27_521# 2482
+R bitslice_7/addf_0/a_784_115# 2734
+R bitslice_7/addf_0/CON 3963
+R bitslice_7/buffer_fo4_0/a_n240_0# 3043
+R bitslice_7/mux21_0/B 2857
+= bitslice_7/mux21_0/B bitslice_7/inverter_0/B
+= bitslice_7/mux21_0/B bitslice_7/m1_142_89#
+R bitslice_7/addf_0/B 6249
+= bitslice_7/addf_0/B bitslice_7/mux21_0/Y
+= bitslice_7/addf_0/B bitslice_7/li_541_681#
+R B7 1961
+= B7 bitslice_7/B
+= B7 bitslice_7/inverter_0/A
+= B7 bitslice_7/mux21_0/A
+= B7 bitslice_7/m1_46_260#
+R bitslice_7/mux21_0/S_n 2024
+R bitslice_6/addf_0/S 2462
+= bitslice_6/addf_0/S bitslice_6/register_0/D
+= bitslice_6/addf_0/S bitslice_6/register_0/d_flip_flop_0/D
+= bitslice_6/addf_0/S bitslice_6/m1_1835_528#
+= bitslice_6/addf_0/S bitslice_6/li_1841_534#
+R bitslice_6/register_0/CLK 4194
+= bitslice_6/register_0/CLK bitslice_6/buffer_fo4_0/B
+= bitslice_6/register_0/CLK bitslice_6/m1_2874_370#
+= bitslice_6/register_0/CLK bitslice_6/register_0/and2_0/A
+R bitslice_6/register_0/and2_0/a_30_n42# 360
+R bitslice_6/register_0/and2_0/Y_n 2223
+R Q6 2101
+= Q6 bitslice_6/Q
+= Q6 bitslice_6/register_0/Q
+= Q6 bitslice_6/register_0/d_flip_flop_0/Q
+R bitslice_6/register_0/and2_0/Y 4505
+= bitslice_6/register_0/and2_0/Y bitslice_6/register_0/d_flip_flop_0/CLK
+= bitslice_6/register_0/and2_0/Y bitslice_6/register_0/m2_368_216#
+R bitslice_6/register_0/d_flip_flop_0/a_1248_0# 129
+R bitslice_6/register_0/d_flip_flop_0/a_974_0# 129
+R bitslice_6/register_0/d_flip_flop_0/a_494_0# 129
+R bitslice_6/register_0/d_flip_flop_0/a_220_0# 129
+R bitslice_6/register_0/d_flip_flop_0/a_1248_426# 212
+R bitslice_6/register_0/d_flip_flop_0/a_974_426# 212
+R bitslice_6/register_0/d_flip_flop_0/a_494_426# 212
+R bitslice_6/register_0/d_flip_flop_0/a_220_426# 212
+R bitslice_6/register_0/d_flip_flop_0/common_2 1750
+R bitslice_6/register_0/d_flip_flop_0/common_1 1746
+R bitslice_6/register_0/d_flip_flop_0/inverter_1_out 2792
+R bitslice_6/register_0/d_flip_flop_0/CLK_n 3984
+R bitslice_7/CI 5252
+= bitslice_7/CI bitslice_7/addf_0/CI
+= bitslice_7/CI bitslice_6/CO
+= bitslice_7/CI bitslice_6/addf_0/CO
+R A6 4745
+= A6 bitslice_6/A
+= A6 bitslice_6/addf_0/A
+R bitslice_6/addf_0/a_952_115# 240
+R bitslice_6/addf_0/a_870_115# 240
+R bitslice_6/addf_0/a_526_115# 944
+R bitslice_6/addf_0/a_368_115# 297
+R bitslice_6/addf_0/a_27_115# 959
+R bitslice_6/addf_0/a_952_521# 955
+R bitslice_6/addf_0/a_870_521# 955
+R bitslice_6/addf_0/a_526_521# 2404
+R bitslice_6/addf_0/a_368_521# 1182
+R bitslice_6/addf_0/a_27_521# 2482
+R bitslice_6/addf_0/a_784_115# 2734
+R bitslice_6/addf_0/CON 3963
+R bitslice_6/buffer_fo4_0/a_n240_0# 3043
+R bitslice_6/mux21_0/B 2857
+= bitslice_6/mux21_0/B bitslice_6/inverter_0/B
+= bitslice_6/mux21_0/B bitslice_6/m1_142_89#
+R bitslice_6/addf_0/B 6249
+= bitslice_6/addf_0/B bitslice_6/mux21_0/Y
+= bitslice_6/addf_0/B bitslice_6/li_541_681#
+R B6 1961
+= B6 bitslice_6/B
+= B6 bitslice_6/inverter_0/A
+= B6 bitslice_6/mux21_0/A
+= B6 bitslice_6/m1_46_260#
+R bitslice_6/mux21_0/S_n 2024
+R bitslice_5/addf_0/S 2462
+= bitslice_5/addf_0/S bitslice_5/register_0/D
+= bitslice_5/addf_0/S bitslice_5/register_0/d_flip_flop_0/D
+= bitslice_5/addf_0/S bitslice_5/m1_1835_528#
+= bitslice_5/addf_0/S bitslice_5/li_1841_534#
+R bitslice_5/register_0/CLK 4194
+= bitslice_5/register_0/CLK bitslice_5/buffer_fo4_0/B
+= bitslice_5/register_0/CLK bitslice_5/m1_2874_370#
+= bitslice_5/register_0/CLK bitslice_5/register_0/and2_0/A
+R bitslice_5/register_0/and2_0/a_30_n42# 360
+R bitslice_5/register_0/and2_0/Y_n 2223
+R Q5 2101
+= Q5 bitslice_5/Q
+= Q5 bitslice_5/register_0/Q
+= Q5 bitslice_5/register_0/d_flip_flop_0/Q
+R bitslice_5/register_0/and2_0/Y 4505
+= bitslice_5/register_0/and2_0/Y bitslice_5/register_0/d_flip_flop_0/CLK
+= bitslice_5/register_0/and2_0/Y bitslice_5/register_0/m2_368_216#
+R bitslice_5/register_0/d_flip_flop_0/a_1248_0# 129
+R bitslice_5/register_0/d_flip_flop_0/a_974_0# 129
+R bitslice_5/register_0/d_flip_flop_0/a_494_0# 129
+R bitslice_5/register_0/d_flip_flop_0/a_220_0# 129
+R bitslice_5/register_0/d_flip_flop_0/a_1248_426# 212
+R bitslice_5/register_0/d_flip_flop_0/a_974_426# 212
+R bitslice_5/register_0/d_flip_flop_0/a_494_426# 212
+R bitslice_5/register_0/d_flip_flop_0/a_220_426# 212
+R bitslice_5/register_0/d_flip_flop_0/common_2 1750
+R bitslice_5/register_0/d_flip_flop_0/common_1 1746
+R bitslice_5/register_0/d_flip_flop_0/inverter_1_out 2792
+R bitslice_5/register_0/d_flip_flop_0/CLK_n 3984
+R bitslice_6/CI 5252
+= bitslice_6/CI bitslice_6/addf_0/CI
+= bitslice_6/CI bitslice_5/CO
+= bitslice_6/CI bitslice_5/addf_0/CO
+R A5 4745
+= A5 bitslice_5/A
+= A5 bitslice_5/addf_0/A
+R bitslice_5/addf_0/a_952_115# 240
+R bitslice_5/addf_0/a_870_115# 240
+R bitslice_5/addf_0/a_526_115# 944
+R bitslice_5/addf_0/a_368_115# 297
+R bitslice_5/addf_0/a_27_115# 959
+R bitslice_5/addf_0/a_952_521# 955
+R bitslice_5/addf_0/a_870_521# 955
+R bitslice_5/addf_0/a_526_521# 2404
+R bitslice_5/addf_0/a_368_521# 1182
+R bitslice_5/addf_0/a_27_521# 2482
+R bitslice_5/addf_0/a_784_115# 2734
+R bitslice_5/addf_0/CON 3963
+R bitslice_5/buffer_fo4_0/a_n240_0# 3043
+R bitslice_5/mux21_0/B 2857
+= bitslice_5/mux21_0/B bitslice_5/inverter_0/B
+= bitslice_5/mux21_0/B bitslice_5/m1_142_89#
+R bitslice_5/addf_0/B 6249
+= bitslice_5/addf_0/B bitslice_5/mux21_0/Y
+= bitslice_5/addf_0/B bitslice_5/li_541_681#
+R B5 1961
+= B5 bitslice_5/B
+= B5 bitslice_5/inverter_0/A
+= B5 bitslice_5/mux21_0/A
+= B5 bitslice_5/m1_46_260#
+R bitslice_5/mux21_0/S_n 2024
+R bitslice_4/addf_0/S 2462
+= bitslice_4/addf_0/S bitslice_4/register_0/D
+= bitslice_4/addf_0/S bitslice_4/register_0/d_flip_flop_0/D
+= bitslice_4/addf_0/S bitslice_4/m1_1835_528#
+= bitslice_4/addf_0/S bitslice_4/li_1841_534#
+R bitslice_4/register_0/CLK 4194
+= bitslice_4/register_0/CLK bitslice_4/buffer_fo4_0/B
+= bitslice_4/register_0/CLK bitslice_4/m1_2874_370#
+= bitslice_4/register_0/CLK bitslice_4/register_0/and2_0/A
+R bitslice_4/register_0/and2_0/a_30_n42# 360
+R bitslice_4/register_0/and2_0/Y_n 2223
+R Q4 2101
+= Q4 bitslice_4/Q
+= Q4 bitslice_4/register_0/Q
+= Q4 bitslice_4/register_0/d_flip_flop_0/Q
+R bitslice_4/register_0/and2_0/Y 4505
+= bitslice_4/register_0/and2_0/Y bitslice_4/register_0/d_flip_flop_0/CLK
+= bitslice_4/register_0/and2_0/Y bitslice_4/register_0/m2_368_216#
+R bitslice_4/register_0/d_flip_flop_0/a_1248_0# 129
+R bitslice_4/register_0/d_flip_flop_0/a_974_0# 129
+R bitslice_4/register_0/d_flip_flop_0/a_494_0# 129
+R bitslice_4/register_0/d_flip_flop_0/a_220_0# 129
+R bitslice_4/register_0/d_flip_flop_0/a_1248_426# 212
+R bitslice_4/register_0/d_flip_flop_0/a_974_426# 212
+R bitslice_4/register_0/d_flip_flop_0/a_494_426# 212
+R bitslice_4/register_0/d_flip_flop_0/a_220_426# 212
+R bitslice_4/register_0/d_flip_flop_0/common_2 1750
+R bitslice_4/register_0/d_flip_flop_0/common_1 1746
+R bitslice_4/register_0/d_flip_flop_0/inverter_1_out 2792
+R bitslice_4/register_0/d_flip_flop_0/CLK_n 3984
+R bitslice_5/CI 5252
+= bitslice_5/CI bitslice_5/addf_0/CI
+= bitslice_5/CI bitslice_4/CO
+= bitslice_5/CI bitslice_4/addf_0/CO
+R A4 4745
+= A4 bitslice_4/A
+= A4 bitslice_4/addf_0/A
+R bitslice_4/addf_0/a_952_115# 240
+R bitslice_4/addf_0/a_870_115# 240
+R bitslice_4/addf_0/a_526_115# 944
+R bitslice_4/addf_0/a_368_115# 297
+R bitslice_4/addf_0/a_27_115# 959
+R bitslice_4/addf_0/a_952_521# 955
+R bitslice_4/addf_0/a_870_521# 955
+R bitslice_4/addf_0/a_526_521# 2404
+R bitslice_4/addf_0/a_368_521# 1182
+R bitslice_4/addf_0/a_27_521# 2482
+R bitslice_4/addf_0/a_784_115# 2734
+R bitslice_4/addf_0/CON 3963
+R bitslice_4/buffer_fo4_0/a_n240_0# 3043
+R bitslice_4/mux21_0/B 2857
+= bitslice_4/mux21_0/B bitslice_4/inverter_0/B
+= bitslice_4/mux21_0/B bitslice_4/m1_142_89#
+R bitslice_4/addf_0/B 6249
+= bitslice_4/addf_0/B bitslice_4/mux21_0/Y
+= bitslice_4/addf_0/B bitslice_4/li_541_681#
+R B4 1961
+= B4 bitslice_4/B
+= B4 bitslice_4/inverter_0/A
+= B4 bitslice_4/mux21_0/A
+= B4 bitslice_4/m1_46_260#
+R bitslice_4/mux21_0/S_n 2024
+R bitslice_3/addf_0/S 2462
+= bitslice_3/addf_0/S bitslice_3/register_0/D
+= bitslice_3/addf_0/S bitslice_3/register_0/d_flip_flop_0/D
+= bitslice_3/addf_0/S bitslice_3/m1_1835_528#
+= bitslice_3/addf_0/S bitslice_3/li_1841_534#
+R bitslice_3/register_0/CLK 4194
+= bitslice_3/register_0/CLK bitslice_3/buffer_fo4_0/B
+= bitslice_3/register_0/CLK bitslice_3/m1_2874_370#
+= bitslice_3/register_0/CLK bitslice_3/register_0/and2_0/A
+R bitslice_3/register_0/and2_0/a_30_n42# 360
+R bitslice_3/register_0/and2_0/Y_n 2223
+R Q3 2101
+= Q3 bitslice_3/Q
+= Q3 bitslice_3/register_0/Q
+= Q3 bitslice_3/register_0/d_flip_flop_0/Q
+R bitslice_3/register_0/and2_0/Y 4505
+= bitslice_3/register_0/and2_0/Y bitslice_3/register_0/d_flip_flop_0/CLK
+= bitslice_3/register_0/and2_0/Y bitslice_3/register_0/m2_368_216#
+R bitslice_3/register_0/d_flip_flop_0/a_1248_0# 129
+R bitslice_3/register_0/d_flip_flop_0/a_974_0# 129
+R bitslice_3/register_0/d_flip_flop_0/a_494_0# 129
+R bitslice_3/register_0/d_flip_flop_0/a_220_0# 129
+R bitslice_3/register_0/d_flip_flop_0/a_1248_426# 212
+R bitslice_3/register_0/d_flip_flop_0/a_974_426# 212
+R bitslice_3/register_0/d_flip_flop_0/a_494_426# 212
+R bitslice_3/register_0/d_flip_flop_0/a_220_426# 212
+R bitslice_3/register_0/d_flip_flop_0/common_2 1750
+R bitslice_3/register_0/d_flip_flop_0/common_1 1746
+R bitslice_3/register_0/d_flip_flop_0/inverter_1_out 2792
+R bitslice_3/register_0/d_flip_flop_0/CLK_n 3984
+R bitslice_4/CI 5252
+= bitslice_4/CI bitslice_4/addf_0/CI
+= bitslice_4/CI bitslice_3/CO
+= bitslice_4/CI bitslice_3/addf_0/CO
+R A3 4745
+= A3 bitslice_3/A
+= A3 bitslice_3/addf_0/A
+R bitslice_3/addf_0/a_952_115# 240
+R bitslice_3/addf_0/a_870_115# 240
+R bitslice_3/addf_0/a_526_115# 944
+R bitslice_3/addf_0/a_368_115# 297
+R bitslice_3/addf_0/a_27_115# 959
+R bitslice_3/addf_0/a_952_521# 955
+R bitslice_3/addf_0/a_870_521# 955
+R bitslice_3/addf_0/a_526_521# 2404
+R bitslice_3/addf_0/a_368_521# 1182
+R bitslice_3/addf_0/a_27_521# 2482
+R bitslice_3/addf_0/a_784_115# 2734
+R bitslice_3/addf_0/CON 3963
+R bitslice_3/buffer_fo4_0/a_n240_0# 3043
+R bitslice_3/mux21_0/B 2857
+= bitslice_3/mux21_0/B bitslice_3/inverter_0/B
+= bitslice_3/mux21_0/B bitslice_3/m1_142_89#
+R bitslice_3/addf_0/B 6249
+= bitslice_3/addf_0/B bitslice_3/mux21_0/Y
+= bitslice_3/addf_0/B bitslice_3/li_541_681#
+R B3 1961
+= B3 bitslice_3/B
+= B3 bitslice_3/inverter_0/A
+= B3 bitslice_3/mux21_0/A
+= B3 bitslice_3/m1_46_260#
+R bitslice_3/mux21_0/S_n 2024
+C vdd0 87.0
+R vdd 421724
+= vdd bitslice_0/vdd
+= vdd bitslice_0/addf_0/vdd
+= vdd bitslice_0/m1_4842_781#
+= vdd bitslice_0/register_0/vdd
+= vdd bitslice_0/register_0/and2_0/vdd
+= vdd bitslice_0/register_0/d_flip_flop_0/vdd
+= vdd bitslice_0/buffer_fo4_0/vdd
+= vdd bitslice_0/inverter_0/vdd
+= vdd bitslice_0/mux21_0/vdd
+= vdd bitslice_7/vdd
+= vdd bitslice_7/addf_0/vdd
+= vdd bitslice_7/m1_4842_781#
+= vdd bitslice_7/register_0/vdd
+= vdd bitslice_7/register_0/and2_0/vdd
+= vdd bitslice_7/register_0/d_flip_flop_0/vdd
+= vdd bitslice_7/buffer_fo4_0/vdd
+= vdd bitslice_7/inverter_0/vdd
+= vdd bitslice_7/mux21_0/vdd
+= vdd bitslice_5/vdd
+= vdd bitslice_5/addf_0/vdd
+= vdd bitslice_5/m1_4842_781#
+= vdd bitslice_5/register_0/vdd
+= vdd bitslice_5/register_0/and2_0/vdd
+= vdd bitslice_5/register_0/d_flip_flop_0/vdd
+= vdd bitslice_5/buffer_fo4_0/vdd
+= vdd bitslice_5/inverter_0/vdd
+= vdd bitslice_5/mux21_0/vdd
+= vdd bitslice_6/vdd
+= vdd bitslice_6/addf_0/vdd
+= vdd bitslice_6/m1_4842_781#
+= vdd bitslice_6/register_0/vdd
+= vdd bitslice_6/register_0/and2_0/vdd
+= vdd bitslice_6/register_0/d_flip_flop_0/vdd
+= vdd bitslice_6/buffer_fo4_0/vdd
+= vdd bitslice_6/inverter_0/vdd
+= vdd bitslice_6/mux21_0/vdd
+= vdd bitslice_4/vdd
+= vdd bitslice_4/addf_0/vdd
+= vdd bitslice_4/m1_4842_781#
+= vdd bitslice_4/register_0/vdd
+= vdd bitslice_4/register_0/and2_0/vdd
+= vdd bitslice_4/register_0/d_flip_flop_0/vdd
+= vdd bitslice_4/buffer_fo4_0/vdd
+= vdd bitslice_4/inverter_0/vdd
+= vdd bitslice_4/mux21_0/vdd
+= vdd bitslice_3/vdd
+= vdd bitslice_1/vdd
+= vdd bitslice_1/addf_0/vdd
+= vdd bitslice_1/m1_4842_781#
+= vdd bitslice_1/register_0/vdd
+= vdd bitslice_1/register_0/and2_0/vdd
+= vdd bitslice_1/register_0/d_flip_flop_0/vdd
+= vdd bitslice_1/buffer_fo4_0/vdd
+= vdd bitslice_1/inverter_0/vdd
+= vdd bitslice_1/mux21_0/vdd
+= vdd bitslice_3/addf_0/vdd
+= vdd bitslice_3/m1_4842_781#
+= vdd bitslice_3/register_0/vdd
+= vdd bitslice_3/register_0/and2_0/vdd
+= vdd bitslice_3/register_0/d_flip_flop_0/vdd
+= vdd bitslice_3/buffer_fo4_0/vdd
+= vdd bitslice_3/inverter_0/vdd
+= vdd bitslice_3/mux21_0/vdd
+= vdd bitslice_2/vdd
+= vdd bitslice_2/addf_0/vdd
+= vdd bitslice_2/m1_4842_781#
+= vdd bitslice_2/register_0/vdd
+= vdd bitslice_2/register_0/and2_0/vdd
+= vdd bitslice_2/register_0/d_flip_flop_0/vdd
+= vdd bitslice_2/buffer_fo4_0/vdd
+= vdd bitslice_2/inverter_0/vdd
+= vdd bitslice_2/mux21_0/vdd
+R bitslice_2/addf_0/S 2462
+= bitslice_2/addf_0/S bitslice_2/register_0/D
+= bitslice_2/addf_0/S bitslice_2/register_0/d_flip_flop_0/D
+= bitslice_2/addf_0/S bitslice_2/m1_1835_528#
+= bitslice_2/addf_0/S bitslice_2/li_1841_534#
+C STORE0 2.8
+R STORE 9362
+= STORE bitslice_0/STORE
+= STORE bitslice_0/register_0/EN
+= STORE bitslice_0/register_0/and2_0/B
+= STORE bitslice_7/STORE
+= STORE bitslice_7/register_0/EN
+= STORE bitslice_7/register_0/and2_0/B
+= STORE bitslice_5/STORE
+= STORE bitslice_5/register_0/EN
+= STORE bitslice_5/register_0/and2_0/B
+= STORE bitslice_6/STORE
+= STORE bitslice_6/register_0/EN
+= STORE bitslice_6/register_0/and2_0/B
+= STORE bitslice_4/STORE
+= STORE bitslice_4/register_0/EN
+= STORE bitslice_4/register_0/and2_0/B
+= STORE bitslice_3/STORE
+= STORE bitslice_1/STORE
+= STORE bitslice_1/register_0/EN
+= STORE bitslice_1/register_0/and2_0/B
+= STORE bitslice_3/register_0/EN
+= STORE bitslice_3/register_0/and2_0/B
+= STORE bitslice_2/STORE
+= STORE bitslice_2/register_0/EN
+= STORE bitslice_2/register_0/and2_0/B
+R bitslice_2/register_0/CLK 4194
+= bitslice_2/register_0/CLK bitslice_2/buffer_fo4_0/B
+= bitslice_2/register_0/CLK bitslice_2/m1_2874_370#
+= bitslice_2/register_0/CLK bitslice_2/register_0/and2_0/A
+R bitslice_2/register_0/and2_0/a_30_n42# 360
+R bitslice_2/register_0/and2_0/Y_n 2223
+R Q2 2101
+= Q2 bitslice_2/Q
+= Q2 bitslice_2/register_0/Q
+= Q2 bitslice_2/register_0/d_flip_flop_0/Q
+R bitslice_2/register_0/and2_0/Y 4505
+= bitslice_2/register_0/and2_0/Y bitslice_2/register_0/d_flip_flop_0/CLK
+= bitslice_2/register_0/and2_0/Y bitslice_2/register_0/m2_368_216#
+R bitslice_2/register_0/d_flip_flop_0/a_1248_0# 129
+R bitslice_2/register_0/d_flip_flop_0/a_974_0# 129
+R bitslice_2/register_0/d_flip_flop_0/a_494_0# 129
+R bitslice_2/register_0/d_flip_flop_0/a_220_0# 129
+R bitslice_2/register_0/d_flip_flop_0/a_1248_426# 212
+R bitslice_2/register_0/d_flip_flop_0/a_974_426# 212
+R bitslice_2/register_0/d_flip_flop_0/a_494_426# 212
+R bitslice_2/register_0/d_flip_flop_0/a_220_426# 212
+R bitslice_2/register_0/d_flip_flop_0/common_2 1750
+R bitslice_2/register_0/d_flip_flop_0/common_1 1746
+R bitslice_2/register_0/d_flip_flop_0/inverter_1_out 2792
+R bitslice_2/register_0/d_flip_flop_0/CLK_n 3984
+R bitslice_3/CI 5252
+= bitslice_3/CI bitslice_3/addf_0/CI
+= bitslice_3/CI bitslice_2/CO
+= bitslice_3/CI bitslice_2/addf_0/CO
+R A2 4745
+= A2 bitslice_2/A
+= A2 bitslice_2/addf_0/A
+R bitslice_2/addf_0/a_952_115# 240
+R bitslice_2/addf_0/a_870_115# 240
+R bitslice_2/addf_0/a_526_115# 944
+R bitslice_2/addf_0/a_368_115# 297
+R bitslice_2/addf_0/a_27_115# 959
+R bitslice_2/addf_0/a_952_521# 955
+R bitslice_2/addf_0/a_870_521# 955
+R bitslice_2/addf_0/a_526_521# 2404
+R bitslice_2/addf_0/a_368_521# 1182
+R bitslice_2/addf_0/a_27_521# 2482
+R bitslice_2/addf_0/a_784_115# 2734
+R bitslice_2/addf_0/CON 3963
+C CLK0 3.4
+R CLK 8818
+= CLK bitslice_0/CLK
+= CLK bitslice_0/buffer_fo4_0/A
+= CLK bitslice_7/CLK
+= CLK bitslice_7/buffer_fo4_0/A
+= CLK bitslice_5/CLK
+= CLK bitslice_5/buffer_fo4_0/A
+= CLK bitslice_6/CLK
+= CLK bitslice_6/buffer_fo4_0/A
+= CLK bitslice_4/CLK
+= CLK bitslice_4/buffer_fo4_0/A
+= CLK bitslice_3/CLK
+= CLK bitslice_1/CLK
+= CLK bitslice_1/buffer_fo4_0/A
+= CLK bitslice_3/buffer_fo4_0/A
+= CLK bitslice_2/CLK
+= CLK bitslice_2/buffer_fo4_0/A
+R bitslice_2/buffer_fo4_0/a_n240_0# 3043
+R bitslice_2/mux21_0/B 2857
+= bitslice_2/mux21_0/B bitslice_2/inverter_0/B
+= bitslice_2/mux21_0/B bitslice_2/m1_142_89#
+R bitslice_2/addf_0/B 6249
+= bitslice_2/addf_0/B bitslice_2/mux21_0/Y
+= bitslice_2/addf_0/B bitslice_2/li_541_681#
+R B2 1961
+= B2 bitslice_2/B
+= B2 bitslice_2/inverter_0/A
+= B2 bitslice_2/mux21_0/A
+= B2 bitslice_2/m1_46_260#
+C SUB0 6.2
+R SUB 21555
+= SUB bitslice_0/CI
+= SUB bitslice_0/addf_0/CI
+= SUB bitslice_7/SUB
+= SUB bitslice_7/mux21_0/S
+= SUB bitslice_5/SUB
+= SUB bitslice_5/mux21_0/S
+= SUB bitslice_6/SUB
+= SUB bitslice_6/mux21_0/S
+= SUB bitslice_4/SUB
+= SUB bitslice_4/mux21_0/S
+= SUB bitslice_0/SUB
+= SUB bitslice_0/mux21_0/S
+= SUB bitslice_3/SUB
+= SUB bitslice_1/SUB
+= SUB bitslice_1/mux21_0/S
+= SUB bitslice_3/mux21_0/S
+= SUB bitslice_2/SUB
+= SUB bitslice_2/mux21_0/S
+R gnd 301100
+= gnd VSUBS
+= gnd bitslice_7/gnd
+= gnd bitslice_7/m1_4642_9#
+= gnd bitslice_7/register_0/gnd
+= gnd bitslice_7/register_0/and2_0/gnd
+= gnd bitslice_7/register_0/VSUBS
+= gnd bitslice_7/register_0/d_flip_flop_0/gnd
+= gnd bitslice_7/addf_0/gnd
+= gnd bitslice_7/buffer_fo4_0/gnd
+= gnd bitslice_7/inverter_0/gnd
+= gnd bitslice_7/VSUBS
+= gnd bitslice_7/mux21_0/gnd
+= gnd bitslice_0/gnd
+= gnd bitslice_0/m1_4642_9#
+= gnd bitslice_0/register_0/gnd
+= gnd bitslice_0/register_0/and2_0/gnd
+= gnd bitslice_0/register_0/VSUBS
+= gnd bitslice_0/register_0/d_flip_flop_0/gnd
+= gnd bitslice_0/addf_0/gnd
+= gnd bitslice_0/buffer_fo4_0/gnd
+= gnd bitslice_0/inverter_0/gnd
+= gnd bitslice_0/VSUBS
+= gnd bitslice_0/mux21_0/gnd
+= gnd bitslice_5/gnd
+= gnd bitslice_5/m1_4642_9#
+= gnd bitslice_5/register_0/gnd
+= gnd bitslice_5/register_0/and2_0/gnd
+= gnd bitslice_5/register_0/VSUBS
+= gnd bitslice_5/register_0/d_flip_flop_0/gnd
+= gnd bitslice_5/addf_0/gnd
+= gnd bitslice_5/buffer_fo4_0/gnd
+= gnd bitslice_5/inverter_0/gnd
+= gnd bitslice_5/VSUBS
+= gnd bitslice_5/mux21_0/gnd
+= gnd bitslice_6/gnd
+= gnd bitslice_6/m1_4642_9#
+= gnd bitslice_6/register_0/gnd
+= gnd bitslice_6/register_0/and2_0/gnd
+= gnd bitslice_6/register_0/VSUBS
+= gnd bitslice_6/register_0/d_flip_flop_0/gnd
+= gnd bitslice_6/addf_0/gnd
+= gnd bitslice_6/buffer_fo4_0/gnd
+= gnd bitslice_6/inverter_0/gnd
+= gnd bitslice_6/VSUBS
+= gnd bitslice_6/mux21_0/gnd
+= gnd bitslice_4/gnd
+= gnd bitslice_4/m1_4642_9#
+= gnd bitslice_4/register_0/gnd
+= gnd bitslice_4/register_0/and2_0/gnd
+= gnd bitslice_4/register_0/VSUBS
+= gnd bitslice_4/register_0/d_flip_flop_0/gnd
+= gnd bitslice_4/addf_0/gnd
+= gnd bitslice_4/buffer_fo4_0/gnd
+= gnd bitslice_4/inverter_0/gnd
+= gnd bitslice_4/VSUBS
+= gnd bitslice_4/mux21_0/gnd
+= gnd bitslice_3/gnd
+= gnd bitslice_1/gnd
+= gnd bitslice_1/m1_4642_9#
+= gnd bitslice_1/register_0/gnd
+= gnd bitslice_1/register_0/and2_0/gnd
+= gnd bitslice_1/register_0/VSUBS
+= gnd bitslice_1/register_0/d_flip_flop_0/gnd
+= gnd bitslice_1/addf_0/gnd
+= gnd bitslice_1/buffer_fo4_0/gnd
+= gnd bitslice_1/inverter_0/gnd
+= gnd bitslice_1/VSUBS
+= gnd bitslice_1/mux21_0/gnd
+= gnd bitslice_3/m1_4642_9#
+= gnd bitslice_3/register_0/gnd
+= gnd bitslice_3/register_0/and2_0/gnd
+= gnd bitslice_3/register_0/VSUBS
+= gnd bitslice_3/register_0/d_flip_flop_0/gnd
+= gnd bitslice_3/addf_0/gnd
+= gnd bitslice_3/buffer_fo4_0/gnd
+= gnd bitslice_3/inverter_0/gnd
+= gnd bitslice_3/VSUBS
+= gnd bitslice_3/mux21_0/gnd
+= gnd bitslice_2/gnd
+= gnd bitslice_2/m1_4642_9#
+= gnd bitslice_2/register_0/gnd
+= gnd bitslice_2/register_0/and2_0/gnd
+= gnd bitslice_2/register_0/VSUBS
+= gnd bitslice_2/register_0/d_flip_flop_0/gnd
+= gnd bitslice_2/addf_0/gnd
+= gnd bitslice_2/buffer_fo4_0/gnd
+= gnd bitslice_2/inverter_0/gnd
+= gnd bitslice_2/VSUBS
+= gnd bitslice_2/mux21_0/gnd
+R bitslice_2/mux21_0/S_n 2024
+R bitslice_1/addf_0/S 2462
+= bitslice_1/addf_0/S bitslice_1/register_0/D
+= bitslice_1/addf_0/S bitslice_1/register_0/d_flip_flop_0/D
+= bitslice_1/addf_0/S bitslice_1/m1_1835_528#
+= bitslice_1/addf_0/S bitslice_1/li_1841_534#
+R bitslice_1/register_0/CLK 4194
+= bitslice_1/register_0/CLK bitslice_1/buffer_fo4_0/B
+= bitslice_1/register_0/CLK bitslice_1/m1_2874_370#
+= bitslice_1/register_0/CLK bitslice_1/register_0/and2_0/A
+R bitslice_1/register_0/and2_0/a_30_n42# 360
+R bitslice_1/register_0/and2_0/Y_n 2223
+R Q1 2101
+= Q1 bitslice_1/Q
+= Q1 bitslice_1/register_0/Q
+= Q1 bitslice_1/register_0/d_flip_flop_0/Q
+R bitslice_1/register_0/and2_0/Y 4505
+= bitslice_1/register_0/and2_0/Y bitslice_1/register_0/d_flip_flop_0/CLK
+= bitslice_1/register_0/and2_0/Y bitslice_1/register_0/m2_368_216#
+R bitslice_1/register_0/d_flip_flop_0/a_1248_0# 129
+R bitslice_1/register_0/d_flip_flop_0/a_974_0# 129
+R bitslice_1/register_0/d_flip_flop_0/a_494_0# 129
+R bitslice_1/register_0/d_flip_flop_0/a_220_0# 129
+R bitslice_1/register_0/d_flip_flop_0/a_1248_426# 212
+R bitslice_1/register_0/d_flip_flop_0/a_974_426# 212
+R bitslice_1/register_0/d_flip_flop_0/a_494_426# 212
+R bitslice_1/register_0/d_flip_flop_0/a_220_426# 212
+R bitslice_1/register_0/d_flip_flop_0/common_2 1750
+R bitslice_1/register_0/d_flip_flop_0/common_1 1746
+R bitslice_1/register_0/d_flip_flop_0/inverter_1_out 2792
+R bitslice_1/register_0/d_flip_flop_0/CLK_n 3984
+R bitslice_2/CI 5252
+= bitslice_2/CI bitslice_2/addf_0/CI
+= bitslice_2/CI bitslice_1/CO
+= bitslice_2/CI bitslice_1/addf_0/CO
+R A1 4745
+= A1 bitslice_1/A
+= A1 bitslice_1/addf_0/A
+R bitslice_1/addf_0/a_952_115# 240
+R bitslice_1/addf_0/a_870_115# 240
+R bitslice_1/addf_0/a_526_115# 944
+R bitslice_1/addf_0/a_368_115# 297
+R bitslice_1/addf_0/a_27_115# 959
+R bitslice_1/addf_0/a_952_521# 955
+R bitslice_1/addf_0/a_870_521# 955
+R bitslice_1/addf_0/a_526_521# 2404
+R bitslice_1/addf_0/a_368_521# 1182
+R bitslice_1/addf_0/a_27_521# 2482
+R bitslice_1/addf_0/a_784_115# 2734
+R bitslice_1/addf_0/CON 3963
+R bitslice_1/buffer_fo4_0/a_n240_0# 3043
+R bitslice_1/mux21_0/B 2857
+= bitslice_1/mux21_0/B bitslice_1/inverter_0/B
+= bitslice_1/mux21_0/B bitslice_1/m1_142_89#
+R bitslice_1/addf_0/B 6249
+= bitslice_1/addf_0/B bitslice_1/mux21_0/Y
+= bitslice_1/addf_0/B bitslice_1/li_541_681#
+R B1 1961
+= B1 bitslice_1/B
+= B1 bitslice_1/inverter_0/A
+= B1 bitslice_1/mux21_0/A
+= B1 bitslice_1/m1_46_260#
+R bitslice_1/mux21_0/S_n 2024
+R bitslice_0/addf_0/S 2462
+= bitslice_0/addf_0/S bitslice_0/register_0/D
+= bitslice_0/addf_0/S bitslice_0/register_0/d_flip_flop_0/D
+= bitslice_0/addf_0/S bitslice_0/m1_1835_528#
+= bitslice_0/addf_0/S bitslice_0/li_1841_534#
+R bitslice_0/register_0/CLK 4194
+= bitslice_0/register_0/CLK bitslice_0/buffer_fo4_0/B
+= bitslice_0/register_0/CLK bitslice_0/m1_2874_370#
+= bitslice_0/register_0/CLK bitslice_0/register_0/and2_0/A
+R bitslice_0/register_0/and2_0/a_30_n42# 360
+R bitslice_0/register_0/and2_0/Y_n 2223
+R Q0 2101
+= Q0 bitslice_0/Q
+= Q0 bitslice_0/register_0/Q
+= Q0 bitslice_0/register_0/d_flip_flop_0/Q
+R bitslice_0/register_0/and2_0/Y 4505
+= bitslice_0/register_0/and2_0/Y bitslice_0/register_0/d_flip_flop_0/CLK
+= bitslice_0/register_0/and2_0/Y bitslice_0/register_0/m2_368_216#
+R bitslice_0/register_0/d_flip_flop_0/a_1248_0# 129
+R bitslice_0/register_0/d_flip_flop_0/a_974_0# 129
+R bitslice_0/register_0/d_flip_flop_0/a_494_0# 129
+R bitslice_0/register_0/d_flip_flop_0/a_220_0# 129
+R bitslice_0/register_0/d_flip_flop_0/a_1248_426# 212
+R bitslice_0/register_0/d_flip_flop_0/a_974_426# 212
+R bitslice_0/register_0/d_flip_flop_0/a_494_426# 212
+R bitslice_0/register_0/d_flip_flop_0/a_220_426# 212
+R bitslice_0/register_0/d_flip_flop_0/common_2 1750
+R bitslice_0/register_0/d_flip_flop_0/common_1 1746
+R bitslice_0/register_0/d_flip_flop_0/inverter_1_out 2792
+R bitslice_0/register_0/d_flip_flop_0/CLK_n 3984
+R bitslice_1/CI 5252
+= bitslice_1/CI bitslice_1/addf_0/CI
+= bitslice_1/CI bitslice_0/CO
+= bitslice_1/CI bitslice_0/addf_0/CO
+R A0 4745
+= A0 bitslice_0/A
+= A0 bitslice_0/addf_0/A
+R bitslice_0/addf_0/a_952_115# 240
+R bitslice_0/addf_0/a_870_115# 240
+R bitslice_0/addf_0/a_526_115# 944
+R bitslice_0/addf_0/a_368_115# 297
+R bitslice_0/addf_0/a_27_115# 959
+R bitslice_0/addf_0/a_952_521# 955
+R bitslice_0/addf_0/a_870_521# 955
+R bitslice_0/addf_0/a_526_521# 2404
+R bitslice_0/addf_0/a_368_521# 1182
+R bitslice_0/addf_0/a_27_521# 2482
+R bitslice_0/addf_0/a_784_115# 2734
+R bitslice_0/addf_0/CON 3963
+R bitslice_0/buffer_fo4_0/a_n240_0# 3043
+R bitslice_0/mux21_0/B 2857
+= bitslice_0/mux21_0/B bitslice_0/inverter_0/B
+= bitslice_0/mux21_0/B bitslice_0/m1_142_89#
+R bitslice_0/addf_0/B 6249
+= bitslice_0/addf_0/B bitslice_0/mux21_0/Y
+= bitslice_0/addf_0/B bitslice_0/li_541_681#
+R B0 1961
+= B0 bitslice_0/B
+= B0 bitslice_0/inverter_0/A
+= B0 bitslice_0/mux21_0/A
+= B0 bitslice_0/m1_46_260#
+R bitslice_0/mux21_0/S_n 2024

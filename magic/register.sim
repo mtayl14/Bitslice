@@ -44,6 +44,10 @@ R D 983
 R and2_0/Y 4505
 = and2_0/Y d_flip_flop_0/CLK
 = and2_0/Y m2_368_216#
+R gnd 12964
+= gnd and2_0/gnd
+= gnd VSUBS
+= gnd d_flip_flop_0/gnd
 R d_flip_flop_0/a_1248_0# 129
 R d_flip_flop_0/a_974_0# 129
 R d_flip_flop_0/a_494_0# 129
@@ -56,7 +60,3 @@ R d_flip_flop_0/common_2 1750
 R d_flip_flop_0/common_1 1746
 R d_flip_flop_0/inverter_1_out 2792
 R d_flip_flop_0/CLK_n 3984
-R gnd 12964
-= gnd and2_0/gnd
-= gnd VSUBS
-= gnd d_flip_flop_0/gnd

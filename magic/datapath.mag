@@ -1,37 +1,129 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1701825258
+timestamp 1701981794
+<< metal2 >>
+rect 912 7360 964 7412
+rect 17 7048 71 7102
+rect 18 6909 70 6961
+rect 5134 6643 5190 6699
+rect 17 6124 71 6178
+rect 18 5985 70 6037
+rect 5134 5719 5190 5775
+rect 17 5200 71 5254
+rect 18 5061 70 5113
+rect 5134 4795 5190 4851
+rect 17 4276 71 4330
+rect 18 4137 70 4189
+rect 5134 3871 5190 3927
+rect 17 3352 71 3406
+rect 18 3213 70 3265
+rect 5134 2947 5190 3003
+rect 17 2428 71 2482
+rect 18 2289 70 2341
+rect 5134 2023 5190 2079
+rect 17 1504 71 1558
+rect 18 1365 70 1417
+rect 5134 1099 5190 1155
+rect 17 580 71 634
+rect 18 441 70 493
+rect 5134 175 5190 231
+rect 236 -56 964 -4
+rect 2103 -56 2155 -4
+rect 3293 -56 3345 -4
+rect 4630 -56 4682 -4
+rect 4830 -56 4882 -4
 use bitslice  bitslice_0
-timestamp 1701824698
+timestamp 1701981720
 transform 1 0 -12 0 1 14
-box 0 -20 5224 877
+box 0 -70 5224 930
 use bitslice  bitslice_1
-timestamp 1701824698
+timestamp 1701981720
 transform 1 0 -12 0 1 938
-box 0 -20 5224 877
+box 0 -70 5224 930
 use bitslice  bitslice_2
-timestamp 1701824698
+timestamp 1701981720
 transform 1 0 -12 0 1 1862
-box 0 -20 5224 877
+box 0 -70 5224 930
 use bitslice  bitslice_3
-timestamp 1701824698
+timestamp 1701981720
 transform 1 0 -12 0 1 2786
-box 0 -20 5224 877
+box 0 -70 5224 930
 use bitslice  bitslice_4
-timestamp 1701824698
+timestamp 1701981720
 transform 1 0 -12 0 1 3710
-box 0 -20 5224 877
+box 0 -70 5224 930
 use bitslice  bitslice_5
-timestamp 1701824698
+timestamp 1701981720
 transform 1 0 -12 0 1 4634
-box 0 -20 5224 877
+box 0 -70 5224 930
 use bitslice  bitslice_6
-timestamp 1701824698
+timestamp 1701981720
 transform 1 0 -12 0 1 5558
-box 0 -20 5224 877
+box 0 -70 5224 930
 use bitslice  bitslice_7
-timestamp 1701824698
+timestamp 1701981720
 transform 1 0 -12 0 1 6482
-box 0 -20 5224 877
+box 0 -70 5224 930
+<< labels >>
+rlabel metal2 236 -56 288 -4 5 SUB
+port 18 s
+rlabel metal2 2103 -56 2155 -4 5 CLK
+port 19 s
+rlabel metal2 3293 -56 3345 -4 5 STORE
+port 20 s
+rlabel metal2 18 441 70 493 5 B0
+port 10 s
+rlabel metal2 18 1365 70 1417 5 B1
+port 11 s
+rlabel metal2 18 2289 70 2341 5 B2
+port 12 s
+rlabel metal2 18 3213 70 3265 5 B3
+port 13 s
+rlabel metal2 18 4137 70 4189 5 B4
+port 14 s
+rlabel metal2 18 5061 70 5113 5 B5
+port 15 s
+rlabel metal2 18 5985 70 6037 5 B6
+port 16 s
+rlabel metal2 18 6909 70 6961 5 B7
+port 17 s
+rlabel metal2 17 580 71 634 5 A0
+port 2 s
+rlabel metal2 17 1504 71 1558 5 A1
+port 3 s
+rlabel metal2 17 2428 71 2482 5 A2
+port 4 s
+rlabel metal2 17 3352 71 3406 5 A3
+port 5 s
+rlabel metal2 17 4276 71 4330 5 A4
+port 6 s
+rlabel metal2 17 5200 71 5254 5 A5
+port 7 s
+rlabel metal2 17 6124 71 6178 5 A6
+port 8 s
+rlabel metal2 17 7048 71 7102 5 A7
+port 9 s
+rlabel metal2 5134 175 5190 231 5 Q0
+port 21 s
+rlabel metal2 5134 1099 5190 1155 5 Q1
+port 22 s
+rlabel metal2 5134 2023 5190 2079 5 Q2
+port 23 s
+rlabel metal2 5134 2947 5190 3003 5 Q3
+port 24 s
+rlabel metal2 5134 3871 5190 3927 5 Q4
+port 25 s
+rlabel metal2 5134 4795 5190 4851 5 Q5
+port 26 s
+rlabel metal2 5134 5719 5190 5775 5 Q6
+port 27 s
+rlabel metal2 5134 6643 5190 6699 5 Q7
+port 28 s
+rlabel metal2 912 7360 964 7412 1 CARRY
+port 29 n
+rlabel metal2 4630 -56 4682 -4 5 gnd
+port 0 s
+rlabel metal2 4830 -56 4882 -4 5 vdd
+port 1 s
 << end >>
