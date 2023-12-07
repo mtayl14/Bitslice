@@ -3,13 +3,12 @@ stepsize 5.0
 h vdd
 l gnd
 
-vector Control	clk	store	sub
+vector Control	CLK	STORE	SUB
 vector A	A7 A6 A5 A4 A3 A2 A1 A0
 vector B	B7 B6 B5 B4 B3 B2 B1 B0
 vector Q	Q7 Q6 Q5 Q4 Q3 Q2 Q1 Q0
-vector Sum	cout sum7 sum6 sum5 sum4 sum3 sum2 sum1 sum0
 
-ana -h clk store sub A B Sum Q
+ana -h CLK STORE SUB A B CARRY Q
 analyzer
 
 | Rising edge to stabalize flip flop
@@ -28,7 +27,8 @@ setvector	Control	010
 s
 setvector	Control	110
 s
-assert		Sum	100000000
+assert		Q	00000000
+assert		CARRY	1
 
 | Add 255 + 255 -> 255 carry 1
 setvector	A	11111111
@@ -37,7 +37,8 @@ setvector	Control	010
 s
 setvector	Control	110
 s
-assert		Sum	111111110
+assert		Q	11111110
+assert		CARRY	1
 
 
 | Subtract 66 - 33 -> 33 carry 1
@@ -47,7 +48,8 @@ setvector	Control	011
 s
 setvector	Control	111
 s
-assert		Sum	100100001
+assert		Q	00100001
+assert		CARRY	1
 
 | Carry = complement of Borrow
 
@@ -58,7 +60,8 @@ setvector	Control	011
 s
 setvector	Control	111
 s
-assert		Sum	011101010
+assert		Q	11101010
+assert		CARRY	0
 
 | Repeat 66 - 33, but don't store result (Q, not Sum vector)
 setvector	A	01000010
@@ -68,4 +71,4 @@ s
 setvector	Control	101
 s
 assert		Q	11101010
-
+assert		CARRY	1
