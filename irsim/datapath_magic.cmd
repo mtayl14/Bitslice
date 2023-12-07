@@ -63,7 +63,7 @@ s
 assert		Q	11101010
 assert		CARRY	0
 
-| Repeat 66 - 33, but don't store result (Q, not Sum vector)
+| Repeat 66 - 33, but don't store result
 setvector	A	01000010
 setvector	B	00100001
 setvector	Control	001
