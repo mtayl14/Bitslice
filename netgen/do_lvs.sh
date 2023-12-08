@@ -3,9 +3,15 @@
 file_name=$1
 circuit_name=$2
 
+# Check if netgen available
+if ! command -v netgen &> /dev/null; then
+	echo "netgen not found. Did you run eda-tools?"
+	exit 1
+fi
+
 # Check for file name
 if [ -z "$file_name" ]; then
-	echo "Please provide a file name (eg, ."
+	echo "Please provide a file name (ex: addf)"
 	exit 1
 fi
 
