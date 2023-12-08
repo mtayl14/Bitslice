@@ -4,7 +4,7 @@ h vdd
 l gnd
 vector In A B CI
 vector Out CO S
-ana -h in Out
+ana -h A B CI S CO
 analyzer
 setvector In 000
 s
