@@ -1,0 +1,286 @@
+%!PS-Adobe-2.0
+%%Pages: 1
+%%EndComments
+%!
+/MSAVE { /mStat save def } def
+/MRESTORE { mStat restore } def
+/SET { exch def } def
+/SF { /wi SET theFont [wi 0 0 FSIZE 0 0] makefont setfont } def
+/L { newpath moveto lineto stroke } def
+/VL { 2 index exch L } def
+/HL { 1 index L } def
+/BOX { /@yb SET /@xb SET /@yt SET /@xt SET newpath
+ @xb @yb moveto @xb @yt lineto @xt @yt lineto @xt @yb lineto closepath } def
+/SL { moveto show } def
+/SR { exch dup /@xr SET 2 index stringwidth pop sub dup
+ 0 le { pop 0 @xr 3 -1 roll SC } { exch FSIZE 2 div sub moveto show }
+ ifelse } def
+/SCP { /@s SET @s stringwidth pop /@sw SET @sw 2 div sub
+ dup @sw add maxX gt { pop maxX @sw sub } if exch moveto @s show } def
+/SC { FSIZE 2 div sub /@y SET /@x2 SET /@x1 SET /@s SET
+ /@l @x2 @x1 sub def /@x @x1 @x2 add 2 div def
+ /@w @s stringwidth pop def @l @w gt
+ { @y @x @s SCP }
+ { @l FSIZE mul @w 1 add div dup MINFSIZE lt
+ { pop } { /svf currentfont def SF @y @x @s SCP svf setfont } ifelse }ifelse
+} def
+/LE { exch GX GY FSIZE 2 div add SR /@x GX def
+ { dup stringwidth pop /@w SET /@x @x FSIZE add def @x @w add
+ 720 ge { /@x GX FSIZE add def /GY GY FSIZE 2 add sub def } if
+ @x GY SL /@x @x @w add def } repeat /GY GY FSIZE 4 add sub def } def
+/FSIZE 9 def /MINFSIZE 4 def /maxX 718 def
+612 0 translate
+90 rotate
+36 55 translate
+1 setlinecap 0.6 setlinewidth 
+/theFont /Helvetica findfont def FSIZE SF
+%%Page: 1 1
+%%PageOrientation: Landscape
+MSAVE
+0.82 setgray
+0 506 720 521 BOX fill
+0 setgray
+0 506 720 521 BOX stroke
+(datapath_magic)6 514 FSIZE 2 div sub SL
+(Fri Dec  8 10:43:52 2023
+) 713 514 SR
+0 -19 720 521 BOX stroke
+0 setlinewidth [1 3] 0 setdash /svfnt currentfont def
+theFont 0.7 FSIZE mul scalefont setfont
+(time \(ns\)) 0 -1 1 SC
+1 505 -3 VL
+(0.00) 0 2 -9 SC
+59 505 -3 VL
+(5.00) 0 118 -9 SC
+119 505 -3 VL
+(10.00) 0 238 -9 SC
+179 505 -3 VL
+(15.00) 0 358 -9 SC
+238 505 -3 VL
+(20.00) 0 476 -9 SC
+298 505 -3 VL
+(25.00) 0 596 -9 SC
+358 505 -3 VL
+(30.00) 0 716 -9 SC
+418 505 -3 VL
+(35.00) 0 836 -9 SC
+477 505 -3 VL
+(40.00) 0 954 -9 SC
+537 505 -3 VL
+(45.00) 0 1074 -9 SC
+597 505 -3 VL
+(50.00) 0 1194 -9 SC
+657 505 -3 VL
+(55.00) 0 1314 -9 SC
+716 505 -3 VL
+(60.00) 0 1432 -9 SC
+-2 1 718 HL
+0.6 setlinewidth [] 0 setdash svfnt setfont
+(CLK)715 474 SR
+(STORE)715 421 SR
+(SUB)715 368 SR
+(A)715 310 SR
+(B)715 244 SR
+(CARRY)715 184 SR
+(Q)715 125 SR
+0.68 setgray
+1 497 1 451 BOX fill
+0 setgray
+1 451 497 VL
+1 451 59 HL
+59 451 497 VL
+59 497 119 HL
+119 451 497 VL
+119 451 179 HL
+179 451 497 VL
+179 497 238 HL
+238 451 497 VL
+238 451 298 HL
+298 451 497 VL
+298 497 358 HL
+358 451 497 VL
+358 451 418 HL
+418 451 497 VL
+418 497 477 HL
+477 451 497 VL
+477 451 537 HL
+537 451 497 VL
+537 497 597 HL
+597 451 497 VL
+597 451 657 HL
+657 451 497 VL
+657 497 716 HL
+0.68 setgray
+1 444 1 398 BOX fill
+0 setgray
+1 398 444 VL
+1 398 59 HL
+59 398 444 VL
+59 444 597 HL
+597 398 444 VL
+597 398 716 HL
+0.68 setgray
+1 391 1 345 BOX fill
+0 setgray
+1 345 391 VL
+1 345 358 HL
+358 345 391 VL
+358 391 716 HL
+1 283 334 VL
+1 334 3 338 L
+1 283 3 279 L
+(XX)1 1 310 SC
+3 338 117 HL
+3 279 117 HL
+119 283 334 VL
+117 338 119 334 L
+117 279 119 283 L
+119 334 121 338 L
+119 283 121 279 L
+(00)1 119 310 SC
+121 338 236 HL
+121 279 236 HL
+238 283 334 VL
+236 338 238 334 L
+236 279 238 283 L
+238 334 241 338 L
+238 283 241 279 L
+(80)119 238 310 SC
+241 338 356 HL
+241 279 356 HL
+358 283 334 VL
+356 338 358 334 L
+356 279 358 283 L
+358 334 360 338 L
+358 283 360 279 L
+(ff)238 358 310 SC
+360 338 475 HL
+360 279 475 HL
+477 283 334 VL
+475 338 477 334 L
+475 279 477 283 L
+477 334 480 338 L
+477 283 480 279 L
+(42)358 477 310 SC
+480 338 595 HL
+480 279 595 HL
+597 283 334 VL
+595 338 597 334 L
+595 279 597 283 L
+597 334 599 338 L
+597 283 599 279 L
+(16)477 597 310 SC
+599 338 716 HL
+599 279 716 HL
+(42)597 716 310 SC
+1 217 269 VL
+1 269 3 272 L
+1 217 3 214 L
+(XX)1 1 244 SC
+3 272 117 HL
+3 214 117 HL
+119 217 269 VL
+117 272 119 269 L
+117 214 119 217 L
+119 269 121 272 L
+119 217 121 214 L
+(00)1 119 244 SC
+121 272 236 HL
+121 214 236 HL
+238 217 269 VL
+236 272 238 269 L
+236 214 238 217 L
+238 269 241 272 L
+238 217 241 214 L
+(80)119 238 244 SC
+241 272 356 HL
+241 214 356 HL
+358 217 269 VL
+356 272 358 269 L
+356 214 358 217 L
+358 269 360 272 L
+358 217 360 214 L
+(ff)238 358 244 SC
+360 272 475 HL
+360 214 475 HL
+477 217 269 VL
+475 272 477 269 L
+475 214 477 217 L
+477 269 480 272 L
+477 217 480 214 L
+(21)358 477 244 SC
+480 272 595 HL
+480 214 595 HL
+597 217 269 VL
+595 272 597 269 L
+595 214 597 217 L
+597 269 599 272 L
+597 217 599 214 L
+(2c)477 597 244 SC
+599 272 716 HL
+599 214 716 HL
+(21)597 716 244 SC
+0.68 setgray
+1 207 1 161 BOX fill
+0 setgray
+1 161 207 VL
+1 161 119 HL
+119 161 207 VL
+119 207 358 HL
+358 161 207 VL
+358 161 359 HL
+359 161 207 VL
+359 207 479 HL
+479 161 207 VL
+479 161 597 HL
+597 161 207 VL
+597 207 716 HL
+3 154 58 HL
+3 95 58 HL
+60 99 150 VL
+58 154 60 150 L
+58 95 60 99 L
+60 150 62 154 L
+60 99 62 95 L
+(XX)1 60 125 SC
+62 154 297 HL
+62 95 297 HL
+299 99 150 VL
+297 154 299 150 L
+297 95 299 99 L
+299 150 301 154 L
+299 99 301 95 L
+(00)60 299 125 SC
+301 154 416 HL
+301 95 416 HL
+418 99 150 VL
+416 154 418 150 L
+416 95 418 99 L
+418 150 420 154 L
+418 99 420 95 L
+(fe)299 418 125 SC
+419 99 150 VL
+420 154 419 150 L
+420 95 419 99 L
+419 150 421 154 L
+419 99 421 95 L
+(ff)418 419 125 SC
+421 154 535 HL
+421 95 535 HL
+537 99 150 VL
+535 154 537 150 L
+535 95 537 99 L
+537 150 539 154 L
+537 99 539 95 L
+(21)419 537 125 SC
+538 99 150 VL
+539 154 538 150 L
+539 95 538 99 L
+538 150 540 154 L
+538 99 540 95 L
+(eb)537 538 125 SC
+540 154 716 HL
+540 95 716 HL
+(ea)538 716 125 SC
+showpage MRESTORE
+%%EOF
