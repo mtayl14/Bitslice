@@ -9,7 +9,7 @@ vector B	B7 B6 B5 B4 B3 B2 B1 B0
 vector Q	Q7 Q6 Q5 Q4 Q3 Q2 Q1 Q0
 vector Sum	cout sum7 sum6 sum5 sum4 sum3 sum2 sum1 sum0
 
-ana -h clk store sub A B Sum Q
+ana -h clk store sub A B cout Q
 analyzer
 
 | Rising edge to stabalize flip flop
