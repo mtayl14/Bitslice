@@ -2,7 +2,7 @@
 .subckt register CLK EN D Q vdd gnd
 *.PININFO CLK:I EN:I D:I Q:O vdd:I gnd:I
 x1 net1 Q D vdd gnd d_flip_flop
-x2 CLK net1 EN vdd gnd vdd gnd and2
+x2 CLK net1 EN vdd gnd and2
 .ends
 
 * expanding   symbol:  d_flip_flop.sym # of pins=5
@@ -82,7 +82,7 @@ XM22 net7 Q gnd GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2)
 * expanding   symbol:  and2.sym # of pins=5
 ** sym_path: /home/mtayl14/Projects/Bitslice/xschem/and2.sym
 ** sch_path: /home/mtayl14/Projects/Bitslice/xschem/and2.sch
-.subckt and2 A Y B vdd gnd vddpin gndpin
+.subckt and2 A Y B vdd gnd
 *.PININFO A:I B:I Y:O vdd:I gnd:I
 XM1 net1 A net2 GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
