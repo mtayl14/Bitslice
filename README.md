@@ -15,6 +15,8 @@ Status:
 
 ![Bitslice](/bitslice.png)
 
+![Response Time](/transistion.png)
+
 ---
 Now, talking with Dr. Stine on Monday, Nov 29th, he said that the two's complement subtraction wasn't actually required.
 I was under the impression that it was required, but re-reading the project description, he states that _it would be easy to implement_, not that it's required.

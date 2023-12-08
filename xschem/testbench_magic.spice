@@ -1,0 +1,42 @@
+** sch_path: /home/mtayl14/Projects/Bitslice/xschem/testbench_magic.sch
+**.subckt testbench_magic GOES_HIGH GOES_HIGH DONT_CARE Q7 CARRY CLK
+*.ipin GOES_HIGH
+*.ipin GOES_HIGH
+*.opin DONT_CARE
+*.opin Q7
+*.opin CARRY
+*.ipin CLK
+x1 GND VDD GOES_HIGH GOES_HIGH GOES_HIGH GOES_HIGH GOES_HIGH GOES_HIGH GOES_HIGH GOES_HIGH GOES_HIGH
++ GOES_HIGH GOES_HIGH GOES_HIGH GOES_HIGH GOES_HIGH GOES_HIGH GND GOES_HIGH CLK CLK DONT_CARE DONT_CARE
++ DONT_CARE DONT_CARE DONT_CARE DONT_CARE DONT_CARE Q7 CARRY datapath
+vvdd VDD GND 1.8
+vin GOES_HIGH GND pulse(0 1.8 15n 250p 250p 5n 10n 1)
+vin1 CLK GND pulse(0 1.8 5n 250p 250p 5n 10n 2)
+**** begin user architecture code
+
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include /programs/open_pdks/share/pdk/sky130A/libs.tech/ngspice/corners/tt.spice
+.include /programs/open_pdks/share/pdk/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
+.include /programs/open_pdks/share/pdk/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
+.include /programs/open_pdks/share/pdk/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
+
+
+
+.control
+TRAN 5p 20n
+save all
+set filetype=binary
+write testbench_magic.raw v(CLK) v(GOES_HIGH) v(Q7) v(CARRY)
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  datapath_magic.sym # of pins=30
+** sym_path: /home/mtayl14/Projects/Bitslice/xschem/datapath_magic.sym
+.include datapath_magic.spice
+.GLOBAL GND
+.GLOBAL VDD
+.end
