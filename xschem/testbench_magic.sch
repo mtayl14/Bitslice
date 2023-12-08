@@ -5,45 +5,16 @@ K {}
 V {}
 S {}
 E {}
+T {NOTE: When netlisting, the subcircuit is called "datapath_magic".
+Remove the '_magic'! This is because the symbol pulls in datapath_magic.spice,
+which is a symbolic link to ../magic/datapath.spice} 90 320 0 0 0.3 0.3 {}
 N 310 20 350 20 {
 lab=CARRY}
 N 310 -160 350 -160 {
 lab=Q7}
-N 170 20 190 20 {
-lab=GOES_HIGH}
-N 170 20 170 160 {
-lab=GOES_HIGH}
 N 170 160 190 160 {
 lab=GOES_HIGH}
-N 170 140 190 140 {
-lab=GOES_HIGH}
-N 170 120 190 120 {
-lab=GOES_HIGH}
-N 170 100 190 100 {
-lab=GOES_HIGH}
-N 170 80 190 80 {
-lab=GOES_HIGH}
-N 170 60 190 60 {
-lab=GOES_HIGH}
-N 170 40 190 40 {
-lab=GOES_HIGH}
 N 170 -20 190 -20 {
-lab=GOES_HIGH}
-N 170 -40 190 -40 {
-lab=GOES_HIGH}
-N 170 -60 190 -60 {
-lab=GOES_HIGH}
-N 170 -80 190 -80 {
-lab=GOES_HIGH}
-N 170 -100 190 -100 {
-lab=GOES_HIGH}
-N 170 -120 190 -120 {
-lab=GOES_HIGH}
-N 170 -140 190 -140 {
-lab=GOES_HIGH}
-N 170 -140 170 -20 {
-lab=GOES_HIGH}
-N 170 -20 170 20 {
 lab=GOES_HIGH}
 N 130 0 170 0 {
 lab=GOES_HIGH}
@@ -85,6 +56,40 @@ N 310 180 330 180 {
 lab=CLK}
 N 330 220 350 220 {
 lab=GOES_HIGH}
+N 130 -160 150 -160 {
+lab=GND}
+N 150 -160 150 -40 {
+lab=GND}
+N 150 -40 190 -40 {
+lab=GND}
+N 150 -80 190 -80 {
+lab=GND}
+N 150 -120 190 -120 {
+lab=GND}
+N 150 -40 150 140 {
+lab=GND}
+N 150 140 190 140 {
+lab=GND}
+N 150 120 190 120 {
+lab=GND}
+N 150 100 190 100 {
+lab=GND}
+N 150 80 190 80 {
+lab=GND}
+N 150 60 190 60 {
+lab=GND}
+N 150 40 190 40 {
+lab=GND}
+N 170 -20 170 160 {
+lab=GOES_HIGH}
+N 150 20 190 20 {
+lab=GND}
+N 150 -60 190 -60 {
+lab=GND}
+N 150 -100 190 -100 {
+lab=GND}
+N 150 -140 190 -140 {
+lab=GND}
 C {sky130_fd_pr/corner.sym} -170 -170 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {datapath_magic.sym} 250 50 0 0 {name=x1}
 C {devices/code.sym} -170 0 0 0 {name=Simulation only_toplevel=false value="
@@ -95,7 +100,7 @@ set filetype=binary
 write testbench_magic.raw v(CLK) v(GOES_HIGH) v(Q7) v(CARRY)
 .endc
 "}
-C {devices/gnd.sym} 150 -160 1 0 {name=l1 lab=GND}
+C {devices/gnd.sym} 130 -160 1 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 150 220 1 0 {name=l2 lab=GND}
 C {devices/vdd.sym} -150 180 0 0 {name=l3 lab=VDD}
 C {devices/vsource.sym} -150 210 0 0 {name=vvdd value=1.8}
